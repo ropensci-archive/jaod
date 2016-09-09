@@ -1,32 +1,7 @@
-geojson
-=======
+jaod
+====
 
 ```{r echo=FALSE}
-library("knitr")
-hook_output <- knitr::knit_hooks$get("output")
-knitr::knit_hooks$set(output = function(x, options) {
-   lines <- options$output.lines
-   if (is.null(lines)) {
-     return(hook_output(x, options))  # pass to default hook
-   }
-   x <- unlist(strsplit(x, "\n"))
-   more <- "..."
-   if (length(lines)==1) {        # first n lines
-     if (length(x) > lines) {
-       # truncate the output, but add ....
-       x <- c(head(x, lines), more)
-     }
-   } else {
-     x <- c(if (abs(lines[1])>1) more else NULL,
-            x[lines],
-            if (length(x)>lines[abs(length(lines))]) more else NULL
-           )
-   }
-   # paste these lines together
-   x <- paste(c(x, ""), collapse = "\n")
-   hook_output(x, options)
- })
-
 knitr::opts_chunk$set(
   comment = "#>",
   collapse = TRUE,
@@ -35,101 +10,45 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/geojson.svg?branch=master)](https://travis-ci.org/ropenscilabs/geojson)
-[![codecov](https://codecov.io/gh/ropenscilabs/geojson/branch/master/graph/badge.svg)](https://codecov.io/gh/ropenscilabs/geojson)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geojson)](https://github.com/metacran/cranlogs.app)
+[![Build Status](https://travis-ci.org/ropenscilabs/jaod.svg?branch=master)](https://travis-ci.org/ropenscilabs/jaod)
 
-`geojson` aims to deal only with geojson data, without requiring any of the `sp`/`rgdal`/`rgeos` stack. That means this package can be relatively light weight.
-
-We'll define classes (`S3` or `R6`) following the [GeoJSON spec][geojsonspec]. These classes sort of overlap with `sp`'s classes, but not really. There's also some overlap in GeoJSON classes with Well-Known Text (WKT) classes, but GeoJSON has a subset of WKT's classes.
-
-[geoops](https://github.com/ropenscilabs/geoops) supports manipulations on these classes.
+`jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
 
 ## installation
 
 ```{r eval=FALSE}
-devtools::install_github("ropenscilabs/geojson")
+devtools::install_github("ropenscilabs/jaod")
 ```
 
 ```{r}
-library("geojson")
+library("jaod")
 ```
 
-## geojson class
-
-this is just a characstring string with S3 class `geojson` attached to make it easy to perform operations on
+## search journals
 
 ```{r}
-x <- "{\"type\":\"FeatureCollection\",\"features\":[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[-99.74,32.45]},\"properties\":{}}]}"
-as.geojson(x)
+jaod_journal_search(query = "bibjson.keywords:heritage")
 ```
 
-## geometrycollection
+## get journal by id
 
 ```{r}
-x <- '{
- "type": "GeometryCollection",
- "geometries": [
-   {
-     "type": "Point",
-     "coordinates": [100.0, 0.0]
-   },
-   {
-     "type": "LineString",
-     "coordinates": [ [101.0, 0.0], [102.0, 1.0] ]
-   }
-  ]
-}'
-(y <- geometrycollection(x))
+out <- jaod_journal(id = "f3f2e7f23d444370ae5f5199f85bc100")
+names(out$bibjson)
 ```
-
-### inspect the object
-
-get the string
 
 ```{r}
-y[[1]]
-```
-
-get the type
-
-```{r}
-geo_type(y)
-```
-
-pretty print the geojson
-
-```{r}
-geo_pretty(y)
-```
-
-get the types within the geometrycollection
-
-
-```{r}
-geo_type(y)
-```
-
-write to disk
-
-```{r}
-geo_write(y, f <- tempfile(fileext = ".geojson"))
-jsonlite::fromJSON(f, FALSE)
-```
-
-```{r echo=FALSE}
-unlink(f)
+out$bibjson$archiving_policy
+out$bibjson$apc
+out$bibjson$article_statistics
+out$bibjson$author_publishing_rights
 ```
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/geojson/issues).
+* Please [report any issues or bugs](https://github.com/ropenscilabs/jaod/issues).
 * License: MIT
-* Get citation information for `geojson` in R doing `citation(package = 'geojson')`
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Get citation information for `jaod` in R doing `citation(package = jaod')`
+* Please note that this project is CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![ropensci_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
-
-[geojsonspec]: http://geojson.org/geojson-spec.html
-[jqr]: https://github.com/ropensci/jqr
-[jq]: https://github.com/stedolan/jq
