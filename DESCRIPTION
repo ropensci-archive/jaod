@@ -1,0 +1,19 @@
+Package: jaod
+Type: Package
+Title: Directory of Open Access Journals Client
+Description: Directory of Open Access Journals Client.
+Version: 0.0.1.9000
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com")
+    )
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/jaod
+BugReports: https://github.com/ropenscilabs/jaod/issues
+LazyData: true
+Imports:
+    jsonlite (>= 1.0),
+    httr (>= 0.2.0),
+    tibble (>= 1.2)
+Suggests:
+    roxygen2 (>= 5.0.1)
+RoxygenNote: 5.0.1
