@@ -44,6 +44,28 @@ out$bibjson$article_statistics
 out$bibjson$author_publishing_rights
 ```
 
+
+## search articles
+
+```{r}
+jaod_article_search(query = "license:CC-BY")
+```
+
+## get article by id
+
+```{r}
+out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
+names(out$bibjson)
+```
+
+```{r}
+out$bibjson$author
+out$bibjson$link
+out$bibjson$identifier
+out$bibjson$subject
+```
+
+
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/jaod/issues).

@@ -2,7 +2,7 @@ Package: jaod
 Type: Package
 Title: Directory of Open Access Journals Client
 Description: Directory of Open Access Journals Client.
-Version: 0.0.1.9000
+Version: 0.0.2.9000
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com")
     )

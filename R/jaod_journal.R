@@ -1,7 +1,7 @@
 #' Get a journal by ID
 #'
 #' @export
-#' @param id (character) a DOAJ journal ID, essentially a UUID. Note, this
+#' @param id (character) a DOAJ journal ID, a UUID. Note, this
 #' is not an ISSN, but you can use \code{\link{jaod_journal_search}} to
 #' search by ISSN to get the DOAJ id
 #' @template curl

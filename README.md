@@ -25,7 +25,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2016-0909T19:12:35Z"
+#> [1] "2016-0909T19:35:04Z"
 #> 
 #> $page
 #> [1] 1
@@ -50,8 +50,8 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 #>            last_updated                               id
 #> *                 <chr>                            <chr>
 #> 1  2016-09-06T16:54:42Z a77592b0bc7043ad89370fc34bafb61e
-#> 2  2016-09-09T15:31:54Z 1642c0a3d74d4218951a597b3ed1193e
-#> 3  2016-09-06T16:53:15Z 6f6f2f3ebd6143589a95b54b50480a16
+#> 2  2016-09-06T16:53:15Z 6f6f2f3ebd6143589a95b54b50480a16
+#> 3  2016-09-09T15:31:54Z 1642c0a3d74d4218951a597b3ed1193e
 #> 4  2016-09-06T16:56:41Z fa4bf9b1a36d4ddabb0019deba82d43f
 #> 5  2016-09-06T16:55:00Z b41c34274fa04f318760687c6b8d1c0f
 #> 6  2016-09-06T16:51:57Z 3858157c002e4fd5b20c8f7b44b2f35b
@@ -135,6 +135,91 @@ out$bibjson$author_publishing_rights
 #> $publishing_rights
 #> [1] "True"
 ```
+
+
+## search articles
+
+
+```r
+jaod_article_search(query = "license:CC-BY")
+#> $timestamp
+#> [1] "2016-0909T19:35:07Z"
+#> 
+#> $page
+#> [1] 1
+#> 
+#> $pageSize
+#> [1] 10
+#> 
+#> $query
+#> [1] "license:CC-BY"
+#> 
+#> $total
+#> [1] 1827970
+#> 
+#> $`next`
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
+#> 
+#> $last
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=182797&pageSize=10"
+#> 
+#> $results
+#> # A tibble: 10 × 22
+#>            last_updated                               id
+#> *                 <chr>                            <chr>
+#> 1  2016-06-24T11:42:49Z 00053c2b16564e92a52dbc38ef581687
+#> 2  2016-06-24T11:43:02Z 000640ee3e234790ba13ada1d0cbe4fd
+#> 3  2016-06-24T11:43:02Z 00064f73fede477eb95514caab3c730a
+#> 4  2016-06-24T11:42:48Z 0004c9e6a3c64ec9848607e51b7edbca
+#> 5  2016-06-24T11:42:48Z 0004ecae4704406c8fef57d8b0f28895
+#> 6  2016-06-24T11:42:48Z 0004fbb5c0414b6c9f0dc14eb49ee848
+#> 7  2016-06-24T11:43:04Z 00077ece9f0149a99cbcb56582474b27
+#> 8  2016-06-24T11:42:49Z 00054f6ce32644a987c3f39e4ae1cd0c
+#> 9  2016-06-24T11:43:03Z 000718ed0c7b435387a729dbb30cafb8
+#> 10 2016-06-24T11:42:50Z 0005e11ec616453f854070069385e057
+#> # ... with 20 more variables: created_date <chr>,
+#> #   bibjson.start_page <chr>, bibjson.author <list>, bibjson.title <chr>,
+#> #   bibjson.subject <list>, bibjson.link <list>, bibjson.year <chr>,
+#> #   bibjson.keywords <list>, bibjson.identifier <list>,
+#> #   bibjson.abstract <chr>, bibjson.end_page <chr>, bibjson.month <chr>,
+#> #   bibjson.journal.publisher <chr>, bibjson.journal.language <list>,
+#> #   bibjson.journal.license <list>, bibjson.journal.title <chr>,
+#> #   bibjson.journal.country <chr>, bibjson.journal.number <chr>,
+#> #   bibjson.journal.volume <chr>, bibjson.journal.issns <list>
+```
+
+## get article by id
+
+
+```r
+out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
+names(out$bibjson)
+#>  [1] "title"      "abstract"   "author"     "month"      "link"      
+#>  [6] "year"       "keywords"   "identifier" "journal"    "subject"
+```
+
+
+```r
+out$bibjson$author
+#>               name
+#> 1    Pradeep Kumar
+#> 2 Zachariah C Alex
+out$bibjson$link
+#>                                                          url     type
+#> 1 http://www.enggjournals.com/ijet/docs/IJET13-05-03-375.pdf fulltext
+out$bibjson$identifier
+#>    type        id
+#> 1 pissn 0975-4024
+out$bibjson$subject
+#>   scheme                                               term     code
+#> 1    LCC Engineering (General). Civil engineering (General) TA1-2040
+#> 2    LCC                                         Technology        T
+#> 3   DOAJ                      General and Civil Engineering     <NA>
+#> 4   DOAJ                         Technology and Engineering     <NA>
+#> 5    LCC                               Technology (General)   T1-995
+#> 6   DOAJ                               Technology (General)     <NA>
+```
+
 
 ## Meta
 
