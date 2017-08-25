@@ -40,4 +40,3 @@ jaod_article_search(query = "issn:1544-9173")
 jaod_article_search(query = "publisher:dove")
 }
 }
-

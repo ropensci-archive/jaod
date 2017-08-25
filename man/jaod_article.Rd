@@ -35,4 +35,3 @@ out <- lapply(ids, jaod_article)
 out[[1]]
 }
 }
-

@@ -35,4 +35,3 @@ out <- lapply(ids, jaod_journal)
 out[[1]]
 }
 }
-

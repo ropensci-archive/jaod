@@ -2,11 +2,10 @@
 % Please edit documentation in R/jaod-package.R
 \docType{package}
 \name{jaod-package}
-\alias{jaod}
 \alias{jaod-package}
+\alias{jaod}
 \title{jaod}
 \description{
 jaod
 }
 \keyword{package}
-
