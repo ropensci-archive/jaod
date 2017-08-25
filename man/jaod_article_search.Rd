@@ -7,7 +7,7 @@
 jaod_article_search(query, page = 1, pageSize = 10, sort = NULL, ...)
 }
 \arguments{
-\item{query}{(character) query terms}
+\item{query}{(character) query terms. See Details.}
 
 \item{page}{(integer) Which page of the results you wish to see. Default: 1}
 
@@ -15,17 +15,32 @@ jaod_article_search(query, page = 1, pageSize = 10, sort = NULL, ...)
 Default: 10}
 
 \item{sort}{(character) one of asc or desc, or sort by a specific field,
-either asc or desc, see examples}
+either asc or desc, see examples. If asc or desc not given, asc is used}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
 see \code{?curl::curl_options} for help on curl options}
 }
 \value{
-a tibble (data.frame)
+a list with metadata (\code{timestamp}, \code{page}, \code{pageSize}, \code{query},
+\code{total} (number of results), \code{next} and \code{last} (next page and last page),
+and \code{results} (a tibble (data.frame)))
 }
 \description{
 Search for articles
 }
+\section{query}{
+
+You can search inside any field you see in the results or the schema.
+See \url{https://doaj.org/api/v1/docs#specific_field_search} for more details.
+For example, to search for all articles with abstracts containing the
+word "shadow", you would do \code{bibjson.abstract:"shadow"}.
+
+Short-hand names are available for some fields. See
+\url{https://doaj.org/api/v1/docs#short_field_names} for more details. For
+example: \code{doi:10.3389/fpsyg.2013.00479}, \code{issn:1874-9496}, \code{license:CC-BY},
+and \code{title:hydrostatic pressure}
+}
+
 \examples{
 \dontrun{
 out <- jaod_article_search(query = "license:CC-BY")
@@ -39,5 +54,11 @@ dplyr::bind_rows(out$results$bibjson.identifier, .id = "doaj_id")
 # more egs
 jaod_article_search(query = "issn:1544-9173")
 jaod_article_search(query = "publisher:dove")
+
+# sorting
+res <- jaod_article_search(query="Pinus contorta", sort="year:desc",
+  pageSize = 50)
+res$results$bibjson.year
+jaod_article_search(query="green", sort="bibjson.year:desc")
 }
 }

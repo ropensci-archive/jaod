@@ -1,14 +1,20 @@
 #' Search for journals
 #'
 #' @export
-#' @param query (character) query terms
-#' @param page (integer) Which page of the results you wish to see. Default: 1
-#' @param pageSize (integer) How many results per page you wish to see.
-#' Default: 10
-#' @param sort (character) one of asc or desc, or sort by a specific field,
-#' either asc or desc, see examples
-#' @template curl
-#' @return a tibble (data.frame)
+#' @inheritParams jaod_article_search
+#' @return a list with metadata (`timestamp`, `page`, `pageSize`, `query`,
+#' `total` (number of results), `next` and `last` (next page and last page),
+#' and `results` (a tibble (data.frame)))
+#' @section query:
+#' You can search inside any field you see in the results or the schema.
+#' See <https://doaj.org/api/v1/docs#specific_field_search> for more details.
+#' For example, to search for all articles with abstracts containing the
+#' word "shadow", you would do `bibjson.abstract:"shadow"`.
+#'
+#' Short-hand names are available for some fields. See
+#' <https://doaj.org/api/v1/docs#short_field_names> for more details. For
+#' example: `doi:10.3389/fpsyg.2013.00479`, `issn:1874-9496`, `license:CC-BY`,
+#' and `title:hydrostatic pressure`
 #' @examples \dontrun{
 #' out <- jaod_journal_search(query = "bibjson.keywords:heritage")
 #' out
@@ -16,12 +22,17 @@
 #'
 #' jaod_journal_search(query = "issn:1544-9173")
 #' jaod_journal_search(query = "publisher:dove")
+#'
+#' # sorting
+#' out <- jaod_journal_search(query = "bibjson.keywords:heritage",
+#'   sort = "bibjson.oa_start.year:desc")
+#' out$results$bibjson.oa_start.year
 #' }
 jaod_journal_search <- function(query, page = 1, pageSize = 10, sort = NULL, ...) {
   res <- jaod_parse(
     jGET(
       file.path(doaj_base(), "search", "journals", query),
-      query = jc(list(page = page, pageSize = pageSize)),
+      query = jc(list(page = page, pageSize = pageSize, sort = sort)),
       ...
     )
   )
