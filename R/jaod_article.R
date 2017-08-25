@@ -2,8 +2,8 @@
 #'
 #' @export
 #' @param id (character) a DOAJ article ID, a UUID. Note, this
-#' is not a DOI, but you can use \code{\link{jaod_article_search}} to
-#' search by ISSN to get DOAJ article ids
+#' is not a DOI, but you can use [jaod_article_search()] to search by ISSN to
+#' get DOAJ article ids
 #' @template curl
 #' @return a named list, with slots admin, last_updated, id, created_date,
 #' and bibjson

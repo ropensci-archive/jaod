@@ -2,7 +2,7 @@
 #'
 #' @export
 #' @param id (character) a DOAJ journal ID, a UUID. Note, this
-#' is not an ISSN, but you can use \code{\link{jaod_journal_search}} to
+#' is not an ISSN, but you can use [jaod_journal_search()] to
 #' search by ISSN to get the DOAJ id
 #' @template curl
 #' @return a named list, with slots admin, last_updated, id, created_date,

@@ -18,7 +18,7 @@ Default: 10}
 either asc or desc, see examples}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
-see `?curl::curl_options` for help on curl options}
+see \code{?curl::curl_options} for help on curl options}
 }
 \value{
 a tibble (data.frame)

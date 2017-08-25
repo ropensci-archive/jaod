@@ -8,11 +8,11 @@ jaod_article(id, ...)
 }
 \arguments{
 \item{id}{(character) a DOAJ article ID, a UUID. Note, this
-is not a DOI, but you can use \code{\link{jaod_article_search}} to
-search by ISSN to get DOAJ article ids}
+is not a DOI, but you can use \code{\link[=jaod_article_search]{jaod_article_search()}} to search by ISSN to
+get DOAJ article ids}
 
 \item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
-see `?curl::curl_options` for help on curl options}
+see \code{?curl::curl_options} for help on curl options}
 }
 \value{
 a named list, with slots admin, last_updated, id, created_date,

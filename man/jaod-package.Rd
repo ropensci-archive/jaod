@@ -6,6 +6,29 @@
 \alias{jaod}
 \title{jaod}
 \description{
-jaod
+Client for the Directory of Open Access Journals (DOAJ)
+\url{https://doaj.org/}.
+}
+\section{DOAJ Information}{
+
+DOAJ is a (quoting) "community-curated list of open access journals and aims
+to be the starting point for all information searches for quality, peer
+reviewed open access material."
+
+DOAJ API documentation can be found at \url{https://doaj.org/api/v1/docs}.
+}
+
+\section{Package API}{
+
+\itemize{
+\item \code{\link[=jaod_article]{jaod_article()}} - Get an article by ID
+\item \code{\link[=jaod_article_search]{jaod_article_search()}} - Search for articles
+\item \code{\link[=jaod_journal]{jaod_journal()}} - Get a journal by ID
+\item \code{\link[=jaod_journal_search]{jaod_journal_search()}} - Search for journals
+}
+}
+
+\author{
+Scott Chamberlain \email{myrmecocystus+r@gmail.com}
 }
 \keyword{package}

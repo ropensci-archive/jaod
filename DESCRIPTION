@@ -14,6 +14,7 @@ License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/jaod
 BugReports: https://github.com/ropenscilabs/jaod/issues
 LazyData: true
+Roxygen: list(markdown = TRUE)
 Imports:
     jsonlite (>= 1.0),
     crul (>= 0.3.8),
