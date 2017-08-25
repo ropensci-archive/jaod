@@ -1,5 +1,6 @@
-jGET <- function(url, ...) {
-  res <- httr::GET(url, ...)
-  httr::stop_for_status(res)
-  conu8(res)
+jGET <- function(url, query = NULL, ...) {
+  cli <- crul::HttpClient$new(url = url, opts = list(...))
+  res <- cli$get(query = query)
+  res$raise_for_status()
+  res$parse("UTF-8")
 }

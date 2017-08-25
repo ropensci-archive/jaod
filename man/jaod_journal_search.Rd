@@ -17,7 +17,8 @@ Default: 10}
 \item{sort}{(character) one of asc or desc, or sort by a specific field,
 either asc or desc, see examples}
 
-\item{...}{curl options passed on to \code{\link[httr]{GET}}}
+\item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
+see `?curl::curl_options` for help on curl options}
 }
 \value{
 a tibble (data.frame)

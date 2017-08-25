@@ -11,7 +11,8 @@ jaod_article(id, ...)
 is not a DOI, but you can use \code{\link{jaod_article_search}} to
 search by ISSN to get DOAJ article ids}
 
-\item{...}{curl options passed on to \code{\link[httr]{GET}}}
+\item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
+see `?curl::curl_options` for help on curl options}
 }
 \value{
 a named list, with slots admin, last_updated, id, created_date,
@@ -22,14 +23,14 @@ Get an article by ID
 }
 \examples{
 \dontrun{
-out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
+out <- jaod_article(id = "0005e11ec616453f854070069385e057")
 out$admin
 out$last_updated
 out$id
 out$created_date
 out$bibjson
 
-ids <- c("0004c9e6a3c64ec9848607e51b7edbca",
+ids <- c("73f781ad57094b98a0b46d8903fdc2c2",
 "0005e11ec616453f854070069385e057")
 out <- lapply(ids, jaod_article)
 out[[1]]

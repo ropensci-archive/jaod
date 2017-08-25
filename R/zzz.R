@@ -8,9 +8,9 @@ pluck <- function(x, name, type) {
 
 jc <- function(x) Filter(Negate(is.null), x)
 
-conu8 <- function(x) {
-  httr::content(x, as = "text", encoding = "UTF-8")
-}
+# conu8 <- function(x) {
+#   httr::content(x, as = "text", encoding = "UTF-8")
+# }
 
 doaj_base <- function() "https://doaj.org/api/v1"
 

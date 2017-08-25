@@ -1,10 +1,14 @@
 Package: jaod
 Type: Package
 Title: Directory of Open Access Journals Client
-Description: Directory of Open Access Journals Client.
-Version: 0.0.2.9000
+Description: Client for the Directory of Open Access Journals ('DOAJ') 
+    (<https://doaj.org/>). 'API' documentation at 
+    <https://doaj.org/api/v1/docs>. Methods included for working with 
+    all DOAJ 'API' routes.
+Version: 0.0.5.9110
 Authors@R: c(
-    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com")
+    person("Scott", "Chamberlain", role = c("aut", "cre"), 
+    email = "myrmecocystus+r@gmail.com")
     )
 License: MIT + file LICENSE
 URL: https://github.com/ropenscilabs/jaod
@@ -12,7 +16,7 @@ BugReports: https://github.com/ropenscilabs/jaod/issues
 LazyData: true
 Imports:
     jsonlite (>= 1.0),
-    httr (>= 0.2.0),
+    crul (>= 0.3.8),
     tibble (>= 1.2)
 Suggests:
     roxygen2 (>= 6.0.1)

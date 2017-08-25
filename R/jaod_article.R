@@ -8,14 +8,14 @@
 #' @return a named list, with slots admin, last_updated, id, created_date,
 #' and bibjson
 #' @examples \dontrun{
-#' out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
+#' out <- jaod_article(id = "0005e11ec616453f854070069385e057")
 #' out$admin
 #' out$last_updated
 #' out$id
 #' out$created_date
 #' out$bibjson
 #'
-#' ids <- c("0004c9e6a3c64ec9848607e51b7edbca",
+#' ids <- c("73f781ad57094b98a0b46d8903fdc2c2",
 #' "0005e11ec616453f854070069385e057")
 #' out <- lapply(ids, jaod_article)
 #' out[[1]]
