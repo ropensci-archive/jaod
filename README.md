@@ -9,6 +9,15 @@ jaod
 
 ## installation
 
+stable CRAN version
+
+
+```r
+install.packages("knitr")
+```
+
+development version
+
 
 ```r
 devtools::install_github("ropenscilabs/jaod")
@@ -25,7 +34,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2017-0825T20:40:52Z"
+#> [1] "2017-0901T02:56:34Z"
 #> 
 #> $page
 #> [1] 1
@@ -142,7 +151,7 @@ out$bibjson$author_publishing_rights
 ```r
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
-#> [1] "2017-0825T20:40:53Z"
+#> [1] "2017-0901T02:56:36Z"
 #> 
 #> $page
 #> [1] 1
@@ -154,13 +163,13 @@ jaod_article_search(query = "license:CC-BY")
 #> [1] "license:CC-BY"
 #> 
 #> $total
-#> [1] 2478542
+#> [1] 2482365
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=247855&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=248237&pageSize=10"
 #> 
 #> $results
 #> # A tibble: 10 x 22
@@ -244,5 +253,3 @@ out$bibjson$subject
 * License: MIT
 * Get citation information for `jaod` in R doing `citation(package = jaod')`
 * Please note that this project is CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-[![ropensci_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
