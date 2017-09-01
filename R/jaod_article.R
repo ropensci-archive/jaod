@@ -16,11 +16,12 @@
 #' out$bibjson
 #'
 #' ids <- c("73f781ad57094b98a0b46d8903fdc2c2",
-#' "0005e11ec616453f854070069385e057")
+#'   "0005e11ec616453f854070069385e057")
 #' out <- lapply(ids, jaod_article)
 #' out[[1]]
 #' }
 jaod_article <- function(id, ...) {
+  assert(id, "character")
   jaod_parse(
     jGET(
       file.path(doaj_base(), "articles", id),

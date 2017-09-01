@@ -28,7 +28,13 @@
 #'   sort = "bibjson.oa_start.year:desc")
 #' out$results$bibjson.oa_start.year
 #' }
-jaod_journal_search <- function(query, page = 1, pageSize = 10, sort = NULL, ...) {
+jaod_journal_search <- function(query, page = 1, pageSize = 10, sort = NULL,
+                                ...) {
+
+  assert(query, "character")
+  assert(page, c('integer', 'numeric'))
+  assert(pageSize, c('integer', 'numeric'))
+  assert(sort, "character")
   res <- jaod_parse(
     jGET(
       file.path(doaj_base(), "search", "journals", query),

@@ -21,6 +21,7 @@
 #' out[[1]]
 #' }
 jaod_journal <- function(id, ...) {
+  assert(id, "character")
   jaod_parse(
     jGET(
       file.path(doaj_base(), "journals", id),
