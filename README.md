@@ -4,6 +4,9 @@ jaod
 
 
 [![Build Status](https://travis-ci.org/ropenscilabs/jaod.svg?branch=master)](https://travis-ci.org/ropenscilabs/jaod)
+[![codecov.io](https://codecov.io/github/ropenscilabs/jaod/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/jaod?branch=master)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/jaod)](https://github.com/metacran/cranlogs.app)
+[![cran version](http://www.r-pkg.org/badges/version/jaod)](https://cran.r-project.org/package=jaod)
 
 `jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
 
@@ -35,25 +38,25 @@ library("jaod")
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
 #> [1] "2017-0901T17:05:14Z"
-#> 
+#>
 #> $page
 #> [1] 1
-#> 
+#>
 #> $pageSize
 #> [1] 10
-#> 
+#>
 #> $query
 #> [1] "bibjson.keywords:heritage"
-#> 
+#>
 #> $total
 #> [1] 55
-#> 
+#>
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10"
-#> 
+#>
 #> $last
 #> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=6&pageSize=10"
-#> 
+#>
 #> $results
 #> # A tibble: 10 x 36
 #>            last_updated                               id
@@ -99,18 +102,18 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 ```r
 out <- jaod_journal(id = "f3f2e7f23d444370ae5f5199f85bc100")
 names(out$bibjson)
-#>  [1] "allows_fulltext_indexing"     "archiving_policy"            
-#>  [3] "persistent_identifier_scheme" "keywords"                    
-#>  [5] "apc"                          "deposit_policy"              
-#>  [7] "article_statistics"           "title"                       
-#>  [9] "publication_time"             "provider"                    
-#> [11] "subject"                      "format"                      
-#> [13] "plagiarism_detection"         "apc_url"                     
-#> [15] "link"                         "oa_start"                    
-#> [17] "editorial_review"             "author_copyright"            
-#> [19] "publisher"                    "language"                    
-#> [21] "license"                      "country"                     
-#> [23] "submission_charges_url"       "author_publishing_rights"    
+#>  [1] "allows_fulltext_indexing"     "archiving_policy"
+#>  [3] "persistent_identifier_scheme" "keywords"
+#>  [5] "apc"                          "deposit_policy"
+#>  [7] "article_statistics"           "title"
+#>  [9] "publication_time"             "provider"
+#> [11] "subject"                      "format"
+#> [13] "plagiarism_detection"         "apc_url"
+#> [15] "link"                         "oa_start"
+#> [17] "editorial_review"             "author_copyright"
+#> [19] "publisher"                    "language"
+#> [21] "license"                      "country"
+#> [23] "submission_charges_url"       "author_publishing_rights"
 #> [25] "identifier"
 ```
 
@@ -119,7 +122,7 @@ names(out$bibjson)
 out$bibjson$archiving_policy
 #> $url
 #> [1] "http://journals.plos.org/plosbiology/s/publishing-information"
-#> 
+#>
 #> $policy
 #>                        name
 #> 1                    LOCKSS
@@ -127,19 +130,19 @@ out$bibjson$archiving_policy
 out$bibjson$apc
 #> $currency
 #> [1] "USD"
-#> 
+#>
 #> $average_price
 #> [1] 2900
 out$bibjson$article_statistics
 #> $url
 #> [1] "http://www.lagotto.io/plos/"
-#> 
+#>
 #> $statistics
 #> [1] TRUE
 out$bibjson$author_publishing_rights
 #> $url
 #> [1] "http://journals.plos.org/plosbiology/s/content-license"
-#> 
+#>
 #> $publishing_rights
 #> [1] "True"
 ```
@@ -152,25 +155,25 @@ out$bibjson$author_publishing_rights
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
 #> [1] "2017-0901T17:05:15Z"
-#> 
+#>
 #> $page
 #> [1] 1
-#> 
+#>
 #> $pageSize
 #> [1] 10
-#> 
+#>
 #> $query
 #> [1] "license:CC-BY"
-#> 
+#>
 #> $total
 #> [1] 2472916
-#> 
+#>
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
-#> 
+#>
 #> $last
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=247292&pageSize=10"
-#> 
+#>
 #> $results
 #> # A tibble: 10 x 22
 #>            last_updated                               id
@@ -203,18 +206,18 @@ jaod_article_search(query = "license:CC-BY")
 out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
 #> Error: Internal Server Error (HTTP 500).
 names(out$bibjson)
-#>  [1] "allows_fulltext_indexing"     "archiving_policy"            
-#>  [3] "persistent_identifier_scheme" "keywords"                    
-#>  [5] "apc"                          "deposit_policy"              
-#>  [7] "article_statistics"           "title"                       
-#>  [9] "publication_time"             "provider"                    
-#> [11] "subject"                      "format"                      
-#> [13] "plagiarism_detection"         "apc_url"                     
-#> [15] "link"                         "oa_start"                    
-#> [17] "editorial_review"             "author_copyright"            
-#> [19] "publisher"                    "language"                    
-#> [21] "license"                      "country"                     
-#> [23] "submission_charges_url"       "author_publishing_rights"    
+#>  [1] "allows_fulltext_indexing"     "archiving_policy"
+#>  [3] "persistent_identifier_scheme" "keywords"
+#>  [5] "apc"                          "deposit_policy"
+#>  [7] "article_statistics"           "title"
+#>  [9] "publication_time"             "provider"
+#> [11] "subject"                      "format"
+#> [13] "plagiarism_detection"         "apc_url"
+#> [15] "link"                         "oa_start"
+#> [17] "editorial_review"             "author_copyright"
+#> [19] "publisher"                    "language"
+#> [21] "license"                      "country"
+#> [23] "submission_charges_url"       "author_publishing_rights"
 #> [25] "identifier"
 ```
 
