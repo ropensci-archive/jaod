@@ -49,7 +49,7 @@ out$results
 
 ## get DOIs or other article IDs
 names(out$results$bibjson.identifier) <- out$results$id
-dplyr::bind_rows(out$results$bibjson.identifier, .id = "doaj_id")
+do.call(rbind, out$results$bibjson.identifier)
 
 # more egs
 jaod_article_search(query = "issn:1544-9173")
