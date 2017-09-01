@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 stable CRAN version
 
 ```{r eval=FALSE}
-install.packages("knitr")
+install.packages("jaod")
 ```
 
 development version

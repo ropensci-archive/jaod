@@ -13,7 +13,7 @@ stable CRAN version
 
 
 ```r
-install.packages("knitr")
+install.packages("jaod")
 ```
 
 development version
@@ -34,7 +34,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2017-0901T02:56:34Z"
+#> [1] "2017-0901T17:05:14Z"
 #> 
 #> $page
 #> [1] 1
@@ -151,7 +151,7 @@ out$bibjson$author_publishing_rights
 ```r
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
-#> [1] "2017-0901T02:56:36Z"
+#> [1] "2017-0901T17:05:15Z"
 #> 
 #> $page
 #> [1] 1
@@ -163,33 +163,33 @@ jaod_article_search(query = "license:CC-BY")
 #> [1] "license:CC-BY"
 #> 
 #> $total
-#> [1] 2482365
+#> [1] 2472916
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=248237&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=247292&pageSize=10"
 #> 
 #> $results
 #> # A tibble: 10 x 22
 #>            last_updated                               id
 #>  *                <chr>                            <chr>
-#>  1 2017-01-31T07:39:30Z 73f180906a634002a6fdf900d4010f50
-#>  2 2016-09-07T17:58:38Z 73f2e93dc3ce42f59a26891c198dbbe0
-#>  3 2016-09-07T17:58:39Z 73f3953c9d434ea1a698c607b6e52cd9
-#>  4 2016-09-07T17:58:40Z 73f5b8dc01814a0f85ca52b3ef105924
-#>  5 2016-07-08T07:15:54Z 73f5d77454df451aac308e90418b466c
-#>  6 2016-12-12T01:30:17Z 73f69c2374da4899ac2e0f8be44cc31e
-#>  7 2016-09-07T17:58:42Z 73f781ad57094b98a0b46d8903fdc2c2
-#>  8 2016-09-07T17:58:42Z 73f845a2c6f1418281aeed6c5164ae28
-#>  9 2016-06-24T21:14:27Z 73f8c23c3841400b921b94ff5bc5cae2
-#> 10 2016-09-07T17:58:43Z 73f9b8a7776d488092b79ffaa72caba6
-#> # ... with 20 more variables: created_date <chr>, bibjson.end_page <chr>,
-#> #   bibjson.start_page <chr>, bibjson.author <list>,
-#> #   bibjson.abstract <chr>, bibjson.title <chr>, bibjson.month <chr>,
-#> #   bibjson.link <list>, bibjson.year <chr>, bibjson.keywords <list>,
-#> #   bibjson.identifier <list>, bibjson.subject <list>,
+#>  1 2016-09-09T16:41:10Z 5e4d8488c03f4646952feb60ebbb78ca
+#>  2 2016-06-24T19:38:54Z 5e4d9fcf009a402d8a99a2c311c2cc2f
+#>  3 2016-09-07T16:48:38Z 5e4e6a5dba5c4467a35a6a0dae559c4e
+#>  4 2016-07-07T14:29:30Z 5e52252a051e4d6dbe9d3031befc6611
+#>  5 2016-07-07T10:23:53Z 5e52a39835684f71b0aab0b865a882b1
+#>  6 2016-06-24T19:39:06Z 5e55bf2b43e74cb6aa55e2d563b54436
+#>  7 2016-07-08T09:58:44Z 5e560da1a7c94fbf994674807a861835
+#>  8 2016-07-07T08:47:08Z 5e56660f6c0f490a90c0f3f10499d456
+#>  9 2016-07-08T09:49:40Z 5e57a3e7a8f04034b4dcd9fa600e96d0
+#> 10 2016-09-07T16:48:45Z 5e57d7169c494e378f318ec4fafd65d3
+#> # ... with 20 more variables: created_date <chr>,
+#> #   bibjson.start_page <chr>, bibjson.author <list>, bibjson.title <chr>,
+#> #   bibjson.subject <list>, bibjson.link <list>, bibjson.year <chr>,
+#> #   bibjson.keywords <list>, bibjson.identifier <list>,
+#> #   bibjson.abstract <chr>, bibjson.end_page <chr>, bibjson.month <chr>,
 #> #   bibjson.journal.publisher <chr>, bibjson.journal.language <list>,
 #> #   bibjson.journal.license <list>, bibjson.journal.title <chr>,
 #> #   bibjson.journal.country <chr>, bibjson.journal.number <chr>,
