@@ -29,7 +29,7 @@ test_that("jaod_journal_search - params work", {
   a <- jaod_journal_search(query="journal", sort="bibjson.oa_start.year:desc",
                            pageSize = 30)
   yrs <- as.numeric(a$results$bibjson.oa_start.year)
-  expect_gt(yrs[1], yrs[length(yrs)])
+  expect_gte(yrs[1], yrs[length(yrs)])
 })
 
 test_that("jaod_journal_search fails well", {
