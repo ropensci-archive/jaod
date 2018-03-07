@@ -10,8 +10,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/jaod.svg?branch=master)](https://travis-ci.org/ropenscilabs/jaod)
-[![codecov.io](https://codecov.io/github/ropenscilabs/jaod/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/jaod?branch=master)
+[![Build Status](https://travis-ci.org/ropensci/jaod.svg?branch=master)](https://travis-ci.org/ropensci/jaod)
+[![codecov.io](https://codecov.io/github/ropensci/jaod/coverage.svg?branch=master)](https://codecov.io/github/ropensci/jaod?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/jaod)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/jaod)](https://cran.r-project.org/package=jaod)
 
@@ -28,7 +28,7 @@ install.packages("jaod")
 development version
 
 ```{r eval=FALSE}
-devtools::install_github("ropenscilabs/jaod")
+devtools::install_github("ropensci/jaod")
 ```
 
 ```{r}
@@ -79,7 +79,7 @@ out$bibjson$subject
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/jaod/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/jaod/issues).
 * License: MIT
 * Get citation information for `jaod` in R doing `citation(package = jaod')`
 * Please note that this project is CONDUCT.md). By participating in this project you agree to abide by its terms.
