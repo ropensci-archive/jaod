@@ -1,0 +1,1358 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/search/articles/license:CC-BY?page=1&pageSize=2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-origin: '*'
+      connection: keep-alive
+      content-encoding: gzip
+      content-type: application/json
+      date: Mon, 29 Oct 2018 17:38:50 GMT
+      link: <https://doaj.org/api/v1/search/articles/license:CC-BY?page=1687241&pageSize=2>;
+        rel=last, <https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=2>;
+        rel=next
+      server: nginx/1.4.6 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      x-total-count: '3374481'
+    body:
+      encoding: UTF-8
+      string: '{"last": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=1687241&pageSize=2",
+        "pageSize": 2, "timestamp": "2018-1029T17:38:50Z", "results": [{"last_updated":
+        "2018-01-02T03:20:27Z", "id": "abbc2add34024e108151613949c0a5e5", "bibjson":
+        {"end_page": "8", "start_page": "5", "author": [{"name": "Zoran Marjanovi\u0107"},
+        {"name": "Maja Slavkovi\u0107-Jovanovi\u0107"}, {"name": "An\u0111elka Slavkovi\u0107"},
+        {"name": "Ivona \u0110or\u0111evi\u0107"}], "abstract": "Penetration of air
+        from the lungs into the space between the parietal and visceral pleura occurs
+        in the neonatal population, and is potentially a very serious problem with
+        the frequency 1-2%. It occurs idiopatically, though may be secondary, mostly
+        in the field of the lung pathology or previous trauma of the lung parenchyma.
+        The aim of the study was to assess the morbidity and mortality among hospitalized
+        neonates with the clinical presentation of pneumothorax. Retrospective analysis
+        involved 16 neonates hospitalized during a 5-year period in the Pediatric
+        Surgery Clinic in Ni\u0161. We analyzed the gestational age, body mass, existence
+        of previous lung pathology, Apgar score and treatment. Neonatal pneumothorax
+        was more common in boys (m:f=2,2:1), in patients with Apgar score below 3,
+        prematured babies and patients with previous lung disease. Treatment was surgical
+        in all patients, and involved thoracotomy (in 75% of patients), while in the
+        remaining 25% thoracocentesis was performed. Mortality reached 30% and was
+        recorded in the population of patients at risk with low Apgar score, in premature
+        babies, and in patients with previous lung disorders. Any child with signs
+        of ARDS must be carefully examined by neonatologist and pediatric surgeon.
+        If pneumothorax is timely diagnosed, even in a group of children with increased
+        risk, treatment is effective.", "title": "INFLUENCE OF RISK FACTORS ON FREQUENCY
+        AND PROGNOSIS OF NEONATAL PNEUMOTHORAX, FIVE-YEAR EXPERIENCE", "month": "06",
+        "link": [{"url": "http://publisher.medfak.ni.ac.rs/2010-html/2-broj/Ivona%20%C3%90ordevic-Influence%20of%20risk%20factors.pdf",
+        "type": "fulltext"}], "year": "2010", "keywords": ["gastrscopy", "gastric
+        cancer", "pathohistological result"], "identifier": [{"type": "pissn", "id":
+        "0365-4478"}], "journal": {"publisher": "University in Nis, Faculty of Medicine",
+        "language": ["EN"], "license": [{"url": "http://publisher.medfak.ni.ac.rs/Index/Open%20Access%20Policy.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Medica
+        Medianae", "country": "RS", "number": "2", "volume": "49", "issns": ["0365-4478",
+        "1821-2794"]}, "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"}]},
+        "created_date": "2010-07-15T17:12:54Z"}, {"last_updated": "2018-01-02T03:20:28Z",
+        "id": "abbdb71923c74bb186e7f02799bfb748", "bibjson": {"start_page": "66",
+        "author": [{"name": "Gerald Gutenschwager"}], "journal": {"publisher": "Risk
+        Institute, Trieste- Geneva", "language": ["EN"], "license": [{"url": "http://cadmusjournal.org/content/copyright-policy",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Cadmus",
+        "country": "IT", "number": "6", "volume": "1", "issns": ["2038-5242", "2038-5250"]},
+        "title": "From Epicurus to Maslow:  Happiness Then and Now and the Place of
+        the  Human Being in Social Theory", "subject": [{"scheme": "LCC", "term":
+        "International relations", "code": "JZ2-6530"}, {"scheme": "LCC", "term":
+        "Economic growth, development, planning", "code": "HD72-88"}], "month": "05",
+        "link": [{"url": "http://www.cadmusjournal.org/article/issue-6/epicurus-maslow",
+        "type": "fulltext"}], "year": "2013", "identifier": [{"type": "pissn", "id":
+        "2038-5242"}, {"type": "eissn", "id": "2038-5250"}], "abstract": "Protagoras
+        said, \"The human being is the measure of all things\". This implies, among
+        other things, that language, science and religion are human inventions, as
+        are economics, money, efficiency, race, conflict, etc. As symbol-using animals,
+        we have created these concepts to serve our purposes. But as our societies
+        have increased in size and our concepts have become more abstract, there is
+        a danger that we will forget our authorship and reify these symbols. This
+        inhibits change in the way we name things, so we are always in danger of misunderstanding
+        the reality we are describing. We seem to be at such a stage now as we employ
+        18th and 19th century theories to describe and, more importantly, create 21st
+        century reality. One such idea has to do with human needs. Influenced by the
+        abstract (economic) concepts we use, we have lost our sense of what we truly
+        need. Epicurus and Maslow may help to review and reassess those concepts.
+        Epicurus, by suggesting that our material needs are quite simple but that
+        emotional and spiritual need satisfaction requires a small scale loving community,
+        free from fear, and Maslow, by suggesting that our emotional development is
+        age-related, which, besides therapy, may help in suggesting revisions in socioeconomic
+        theory that would ensure the social conditions that would allow this development
+        to take place successfully.", "end_page": "90"}, "created_date": "2013-05-17T06:37:31Z"}],
+        "next": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=2",
+        "query": "license:CC-BY", "total": 3374481, "page": 1}'
+  recorded_at: 2018-10-29 17:38:51 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/search/articles/Pinus%20contorta?page=1&pageSize=30&sort=year%3Adesc
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-origin: '*'
+      connection: keep-alive
+      content-encoding: gzip
+      content-type: application/json
+      date: Mon, 29 Oct 2018 17:38:51 GMT
+      link: <https://doaj.org/api/v1/search/articles/Pinus%20contorta?sort=year%3Adesc&page=2&pageSize=30>;
+        rel=last, <https://doaj.org/api/v1/search/articles/Pinus%20contorta?sort=year%3Adesc&page=2&pageSize=30>;
+        rel=next
+      server: nginx/1.4.6 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      x-total-count: '55'
+    body:
+      encoding: UTF-8
+      string: '{"sort": "year:desc", "last": "https://doaj.org/api/v1/search/articles/Pinus%20contorta?sort=year%3Adesc&page=2&pageSize=30",
+        "pageSize": 30, "timestamp": "2018-1029T17:38:51Z", "results": [{"last_updated":
+        "2018-08-02T04:31:20Z", "id": "54daf5882a1a4d70b0c005474b3a9ea6", "bibjson":
+        {"start_page": "e0196732", "author": [{"name": "Erika L Eidson"}, {"name":
+        "Karen E Mock"}, {"name": "Barbara J Bentz"}], "journal": {"publisher": "Public
+        Library of Science (PLoS)", "language": ["EN"], "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "5", "volume": "13", "issns": ["1932-6203"]}, "title":
+        "Low offspring survival in mountain pine beetle infesting the resistant Great
+        Basin bristlecone pine supports the preference-performance hypothesis.", "month":
+        "0", "link": [{"url": "http://europepmc.org/articles/PMC5929522?pdf=render",
+        "type": "fulltext"}], "year": "2018", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0196732"}], "abstract":
+        "The preference-performance hypothesis states that ovipositing phytophagous
+        insects will select host plants that are well-suited for their offspring and
+        avoid host plants that do not support offspring performance (survival, development
+        and fitness). The mountain pine beetle (Dendroctonus ponderosae), a native
+        insect herbivore in western North America, can successfully attack and reproduce
+        in most species of Pinus throughout its native range. However, mountain pine
+        beetles avoid attacking Great Basin bristlecone pine (Pinus longaeva), despite
+        recent climate-driven increases in mountain pine beetle populations at the
+        high elevations where Great Basin bristlecone pine grows. Low preference for
+        a potential host plant species may not persist if the plant supports favorable
+        insect offspring performance, and Great Basin bristlecone pine suitability
+        for mountain pine beetle offspring performance is unclear. We infested cut
+        bolts of Great Basin bristlecone pine and two susceptible host tree species,
+        limber (P. flexilis) and lodgepole (P. contorta) pines with adult mountain
+        pine beetles and compared offspring performance. To investigate the potential
+        for variation in offspring performance among mountain pine beetles from different
+        areas, we tested beetles from geographically-separated populations within
+        and outside the current range of Great Basin bristlecone pine. Although mountain
+        pine beetles constructed galleries and laid viable eggs in all three tree
+        species, extremely few offspring emerged from Great Basin bristlecone pine,
+        regardless of the beetle population. Our observed low offspring performance
+        in Great Basin bristlecone pine corresponds with previously documented low
+        mountain pine beetle attack preference. A low preference-low performance relationship
+        suggests that Great Basin bristlecone pine resistance to mountain pine beetle
+        is likely to be retained through climate-driven high-elevation mountain pine
+        beetle outbreaks.", "subject": [{"scheme": "LCC", "term": "Medicine", "code":
+        "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}]}, "created_date":
+        "2018-07-26T06:07:20Z"}, {"last_updated": "2018-10-07T11:49:44Z", "id": "8c7b6b2dc4334742b8071c1542a45b13",
+        "bibjson": {"end_page": "24", "start_page": "1", "author": [{"affiliation":
+        "Department of Marine and Environmental Sciences, Northeastern Marine Science
+        Center", "name": "Katie E Lotterhos"}, {"affiliation": "Department of Biological
+        Sciences, University of Calgary", "name": "Sam Yeaman"}, {"affiliation": "Department
+        of Forest and Conservation Sciences, Faculty of Forestry", "name": "Jon Degner"},
+        {"affiliation": "Department of Forest and Conservation Sciences, Faculty of
+        Forestry", "name": "Sally Aitken"}, {"affiliation": "School of Biological
+        Sciences, Monash University", "name": "Kathryn A Hodgins"}], "abstract": "Abstract
+        Background Linkage among genes experiencing different selection pressures
+        can make natural selection less efficient. Theory predicts that when local
+        adaptation is driven by complex and non-covarying stresses, increased linkage
+        is favored for alleles with similar pleiotropic effects, with increased recombination
+        favored among alleles with contrasting pleiotropic effects. Here, we introduce
+        a framework to test these predictions with a co-association network analysis,
+        which clusters loci based on differing associations. We use this framework
+        to study the genetic architecture of local adaptation to climate in lodgepole
+        pine, Pinus contorta, based on associations with environments. Results We
+        identify many clusters of candidate genes and SNPs associated with distinct
+        environments, including aspects of aridity and freezing, and discover low
+        recombination rates among some candidate genes in different clusters. Only
+        a few genes contain SNPs with effects on more than one distinct aspect of
+        climate. There is limited correspondence between co-association networks and
+        gene regulatory networks. We further show how associations with environmental
+        principal components can lead to misinterpretation. Finally, simulations illustrate
+        both benefits and caveats of co-association networks. Conclusions Our results
+        support the prediction that different selection pressures favor the evolution
+        of distinct groups of genes, each associating with a different aspect of climate.
+        But our results went against the prediction that loci experiencing different
+        sources of selection would have high recombination among them. These results
+        give new insight into evolutionary debates about the extent of modularity,
+        pleiotropy, and linkage in the evolution of genetic architectures.", "title":
+        "Modularity of genes involved in local adaptation to climate despite physical
+        linkage", "month": "10", "link": [{"url": "http://link.springer.com/article/10.1186/s13059-018-1545-7",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2018", "keywords":
+        ["Landscape genomics", "Genome-environment associations", "Genome-wide association
+        studies (GWAS)", "Conifers", "Linkage disequilibrium", "Ion antiporters"],
+        "identifier": [{"type": "doi", "id": "10.1186/s13059-018-1545-7"}, {"type":
+        "eissn", "id": "1474-760X"}], "journal": {"publisher": "BMC", "language":
+        ["EN"], "license": [{"url": "http://www.biomedcentral.com/about/license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Genome
+        Biology", "country": "GB", "number": "1", "volume": "19", "issns": ["1474-760X"]},
+        "subject": [{"scheme": "LCC", "term": "Biology (General)", "code": "QH301-705.5"},
+        {"scheme": "LCC", "term": "Genetics", "code": "QH426-470"}]}, "created_date":
+        "2018-10-07T12:49:44Z"}, {"last_updated": "2018-09-21T07:36:55Z", "id": "9ae85b63567b4c219c48094c52ddcd32",
+        "bibjson": {"start_page": "525", "author": [{"affiliation": "Rocky Mountain
+        Research Station, USDA Forest Service, Fort Collins, CO 80526, USA", "name":
+        "Kristen  A. Pelz"}, {"affiliation": "Department of Forest and Rangeland Stewardship,
+        Colorado State University (Retired), Fort Collins, CO 80523, USA", "name":
+        "Frederick  W. Smith"}], "journal": {"publisher": "MDPI AG", "language": ["EN"],
+        "license": [{"url": "http://www.mdpi.com/journal/forests/about", "open_access":
+        true, "type": "CC BY", "title": "CC BY"}], "title": "Forests", "country":
+        "CH", "number": "9", "volume": "9", "issns": ["1999-4907"]}, "title": "Effects
+        of Stand Structure, Browsing, and Biophysical Conditions on Regeneration Following
+        Mountain Pine Beetle in Mixed Lodgepole Pine and Aspen Forests of the Southern
+        Rockies", "month": "8", "link": [{"url": "http://www.mdpi.com/1999-4907/9/9/525",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2018", "keywords": ["trembling
+        aspen", "lodgepole pine", "mountain pine beetle", "bark beetles", "browsing"],
+        "identifier": [{"type": "eissn", "id": "1999-4907"}, {"type": "doi", "id":
+        "10.3390/f9090525"}], "abstract": "Aspen (Populus tremuloides) and lodgepole
+        pine (Pinus contorta var. latifolia) co-occur in the southern Rocky Mountains
+        (USA), where mountain pine beetle (MPB, Dendroctonus ponderosae) has caused
+        extensive lodgepole pine mortality since the late 1990s. Both species excel
+        in post-disturbance high-light environments, but lodgepole pine has generally
+        been thought to establish poorly on undisturbed seedbeds, and aspen suckering
+        may be inhibited by intact aspen overstory. We ask whether lodgepole pine
+        and aspen will regenerate in sufficient quantities to revegetate these forests.
+        We visited a random sample of aspen and lodgepole pine stands across the affected
+        landscape in northern Colorado and southern Wyoming to measure regeneration
+        and overstory mortality. Lodgepole pine regeneration is occurring in 85% of
+        stands, and most stands have &gt;550 stems ha&minus;1. The median aspen sucker
+        density was 6175 stems ha&minus;1. Surprisingly, neither lodgepole pine nor
+        aspen regeneration density was related to overstory mortality level. Animal
+        damage is currently affecting aspen in these forests. Over 50% of stands had
+        damage to 60% or more of their suckers, but 30% of stands had &lt;20% of their
+        stems damaged. Browsed stems were significantly shorter for their ages and
+        were shorter than the 2.5-m height threshold for possible elk browsing. However,
+        the results suggest that sufficient quantities of down lodgepole pine may
+        protect aspen from damage and allow aspen to successfully recruit to the overstory.
+        Multiple regression analysis showed that down lodgepole pine basal area, followed
+        by browsing pressure, were the most important predictors of sucker height
+        and the proportion of suckers browsed. Although 15% of stands had no lodgepole
+        pine regeneration, aspen and lodgepole pine forests are generally regenerating
+        despite animal browsing on aspen. This study is the first to present a regional
+        perspective on regeneration in MPB-affected lodgepole pine and aspen forests,
+        and overall, intervention does not seem necessary to ensure a mix of both
+        species in the future.", "subject": [{"scheme": "LCC", "term": "Plant ecology",
+        "code": "QK900-989"}]}, "created_date": "2018-08-31T06:51:05Z"}, {"last_updated":
+        "2018-09-21T08:16:13Z", "id": "faa33d2881d24517a0df2c19a77425e5", "bibjson":
+        {"start_page": "558", "author": [{"affiliation": "Department of Entomology,
+        Virginia Tech, Blacksburg, VA 24061, USA", "name": "Molly N. Darr"}, {"affiliation":
+        "School of Plant and Environmental Sciences, Virginia Tech, Blacksburg, VA
+        24061, USA", "name": "Rachel K. Brooks"}, {"affiliation": "Northern Research
+        Station, Forest Service, USDA, Hamden, CT 06514, USA", "name": "Nathan P.
+        Havill"}, {"affiliation": "Museum of Natural History and Department of Entomology,
+        University of Georgia, Athens, GA 30602, USA", "name": "E. Richard Hoebeke"},
+        {"affiliation": "Department of Entomology, Virginia Tech, Blacksburg, VA 24061,
+        USA", "name": "Scott M. Salom"}], "journal": {"publisher": "MDPI AG", "language":
+        ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about", "open_access":
+        true, "type": "CC BY", "title": "CC BY"}], "title": "Forests", "country":
+        "CH", "number": "9", "volume": "9", "issns": ["1999-4907"]}, "title": "Phenology
+        and Synchrony of Scymnus coniferarum (Coleoptera: Coccinellidae) with Multiple
+        Adelgid Species in the Puget Sound, WA, USA", "month": "9", "link": [{"url":
+        "http://www.mdpi.com/1999-4907/9/9/558", "type": "fulltext", "content_type":
+        "pdf"}], "year": "2018", "keywords": ["Adelges tsugae", "HWA", "Scymnus coniferarum",
+        "phenology", "Washington"], "identifier": [{"type": "eissn", "id": "1999-4907"},
+        {"type": "doi", "id": "10.3390/f9090558"}], "abstract": "The hemlock woolly
+        adelgid (HWA), Adelges tsugae, is an invasive pest of Tsuga spp. in eastern
+        North America. Scymnus coniferarum is a predaceous beetle that was collected
+        from HWA in the western United States. Limited knowledge of this insect in
+        its native habitat led to studies to evaluate its potential for biological
+        control of HWA. Seasonal abundance was sampled at six sites in Tacoma, WA,
+        twice monthly, for one year on different host trees of potential adelgid prey.
+        Tree species included Pseudotsuga menziesii, Pinus contorta, Pinus monticola,
+        and Tsuga heterophylla. Scymnus coniferarum adults were found on all conifer
+        species, except P. menziesii. Each conifer species supported a different adelgid
+        species, suggesting S. coniferarum feeds on multiple adelgid species. More
+        S. coniferarum were found on pine than hemlock. DNA barcoding of S. coniferarum
+        found two distinct clusters that differed by 6% divergence. Beetles in each
+        cluster were co-habiting the same conifer species, and they could not be distinguished
+        morphologically. Further taxonomic studies are needed to understand the significance
+        of DNA barcode sequence divergence. Because S. coniferarum was more frequently
+        associated with pine adelgids than HWA, and because of remaining taxonomic
+        uncertainty, S. coniferarum may not be suitable for HWA biological control.",
+        "subject": [{"scheme": "LCC", "term": "Plant ecology", "code": "QK900-989"}]},
+        "created_date": "2018-09-12T06:50:03Z"}, {"last_updated": "2018-06-27T04:41:26Z",
+        "id": "53bd00df7dcd4da8bd29491aedbddde8", "bibjson": {"start_page": "e0192966",
+        "author": [{"name": "Sajjad Asaf"}, {"name": "Abdul Latif Khan"}, {"name":
+        "Muhammad Aaqil Khan"}, {"name": "Raheem Shahzad"}, {"name": "Lubna"}, {"name":
+        "Sang Mo Kang"}, {"name": "Ahmed Al-Harrasi"}, {"name": "Ahmed Al-Rawahi"},
+        {"name": "In-Jung Lee"}], "journal": {"publisher": "Public Library of Science
+        (PLoS)", "language": ["EN"], "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "3", "volume": "13", "issns": ["1932-6203"]}, "title":
+        "Complete chloroplast genome sequence and comparative analysis of loblolly
+        pine (Pinus taeda L.) with related species.", "month": "0", "link": [{"url":
+        "http://europepmc.org/articles/PMC5875761?pdf=render", "type": "fulltext"}],
+        "year": "2018", "identifier": [{"type": "eissn", "id": "1932-6203"}, {"type":
+        "doi", "id": "10.1371/journal.pone.0192966"}], "abstract": "Pinaceae, the
+        largest family of conifers, has a diversified organization of chloroplast
+        (cp) genomes with two typical highly reduced inverted repeats (IRs). In the
+        current study, we determined the complete sequence of the cp genome of an
+        economically and ecologically important conifer tree, the loblolly pine (Pinus
+        taeda L.), using Illumina paired-end sequencing and compared the sequence
+        with those of other pine species. The results revealed a genome size of 121,531
+        base pairs (bp) containing a pair of 830-bp IR regions, distinguished by a
+        small single copy (42,258 bp) and large single copy (77,614 bp) region. The
+        chloroplast genome of P. taeda encodes 120 genes, comprising 81 protein-coding
+        genes, four ribosomal RNA genes, and 35 tRNA genes, with 151 randomly distributed
+        microsatellites. Approximately 6 palindromic, 34 forward, and 22 tandem repeats
+        were found in the P. taeda cp genome. Whole cp genome comparison with those
+        of other Pinus species exhibited an overall high degree of sequence similarity,
+        with some divergence in intergenic spacers. Higher and lower numbers of indels
+        and single-nucleotide polymorphism substitutions were observed relative to
+        P. contorta and P. monophylla, respectively. Phylogenomic analyses based on
+        the complete genome sequence revealed that 60 shared genes generated trees
+        with the same topologies, and P. taeda was closely related to P. contorta
+        in the subgenus Pinus. Thus, the complete P. taeda genome provided valuable
+        resources for population and evolutionary studies of gymnosperms and can be
+        used to identify related species.", "subject": [{"scheme": "LCC", "term":
+        "Medicine", "code": "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}]},
+        "created_date": "2018-06-27T05:41:25Z"}, {"last_updated": "2018-10-24T01:25:21Z",
+        "id": "53e64ee727c240fc88f23c313e107022", "bibjson": {"start_page": "558",
+        "author": [{"affiliation": "Corresponding author.; University of Montana,
+        Missoula, MT, United States", "name": "L. Annie Cooper"}, {"affiliation":
+        "University of Montana, Missoula, MT, United States", "name": "Charlotte C.
+        Reed"}, {"affiliation": "University of Montana, Missoula, MT, United States",
+        "name": "Ashley P. Ballantyne"}], "journal": {"publisher": "Elsevier", "language":
+        ["EN"], "license": [{"url": "http://www.elsevier.com/journals/data-in-brief/2352-3409/guide-for-authors",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Data in
+        Brief", "country": "US", "number": "", "volume": "20", "issns": ["2352-3409"]},
+        "title": "Data on beetle-killed and surviving lodgepole pine (Pinus contorta)
+        radial growth from the Beaverhead-Deerlodge National Forest, MT prior to a
+        severe mountain pine beetle outbreak", "subject": [{"scheme": "LCC", "term":
+        "Computer applications to medicine. Medical informatics", "code": "R858-859.7"},
+        {"scheme": "LCC", "term": "Science (General)", "code": "Q1-390"}], "month":
+        "10", "link": [{"url": "http://www.sciencedirect.com/science/article/pii/S2352340918308692",
+        "type": "fulltext"}], "year": "2018", "identifier": [{"type": "pissn", "id":
+        "2352-3409"}, {"type": "DOI", "id": "10.1016/j.dib.2018.08.019"}], "abstract":
+        "This article contains measurements of raw radial growth, distance to pith,
+        and calculated basal area increments (BAI) from 444 5-mm increment cores (237
+        trees) collected in July 2016 from the Beaverhead-Deerlodge National Forest,
+        MT. These data were used for the study presented in \u201cMountain pine beetle
+        attack faster growing lodgepole pine at low elevations in western Montana,
+        USA\u201d [1]. Plot locations where increment cores were taken as well as
+        code to calculate BAI are also included. Cores were collected from lodgepole
+        pine (Pinus contorta) trees that were killed during a recent bark beetle outbreak
+        (220 cores; 117 trees) as well as trees that survived the outbreak (210 cores;
+        113 trees) in twelve stands spanning north and south aspects and three elevational
+        bands along a 600-m gradient. 14 additional cores were collected from 7 strip-attacked
+        trees. Increment cores were prepared and measured using standard dendrochronological
+        techniques, \u201cAn Introduction to Tree-Ring Dating\u201d [2]. Master chronologies
+        for each aspect-elevation combination were created using approximately ten
+        cores from surviving trees at each location. Cores were cross-dated, then
+        scanned at 2400 dpi. Annual ring widths were measured using CooRecorder 7.7,
+        \u201cCybis Electronic, CDendro and CooRecorder V.7.7\u201d [3], and final
+        chronologies were quantitatively validated in COFECHA, \u201cComputer-assisted
+        quality control in tree-ring dating and measurement, Tree-Ring Society\u201d
+        [4].", "end_page": "561"}, "created_date": "2018-10-24T02:25:21Z"}, {"last_updated":
+        "2018-05-16T04:32:08Z", "id": "c622f3e3c44d45e19d8b82447fc8cf62", "bibjson":
+        {"start_page": "e0196732", "author": [{"name": "Erika L Eidson"}, {"name":
+        "Karen E Mock"}, {"name": "Barbara J Bentz"}], "journal": {"publisher": "Public
+        Library of Science (PLoS)", "language": ["EN"], "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "5", "volume": "13", "issns": ["1932-6203"]}, "title":
+        "Low offspring survival in mountain pine beetle infesting the resistant Great
+        Basin bristlecone pine supports the preference-performance hypothesis.", "month":
+        "0", "link": [{"url": "http://europepmc.org/articles/PMC5929522?pdf=render",
+        "type": "fulltext"}], "year": "2018", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0196732"}], "abstract":
+        "The preference-performance hypothesis states that ovipositing phytophagous
+        insects will select host plants that are well-suited for their offspring and
+        avoid host plants that do not support offspring performance (survival, development
+        and fitness). The mountain pine beetle (Dendroctonus ponderosae), a native
+        insect herbivore in western North America, can successfully attack and reproduce
+        in most species of Pinus throughout its native range. However, mountain pine
+        beetles avoid attacking Great Basin bristlecone pine (Pinus longaeva), despite
+        recent climate-driven increases in mountain pine beetle populations at the
+        high elevations where Great Basin bristlecone pine grows. Low preference for
+        a potential host plant species may not persist if the plant supports favorable
+        insect offspring performance, and Great Basin bristlecone pine suitability
+        for mountain pine beetle offspring performance is unclear. We infested cut
+        bolts of Great Basin bristlecone pine and two susceptible host tree species,
+        limber (P. flexilis) and lodgepole (P. contorta) pines with adult mountain
+        pine beetles and compared offspring performance. To investigate the potential
+        for variation in offspring performance among mountain pine beetles from different
+        areas, we tested beetles from geographically-separated populations within
+        and outside the current range of Great Basin bristlecone pine. Although mountain
+        pine beetles constructed galleries and laid viable eggs in all three tree
+        species, extremely few offspring emerged from Great Basin bristlecone pine,
+        regardless of the beetle population. Our observed low offspring performance
+        in Great Basin bristlecone pine corresponds with previously documented low
+        mountain pine beetle attack preference. A low preference-low performance relationship
+        suggests that Great Basin bristlecone pine resistance to mountain pine beetle
+        is likely to be retained through climate-driven high-elevation mountain pine
+        beetle outbreaks.", "subject": [{"scheme": "LCC", "term": "Medicine", "code":
+        "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}]}, "created_date":
+        "2018-05-15T05:31:57Z"}, {"last_updated": "2018-07-23T04:25:57Z", "id": "c75fd7ce8031471cb4989f68f5f77e1d",
+        "bibjson": {"author": [{"affiliation": "Department of Ecosystem and Conservation
+        Sciences, University of Montana, Missoula, MT, United States", "name": "Diana
+        L. Six"}, {"affiliation": "Department of Ecosystem and Conservation Sciences,
+        University of Montana, Missoula, MT, United States", "name": "Clare Vergobbi"},
+        {"affiliation": "Department of Biology, Whitman College, Walla Walla, WA,
+        United States", "name": "Mitchell Cutter"}], "journal": {"publisher": "Frontiers
+        Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/plant-science#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
+        "title": "Frontiers in Plant Science", "country": "CH", "volume": "9", "issns":
+        ["1664-462X"]}, "title": "Are Survivors Different? Genetic-Based Selection
+        of Trees by Mountain Pine Beetle During a Climate Change-Driven Outbreak in
+        a High-Elevation Pine Forest", "month": "7", "link": [{"url": "https://www.frontiersin.org/article/10.3389/fpls.2018.00993/full",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2018", "keywords":
+        ["Pinus albicaulis", "Pinus contorta", "Dendroctonus ponderosae", "whitebark
+        pine", "climate adaptation", "climate change"], "identifier": [{"type": "eissn",
+        "id": "1664-462X"}, {"type": "doi", "id": "10.3389/fpls.2018.00993"}], "abstract":
+        "Increased mortality of forest trees, driven directly or indirectly by climate
+        change, is occurring around the world. In western North America, whitebark
+        pine, a high elevation keystone species, and lodgepole pine, a widespread
+        ecologically and economically important tree, have experienced extensive mortality
+        in recent climate-driven outbreaks of the mountain pine beetle. However, even
+        in stands experiencing high levels of mortality, some mature trees have survived.
+        We hypothesized that the outbreak acted as a natural selection event, removing
+        trees most susceptible to the beetle and least adapted to warmer drier conditions.
+        If this was the case, genetic change would be expected at loci underlying
+        beetle resistance. Given we did not know the basis for resistance, we used
+        inter-simple sequence repeats to compare the genetic profiles of two sets
+        of trees, survivors (mature, living trees) and general population (trees just
+        under the diameter preferred by the beetles and expected to approximate the
+        genetic structure of each tree species at the site without beetle selection).
+        This method detects high levels of polymorphism and has often been able to
+        detect patterns associated with phenotypic traits. For both whitebark and
+        lodgepole pine, survivors and general population trees mostly segregated independently
+        indicating a genetic basis for survivorship. Exceptions were a few general
+        population trees that segregated with survivors in proportions roughly reflecting
+        the proportion of survivors versus beetle-killed trees. Our results indicate
+        that during outbreaks, beetle choice may result in strong selection for trees
+        with greater resistance to attack. Our findings suggest that survivorship
+        is genetically based and, thus, heritable. Therefore, retaining survivors
+        after outbreaks to act as primary seed sources could act to promote adaptation.
+        Further research will be needed to characterize the actual mechanism(s) of
+        resistance.", "subject": [{"scheme": "LCC", "term": "Plant culture", "code":
+        "SB1-1110"}]}, "created_date": "2018-07-23T05:25:55Z"}, {"last_updated": "2018-09-21T08:22:40Z",
+        "id": "23d047641958487ca51be4d11f0daacd", "bibjson": {"start_page": "552",
+        "author": [{"affiliation": "W.A. Franke College of Forestry &amp; Conservation,
+        University of Montana, 32 Campus Drive, Missoula, MT 59812, USA", "name":
+        "Howard Williams"}, {"affiliation": "USDA Forest Service, Rocky Mountain Research
+        Station, Missoula, MT 59808, USA", "name": "Sharon  M. Hood"}, {"affiliation":
+        "W.A. Franke College of Forestry &amp; Conservation, University of Montana,
+        32 Campus Drive, Missoula, MT 59812, USA", "name": "Christopher  R. Keyes"},
+        {"affiliation": "USDA Forest Service, Forest Health Protection, 26 Fort Missoula
+        Road, Missoula, MT 59804, USA", "name": "Joel  M. Egan"}, {"affiliation":
+        "USDA Forest Service, Rocky Mountain Research Station, Fort Collins, CO 80525,
+        USA", "name": "Jos\u00e9 Negr\u00f3n"}], "journal": {"publisher": "MDPI AG",
+        "language": ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Forests",
+        "country": "CH", "number": "9", "volume": "9", "issns": ["1999-4907"]}, "title":
+        "Subwatershed-Level Lodgepole Pine Attributes Associated with a Mountain Pine
+        Beetle Outbreak", "month": "9", "link": [{"url": "http://www.mdpi.com/1999-4907/9/9/552",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2018", "keywords": ["Pinus
+        contorta", "Dendroctonus ponderosae", "CART analysis", "landscape heterogeneity",
+        "disturbance ecology"], "identifier": [{"type": "eissn", "id": "1999-4907"},
+        {"type": "doi", "id": "10.3390/f9090552"}], "abstract": "Mountain pine beetle
+        (Dendroctonus ponderosae Hopkins; MPB) is an aggressive bark beetle that attacks
+        numerous Pinus spp. and causes extensive mortality in lodgepole pine (Pinus
+        contorta Douglas ex Loudon; LPP) forests in the western United States and
+        Canada. We used pre-outbreak LPP attributes, cumulative MPB attack severity,
+        and areal extent of mortality data to identify subwatershed-scale forest attributes
+        associated with severe MPB-caused tree mortality that occurred across the
+        Northern Rockies, USA from 1999&ndash;2014. We upscaled stand-level data to
+        the subwatershed scale to allow identification of large LPP areas vulnerable
+        to MPB. The highest mortality occurred in subwatersheds where LPP mean basal
+        area was greater than 11.5 m2 ha&minus;1 and LPP quadratic mean diameter was
+        greater than or equal to 18 cm. A coarse assessment of federally-owned LPP-dominated
+        forestland in the analysis area indicated about 42% could potentially be silviculturally
+        treated. Silvicultural management may be a suitable option for many LPP forests,
+        and our hazard model can be used to identify subwatersheds with LPP attributes
+        associated with high susceptibility to MPB across landscape spatial scales.
+        Identifying highly susceptible subwatersheds can help prioritize general areas
+        for potential treatments, especially where spatially extensive areas of contiguous,
+        highly susceptible LPP occur.", "subject": [{"scheme": "LCC", "term": "Plant
+        ecology", "code": "QK900-989"}]}, "created_date": "2018-09-10T07:27:42Z"},
+        {"last_updated": "2017-12-11T21:06:53Z", "id": "6fe26683011c4baf83916184a46faa2f",
+        "bibjson": {"author": [{"affiliation": "Ontario Ministry of Natural Resources
+        and Forestry, Ontario Forest Research Institute, Sault Ste. MarieON, Canada",
+        "name": "Rongzhou Man"}, {"affiliation": "Ontario Ministry of Natural Resources
+        and Forestry, Ontario Forest Research Institute, Sault Ste. MarieON, Canada",
+        "name": "Pengxin Lu"}, {"affiliation": "Faculty of Natural Resources Management,
+        Lakehead University, Thunder BayON, Canada", "name": "Qing-Lai Dang"}], "journal":
+        {"publisher": "Frontiers Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/plant-science#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
+        "title": "Frontiers in Plant Science", "country": "CH", "volume": "8", "issns":
+        ["1664-462X"]}, "title": "Insufficient Chilling Effects Vary among Boreal
+        Tree Species and Chilling Duration", "month": "08", "link": [{"url": "http://journal.frontiersin.org/article/10.3389/fpls.2017.01354/full",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2017", "keywords":
+        ["chilling requirement", "heat accumulation", "dormancy release", "climatic
+        warming", "spring bud phenology"], "identifier": [{"type": "eissn", "id":
+        "1664-462X"}, {"type": "doi", "id": "10.3389/fpls.2017.01354"}], "abstract":
+        "Insufficient chilling resulting from rising winter temperatures associated
+        with climate warming has been an area of particular interest in boreal and
+        temperate regions where a period of cool temperatures in fall and winter is
+        required to break plant dormancy. In this study, we examined the budburst
+        and growth of trembling aspen (Populus tremuloides Michx.), balsam poplar
+        (Populus balsamifera L.), white birch (Betula papyrifera Marsh.), black spruce
+        (Picea mariana (Mill.) B.S.P.), white spruce (Picea glauca (Moench) Voss),
+        jack pine (Pinus banksiana Lamb.), and lodgepole pine (Pinus contorta Dougl.
+        ex. Loud.) seedlings subjected to typical northern Ontario, Canada, spring
+        conditions in climate chambers after different exposures to natural chilling.
+        Results indicate that chilling requirements (cumulative weighted chilling
+        hours) differed substantially among the seven species, ranging from 300 to
+        500 h for spruce seedlings to more than 1100 h for trembling aspen and lodgepole
+        pine. Only spruce seedlings had fulfilled their chilling requirements before
+        December 31, whereas the other species continued chilling well into March
+        and April. Species with lower chilling requirements needed more heat accumulation
+        for budburst and vice versa. Insufficient chilling delayed budburst but only
+        extremely restricted chilling hours (&lt;400) resulted in abnormal budburst
+        and growth, including reduced needle and shoot expansion, early budburst in
+        lower crowns, and erratic budburst on lower stems and roots. Effects, however,
+        depended on both the species\u2019 chilling requirements and the chilling\u2013heat
+        relationship. Among the seven tree species examined, trembling aspen is most
+        likely to be affected by reduced chilling accumulation possible under future
+        climate scenarios, followed by balsam poplar, white birch, lodgepole pine,
+        and jack pine. Black and white spruce are least likely to be affected by changes
+        in chilling hours.", "subject": [{"scheme": "LCC", "term": "Plant culture",
+        "code": "SB1-1110"}]}, "created_date": "2017-08-15T04:57:51Z"}, {"last_updated":
+        "2017-12-12T00:16:44Z", "id": "ab13dc54d3554920936fe1a6d36c96fe", "bibjson":
+        {"end_page": "172", "start_page": "159", "author": [{"affiliation": "Institute
+        of Regional Sciene (IfR), Karlsruhe Institute of Technology (KIT), 76131 Karlsruhe,
+        Germany", "name": "Andreas Ch. Braun"}, {"affiliation": "Institute of Regional
+        Sciene (IfR), Karlsruhe Institute of Technology (KIT), 76131 Karlsruhe, Germany",
+        "name": "Danny Troeger"}, {"affiliation": "Facultad de Ciencias Forestales
+        (Laboratorio de Invasiones Biologicas - LIB), Universidad de Concepcion (UdeC),
+        Victoria 631, Concepcion, Chile", "name": "Rafael Garcia"}, {"affiliation":
+        "Centro de Ciencias Ambientales (EULA), Universidad de Concepcion (UdeC),
+        Casilla 160-C, Concepcion, Chile", "name": "Mauricio Aguayo"}, {"affiliation":
+        "Facultad de Ciencias Ambientales, Universidad de Concepcion (UdeC), Casilla
+        160-C, Concepcion, Chile", "name": "Ricardo Barra"}, {"affiliation": "Institute
+        of Regional Sciene (IfR), Karlsruhe Institute of Technology (KIT), 76131 Karlsruhe,
+        Germany", "name": "Joachim Vogt"}], "abstract": "Effects of plantation forestry
+        on biodiversity are controversially discussed in literature. While some authors
+        stress positive effects, others tend to attribute a largely negative influence
+        to plantations. One important factor steering the influence on biodiversity
+        are management practices. A second important factor is the environmental matrix.
+        Chile offers the option to analyse both factors jointly. The coastal range
+        of central Chile has experienced rapid and widespread replacement of native
+        Nothofagus spp. forests in favour of Pinus radiata plantations. Here, native
+        forests remain limited to small patches surrounded by an environmental matrix
+        of plantations. Management is rather intensive and not designed to maintain
+        biodiversity. While in the coastal range of central Chile the transformation
+        from native forests to non-native tree plantations has almost come to an end,
+        spatial extension of P. contorta and P. ponderosa plantations has just recently
+        begun in Chilean Patagonia. While the management is similar to central Chile,
+        plantations rather exist as small patches surrounded by an environmental matrix
+        of native plant formations (e.g. Nothofagus spp. forests and Nothofagus spp.
+        scrublands). In the framework of this work, effects of the two diametric land
+        usages on biodiversity are assessed and compared. Biodiversity is assessed
+        at the \u03b1-, \u03b2- and \u03b3-scale. At the \u03b1-scale, biodiversity
+        impacts are inferred statistically, using one-way ANOVA and Tukey\u2019s PostHoc
+        test. Biodiversity of plants at both sites is significantly reduced in plantations
+        when compared to native forests or scrublands. Plantation forestry lowers
+        \u03b1-biodiversity and does not provide additional habitats for specialists.
+        At the \u03b2-scale, weak edge effects due to the presence of native forests
+        are observed. In total, plantation forestry tends to promote plant invasions
+        and impairs the survival of endemics. At the \u03b3-scale, plant species communities
+        where predominantly native and endemic in forests, predominantly introduced
+        in plantations. Positive effects of the more native environmental matrix in
+        Patagonia are not found to be stronger than in central Chile, therefore it
+        is concluded that management imposes a much stronger influence. Results show,
+        that the biodiversity impacts in Central Chile are transferable to Chilean
+        Patagonia, where plantation forestry is increasingly established.", "title":
+        "Assessing the impact of plantation forestry on plant biodiversity", "month":
+        "4", "link": [{"url": "http://www.sciencedirect.com/science/article/pii/S235198941630155X",
+        "type": "fulltext"}], "year": "2017", "keywords": ["Plantation forestry",
+        "Biodiversity", "Pinus spp.", "Nothofagus spp.", "Chile", "Patagonia"], "identifier":
+        [{"type": "pissn", "id": "2351-9894"}, {"type": "doi", "id": "10.1016/j.gecco.2017.03.006"}],
+        "journal": {"publisher": "Elsevier", "language": ["EN"], "license": [{"url":
+        "http://www.elsevier.com/journals/global-ecology-and-conservation/2351-9894/open-access-journal",
+        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
+        "Global Ecology and Conservation", "country": "NL", "number": "C", "volume":
+        "10", "issns": ["2351-9894"]}, "subject": [{"scheme": "LCC", "term": "Ecology",
+        "code": "QH540-549.5"}]}, "created_date": "2017-05-22T04:56:09Z"}, {"last_updated":
+        "2018-10-26T08:44:47Z", "id": "4d92ec1278b044acb56b639edff9b62d", "bibjson":
+        {"start_page": "457", "author": [{"affiliation": "Geomatics Engineering, Schulich
+        School of Engineering, University of Calgary, 2500 University Drive NW, Calgary,
+        AB T2N 1N4, Canada", "name": "M. Rebeca Qui\u00f1onez-Pi\u00f1\u00f3n"}, {"affiliation":
+        "Mechanical Engineering, University of Victoria, P.O. Box 1700 STN CSC, Victoria,
+        BC V8W 2Y2, Canada", "name": "Caterina Valeo"}], "journal": {"publisher":
+        "MDPI AG", "language": ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Forests",
+        "country": "CH", "number": "11", "volume": "8", "issns": ["1999-4907"]}, "title":
+        "Allometry of Sapwood Depth in Five Boreal Trees", "month": "11", "link":
+        [{"url": "https://www.mdpi.com/1999-4907/8/11/457", "type": "fulltext", "content_type":
+        "pdf"}], "year": "2017", "keywords": ["sapwood depth", "sapwood area", "intra-specific
+        sapwood depth variation", "tree allometry", "allometric correlations", "Populus
+        tremuloides", "Pinus contorta", "Pinus banksiana", "Picea mariana", "Picea
+        glauca"], "identifier": [{"type": "eissn", "id": "1999-4907"}, {"type": "doi",
+        "id": "10.3390/f8110457"}], "abstract": "This paper analyzes sapwood variability
+        and allometry within individuals of Populus tremuloides, Pinus contorta, Pinus
+        banksiana, Picea mariana, and Picea glauca. Outside bark diameter at breast
+        height (DBH) and sapwood depth (sd) in four cardinal directions were measured
+        in individuals in stands in Alberta and Saskatchewan, Canada. The microscopical
+        analysis of wood anatomy was used to measure sd, and the error associated
+        with the measures was observed. Sapwood allometry analyses examined the influence
+        of DBH on sd and on sapwood area (SA). All species were observed to have varying
+        sapwood depths around the trunk with statistical analyses showing that Pinus
+        banksiana has a well defined preference to grow thicker in the North-East
+        side. The largest sd values were observed for the Populus tremuloides set.
+        Unlike Populus tremuloides and Picea glauca, for the species Pinus contorta,
+        Pinus banksiana, and Picea mariana, incremental growth in DBH does not directly
+        drive sapwood growth in any direction. For these three species, SA increases
+        only because of increases in DBH as sd remains nearly constant. These results
+        show that sapwood depth and sapwood area seem to behave differently in each
+        studied species and are not always proportional to the tree size as is normally
+        assumed.", "subject": [{"scheme": "LCC", "term": "Plant ecology", "code":
+        "QK900-989"}]}, "created_date": "2017-11-20T16:28:50Z"}, {"last_updated":
+        "2018-09-02T18:50:30Z", "id": "4bba76322a4d4834b110f1f5d3534332", "bibjson":
+        {"end_page": "188", "start_page": "180", "author": [{"affiliation": "Latvian
+        State Forest Research Institute Silava, Rigas 111, Salaspils, LV-2169Latvia,
+        phone: +371 29789581", "name": "Jansons Aris"}, {"affiliation": "Latvian State
+        Forest Research Institute Silava, Rigas 111, Salaspils, LV-2169Latvia, phone:
+        +371 29789581", "name": "Matisons Roberts"}, {"affiliation": "Forest Competence
+        Centre Ltd., Dzerbenes 27, Riga, LV-1006Latvia", "name": "Pobiarzens Agris"},
+        {"affiliation": "Latvia University of Agriculture, Faculty of Forestry, Akademijas
+        11, Jelgava, LV-3001Latvia", "name": "Sisenis Linards"}, {"affiliation": "Latvian
+        State Forest Research Institute Silava, Rigas 111, Salaspils, LV-2169Latvia,
+        phone: +371 29789581", "name": "Neimane Una"}], "abstract": "In forestry,
+        alien tree species are planted to maximize yield from a stand by increasing
+        productivity and decreasing environmental risks. In Eastern Europe, lodgepole
+        pine (Pinus contorta var. latifolia) might be used as a source of biomass
+        and industrial wood; however, before any recommendations are given, possible
+        gains of the novel species should be scrupulously evaluated. In this study,
+        we compared volume and proportion of knotty stemwood (VKN) of native Scots
+        pine (Pinus sylvestris) from first generation seed orchards and provenances
+        of alien lodgepole pine [Fort Nelson (58\u00b038\u2019 N, 122\u00b041\u2019
+        W) and Summit Lake (54\u00b024\u203a N, 122\u00b037\u203a W)] at the age of
+        27 years growing in central Latvia. We also assessed the relationships between
+        VKN and several morphometric parameters.", "title": "Proportion of knotty
+        wood in stems of 28-year old lodgepole and Scots pine in experimental plantation
+        in Zvirgzde, Latvia", "month": "9", "link": [{"url": "http://www.degruyter.com/view/j/ffp.2017.59.issue-3/ffp-2017-0019/ffp-2017-0019.xml?format=INT",
+        "type": "fulltext"}], "year": "2017", "keywords": ["Pinus contorta", "introduced
+        species", "stemwood knottiness", "industrial timber", "branch traits"], "identifier":
+        [{"type": "pissn", "id": "0071-6677"}, {"type": "eissn", "id": "2199-5907"},
+        {"type": "doi", "id": "10.1515/ffp-2017-0019"}], "journal": {"publisher":
+        "Sciendo", "language": ["EN"], "license": [{"url": "http://www.degruyter.com/view/supplement/s00716677_Open_Access_License.pdf",
+        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
+        "Folia Forestalia Polonica: Series A - Forestry", "country": "PL", "number":
+        "3", "volume": "59", "issns": ["0071-6677", "2199-5907"]}, "subject": [{"scheme":
+        "LCC", "term": "Forestry", "code": "SD1-669.5"}]}, "created_date": "2017-10-31T14:25:27Z"},
+        {"last_updated": "2018-10-26T08:32:58Z", "id": "980989de3b8649b8b86198f7a543f26d",
+        "bibjson": {"start_page": "414", "author": [{"affiliation": "School of Natural
+        Sciences, UC Merced, Merced, CA 95343, USA", "name": "M\u00e9laine Aubry-Kientz"},
+        {"affiliation": "School of Natural Sciences, UC Merced, Merced, CA 95343,
+        USA", "name": "Emily V. Moran"}], "journal": {"publisher": "MDPI AG", "language":
+        ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about", "open_access":
+        true, "type": "CC BY", "title": "CC BY"}], "title": "Forests", "country":
+        "CH", "number": "11", "volume": "8", "issns": ["1999-4907"]}, "title": "Climate
+        Impacts on Tree Growth in the Sierra Nevada", "month": "11", "link": [{"url":
+        "https://www.mdpi.com/1999-4907/8/11/414", "type": "fulltext", "content_type":
+        "pdf"}], "year": "2017", "keywords": ["tree growth", "climate", "growth model"],
+        "identifier": [{"type": "eissn", "id": "1999-4907"}, {"type": "doi", "id":
+        "10.3390/f8110414"}], "abstract": "Rising temperatures and aridity may negatively
+        impact tree growth, and therefore ecosystem services like carbon sequestration.
+        In the Sierra Nevada in California, annual variation in precipitation is high,
+        and forests have already been impacted by several recent severe droughts.
+        In this study, we used growth census data from long-term plots in the Sierra
+        Nevada to calibrate an annual climate-dependent growth model. Our results
+        highlight a high diversity of responses to climate, although the effects of
+        climate are small compared to those of tree size and competition. Some species
+        grow less during dry years (Pinus contorta and Calocedrus decurrens) but,
+        surprisingly, other species exhibit higher growth during dry years (Pinus
+        monticola, Abies magnifica, Pinus jeffreyi, Quercus kelloggii). These results
+        emphasize the need for growth models to take into account species variability,
+        as well as spatial heterogeneity, when studying mixed conifer forests. So
+        far, temperatures have increased in California, and tree growth of some species
+        may drastically decrease in the Sierra Nevada if warming continues, leading
+        to changes in forest structure and composition as well as potential changes
+        in wood production and carbon sequestration.", "subject": [{"scheme": "LCC",
+        "term": "Plant ecology", "code": "QK900-989"}]}, "created_date": "2017-11-02T16:38:29Z"},
+        {"last_updated": "2017-12-12T00:32:41Z", "id": "afd97c4367ad460da1af797b63a7e6e5",
+        "bibjson": {"author": [{"affiliation": "University of Alberta", "name": "Inka
+        eLusebrink"}, {"affiliation": "University of Alberta", "name": "Nadir eErbilgin"},
+        {"affiliation": "University of Alberta", "name": "Maya Louise Evenden"}],
+        "journal": {"publisher": "Frontiers Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/ecology-and-evolution#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
+        "title": "Frontiers in Ecology and Evolution", "country": "CH", "volume":
+        "4", "issns": ["2296-701X"]}, "title": "The effect of water limitation on
+        volatile emission, tree defense response, and brood success of Dendroctonus
+        ponderosae in two pine hosts, lodgepole and jack pine", "month": "2", "link":
+        [{"url": "http://journal.frontiersin.org/Journal/10.3389/fevo.2016.00002/full",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2016", "keywords":
+        ["drought", "mountain pine beetle", "range expansion", "Host shift", "tree
+        defense."], "identifier": [{"type": "eissn", "id": "2296-701X"}, {"type":
+        "doi", "id": "10.3389/fevo.2016.00002"}], "abstract": "The mountain pine beetle
+        (MPB; Dendroctonus ponderosae) has recently expanded its range from lodgepole
+        pine forest into the lodgepole \u00d7 jack pine hybrid zone in central Alberta,
+        within which it has attacked pure jack pine. This study tested the effects
+        of water limitation on tree defense response of mature lodgepole and jack
+        pine (Pinus contorta and Pinus banksiana) trees in the field. Tree defense
+        response was initiated by inoculation of trees with the MPB-associated fungus
+        Grosmannia clavigera and measured through monoterpene emission from tree boles
+        and concentration of defensive compounds in phloem, needles, and necrotic
+        tissues. Lodgepole pine generally emitted higher amounts of monoterpenes than
+        jack pine; particularly from fungal-inoculated trees. Compared to non-inoculated
+        trees, fungal inoculation increased monoterpene emission in both species,
+        whereas water treatment had no effect on monoterpene emission. The phloem
+        of both pine species contains (-)-\u03b1-pinene, the precursor of the beetle\u2019s
+        aggregation pheromone, however lodgepole pine contains two times as much as
+        jack pine. The concentration of defensive compounds was 70-fold greater in
+        the lesion tissue in jack pine, but only 10-fold in lodgepole pine compared
+        to healthy phloem tissue in each species, respectively. Water-deficit treatment
+        inhibited an increase of L-limonene as response to fungal inoculation in lodgepole
+        pine phloem. The amount of myrcene in jack pine phloem was higher in water-deficit
+        trees compared to ambient trees. Beetles reared in jack pine were not affected
+        by either water or biological treatment, whereas beetles reared in lodgepole
+        pine benefited from fungal inoculation by producing larger and heavier female
+        offspring. Female beetles that emerged from jack pine bolts contained more
+        fat than those that emerged from lodgepole pine, even though lodgepole pine
+        phloem had a higher nitrogen content than jack pine phloem. These results
+        suggest that jack pine chemistry is suitable for MPB pheromone production
+        and aggregation on the host tree.", "subject": [{"scheme": "LCC", "term":
+        "Evolution", "code": "QH359-425"}, {"scheme": "LCC", "term": "Ecology", "code":
+        "QH540-549.5"}]}, "created_date": "2016-07-07T08:15:44Z"}, {"last_updated":
+        "2018-01-02T05:02:34Z", "id": "af11672291d74068914a1896e8a5cee1", "bibjson":
+        {"start_page": "572", "author": [{"affiliation": "College of Natural Resources,
+        University of Idaho, Moscow, ID 83844, USA", "name": "Aaron M. Sparks"}, {"affiliation":
+        "College of Natural Resources, University of Idaho, Moscow, ID 83844, USA",
+        "name": "Crystal A. Kolden"}, {"affiliation": "Oak Ridge Institute for Science
+        Education, National Center for Environmental Assessment, US Environmental
+        Protection Agency, Research Triangle Park, NC 277094, USA", "name": "Alan
+        F. Talhelm"}, {"affiliation": "College of Natural Resources, University of
+        Idaho, Moscow, ID 83844, USA", "name": "Alistair M.S. Smith"}, {"affiliation":
+        "College of Agriculture and Life Sciences, University of Arizona, Payson,
+        AZ 85541, USA", "name": "Kent G. Apostol"}, {"affiliation": "College of Natural
+        Resources, University of Idaho, Moscow, ID 83844, USA", "name": "Daniel M.
+        Johnson"}, {"affiliation": "College of Natural Resources, University of Idaho,
+        Moscow, ID 83844, USA", "name": "Luigi Boschetti"}], "journal": {"publisher":
+        "MDPI AG", "language": ["EN"], "license": [{"url": "http://www.mdpi.com/journal/remotesensing/about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Remote
+        Sensing", "country": "CH", "number": "7", "volume": "8", "issns": ["2072-4292"]},
+        "title": "Spectral Indices Accurately Quantify Changes in Seedling Physiology
+        Following Fire: Towards Mechanistic Assessments of Post-Fire Carbon Cycling",
+        "month": "7", "link": [{"url": "http://www.mdpi.com/2072-4292/8/7/572", "type":
+        "fulltext", "content_type": "pdf"}], "year": "2016", "keywords": ["\ufb01re",
+        "remote sensing", "severity", "carbon", "recovery", "mortality"], "identifier":
+        [{"type": "eissn", "id": "2072-4292"}, {"type": "doi", "id": "10.3390/rs8070572"}],
+        "abstract": "Fire activity, in terms of intensity, frequency, and total area
+        burned, is expected to increase with a changing climate. A challenge for landscape-level
+        assessment of \ufb01re effects, often termed burn severity, is that current
+        remote sensing assessments provide very little information regarding tree/vegetation
+        physiological performance and recovery, limiting our understanding of \ufb01re
+        effects on ecosystem services such as carbon storage/cycling. In this paper,
+        we evaluated whether spectral indices common in vegetation stress and burn
+        severity assessments could accurately quantify post-fire physiological performance
+        (indicated by net photosynthesis and crown scorch) of two seedling species,
+        Larix occidentalis and Pinus contorta. Seedlings were subjected to increasing
+        \ufb01re radiative energy density (FRED) doses through a series of controlled
+        laboratory surface \ufb01res. Mortality, physiology, and spectral re\ufb02ectance
+        were assessed for a month following the \ufb01res, and then again at one year
+        post-\ufb01re. The differenced Normalized Difference Vegetation Index (dNDVI)
+        spectral index outperformed other spectral indices used for vegetation stress
+        and burn severity characterization in regard to leaf net photosynthesis quanti\ufb01cation,
+        indicating that landscape-level quanti\ufb01cation of tree physiology may
+        be possible. Additionally, the survival of the majority of seedlings in the
+        low and moderate FRED doses indicates that \ufb01re-induced mortality is more
+        complex than the currently accepted binary scenario, where trees survive with
+        no impacts below a certain temperature and duration threshold, and mortality
+        occurs above the threshold.", "subject": [{"scheme": "LCC", "term": "Science",
+        "code": "Q"}]}, "created_date": "2016-07-07T17:07:26Z"}, {"last_updated":
+        "2017-12-12T01:37:05Z", "id": "c42bd8d8c8f14bae8397cafbe96800be", "bibjson":
+        {"end_page": "540", "start_page": "525", "author": [{"name": "Melanie A. Harsch"},
+        {"affiliation": "The Bio-Protection Research Centre, Lincoln University, PO
+        Box 85084, Christchurch, New Zealand", "name": "Philip E. Hulme"}, {"name":
+        "Richard P. Duncan"}, {"name": "Sara Tomiolo"}], "abstract": "In many regions,
+        alien conifers have spread widely at lower elevations and are increasingly
+        found colonizing alpine areas. Although studies have addressed conifer invasions
+        at low elevations, little is known about the rates and constraints on spread
+        into higher elevations. Here, we assess the relative importance of climate
+        and the availability of regeneration microsites on the establishment of the
+        alien species <em>Pinus contorta</em> into a high elevation site in New Zealand.
+        Spread has occurred from two stands planted at the elevation of the native
+        treeline (1347\u20131388 masl) in the 1960s. Most stems established between
+        1350 and 1450 masl and <em>P. contorta</em> individuals were found up to 270
+        m above the original plantings. Although the population has increased by 180%
+        in the last 20 years, population growth rate has been declining. Furthermore,
+        comparisons with studies from other mountain ranges around the world and at
+        low elevations in New Zealand suggest this is a relatively limited spread.
+        Our results suggest that climate variation did not have a significant effect
+        on establishment patterns, as opposed to availability of regeneration microsites.
+        Soil and alpine mat microsites favoured establishment of<em> P. contorta</em>
+        and, although these microsites did not appear to be saturated, microsite availability
+        may be an important limiting factor for the spread of <em>P. contorta.</em>
+        Thus management strategies should focus on preventing spread in addition to
+        removing already established stems.", "title": "Influence of climate and regeneration
+        microsites on <em>Pinus contorta</em> invasion into an alpine ecosystem in
+        New Zealand", "month": "8", "link": [{"url": "http://www.aimspress.com/environmental/article/947/fulltext.html",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2016", "keywords": ["biological
+        invasions", "climate change", "dendrochronology", "dispersal", "forestry",
+        "microhabitat", "<em>Pinus contorta</em>", "recruitment", "tree line", "weed"],
+        "identifier": [{"type": "pissn", "id": "2372-0352"}, {"type": "doi", "id":
+        "10.3934/environsci.2016.3.525"}], "journal": {"publisher": "AIMS Press",
+        "language": ["EN"], "license": [{"url": "http://www.aimspress.com/about.html",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "AIMS Environmental
+        Science", "country": "US", "number": "3", "volume": "3", "issns": ["2372-0344",
+        "2372-0352"]}, "subject": [{"scheme": "LCC", "term": "Environmental sciences",
+        "code": "GE1-350"}]}, "created_date": "2016-09-28T07:30:08Z"}, {"last_updated":
+        "2018-04-02T02:18:29Z", "id": "64906c392a24483aa425512f429534b7", "bibjson":
+        {"author": [{"affiliation": "Department of Forestry and Wildland Resources,
+        Humboldt State University, 1 Harpst St. Arcata, CA 95521, USA", "name": "Nickolas
+        E. Zeibig-Kichas"}, {"affiliation": "Department of Forestry and Wildland Resources,
+        Humboldt State University, 1 Harpst St. Arcata, CA 95521, USA", "name": "Christopher
+        W. Ardis"}, {"affiliation": "Department of Forestry and Wildland Resources,
+        Humboldt State University, 1 Harpst St. Arcata, CA 95521, USA", "name": "John-Pascal
+        Berrill"}, {"affiliation": "Department of Forestry and Wildland Resources,
+        Humboldt State University, 1 Harpst St. Arcata, CA 95521, USA", "name": "Joseph
+        P. King"}], "journal": {"publisher": "Hindawi Limited", "license": [{"url":
+        "https://www.hindawi.com/journals/ijfr/guidelines/", "open_access": true,
+        "type": "CC BY", "title": "CC BY"}], "language": ["EN"], "title": "International
+        Journal of Forestry Research", "country": "GB", "volume": "2016", "issns":
+        ["1687-9368", "1687-9376"]}, "title": "Bark Thickness Equations for Mixed-Conifer
+        Forest Type in Klamath and Sierra Nevada Mountains of California", "link":
+        [{"url": "http://dx.doi.org/10.1155/2016/1864039", "type": "fulltext"}], "year":
+        "2016", "identifier": [{"type": "pissn", "id": "1687-9368"}, {"type": "eissn",
+        "id": "1687-9376"}, {"type": "doi", "id": "10.1155/2016/1864039"}], "abstract":
+        "We studied bark thickness in the mixed-conifer forest type throughout California.
+        Sampling included eight conifer species and covered latitude and elevation
+        gradients. The thickness of tree bark at 1.37\u2009m correlated with diameter
+        at breast height (DBH) and varied among species. Trees exhibiting more rapid
+        growth had slightly thinner bark for a given DBH. Variability in bark thickness
+        obscured differences between sample locations. Model predictions for 50\u2009cm
+        DBH trees of each species indicated that bark thickness was ranked Calocedrus
+        decurrens > Pinus jeffreyi > Pinus lambertiana > Abies concolor > Pseudotsuga
+        menziesii > Abies magnifica > Pinus monticola > Pinus contorta. We failed
+        to find reasonable agreement between our bark thickness data and existing
+        bark thickness regressions used in models predicting fire-induced mortality
+        in the mixed-conifer forest type in California. The fire effects software
+        systems generally underpredicted bark thickness for most species, which could
+        lead to an overprediction in fire-caused tree mortality in California. A model
+        for conifers in Oregon predicted that bark was 49% thinner in Abies concolor
+        and 37% thicker in Pseudotsuga menziesii than our samples from across California,
+        suggesting that more data are needed to validate and refine bark thickness
+        equations within existing fire effects models.", "subject": [{"scheme": "LCC",
+        "term": "Forestry", "code": "SD1-669.5"}, {"scheme": "LCC", "term": "General.
+        Including nature conservation, geographical distribution", "code": "QH1-199.5"}]},
+        "created_date": "2016-12-20T07:34:32Z"}, {"last_updated": "2018-01-02T03:59:48Z",
+        "id": "f25a8ff87ad44b8bb12499b71a43749f", "bibjson": {"start_page": "40",
+        "author": [{"affiliation": "British Columbia Ministry of Forests, Lands &
+        Natural Resource Operations, Forest Science, 4th floor. 499 George Street,
+        Prince George, BC V2L 1R5, Canada", "name": "John Rex"}, {"affiliation": "Natural
+        Resources and Environmental Technology, College of New Caledonia, 22 Avenue,
+        Prince George, BC V2N 1P8, Canada", "name": "Stephane Dub\u00e9"}, {"affiliation":
+        "British Columbia Ministry of Forests, Lands & Natural Resource Operations,
+        Water Stewardship Division, 5th flr. 499 George Street, Prince George, BC
+        V2L 1R5, Canada", "name": "Phillip Krauskopf"}, {"affiliation": "British Columbia
+        Ministry of Environment, Ecosystems Protection and Sustainability Branch,
+        4300 North Road, Victoria, B.C. V8Z 5J3, Canada", "name": "Shannon Berch"}],
+        "journal": {"publisher": "MDPI AG", "language": ["EN"], "license": [{"url":
+        "http://www.mdpi.com/journal/forests/about", "open_access": true, "type":
+        "CC BY", "title": "CC BY"}], "title": "Forests", "country": "CH", "number":
+        "2", "volume": "7", "issns": ["1999-4907"]}, "title": "Investigating Potential
+        Toxicity of Leachate  from Wood Chip Piles Generated by Roadside Biomass Operations",
+        "month": "2", "link": [{"url": "http://www.mdpi.com/1999-4907/7/2/40", "type":
+        "fulltext", "content_type": "pdf"}], "year": "2016", "keywords": ["Biomass
+        Leachate", "Aquatic Toxicity: MicrotoxTM", "Chemical Oxygen Demand", "Resin
+        Acids", "Rainfall Simulation"], "identifier": [{"type": "eissn", "id": "1999-4907"},
+        {"type": "doi", "id": "10.3390/f7020040"}], "abstract": "Roadside processing
+        of wood biomass leaves chip piles of varying size depending upon whether they
+        were created for temporary storage, spillage, or equipment maintenance. Wood
+        chips left in these piles can generate leachate that contaminates streams
+        when processing sites are connected to waterways. Leachate toxicity and chemistry
+        were assessed for pure aspen (Populus tremuloides Michx.), lodgepole pine
+        (Pinus contorta Dougl.), hybrid white spruce (Picea engelmannii x glauca Parry),
+        and black spruce (Picea mariana (Mill.) Britton) as well as from two wood
+        chipping sites using mixes of lodgepole pine and hybrid or black spruce. Leachate
+        was generated using rainfall simulation, a static 28-day laboratory assay,
+        and a field-based exposure. Leachate generated by these exposures was analyzed
+        for organic matter content, phenols, ammonia, pH, and toxicity. Findings indicate
+        that all wood chip types produced a toxic leachate despite differences in
+        their chemistry. The consistent toxicity response highlights the need for
+        runoff management that will disconnect processing sites from aquatic environments.",
+        "subject": [{"scheme": "LCC", "term": "Plant ecology", "code": "QK900-989"}]},
+        "created_date": "2016-02-10T07:00:07Z"}, {"last_updated": "2018-01-02T07:30:54Z",
+        "id": "b685b52037a7451ead2f148103730ad0", "bibjson": {"end_page": "e075",
+        "start_page": "e075", "author": [{"affiliation": "Facultad de Ciencias Naturales,
+        Universidad Nacional de la Patagonia San Juan Bosco, sede Esquel\r\nCentro
+        de Investigaci\u00f3n y Extensi\u00f3n Forestal Andino Patag\u00f3nico (CIEFAP)
+        - Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET)",
+        "name": "Leticia Pafundi"}, {"affiliation": "Centro de Investigaci\u00f3n
+        y Extensi\u00f3n Forestal Andino Patag\u00f3nico (CIEFAP) - Consejo Nacional
+        de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET)", "name": "Maria
+        Florencia Urretavizcaya"}, {"affiliation": "Departamento Forestal-Facultad
+        de Ingenier\u00eda, Universidad Nacional de la Patagonia San Juan Bosco, sede
+        Esquel\r\nCentro de Investigaci\u00f3n y Extensi\u00f3n Forestal Andino Patag\u00f3nico
+        (CIEFAP) - Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas
+        (CONICET)", "name": "Guillermo Emilio Defosse"}], "abstract": "Aim of the
+        study: to analyze, within a Pinus contorta plantation, the effects of artificially
+        created small rectangular and small medium circular canopy gaps on: i) photosynthetic
+        active radiation (PAR), and soil temperature and moisture, and ii) survival
+        and growth of planted Austrocedrus chilensis and Nothofagus dombeyi seedlings,
+        species which formerly composed the natural forest of the area.\n\nStudy area:
+        A 2 ha stand of a Pinus contorta stand in Los Alerces National Park, Argentina
+        (42\u00b043\u2019S, 71\u00b043\u2019W, 490 m.a.s.l.). \n\nMaterial and methods:
+        The Pinus contorta stand was 25 yr old, 22 m height and 26 cm DBH, presenting
+        1000 trees ha-1 of density and 53 m2 ha-1 of basal area. In 2009, rectangular
+        and circular gaps were created within the stand and then seedlings were planted.
+        During two growing seasons (2010-2011 and 2011-2012), PAR, soil temperature
+        and moisture were measured in gaps and understory (control), and seedling
+        survival and growth in gaps.\n\nMain results: During both seasons, soil temperature
+        did not differ among gaps and control, whereas PAR and soil moisture were
+        lower in control than in gaps. Seedling survival was high in all gaps regardless
+        of species and season. Seedlings showed higher diameter growth in rectangular
+        than in circular gaps.\n\nResearch highlights: Austrocedrus chilensis and
+        N. dombeyi seedlings survival is high and their growth slightly affected,
+        when planted in differently-sized canopy gaps within a Pinus contorta plantation
+        in Patagonia. However, other gap sizes and stand densities should be tested
+        before recommending which one shows better results for reconverting monocultures
+        into former native forests.\n\nKeywords: planted seedlings; gap structure;
+        photosynthetic active radiation; soil temperature; soil moisture.\nAbbreviations
+        used: PAR (Photosynthetic Active Radiation); DBH (Diameter at Breast Height);
+        INTA (Argentinean Institute of Agricultural Technology); IFONA (Argentinean
+        Forest Institute).", "title": "Micro-environmental changes induced by shape
+        and size of forest openings: effects on Austrocedrus chilensis and Nothofagus
+        dombeyi seedlings performance in a Pinus contorta plantation of Patagonia,
+        Argentina", "month": "12", "link": [{"url": "http://revistas.inia.es/index.php/fs/article/view/8971",
+        "type": "fulltext", "content_type": "html"}], "year": "2016", "keywords":
+        ["planted seedlings", "gap structure", "photosynthetic active radiation",
+        "soil temperature", "soil moisture"], "identifier": [{"type": "eissn", "id":
+        "2171-9845"}, {"type": "doi", "id": "10.5424/fs/2016253-08971"}], "journal":
+        {"publisher": "Instituto Nacional de Investigaci\u00f3n y Tecnolog\u00eda
+        Agraria y Alimentaria", "language": ["EN"], "license": [{"url": "http://revistas.inia.es/index.php/fs/about/submissions#copyrightNotice",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Forest
+        Systems", "country": "ES", "number": "3", "volume": "25", "issns": ["2171-5068",
+        "2171-9845"]}, "subject": [{"scheme": "LCC", "term": "Forestry", "code": "SD1-669.5"}]},
+        "created_date": "2016-12-22T10:30:05Z"}, {"last_updated": "2017-12-11T18:39:20Z",
+        "id": "41f12541236c47ae9e950848f8788e33", "bibjson": {"start_page": "e0164738",
+        "author": [{"name": "Andrew P Lerch"}, {"name": "Jesse A Pfammatter"}, {"name":
+        "Barbara J Bentz"}, {"name": "Kenneth F Raffa"}], "journal": {"publisher":
+        "Public Library of Science (PLoS)", "language": ["EN"], "license": [{"url":
+        "http://journals.plos.org/plosone/s/content-license", "open_access": true,
+        "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE", "country": "US",
+        "number": "10", "volume": "11", "issns": ["1932-6203"]}, "title": "Mountain
+        Pine Beetle Dynamics and Reproductive Success in Post-Fire Lodgepole and Ponderosa
+        Pine Forests in Northeastern Utah.", "month": "0", "link": [{"url": "http://europepmc.org/articles/PMC5082653?pdf=render",
+        "type": "fulltext"}], "year": "2016", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0164738"}], "abstract":
+        "Fire injury can increase tree susceptibility to some bark beetles (Curculionidae,
+        Scolytinae), but whether wildfires can trigger outbreaks of species such as
+        mountain pine beetle (Dendroctonus ponderosae Hopkins) is not well understood.
+        We monitored 1173 lodgepole (Pinus contorta var. latifolia Doug.) and 599
+        ponderosa (Pinus ponderosa Doug. ex Law) pines for three years post-wildfire
+        in the Uinta Mountains of northeastern Utah in an area with locally endemic
+        mountain pine beetle. We examined how the degree and type of fire injury influenced
+        beetle attacks, brood production, and subsequent tree mortality, and related
+        these to beetle population changes over time. Mountain pine beetle population
+        levels were high the first two post-fire years in lodgepole pine, and then
+        declined. In ponderosa pine, populations declined each year after initial
+        post-fire sampling. Compared to trees with strip or failed attacks, mass attacks
+        occurred on trees with greater fire injury, in both species. Overall, a higher
+        degree of damage to crowns and boles was associated with higher attack rates
+        in ponderosa pines, but additional injury was more likely to decrease attack
+        rates in lodgepole pines. In lodgepole pine, attacks were initially concentrated
+        on fire-injured trees, but during subsequent years beetles attacked substantial
+        numbers of uninjured trees. In ponderosa pine, attacks were primarily on injured
+        trees each year, although these stands were more heavily burned and had few
+        uninjured trees. In total, 46% of all lodgepole and 56% of ponderosa pines
+        underwent some degree of attack. Adult brood emergence within caged bole sections
+        decreased with increasing bole char in lodgepole pine but increased in ponderosa
+        pine, however these relationships did not scale to whole trees. Mountain pine
+        beetle populations in both tree species four years post-fire were substantially
+        lower than the year after fire, and wildfire did not result in population
+        outbreaks.", "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"},
+        {"scheme": "LCC", "term": "Science", "code": "Q"}]}, "created_date": "2017-11-11T22:21:23Z"},
+        {"last_updated": "2017-12-11T16:51:02Z", "id": "257b14957d4442b0b020494b3b3b9fa6",
+        "bibjson": {"start_page": "e0151436", "author": [{"name": "Anne C S McIntosh"},
+        {"name": "S Ellen Macdonald"}, {"name": "Sylvie A Quideau"}], "journal": {"publisher":
+        "Public Library of Science (PLoS)", "language": ["EN"], "license": [{"url":
+        "http://journals.plos.org/plosone/s/content-license", "open_access": true,
+        "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE", "country": "US",
+        "number": "3", "volume": "11", "issns": ["1932-6203"]}, "title": "Understory
+        Plant Community Composition Is Associated with Fine-Scale Above- and Below-Ground
+        Resource Heterogeneity in Mature Lodgepole Pine (Pinus contorta) Forests.",
+        "month": "0", "link": [{"url": "http://europepmc.org/articles/PMC4790852?pdf=render",
+        "type": "fulltext"}], "year": "2016", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0151436"}], "abstract":
+        "Understory plant communities play critical ecological roles in forest ecosystems.
+        Both above- and below-ground ecosystem properties and processes influence
+        these communities but relatively little is known about such effects at fine
+        (i.e., one to several meters within-stand) scales, particularly for forests
+        in which the canopy is dominated by a single species. An improved understanding
+        of these effects is critical for understanding how understory biodiversity
+        is regulated in such forests and for anticipating impacts of changing disturbance
+        regimes. Our primary objective was to examine the patterns of fine-scale variation
+        in understory plant communities and their relationships to above- and below-ground
+        resource and environmental heterogeneity within mature lodgepole pine forests.
+        We assessed composition and diversity of understory vegetation in relation
+        to heterogeneity of both the above-ground (canopy tree density, canopy and
+        tall shrub basal area and cover, downed wood biomass, litter cover) and below-ground
+        (soil nutrient availability, decomposition, forest floor thickness, pH, and
+        phospholipid fatty acids (PLFAs) and multiple carbon-source substrate-induced
+        respiration (MSIR) of the forest floor microbial community) environment. There
+        was notable variation in fine-scale plant community composition; cluster and
+        indicator species analyses of the 24 most commonly occurring understory species
+        distinguished four assemblages, one for which a pioneer forb species had the
+        highest cover levels, and three others that were characterized by different
+        bryophyte species having the highest cover. Constrained ordination (distance-based
+        redundancy analysis) showed that two above-ground (mean tree diameter, litter
+        cover) and eight below-ground (forest floor pH, plant available boron, microbial
+        community composition and function as indicated by MSIR and PLFAs) properties
+        were associated with variation in understory plant community composition.
+        These results provide novel insights into the important ecological associations
+        between understory plant community composition and heterogeneity in ecosystem
+        properties and processes within forests dominated by a single canopy species.",
+        "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"}, {"scheme":
+        "LCC", "term": "Science", "code": "Q"}]}, "created_date": "2016-06-15T05:50:00Z"},
+        {"last_updated": "2017-12-11T21:21:18Z", "id": "744cb0bb48664232a9c0faca38137e16",
+        "bibjson": {"start_page": "248", "author": [{"affiliation": "Colorado State
+        Forest Service, Colorado State University, 5060 Campus Delivery, Fort Collins,
+        CO 80523-5060, USA", "name": "Daniel R. West"}, {"affiliation": "Department
+        of Bioagricultural Sciences and Pest Management, Colorado State University,
+        E211 Plant Sciences Bldg., Fort Collins, CO 80523-1177, USA", "name": "Elisa
+        J. Bernklau"}, {"affiliation": "Department of Bioagricultural Sciences and
+        Pest Management, Colorado State University, C202 Plant Sciences Bldg., Fort
+        Collins, CO 80523-1177, USA", "name": "Louis B. Bjostad"}, {"affiliation":
+        "Department of Bioagricultural Sciences and Pest Management, Colorado State
+        University, E211 Plant Sciences Bldg., Fort Collins, CO 80523-1177, USA",
+        "name": "William R. Jacobi"}], "journal": {"publisher": "MDPI AG", "language":
+        ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about", "open_access":
+        true, "type": "CC BY", "title": "CC BY"}], "title": "Forests", "country":
+        "CH", "number": "10", "volume": "7", "issns": ["1999-4907"]}, "title": "Host
+        Defense Mechanisms against Bark Beetle Attack Differ between Ponderosa and
+        Lodgepole Pines", "month": "10", "link": [{"url": "http://www.mdpi.com/1999-4907/7/10/248",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2016", "keywords": ["quantitative
+        defenses", "qualitative defenses", "Dendroctonus ponderosae", "Pinus contorta",
+        "Pinus ponderosa"], "identifier": [{"type": "eissn", "id": "1999-4907"}, {"type":
+        "doi", "id": "10.3390/f7100248"}], "abstract": "Conifer defenses against bark
+        beetle attack include, but are not limited to, quantitative and qualitative
+        defenses produced prior to attack. Our objective was to assess host defenses
+        of lodgepole pine and ponderosa pine from ecotone stands. These stands provide
+        a transition of host species for mountain pine beetle (Dendroctonus ponderosae;
+        MPB). We asked two questions: (1) do the preformed quantitative host defenses
+        (amount of resin) and (2) the preformed qualitative host defenses (monoterpene
+        constituents) differ between lodgepole and ponderosa pines. We collected oleoresins
+        at three locations in the Southern Rocky Mountains from 56 pairs of the pine
+        species of similar size and growing conditions. The amount of preformed-ponderosa
+        pine oleoresins exuded in 24 h (mg) was almost four times that of lodgepole
+        pine. Total qualitative preformed monoterpenes did not differ between the
+        two hosts, though we found differences in all but three monoterpenes. No differences
+        were detected in \u03b1-pinene, \u03b3-terpinene, and bornyl acetate. We found
+        greater concentrations of limonene, \u03b2-phellandrene, and cymene in lodgepole
+        pines, whereas \u03b2-pinene, 3-carene, myrcene, and terpinolene were greater
+        in ponderosa pine. Although we found differences both in quantitative and
+        qualitative preformed oleoresin defenses, the ecological relevance of these
+        differences to bark beetle susceptibility have not been fully tested.", "subject":
+        [{"scheme": "LCC", "term": "Plant ecology", "code": "QK900-989"}]}, "created_date":
+        "2016-10-26T12:01:21Z"}, {"last_updated": "2017-12-11T17:23:31Z", "id": "2cd89d59801d4d1db7ea0a81a12df4e5",
+        "bibjson": {"start_page": "2945", "author": [{"affiliation": "Department of
+        Forest and Conservation Sciences, University of British\nColumbia, 2424 Main
+        Mall, Vancouver, British Columbia V6T 1Z4, Canada", "name": "Y. Liu"}, {"affiliation":
+        "Department of Forest and Conservation Sciences, University of British\nColumbia,
+        2424 Main Mall, Vancouver, British Columbia V6T 1Z4, Canada", "name": "T.
+        Wang"}, {"affiliation": "Department of Forest and Conservation Sciences, University
+        of British\nColumbia, 2424 Main Mall, Vancouver, British Columbia V6T 1Z4,
+        Canada", "name": "Y. A. El-Kassaby"}], "journal": {"publisher": "Copernicus
+        Publications", "language": ["EN"], "license": [{"url": "http://www.biogeosciences.net/about/licence_and_copyright.html",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Biogeosciences",
+        "country": "DE", "number": "10", "volume": "13", "issns": ["1726-4170", "1726-4189"]},
+        "title": "Contributions of dynamic environmental signals during life-cycle
+        transitions  to early life-history traits in lodgepole pine (<i>Pinus contorta</i>
+        Dougl.)", "subject": [{"scheme": "LCC", "term": "Ecology", "code": "QH540-549.5"},
+        {"scheme": "LCC", "term": "Life", "code": "QH501-531"}, {"scheme": "LCC",
+        "term": "Geology", "code": "QE1-996.5"}], "month": "5", "link": [{"url": "http://www.biogeosciences.net/13/2945/2016/bg-13-2945-2016.pdf",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2016", "identifier":
+        [{"type": "pissn", "id": "1726-4170"}, {"type": "eissn", "id": "1726-4189"},
+        {"type": "doi", "id": "10.5194/bg-13-2945-2016"}], "abstract": "Environmental
+        signals are important triggers in the life-cycle transitions\nand play a crucial
+        role in the life-history evolution. Yet very little is\nknown about the leading
+        ecological factors contributing to the variations of\nlife-history traits
+        in perennial plants. This paper explores both the causes\nand consequences
+        for the evolution of life-history traits (i.e., seed\ndormancy and size) in
+        lodgepole pine (<i>Pinus contorta</i> Dougl.) across British Columbia\n(B.C.),
+        Canada. We selected 83 logepole pine populations covering 22\necosystem zones
+        of B.C. and through their geographic coordinate, 197\nclimatic variables were
+        generated accordingly for the reference (1961\u20131990)\nand future (2041\u20132070)
+        periods. We found that dynamic climatic variables\nrather than constant geographic
+        variables are the true environmental driving\nforces in seed dormancy and
+        size variations and thus provide reliable\npredictors in response to global
+        climate change. Evapotranspiration and\nprecipitation in the plant-to-seed
+        chronology are the most critical climate\nvariables for seed dormancy and
+        size variations, respectively. Hence, we\npredicted that levels of seed dormancy
+        in lodgepole pine would increase\nacross large tracts of B.C. in 2050s. Winter-chilling
+        is able to increase\nthe magnitude of life-history plasticity and lower the
+        bet-hedge strategy in\nthe seed-to-plant transition;  however, winter-chilling
+        is likely to be\ninsufficient in the north of 49\u00b0\u202fN in 2050s, which
+        may delay\ngermination while unfavorable conditions during dry summers may
+        result in\nadverse consequences in the survival of seedlings owing to extended\ngermination
+        span. These findings provide useful information to studies\nrelated to assessments
+        of seed transfer and tree adaptation.", "end_page": "2958"}, "created_date":
+        "2016-09-28T15:00:04Z"}, {"last_updated": "2018-01-23T08:05:12Z", "id": "c3533ebaaae24ff5bfa06e0f4e52241e",
+        "bibjson": {"author": [{"affiliation": "Plant Physiology Laboratory, Center
+        for Biotechnology and Department of Botany, Federal University of Rio Grande
+        do SulPorto Alegre, Brazil", "name": "J\u00falio C. de Lima"}, {"affiliation":
+        "Plant Physiology Laboratory, Center for Biotechnology and Department of Botany,
+        Federal University of Rio Grande do SulPorto Alegre, Brazil", "name": "Fernanda
+        de Costa"}, {"affiliation": "Plant Physiology Laboratory, Center for Biotechnology
+        and Department of Botany, Federal University of Rio Grande do SulPorto Alegre,
+        Brazil", "name": "Thanise N. F\u00fcller"}, {"affiliation": "Biological Sciences
+        Department, Regional Integrated University of Alto Uruguai and Miss\u00f5es
+        (URI-FW)Frederico Westphalen, Brazil", "name": "Kelly C. da Silva Rodrigues-Corr\u00eaa"},
+        {"affiliation": "Plant Physiology Laboratory, Center for Biotechnology and
+        Department of Botany, Federal University of Rio Grande do SulPorto Alegre,
+        Brazil", "name": "Magnus R. Kerber"}, {"affiliation": "Plant Physiology Laboratory,
+        Center for Biotechnology and Department of Botany, Federal University of Rio
+        Grande do SulPorto Alegre, Brazil", "name": "Mariano S. Lima"}, {"affiliation":
+        "Plant Physiology Laboratory, Center for Biotechnology and Department of Botany,
+        Federal University of Rio Grande do SulPorto Alegre, Brazil", "name": "Janette
+        P. Fett"}, {"affiliation": "Plant Physiology Laboratory, Center for Biotechnology
+        and Department of Botany, Federal University of Rio Grande do SulPorto Alegre,
+        Brazil", "name": "Arthur G. Fett-Neto"}], "journal": {"publisher": "Frontiers
+        Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/plant-science#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
+        "title": "Frontiers in Plant Science", "country": "CH", "volume": "7", "issns":
+        ["1664-462X"]}, "title": "Reference Genes for qPCR Analysis in Resin-Tapped
+        Adult Slash Pine As a Tool to Address the Molecular Basis of Commercial Resinosis",
+        "month": "06", "link": [{"url": "http://journal.frontiersin.org/article/10.3389/fpls.2016.00849/full",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2016", "keywords":
+        ["resin", "Pinus", "gene expression", "normalizer genes", "terpene synthase"],
+        "identifier": [{"type": "eissn", "id": "1664-462X"}, {"type": "doi", "id":
+        "10.3389/fpls.2016.00849"}], "abstract": "Pine oleoresin is a major source
+        of terpenes, consisting of turpentine (mono- and sesquiterpenes) and rosin
+        (diterpenes) fractions. Higher oleoresin yields are of economic interest,
+        since oleoresin derivatives make up a valuable source of materials for chemical
+        industries. Oleoresin can be extracted from living trees, often by the bark
+        streak method, in which bark removal is done periodically, followed by application
+        of stimulant paste containing sulfuric acid and other chemicals on the freshly
+        wounded exposed surface. To better understand the molecular basis of chemically-stimulated
+        and wound induced oleoresin production, we evaluated the stability of 11 putative
+        reference genes for the purpose of normalization in studying Pinus elliottii
+        gene expression during oleoresinosis. Samples for RNA extraction were collected
+        from field-grown adult trees under tapping operations using stimulant pastes
+        with different compositions and at various time points after paste application.
+        Statistical methods established by geNorm, NormFinder, and BestKeeper softwares
+        were consistent in pointing as adequate reference genes HISTO3 and UBI. To
+        confirm expression stability of the candidate reference genes, expression
+        profiles of putative P. elliottii orthologs of resin biosynthesis-related
+        genes encoding Pinus contorta \u03b2-pinene synthase [PcTPS-(\u2212)\u03b2-pin1],
+        P. contorta levopimaradiene/abietadiene synthase (PcLAS1), Pinus taeda \u03b1-pinene
+        synthase [PtTPS-(+)\u03b1pin], and P. taeda \u03b1-farnesene synthase (Pt\u03b1FS)
+        were examined following stimulant paste application. Increased oleoresin yields
+        observed in stimulated treatments using phytohormone-based pastes were consistent
+        with higher expression of pinene synthases. Overall, the expression of all
+        genes examined matched the expected profiles of oleoresin-related transcript
+        changes reported for previously examined conifers.", "subject": [{"scheme":
+        "LCC", "term": "Plant culture", "code": "SB1-1110"}]}, "created_date": "2018-01-23T08:05:12Z"},
+        {"last_updated": "2018-07-02T09:17:42Z", "id": "12c619ddc33749299719a880c74e6bcf",
+        "bibjson": {"start_page": "16", "author": [{"affiliation": "Idaho National
+        Laboratory, 750 University Blvd., Energy Systems Laboratory, PO: Box: 1625,
+        Idaho Falls, ID 83415, USA", "name": "Jaya Shankar Tumuluru"}], "journal":
+        {"publisher": "MDPI AG", "language": ["EN"], "license": [{"url": "http://www.mdpi.com/about/openaccess",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Bioengineering",
+        "country": "CH", "number": "2", "volume": "3", "issns": ["2306-5354"]}, "title":
+        "Effect of Deep Drying and Torrefaction Temperature on Proximate, Ultimate
+        Composition, and Heating Value of 2-mm Lodgepole Pine (Pinus contorta) Grind",
+        "month": "6", "link": [{"url": "http://www.mdpi.com/2306-5354/3/2/16", "type":
+        "fulltext", "content_type": "pdf"}], "year": "2016", "keywords": ["lodgepole
+        pine", "torrefaction", "thermogravimetric analysis", "proximate and ultimate
+        composition"], "identifier": [{"type": "eissn", "id": "2306-5354"}, {"type":
+        "doi", "id": "10.3390/bioengineering3020016"}], "abstract": "Deep drying and
+        torrefaction compose a thermal pretreatment method where biomass is heated
+        in the temperature range of 150\u2013300 \u00b0C in an inert or reduced environment.
+        The process parameters, like torrefaction temperature and residence time,
+        have a significant impact on the proximate, ultimate, and energy properties.
+        In this study, torrefaction experiments were conducted on 2-mm ground lodgepole
+        pine (Pinus contorta) using a thermogravimetric analyzer. Both deep drying
+        and torrefaction temperature (160\u2013270 \u00b0C) and time (15\u2013120
+        min) were selected. Torrefied samples were analyzed for the proximate, ultimate,
+        and higher heating value. The results indicate that moisture content decreases
+        with increases in torrefaction temperature and time, where at 270 \u00b0C
+        and 120 min, the moisture content is found to be 1.15% (w.b.). Volatile content
+        in the lodgepole pine decreased from about 80% to about 45%, and ash content
+        increased from 0.77% to about 1.91% at 270 \u00b0C and 120 min. The hydrogen,
+        oxygen, and sulfur content decreased to 3%, 28.24%, and 0.01%, whereas the
+        carbon content and higher heating value increased to 68.86% and 23.67 MJ/kg
+        at 270 \u00b0C and 120 min. Elemental ratio of hydrogen to carbon and oxygen
+        to carbon (H/C and O/C) calculated at 270 \u00b0C and a 120-min residence
+        time were about 0.56 and 0.47. Based on this study, it can be concluded that
+        higher torrefaction temperatures \u2265230 \u00b0C and residence time \u226515
+        min influence the proximate, ultimate, and energy properties of ground lodgepole
+        pine.", "subject": [{"scheme": "LCC", "term": "Technology", "code": "T"},
+        {"scheme": "LCC", "term": "Biology (General)", "code": "QH301-705.5"}]}, "created_date":
+        "2016-06-23T03:00:30Z"}, {"last_updated": "2017-12-11T18:07:57Z", "id": "380d59ca39f543d0a7b3ad35e4ba2eb4",
+        "bibjson": {"start_page": "e0147004", "author": [{"name": "Sofia B\u00e4cklund"},
+        {"name": "Mari J\u00f6nsson"}, {"name": "Joachim Strengbom"}, {"name": "Andreas
+        Frisch"}, {"name": "G\u00f6ran Thor"}], "journal": {"publisher": "Public Library
+        of Science (PLoS)", "language": ["EN"], "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "1", "volume": "11", "issns": ["1932-6203"]}, "title":
+        "A Pine Is a Pine and a Spruce Is a Spruce--The Effect of Tree Species and
+        Stand Age on Epiphytic Lichen Communities.", "month": "0", "link": [{"url":
+        "http://europepmc.org/articles/PMC4723141?pdf=render", "type": "fulltext"}],
+        "year": "2016", "identifier": [{"type": "eissn", "id": "1932-6203"}, {"type":
+        "doi", "id": "10.1371/journal.pone.0147004"}], "abstract": "With an increasing
+        demand for forest-based products, there is a growing interest in introducing
+        fast-growing non-native tree species in forest management. Such introductions
+        often have unknown consequences for native forest biodiversity. In this study,
+        we examine epiphytic lichen species richness and species composition on the
+        trunks of non-native Pinus contorta and compare these to the native Pinus
+        sylvestris and Picea abies in managed boreal forests in northern Sweden across
+        a chronosequence of age classes. Overall, we recorded a total of 66,209 lichen
+        occurrences belonging to 57 species in the 96 studied forest stands. We found
+        no difference in species richness of lichens between stands of P. contorta
+        and P. sylvestris, but stands of P. abies had higher total species richness.
+        However, species richness of lichens in stands of P. abies decreased with
+        increasing stand age, while no such age effect was detected for P. contorta
+        and P. sylvestris. Lichen species composition progressively diverged with
+        increasing stand age, and in 30-year-old stands all three tree species showed
+        species-specific assemblages. Epiphytic lichen assemblages in stands of 30-year-old
+        P. contorta were influenced by greater basal area, canopy closure, and average
+        diameter at breast height, P. abies stands by higher branch density and canopy
+        closure, and stands of P. sylvestris by greater bark crevice depth. Differences
+        in lichen species richness and composition were mainly explained by canopy
+        closure and habitat availability, and the greater canopy closure in mature
+        P. abies stands promoted the colonization and growth of calicioid lichen species.
+        Our results indicate that the non-native P. contorta have similar species
+        richness as the native P. sylvestris. The main difference in lichen species
+        richness and composition is between P. abies and Pinus spp. in managed forests
+        of boreal Sweden.", "subject": [{"scheme": "LCC", "term": "Medicine", "code":
+        "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}]}, "created_date":
+        "2016-06-10T13:00:49Z"}, {"last_updated": "2017-12-11T18:48:25Z", "id": "44cfe28619f54e2794141573189188d6",
+        "bibjson": {"start_page": "e0124691", "author": [{"name": "Gregory J Pec"},
+        {"name": "Justine Karst"}, {"name": "Alexandra N Sywenky"}, {"name": "Paul
+        W Cigan"}, {"name": "Nadir Erbilgin"}, {"name": "Suzanne W Simard"}, {"name":
+        "James F Cahill"}], "journal": {"publisher": "Public Library of Science (PLoS)",
+        "language": ["EN"], "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "4", "volume": "10", "issns": ["1932-6203"]}, "title":
+        "Rapid Increases in forest understory diversity and productivity following
+        a mountain pine beetle (Dendroctonus ponderosae) outbreak in pine forests.",
+        "month": "0", "link": [{"url": "http://europepmc.org/articles/PMC4393282?pdf=render",
+        "type": "fulltext"}], "year": "2015", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0124691"}], "abstract":
+        "The current unprecedented outbreak of mountain pine beetle (Dendroctonus
+        ponderosae) in lodgepole pine (Pinus contorta) forests of western Canada has
+        resulted in a landscape consisting of a mosaic of forest stands at different
+        stages of mortality. Within forest stands, understory communities are the
+        reservoir of the majority of plant species diversity and influence the composition
+        of future forests in response to disturbance. Although changes to stand composition
+        following beetle outbreaks are well documented, information on immediate responses
+        of forest understory plant communities is limited. The objective of this study
+        was to examine the effects of D. ponderosae-induced tree mortality on initial
+        changes in diversity and productivity of understory plant communities. We
+        established a total of 110 1-m2 plots across eleven mature lodgepole pine
+        forests to measure changes in understory diversity and productivity as a function
+        of tree mortality and below ground resource availability across multiple years.
+        Overall, understory community diversity and productivity increased across
+        the gradient of increased tree mortality. Richness of herbaceous perennials
+        increased with tree mortality as well as soil moisture and nutrient levels.
+        In contrast, the diversity of woody perennials did not change across the gradient
+        of tree mortality. Understory vegetation, namely herbaceous perennials, showed
+        an immediate response to improved growing conditions caused by increases in
+        tree mortality. How this increased pulse in understory richness and productivity
+        affects future forest trajectories in a novel system is unknown.", "subject":
+        [{"scheme": "LCC", "term": "Medicine", "code": "R"}, {"scheme": "LCC", "term":
+        "Science", "code": "Q"}]}, "created_date": "2016-06-10T12:05:23Z"}, {"last_updated":
+        "2018-01-02T13:53:16Z", "id": "3d6ac1422c2046d78e990c35854232ef", "bibjson":
+        {"end_page": "3500", "start_page": "3483", "author": [{"affiliation": "Mixedwood
+        Ecology and Management Program, University of Northern British Columbia,  3333
+        University Way, Prince George, BC V2N 4Z9, Canada", "name": "Amalesh Dhar"},
+        {"affiliation": "Mixedwood Ecology and Management Program, University of Northern
+        British Columbia,  3333 University Way, Prince George, BC V2N 4Z9, Canada",
+        "name": "Nicole A. Balliet"}, {"affiliation": "Mixedwood Ecology and Management
+        Program, University of Northern British Columbia,  3333 University Way, Prince
+        George, BC V2N 4Z9, Canada", "name": "Kyle D. Runzer"}, {"affiliation": "Mixedwood
+        Ecology and Management Program, University of Northern British Columbia,  3333
+        University Way, Prince George, BC V2N 4Z9, Canada", "name": "Christopher D.
+        B. Hawkins"}], "abstract": "The current mountain pine beetle (MPB) (Dendroctonous
+        ponderosae Hopkins) epidemic has severely affected pine forests of Western
+        Canada and killed millions of hectares of lodgepole pine (Pinus contorta Dougl.
+        ex Loud. var. latifolia Engelm.) forest. Generally, MPB attack larger and
+        older (diameter &gt; 20 cm or &gt;60 years of age) trees, but the current
+        epidemic extends this limit with attacks on even younger and smaller trees.
+        The study\u2019s aim was to investigate the extent of MPB attack in young
+        pine stands and its possible impact on stand dynamics. Although MPB attacks
+        were observed in trees as small as 7.5 cm diameter at breast height (DBH)
+        and as young as 13 years old, the degree of MPB attack (percent stems ha\u22121)
+        increased with increasing tree diameter and age class (13\u201320, 21\u201340,
+        41\u201360, and 61\u201380 years old) (6.4%, 49.4%, 62.6%, and 69.5% attack,
+        respectively, by age class) which is greater than that reported from previous
+        epidemics for stands of this age. The mean density of surviving residual structure
+        varied widely among age classes and ecological subzones. Depending on age
+        class, 65% to 77% of the attacked stands could contribute to mid-term timber
+        supply. The surviving residual structure of young stands offers an opportunity
+        to mitigate the effects of MPB-attack on future timber supply, increase age
+        class diversity, and enhance ecological resilience in younger stands.", "title":
+        "Impact of a Mountain Pine Beetle Outbreak on Young Lodgepole Pine Stands
+        in Central British Columbia", "month": "9", "link": [{"url": "http://www.mdpi.com/1999-4907/6/10/3483",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2015", "keywords": ["ecological
+        zone", "lodgepole pine", "mid-term timber supply", "mountain pine beetle",
+        "residual trees", "stocking"], "identifier": [{"type": "eissn", "id": "1999-4907"},
+        {"type": "doi", "id": "10.3390/f6103483"}], "journal": {"publisher": "MDPI
+        AG", "language": ["EN"], "license": [{"url": "http://www.mdpi.com/journal/forests/about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Forests",
+        "country": "CH", "number": "10", "volume": "6", "issns": ["1999-4907"]}, "subject":
+        [{"scheme": "LCC", "term": "Plant ecology", "code": "QK900-989"}]}, "created_date":
+        "2015-10-01T07:30:07Z"}, {"last_updated": "2018-03-25T04:31:40Z", "id": "d523690594d04b00a6d3fb34a5dd5bad",
+        "bibjson": {"start_page": "e110673", "author": [{"name": "Caitlin Pitt"},
+        {"name": "Jeanne A Robert"}, {"name": "Tiffany R Bonnett"}, {"name": "Christopher
+        I Keeling"}, {"name": "J\u00f6rg Bohlmann"}, {"name": "Dezene P W Huber"}],
+        "journal": {"publisher": "Public Library of Science (PLoS)", "language": ["EN"],
+        "license": [{"url": "http://journals.plos.org/plosone/s/content-license",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "PLoS ONE",
+        "country": "US", "number": "10", "volume": "9", "issns": ["1932-6203"]}, "title":
+        "Proteomics indicators of the rapidly shifting physiology from whole mountain
+        pine beetle, Dendroctonus ponderosae (Coleoptera: Curculionidae), adults during
+        early host colonization.", "month": "0", "link": [{"url": "http://europepmc.org/articles/PMC4215907?pdf=render",
+        "type": "fulltext"}], "year": "2014", "identifier": [{"type": "eissn", "id":
+        "1932-6203"}, {"type": "doi", "id": "10.1371/journal.pone.0110673"}], "abstract":
+        "We developed proteome profiles for host colonizing mountain pine beetle adults,
+        Dendroctonus ponderosae Hopkins (Coleoptera: Curculionidae). Adult insects
+        were fed in pairs on fresh host lodgepole pine, Pinus contorta Dougl. ex Loud,
+        phloem tissue. The proteomes of fed individuals were monitored using iTRAQ
+        and compared to those of starved beetles, revealing 757 and 739 expressed
+        proteins in females and males, respectively, for which quantitative information
+        was obtained. Overall functional category distributions were similar for males
+        and females, with the majority of proteins falling under carbohydrate metabolism
+        (glycolysis, gluconeogenesis, citric acid cycle), structure (cuticle, muscle,
+        cytoskeleton), and protein and amino acid metabolism. Females had 23 proteins
+        with levels that changed significantly with feeding (p<0.05, FDR<0.20), including
+        chaperones and enzymes required for vitellogenesis. In males, levels of 29
+        proteins changed significantly with feeding (p<0.05, FDR<0.20), including
+        chaperones as well as motor proteins. Only two proteins, both chaperones,
+        exhibited a significant change in both females and males with feeding. Proteins
+        with differential accumulation patterns in females exhibited higher fold changes
+        with feeding than did those in males. This difference may be due to major
+        and rapid physiological changes occurring in females upon finding a host tree
+        during the physiological shift from dispersal to reproduction. The significant
+        accumulation of chaperone proteins, a cytochrome P450, and a glutathione S-transferase,
+        indicate secondary metabolite-induced stress physiology related to chemical
+        detoxification during early host colonization. The females'' activation of
+        vitellogenin only after encountering a host indicates deliberate partitioning
+        of resources and a balancing of the needs of dispersal and reproduction.",
+        "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"}, {"scheme":
+        "LCC", "term": "Science", "code": "Q"}]}, "created_date": "2016-06-15T03:02:04Z"}],
+        "next": "https://doaj.org/api/v1/search/articles/Pinus%20contorta?sort=year%3Adesc&page=2&pageSize=30",
+        "query": "Pinus contorta", "total": 55, "page": 1}'
+  recorded_at: 2018-10-29 17:38:51 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

@@ -1,0 +1,289 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=1&pageSize=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-origin: '*'
+      connection: keep-alive
+      content-encoding: gzip
+      content-type: application/json
+      date: Mon, 29 Oct 2018 17:41:10 GMT
+      link: <https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=9&pageSize=10>;
+        rel=last, <https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10>;
+        rel=next
+      server: nginx/1.4.6 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      x-total-count: '82'
+    body:
+      encoding: UTF-8
+      string: '{"last": "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=9&pageSize=10",
+        "pageSize": 10, "timestamp": "2018-1029T17:41:10Z", "results": [{"last_updated":
+        "2018-05-10T09:57:15Z", "id": "02233e98710842d4a296c3dc7e472aa4", "bibjson":
+        {"allows_fulltext_indexing": true, "author_publishing_rights": {"url": "",
+        "publishing_rights": "False"}, "keywords": ["cultural heritage"], "subject":
+        [{"code": "GN301-674", "term": "Ethnology. Social and cultural anthropology",
+        "scheme": "LCC"}], "article_statistics": {"url": "", "statistics": false},
+        "title": "Journal Sampurasun", "publication_time": 24, "provider": "OJS",
+        "format": ["PDF"], "plagiarism_detection": {"detection": false, "url": ""},
+        "apc_url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee", "link":
+        [{"url": "https://journal.unpas.ac.id/index.php/sampurasun", "type": "homepage"},
+        {"url": "https://journal.unpas.ac.id/index.php/sampurasun/EditorialTeam",
+        "type": "editorial_board"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/FocusandScope",
+        "type": "aims_scope"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorGuidelines",
+        "type": "author_instructions"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/OpenAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2016}, "editorial_review":
+        {"process": "Peer review", "url": "https://journal.unpas.ac.id/index.php/sampurasun/PeerReviewProcess"},
+        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Universitas
+        Pasundan", "language": ["EN", "ID"], "license": [{"open_access": true, "embedded":
+        false, "title": "CC BY", "url": "https://journal.unpas.ac.id/index.php/sampurasun/CopyrightNotice",
+        "NC": false, "ND": false, "embedded_example_url": "", "SA": false, "type":
+        "CC BY", "BY": true}], "alternative_title": "Sampurasun Interdisciplinary
+        Studies for Cultural Heritage", "country": "ID", "submission_charges_url":
+        "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee", "identifier":
+        [{"type": "pissn", "id": "2460-5735"}, {"type": "eissn", "id": "2460-5743"}]},
+        "created_date": "2017-06-30T14:29:20Z"}, {"last_updated": "2018-05-10T09:58:58Z",
+        "id": "1642c0a3d74d4218951a597b3ed1193e", "bibjson": {"allows_fulltext_indexing":
+        true, "author_publishing_rights": {"url": "", "publishing_rights": "False"},
+        "keywords": ["cultural heritage"], "subject": [{"code": "N", "term": "Fine
+        Arts", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
+        false}, "title": "In Situ : Revue de Patrimoines", "publication_time": 40,
+        "provider": "revues.org", "format": ["PDF", "HTML"], "plagiarism_detection":
+        {"detection": false, "url": ""}, "apc_url": "http://insitu.revues.org/?page=informations",
+        "link": [{"url": "http://insitu.revues.org/", "type": "homepage"}, {"url":
+        "http://insitu.revues.org/400", "type": "editorial_board"}, {"url": "http://insitu.revues.org/399",
+        "type": "aims_scope"}, {"url": "http://insitu.revues.org/401", "type": "author_instructions"},
+        {"url": "http://insitu.revues.org/?page=informations", "type": "oa_statement"}],
+        "active": true, "oa_start": {"year": 2001}, "editorial_review": {"process":
+        "Peer review", "url": "http://insitu.revues.org/399"}, "author_copyright":
+        {"url": "", "copyright": "False"}, "publisher": "Minist\u00e8re de la Culture
+        et de la Communication", "language": ["FR"], "license": [{"open_access": true,
+        "embedded": true, "title": "CC BY-NC-ND", "url": "http://insitu.revues.org/?page=informations",
+        "NC": true, "ND": true, "embedded_example_url": "https://insitu.revues.org/12009",
+        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "FR", "submission_charges_url":
+        "http://insitu.revues.org/?page=informations", "identifier": [{"type": "eissn",
+        "id": "1630-7305"}]}, "created_date": "2012-07-13T10:25:34Z"}, {"last_updated":
+        "2018-05-10T10:06:11Z", "id": "6f6f2f3ebd6143589a95b54b50480a16", "bibjson":
+        {"allows_fulltext_indexing": true, "archiving_policy": {"url": "http://jurnallektur.kemenag.go.id/index.php/heritage/gateway/lockss"},
+        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "keywords":
+        ["heritage", "religious heritage", "religious literature"], "subject": [{"code":
+        "BL1-50", "term": "Religion (General)", "scheme": "LCC"}], "article_statistics":
+        {"url": "", "statistics": false}, "title": "Heritage of Nusantara: International
+        Journal of Religious Literature and Heritage", "publication_time": 24, "provider":
+        "OJS", "format": ["PDF"], "plagiarism_detection": {"detection": true, "url":
+        "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#custom-2"},
+        "apc_url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#custom-1",
+        "link": [{"url": "http://jurnallektur.kemenag.go.id/index.php/heritage", "type":
+        "homepage"}, {"url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialTeam",
+        "type": "editorial_board"}, {"url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/submissions#authorGuidelines",
+        "type": "author_instructions"}, {"url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2012}, "editorial_review":
+        {"process": "Double blind peer review", "url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#peerReviewProcess"},
+        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Center
+        for Research and Development of Religious Literature and Heritage; Agency
+        for Research and Development; Training Ministry of Religious Affairs of the
+        Republic of Indonesia", "language": ["AR", "EN"], "license": [{"open_access":
+        true, "embedded": true, "title": "CC BY-SA", "url": "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#openAccessPolicy",
+        "NC": false, "ND": false, "embedded_example_url": "http://jurnallektur.kemenag.go.id/index.php/heritage/article/view/96/129",
+        "SA": true, "type": "CC BY-SA", "BY": true}], "country": "ID", "submission_charges_url":
+        "http://jurnallektur.kemenag.go.id/index.php/heritage/about/editorialPolicies#custom-1",
+        "identifier": [{"type": "pissn", "id": "2303-243X"}, {"type": "eissn", "id":
+        "2442-9031"}]}, "created_date": "2016-06-03T15:42:29Z"}, {"last_updated":
+        "2018-05-10T10:10:48Z", "id": "a77592b0bc7043ad89370fc34bafb61e", "bibjson":
+        {"allows_fulltext_indexing": true, "archiving_policy": {"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#openAccessPolicy",
+        "known": ["LOCKSS"]}, "author_publishing_rights": {"url": "", "publishing_rights":
+        "False"}, "keywords": ["museology", "heritage"], "deposit_policy": ["Diadorim"],
+        "article_statistics": {"url": "", "statistics": false}, "title": "Museologia
+        e Patrim\u00f4nio ", "publication_time": 24, "provider": "OJS", "subject":
+        [{"code": "A", "term": "General Works", "scheme": "LCC"}, {"code": "AM1-501",
+        "term": "Museums. Collectors and collecting", "scheme": "LCC"}], "format":
+        ["PDF"], "plagiarism_detection": {"detection": false, "url": ""}, "apc_url":
+        "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#openAccessPolicy",
+        "link": [{"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus",
+        "type": "homepage"}, {"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialTeam",
+        "type": "editorial_board"}, {"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#custom0",
+        "type": "author_instructions"}, {"url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2008}, "editorial_review":
+        {"process": "Double blind peer review", "url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#peerReviewProcess"},
+        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Programa
+        de P\u00f3s-Gradua\u00e7\u00e3o em Museologia e Patrim\u00f4nio da Universidade
+        Federal do Estado do Rio de Janeiro", "publisher": "Universidade Federal do
+        Estado do Rio de Janeiro", "language": ["EN", "PT", "ES"], "license": [{"open_access":
+        true, "embedded": false, "title": "CC BY-NC", "url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#focusAndScope",
+        "NC": true, "ND": false, "embedded_example_url": "", "SA": false, "type":
+        "CC BY-NC", "BY": true}], "country": "BR", "submission_charges_url": "http://revistamuseologiaepatrimonio.mast.br/index.php/ppgpmus/about/editorialPolicies#openAccessPolicy",
+        "identifier": [{"type": "eissn", "id": "1984-3917"}]}, "created_date": "2016-01-21T13:31:24Z"},
+        {"last_updated": "2018-05-22T11:05:03Z", "id": "2c6c1e5250644b33b18739f65ebd3b07",
+        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
+        "http://gtg.webhost.uoradea.ro/archive.html"}, "persistent_identifier_scheme":
+        ["DOI"], "keywords": ["tourism", "geosites", "heritage", "geography"], "apc":
+        {"currency": "EUR", "average_price": 190}, "subject": [{"code": "G", "term":
+        "Geography. Anthropology. Recreation", "scheme": "LCC"}, {"code": "G1-922",
+        "term": "Geography (General)", "scheme": "LCC"}], "article_statistics": {"url":
+        "", "statistics": false}, "title": "Geo Journal of Tourism and Geosites",
+        "publication_time": 24, "format": ["PDF"], "plagiarism_detection": {"detection":
+        false, "url": ""}, "apc_url": "http://gtg.webhost.uoradea.ro/publication.html",
+        "link": [{"url": "http://gtg.webhost.uoradea.ro/", "type": "homepage"}, {"url":
+        "http://gtg.webhost.uoradea.ro/editorial.html", "type": "editorial_board"},
+        {"url": "http://gtg.webhost.uoradea.ro/aims.html", "type": "aims_scope"},
+        {"url": "http://gtg.webhost.uoradea.ro/publication.html", "type": "author_instructions"},
+        {"url": "http://gtg.webhost.uoradea.ro/", "type": "oa_statement"}], "active":
+        true, "oa_start": {"year": 2008}, "editorial_review": {"process": "Double
+        blind peer review", "url": "http://gtg.webhost.uoradea.ro/metods.html"}, "author_copyright":
+        {"url": "", "copyright": "False"}, "institution": "University of Oradea",
+        "publisher": "Editura Universit\u0103\u0163ii din Oradea", "language": ["EN"],
+        "license": [{"open_access": true, "embedded": false, "title": "CC BY-NC-ND",
+        "url": "http://gtg.webhost.uoradea.ro/ethics.html", "NC": true, "ND": true,
+        "embedded_example_url": "", "SA": false, "type": "CC BY-NC-ND", "BY": true}],
+        "country": "RO", "submission_charges_url": "http://gtg.webhost.uoradea.ro/publication.html",
+        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
+        [{"type": "pissn", "id": "2065-0817"}, {"type": "eissn", "id": "2065-1198"}]},
+        "created_date": "2018-05-22T11:05:03Z"}, {"last_updated": "2018-05-10T10:01:37Z",
+        "id": "3811243d06f7401ca906630fbe9da768", "bibjson": {"allows_fulltext_indexing":
+        true, "author_publishing_rights": {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#copyrightNotice",
+        "publishing_rights": "True"}, "keywords": ["cultural heritage", "archaelogy",
+        "anthropology"], "subject": [{"code": "GN1-890", "term": "Anthropology", "scheme":
+        "LCC"}, {"code": "CC1-960", "term": "Archaeology", "scheme": "LCC"}], "article_statistics":
+        {"url": "", "statistics": false}, "title": "Cadernos do LEPAARQ", "publication_time":
+        20, "provider": "OJS", "format": ["PDF"], "plagiarism_detection": {"detection":
+        false, "url": ""}, "apc_url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#copyrightNotice",
+        "link": [{"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/index",
+        "type": "homepage"}, {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/editorialTeam",
+        "type": "editorial_board"}, {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#authorGuidelines",
+        "type": "author_instructions"}, {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2004}, "editorial_review":
+        {"process": "Peer review", "url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/editorialPolicies#peerReviewProcess"},
+        "author_copyright": {"url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#copyrightNotice",
+        "copyright": "True"}, "institution": "Universidade Federal de Pelotas, Laborat\u00f3rio
+        de Ensino e Pesquisa em Antropologia e Arqueologia", "publisher": "Universidade
+        Federal de Pelotas", "language": ["PT"], "license": [{"open_access": true,
+        "embedded": true, "title": "CC BY-NC", "url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#copyrightNotice",
+        "NC": true, "ND": false, "embedded_example_url": "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/article/view/741",
+        "SA": false, "type": "CC BY-NC", "BY": true}], "alternative_title": "Cadernos
+        do LEPAARQ: Revista do Laborat\u00f3rio de Ensino e Pesquisa em Antropologia
+        e Arqueologia da Universidade Federal de Pelotas", "country": "BR", "submission_charges_url":
+        "https://periodicos.ufpel.edu.br/ojs2/index.php/lepaarq/about/submissions#copyrightNotice",
+        "identifier": [{"type": "pissn", "id": "1806-9118"}, {"type": "eissn", "id":
+        "2316-8412"}]}, "created_date": "2016-02-17T15:50:04Z"}, {"last_updated":
+        "2018-06-12T10:37:15Z", "id": "b90fdc6d57e7474c80d5e1cad7619b49", "bibjson":
+        {"allows_fulltext_indexing": true, "archiving_policy": {"url": "https://thekeepers.org/purl/issn/0102-0420",
+        "other": "Cariniana Network"}, "persistent_identifier_scheme": ["DOI"], "keywords":
+        ["archeology", "heritage", "Brazil", "history"], "subject": [{"code": "CC1-960",
+        "term": "Archaeology", "scheme": "LCC"}], "article_statistics": {"url": "",
+        "statistics": false}, "title": "Revista de Arqueologia", "publication_time":
+        24, "format": ["PDF"], "provider": "OJS", "deposit_policy": ["Diadorim"],
+        "plagiarism_detection": {"detection": true, "url": "http://revista.sabnet.com.br/revista/index.php/SAB/about"},
+        "apc_url": "http://revista.sabnet.com.br/revista/index.php/SAB/about", "link":
+        [{"url": "http://www.revista.sabnet.com.br", "type": "homepage"}, {"url":
+        "http://www.revista.sabnet.com.br/revista/index.php/SAB/about/editorialTeam",
+        "type": "editorial_board"}, {"url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "type": "aims_scope"}, {"url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about/submissions",
+        "type": "author_instructions"}, {"url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "type": "oa_statement"}], "oa_start": {"year": 1983}, "editorial_review":
+        {"process": "Double blind peer review", "url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about"},
+        "author_copyright": {"url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "copyright": "True"}, "institution": "Sociedade de Arqueologia Brasileira",
+        "publisher": "Sociedade de Arqueologia Brasileira", "language": ["PT"], "license":
+        [{"open_access": true, "embedded": false, "title": "CC BY-SA", "url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "NC": false, "ND": false, "embedded_example_url": "", "SA": true, "type":
+        "CC BY-SA", "BY": true}], "alternative_title": "Revista de Arqueologia da
+        SAB", "country": "BR", "submission_charges_url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "author_publishing_rights": {"url": "http://www.revista.sabnet.com.br/revista/index.php/SAB/about",
+        "publishing_rights": "True"}, "identifier": [{"type": "pissn", "id": "0102-0420"},
+        {"type": "eissn", "id": "1982-1999"}]}, "created_date": "2018-04-04T11:14:37Z"},
+        {"last_updated": "2018-10-24T19:25:59Z", "id": "7f2c0627a350469a91485e0b87313803",
+        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
+        "https://revistas.ucm.es/index.php/ANHA"}, "persistent_identifier_scheme":
+        ["DOI"], "keywords": ["heritage", "art", "history"], "subject": [{"code":
+        "N", "term": "Fine Arts", "scheme": "LCC"}, {"code": "NX1-820", "term": "Arts
+        in general", "scheme": "LCC"}, {"code": "NX440-632", "term": "History of the
+        arts", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
+        false}, "title": "Anales de Historia del Arte", "publication_time": 9, "format":
+        ["PDF"], "plagiarism_detection": {"detection": false, "url": ""}, "apc_url":
+        "https://revistas.ucm.es/index.php/ANHA/about/editorialPolicies#openAccessPolicy",
+        "link": [{"url": "https://revistas.ucm.es/index.php/ANHA", "type": "homepage"},
+        {"url": "https://revistas.ucm.es/index.php/ANHA/pages/view/equipo", "type":
+        "editorial_board"}, {"url": "https://revistas.ucm.es/index.php/ANHA/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "http://revistas.ucm.es/index.php/ANHA/about/submissions#onlineSubmissions",
+        "type": "author_instructions"}, {"url": "http://revistas.ucm.es/index.php/ANHA/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2005}, "editorial_review":
+        {"process": "Double blind peer review", "url": "https://revistas.ucm.es/index.php/ANHA/about/editorialPolicies#custom-2"},
+        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Universidad
+        Complutense de Madrid", "language": ["EN", "ES"], "license": [{"open_access":
+        true, "embedded": false, "title": "CC BY", "url": "https://revistas.ucm.es/index.php/ANHA",
+        "NC": false, "ND": false, "embedded_example_url": "", "SA": false, "type":
+        "CC BY", "BY": true}], "country": "ES", "submission_charges_url": "https://revistas.ucm.es/index.php/ANHA/about/editorialPolicies#openAccessPolicy",
+        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
+        [{"type": "pissn", "id": "0214-6452"}, {"type": "eissn", "id": "1988-2491"}]},
+        "created_date": "2018-10-24T19:25:59Z"}, {"last_updated": "2018-06-12T10:37:45Z",
+        "id": "ff06c33010a24fa08101dd61902692a1", "bibjson": {"allows_fulltext_indexing":
+        true, "author_publishing_rights": {"url": "http://revistes.ub.edu/index.php/ara/about/submissions#copyrightNotice",
+        "publishing_rights": "True"}, "keywords": ["tourism research", "sustainability",
+        "heritage"], "deposit_policy": ["Dulcinea"], "article_statistics": {"url":
+        "", "statistics": false}, "title": "ARA: Revista de Investigaci\u00f3n en
+        Turismo", "publication_time": 8, "provider": "OJS", "subject": [{"code": "GV181.35-181.6",
+        "term": "Recreation leadership. Administration of recreation services", "scheme":
+        "LCC"}, {"code": "HT321-325", "term": "The city as an economic factor. City
+        promotion", "scheme": "LCC"}], "format": ["PDF"], "plagiarism_detection":
+        {"detection": false, "url": ""}, "apc_url": "http://revistes.ub.edu/index.php/ara/about/editorialPolicies#openAccessPolicy",
+        "link": [{"url": "http://revistes.ub.edu/index.php/ara/index", "type": "homepage"},
+        {"url": "http://revistes.ub.edu/index.php/ara/about/editorialTeam", "type":
+        "editorial_board"}, {"url": "http://revistes.ub.edu/index.php/ara/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "http://revistes.ub.edu/index.php/ara/about/submissions#authorGuidelines",
+        "type": "author_instructions"}, {"url": "http://revistes.ub.edu/index.php/ara/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "oa_start": {"year": 2008}, "editorial_review":
+        {"process": "Double blind peer review", "url": "http://revistes.ub.edu/index.php/ara/about/editorialPolicies#peerReviewProcess"},
+        "author_copyright": {"url": "http://revistes.ub.edu/index.php/ara/about/submissions#copyrightNotice",
+        "copyright": "True"}, "institution": "Universitat de Barcelona", "publisher":
+        "Universitat de Barcelona", "language": ["EN", "ES"], "license": [{"open_access":
+        true, "embedded": false, "title": "CC BY-NC-ND", "url": "http://revistes.ub.edu/index.php/ara/about/submissions#copyrightNotice",
+        "NC": true, "ND": true, "embedded_example_url": "", "SA": false, "type": "CC
+        BY-NC-ND", "BY": true}], "country": "ES", "submission_charges_url": "http://revistes.ub.edu/index.php/ara/about/editorialPolicies#openAccessPolicy",
+        "identifier": [{"type": "eissn", "id": "2014-4458"}]}, "created_date": "2018-02-11T13:58:22Z"},
+        {"last_updated": "2018-05-10T10:01:39Z", "id": "3858157c002e4fd5b20c8f7b44b2f35b",
+        "bibjson": {"allows_fulltext_indexing": false, "author_publishing_rights":
+        {"url": "", "publishing_rights": "False"}, "keywords": ["archeology", "heritage",
+        "memory", "identity"], "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
+        {"url": "", "statistics": false}, "title": "Revista Memorare", "publication_time":
+        12, "provider": "OJS", "subject": [{"code": "GN301-674", "term": "Ethnology.
+        Social and cultural anthropology", "scheme": "LCC"}, {"code": "C", "term":
+        "Auxiliary sciences of history", "scheme": "LCC"}, {"code": "CC1-960", "term":
+        "Archaeology", "scheme": "LCC"}], "format": ["PDF"], "plagiarism_detection":
+        {"detection": false, "url": ""}, "apc_url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialPolicies#focusAndScope",
+        "link": [{"url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep",
+        "type": "homepage"}, {"url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialTeam",
+        "type": "editorial_board"}, {"url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialPolicies#focusAndScope",
+        "type": "aims_scope"}, {"url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/submissions#authorGuidelines",
+        "type": "author_instructions"}, {"url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialPolicies#openAccessPolicy",
+        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2013}, "editorial_review":
+        {"process": "Peer review", "url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialPolicies#peerReviewProcess"},
+        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Grupo
+        de Pesquisa em Arqueologia e Educa\u00e7\u00e3o Patrimonial", "publisher":
+        "Universidade do Sul de Santa Catarina", "language": ["PT"], "license": [{"open_access":
+        true, "embedded": true, "title": "CC BY", "url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/index",
+        "NC": false, "ND": false, "embedded_example_url": "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/article/view/3337",
+        "SA": false, "type": "CC BY", "BY": true}], "country": "BR", "submission_charges_url":
+        "http://www.portaldeperiodicos.unisul.br/index.php/memorare_grupep/about/editorialPolicies#focusAndScope",
+        "identifier": [{"type": "eissn", "id": "2358-0593"}]}, "created_date": "2016-03-09T14:17:59Z"}],
+        "next": "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10",
+        "query": "bibjson.keywords:heritage", "total": 82, "page": 1}'
+  recorded_at: 2018-10-29 17:41:10 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

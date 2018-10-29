@@ -1,0 +1,47 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/articles/0005e11ec616453f854070069385e057
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-origin: '*'
+      connection: keep-alive
+      content-encoding: gzip
+      content-type: application/json
+      date: Mon, 29 Oct 2018 17:37:31 GMT
+      server: nginx/1.4.6 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"admin": {"seal": true, "upload_id": "f5bc15c78aa341eda23d2ba578107cbc",
+        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2017-12-11T13:54:49Z",
+        "id": "0005e11ec616453f854070069385e057", "bibjson": {"title": "Where in the
+        brain are the genes expressed", "journal": {"publisher": "Frontiers Media
+        S.A.", "language": ["EN"], "license": [{"url": "http://journal.frontiersin.org/journal/neuroinformatics#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Frontiers
+        in Neuroinformatics", "country": "CH", "volume": "2"}, "author": [{"affiliation":
+        "Centre for Molecular Biology and Neuroscience & Institute for basic medical
+        sciences, Univ Oslo", "name": "Trygve B Leergaard"}, {"affiliation": "San
+        Diego Supercomputer Center, UCSD", "name": "Ilya Zaslavsky"}], "month": "4",
+        "link": [{"url": "http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2008", "identifier":
+        [{"type": "eissn", "id": "1662-5196"}, {"type": "doi", "id": "10.3389/neuro.11.009.2007"}],
+        "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological psychiatry.
+        Neuropsychiatry", "code": "RC321-571"}]}, "created_date": "2014-05-22T09:30:38Z"}'
+  recorded_at: 2018-10-29 17:37:31 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

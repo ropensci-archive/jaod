@@ -7,7 +7,7 @@ Description: Client for the Directory of Open Access Journals ('DOAJ')
     all 'DOAJ' API routes: fetch article information by identifier,
     search for articles, fetch journal information by identifier,
     and search for journals.
-Version: 0.1.1.9100
+Version: 0.1.1.9300
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus+r@gmail.com", 
@@ -26,5 +26,6 @@ Imports:
     tibble (>= 1.3.4)
 Suggests:
     roxygen2 (>= 6.1.0),
-    testthat
+    testthat,
+    vcr
 RoxygenNote: 6.1.0
