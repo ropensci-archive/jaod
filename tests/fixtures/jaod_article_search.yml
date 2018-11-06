@@ -1,0 +1,377 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/search/articles/license:CC-BY?page=1&pageSize=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-origin: '*'
+      connection: keep-alive
+      content-encoding: gzip
+      content-type: application/json
+      date: Mon, 29 Oct 2018 17:38:49 GMT
+      link: <https://doaj.org/api/v1/search/articles/license:CC-BY?page=337449&pageSize=10>;
+        rel=last, <https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10>;
+        rel=next
+      server: nginx/1.4.6 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      x-total-count: '3374481'
+    body:
+      encoding: UTF-8
+      string: '{"last": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=337449&pageSize=10",
+        "pageSize": 10, "timestamp": "2018-1029T17:38:49Z", "results": [{"last_updated":
+        "2018-01-02T03:20:27Z", "id": "abbc2add34024e108151613949c0a5e5", "bibjson":
+        {"end_page": "8", "start_page": "5", "author": [{"name": "Zoran Marjanovi\u0107"},
+        {"name": "Maja Slavkovi\u0107-Jovanovi\u0107"}, {"name": "An\u0111elka Slavkovi\u0107"},
+        {"name": "Ivona \u0110or\u0111evi\u0107"}], "abstract": "Penetration of air
+        from the lungs into the space between the parietal and visceral pleura occurs
+        in the neonatal population, and is potentially a very serious problem with
+        the frequency 1-2%. It occurs idiopatically, though may be secondary, mostly
+        in the field of the lung pathology or previous trauma of the lung parenchyma.
+        The aim of the study was to assess the morbidity and mortality among hospitalized
+        neonates with the clinical presentation of pneumothorax. Retrospective analysis
+        involved 16 neonates hospitalized during a 5-year period in the Pediatric
+        Surgery Clinic in Ni\u0161. We analyzed the gestational age, body mass, existence
+        of previous lung pathology, Apgar score and treatment. Neonatal pneumothorax
+        was more common in boys (m:f=2,2:1), in patients with Apgar score below 3,
+        prematured babies and patients with previous lung disease. Treatment was surgical
+        in all patients, and involved thoracotomy (in 75% of patients), while in the
+        remaining 25% thoracocentesis was performed. Mortality reached 30% and was
+        recorded in the population of patients at risk with low Apgar score, in premature
+        babies, and in patients with previous lung disorders. Any child with signs
+        of ARDS must be carefully examined by neonatologist and pediatric surgeon.
+        If pneumothorax is timely diagnosed, even in a group of children with increased
+        risk, treatment is effective.", "title": "INFLUENCE OF RISK FACTORS ON FREQUENCY
+        AND PROGNOSIS OF NEONATAL PNEUMOTHORAX, FIVE-YEAR EXPERIENCE", "month": "06",
+        "link": [{"url": "http://publisher.medfak.ni.ac.rs/2010-html/2-broj/Ivona%20%C3%90ordevic-Influence%20of%20risk%20factors.pdf",
+        "type": "fulltext"}], "year": "2010", "keywords": ["gastrscopy", "gastric
+        cancer", "pathohistological result"], "identifier": [{"type": "pissn", "id":
+        "0365-4478"}], "journal": {"publisher": "University in Nis, Faculty of Medicine",
+        "language": ["EN"], "license": [{"url": "http://publisher.medfak.ni.ac.rs/Index/Open%20Access%20Policy.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Medica
+        Medianae", "country": "RS", "number": "2", "volume": "49", "issns": ["0365-4478",
+        "1821-2794"]}, "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"}]},
+        "created_date": "2010-07-15T17:12:54Z"}, {"last_updated": "2018-01-02T03:20:28Z",
+        "id": "abbdb71923c74bb186e7f02799bfb748", "bibjson": {"start_page": "66",
+        "author": [{"name": "Gerald Gutenschwager"}], "journal": {"publisher": "Risk
+        Institute, Trieste- Geneva", "language": ["EN"], "license": [{"url": "http://cadmusjournal.org/content/copyright-policy",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Cadmus",
+        "country": "IT", "number": "6", "volume": "1", "issns": ["2038-5242", "2038-5250"]},
+        "title": "From Epicurus to Maslow:  Happiness Then and Now and the Place of
+        the  Human Being in Social Theory", "subject": [{"scheme": "LCC", "term":
+        "International relations", "code": "JZ2-6530"}, {"scheme": "LCC", "term":
+        "Economic growth, development, planning", "code": "HD72-88"}], "month": "05",
+        "link": [{"url": "http://www.cadmusjournal.org/article/issue-6/epicurus-maslow",
+        "type": "fulltext"}], "year": "2013", "identifier": [{"type": "pissn", "id":
+        "2038-5242"}, {"type": "eissn", "id": "2038-5250"}], "abstract": "Protagoras
+        said, \"The human being is the measure of all things\". This implies, among
+        other things, that language, science and religion are human inventions, as
+        are economics, money, efficiency, race, conflict, etc. As symbol-using animals,
+        we have created these concepts to serve our purposes. But as our societies
+        have increased in size and our concepts have become more abstract, there is
+        a danger that we will forget our authorship and reify these symbols. This
+        inhibits change in the way we name things, so we are always in danger of misunderstanding
+        the reality we are describing. We seem to be at such a stage now as we employ
+        18th and 19th century theories to describe and, more importantly, create 21st
+        century reality. One such idea has to do with human needs. Influenced by the
+        abstract (economic) concepts we use, we have lost our sense of what we truly
+        need. Epicurus and Maslow may help to review and reassess those concepts.
+        Epicurus, by suggesting that our material needs are quite simple but that
+        emotional and spiritual need satisfaction requires a small scale loving community,
+        free from fear, and Maslow, by suggesting that our emotional development is
+        age-related, which, besides therapy, may help in suggesting revisions in socioeconomic
+        theory that would ensure the social conditions that would allow this development
+        to take place successfully.", "end_page": "90"}, "created_date": "2013-05-17T06:37:31Z"},
+        {"last_updated": "2018-01-02T03:20:28Z", "id": "abbdc73644994805a92adb87bc307a49",
+        "bibjson": {"end_page": "183", "start_page": "175", "author": [{"name": "Tania
+        F. Salvini"}, {"name": "Jo\u00e3o L. Q. Durigan"}, {"name": "Sabrina M. Peviani"},
+        {"name": "Thiago L. Russo"}], "abstract": "BACKGROUND: This review will describe
+        the main cellular mechanisms involved in the reduction and increase of myoproteins
+        synthesis commonly associated with muscle atrophy and hypertrophy, respectively.
+        OBJECTIVE: We analyzed the effects of electrical stimulation (ES) and stretching
+        exercise on the molecular pathways involved in muscle atrophy and hypertrophy.
+        We also described the main effects and limits of these resources in the skeletal
+        muscle, particularly on the denervated muscle. DISCUSSION: Recently, our studies
+        showed that the ES applied in a similar manner as performed in clinical practice
+        is able to attenuate the increase of genes expression involved in muscle atrophy.
+        However, ES was not effective to prevent the loss of muscle mass caused by
+        denervation. Regarding to stretching exercises, their mechanisms of action
+        on the denervated muscle are not fully understood and studies on this area
+        are scarce. Studies from our laboratory have found that stretching exercise
+        increased the extracellular matrix remodeling and decreased genes expression
+        related to atrophy in denervated muscle. Nevertheless, it was not enough to
+        prevent muscle atrophy after denervation. CONCLUSIONS: In spite of the use
+        of stretching exercise and ES in clinical practice in order to minimize the
+        atrophy of denervated muscle, there is still lack of scientific evidence to
+        justify the effectiveness of these resources to prevent muscle atrophy in
+        denervated muscle.<br>CONTEXTUALIZA\u00c7\u00c3O: Esta revis\u00e3o abordar\u00e1
+        os principais mecanismos celulares envolvidos na redu\u00e7\u00e3o e aumento
+        da s\u00edntese de mioprote\u00ednas comumente associadas \u00e0s situa\u00e7\u00f5es
+        de atrofia e hipertrofia muscular, respectivamente. OBJETIVO: Analisaremos
+        os efeitos da estimula\u00e7\u00e3o el\u00e9trica (EE) e do exerc\u00edcio
+        de alongamento sobre as vias moleculares envolvidas na atrofia e hipertrofia
+        muscular. Ser\u00e3o descritos os principais efeitos e os limites desses recursos
+        no m\u00fasculo esquel\u00e9tico, particularmente sobre o m\u00fasculo desnervado.
+        DISCUSS\u00c3O: Recentemente, nossos estudos mostraram que a EE, aplicada
+        de modo semelhante ao realizado na pr\u00e1tica cl\u00ednica, \u00e9 capaz
+        de amenizar o aumento da express\u00e3o de genes envolvidos na atrofia muscular.
+        Entretanto, a EE n\u00e3o foi efetiva para deter a perda de massa muscular
+        decorrente da desnerva\u00e7\u00e3o. Em rela\u00e7\u00e3o ao alongamento,
+        seus mecanismos de a\u00e7\u00e3o sobre o m\u00fasculo desnervado n\u00e3o
+        s\u00e3o totalmente conhecidos, e os trabalhos nessa \u00e1rea s\u00e3o escassos.
+        Estudos do nosso laborat\u00f3rio identificaram que o alongamento aumentou
+        o remodelamento da matriz extracelular e diminuiu a express\u00e3o de genes
+        relacionados \u00e0 atrofia no m\u00fasculo desnervado. Por\u00e9m, tamb\u00e9m
+        n\u00e3o foi suficiente para impedir a atrofia muscular ap\u00f3s a desnerva\u00e7\u00e3o.
+        CONCLUS\u00d5ES: Apesar do uso da EE e do alongamento muscular na pr\u00e1tica
+        cl\u00ednica, com objetivo de minimizar a atrofia do m\u00fasculo desnervado,
+        ainda h\u00e1 car\u00eancia de informa\u00e7\u00f5es cient\u00edficas que
+        justifiquem a efic\u00e1cia desses recursos para prevenir a atrofia no m\u00fasculo
+        desnervado.", "title": "Effects of electrical stimulation and stretching on
+        the adaptation of denervated skeletal muscle: implications for physical therapy
+        Efeitos da eletroestimula\u00e7\u00e3o e do alongamento muscular sobre a adapta\u00e7\u00e3o
+        do m\u00fasculo desnervado: implica\u00e7\u00f5es para a fisioterapia", "month":
+        "06", "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-35552012000300002",
+        "type": "fulltext"}], "year": "2012", "keywords": ["reabilita\u00e7\u00e3o",
+        "estimula\u00e7\u00e3o el\u00e9trica", "les\u00e3o nervosa perif\u00e9rica",
+        "atrofia muscular", "alongamento", "rehabilitation", "electric stimulation",
+        "peripheral nerve injury", "muscle atrophy", "stretching"], "identifier":
+        [{"type": "pissn", "id": "1413-3555"}], "journal": {"publisher": "Associa\u00e7\u00e3o
+        Brasileira de Pesquisa e P\u00f3s-Gradua\u00e7\u00e3o em Fisioterapia", "language":
+        ["EN"], "license": [{"url": "http://www.scielo.br/revistas/rbfis/iaboutj.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Brazilian
+        Journal of Physical Therapy", "country": "BR", "number": "3", "volume": "16",
+        "issns": ["1413-3555", "1809-9246"]}, "subject": [{"scheme": "LCC", "term":
+        "Therapeutics. Pharmacology", "code": "RM1-950"}]}, "created_date": "2013-09-05T09:59:39Z"},
+        {"last_updated": "2018-01-02T03:20:29Z", "id": "ab8a5abc4f42454aaf68d24246c64d7f",
+        "bibjson": {"start_page": "o524", "author": [{"name": "A. Matos Beja"}, {"name":
+        "J. A. Paix&amp;#227;o"}, {"name": "M. Ramos Silva"}, {"name": "P. S. Pereira
+        Silva"}], "journal": {"publisher": "International Union of Crystallography",
+        "language": ["EN"], "license": [{"url": "http://journals.iucr.org/services/oa/oalicenceshort.html",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Crystallographica
+        Section E", "country": "GB", "number": "3", "volume": "66", "issns": ["1600-5368"]},
+        "title": "Guanidinium 4-aminobenzoate", "subject": [{"scheme": "LCC", "term":
+        "Chemistry", "code": "QD1-999"}], "month": "03", "link": [{"url": "http://scripts.iucr.org/cgi-bin/paper?S160053681000396X",
+        "type": "fulltext"}], "year": "2010", "identifier": [{"type": "doi", "id":
+        "10.1107/S160053681000396X"}, {"type": "pissn", "id": "1600-5368"}], "abstract":
+        "In the title compound, CH6N3+&amp;#183;C7H6NO2&amp;#8722;, the cation and
+        anion lie on crystallographic mirror planes. The 4-aminobenzoate anion is
+        almost in a planar conformation with a maximum deviation of 0.024&amp;#8197;(2)&amp;#8197;&amp;#197;
+        for the N atom. The bond length in the deprotonated carboxyl group is intermediate
+        between those of normal single and double Csp2=O bonds, indicating delocalization
+        of the charge over both O atoms of the COO&amp;#8722; group. In the crystal,
+        N&amp;#8212;H...O hydrogen bonds assemble the ions in layers propagating in
+        the bc plane. This structure is very similar to that of guanidinium benzoate.
+        ", "end_page": "o524"}, "created_date": "2010-03-04T12:25:30Z"}, {"last_updated":
+        "2018-01-02T03:20:29Z", "id": "ab8aaf6f569a4dd0ae8f1df3666cf706", "bibjson":
+        {"end_page": "109", "start_page": "87", "author": [{"name": "Eleut\u00e9rio
+        Sampaio"}], "abstract": "Este artigo perspectiva alguns programas televisivos
+        de car\u00e1cter l\u00fadico como actividades mim\u00e9ticas, na linha interpretativa
+        de Elias e Dunning. Preconiza-se que nesse tipo de actividades t\u00eam lugar
+        manifesta\u00e7\u00f5es afectivo-emocionais que se confrontam com as do quotidiano
+        \"s\u00e9rio\", constituindo-se ao mesmo tempo como seu complemento incontorn\u00e1vel.
+        Tra\u00e7ar-se-\u00e3o alguns aspectos definidores das actividades mim\u00e9ticas,
+        real\u00e7ando o desenvolvimento no seu seio de emo\u00e7\u00f5es espec\u00edficas
+        socialmente produzidas, dando corpo a uma sociabilidade emocional que estaria
+        no cerne da considera\u00e7\u00e3o do hedonismo como objectivo principal a
+        alcan\u00e7ar.", "title": "O mimetismo emocional e a televis\u00e3o", "month":
+        "09", "link": [{"url": "http://www.scielo.oces.mctes.pt/scielo.php?script=sci_arttext&pid=S0873-65292000000200005",
+        "type": "fulltext"}], "year": "2000", "keywords": ["Actividades mim\u00e9ticas",
+        "sociabilidade emocional", "hedonismo"], "identifier": [{"type": "pissn",
+        "id": "0873-6529"}], "journal": {"publisher": "Editora Mundos Sociais", "license":
+        [{"url": "http://revistas.rcaap.pt/sociologiapp/about/submissions#copyrightNotice",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN",
+        "ES", "PT"], "title": "Sociologia", "country": "PT", "number": "33", "issns":
+        ["0873-6529"]}, "subject": [{"scheme": "LCC", "term": "Social Sciences", "code":
+        "H"}, {"scheme": "LCC", "term": "Sociology (General)", "code": "HM401-1281"}]},
+        "created_date": "2013-08-30T10:44:23Z"}, {"last_updated": "2018-01-02T03:20:29Z",
+        "id": "ab8b51a0b510498fa5827df1ebd8c5d6", "bibjson": {"end_page": "940", "start_page":
+        "927", "author": [{"name": "Antonio Jos\u00e9 Leal Costa"}], "abstract": "A
+        avalia\u00e7\u00e3o das conseq\u00fc\u00eancias dos problemas de sa\u00fade
+        \u00e9 um tema marcado pela diversidade conceitual e metodol\u00f3gica. Diferentes
+        modelos conceituais s\u00e3o utilizados para o desenvolvimento de m\u00e9todos
+        para avalia\u00e7\u00e3o dos n\u00edveis de sa\u00fade de popula\u00e7\u00f5es
+        humanas. A avalia\u00e7\u00e3o das limita\u00e7\u00f5es e restri\u00e7\u00f5es
+        da atividade f\u00edsica, devido a sua import\u00e2ncia no \u00e2mbito das
+        conseq\u00fc\u00eancias das doen\u00e7as cr\u00f4nicas, tem sido contemplada
+        em inqu\u00e9ritos populacionais. Tais an\u00e1lises baseiam-se nas escalas
+        de avalia\u00e7\u00e3o das atividades di\u00e1rias da vida ou das atividades
+        instrumentais di\u00e1rias da vida. A PNAD, por meio do seu Suplemento Sa\u00fade
+        realizado em 1998 e 2003, tem possibilitado a an\u00e1lise dos padr\u00f5es
+        de limita\u00e7\u00e3o das atividades habituais na popula\u00e7\u00e3o brasileira
+        com idade superior a 13 anos. Neste estudo foram apresentados indicadores
+        de diferentes graus de limita\u00e7\u00e3o, desenvolvidos com os dados da
+        PNAD 2003. Os resultados preliminares mostram perfis diferenciados de limita\u00e7\u00e3o
+        das atividades, segundo categorias das vari\u00e1veis sexo e faixa et\u00e1ria.
+        As mulheres e os indiv\u00edduos com mais idade apresentaram limita\u00e7\u00f5es
+        com maior freq\u00fc\u00eancia e em maior grau. A preocupa\u00e7\u00e3o com
+        o vi\u00e9s do informante se justifica pelo fato de metade das respostas ter
+        sido fornecida por terceiros.<br>The evaluation of the consequences of health
+        problems is a subject characterized by conceptual and methodological diversity.
+        Different conceptual models have been used for developing methods aimed at
+        evaluating the health of populations. In the context of chronic diseases,
+        the evaluation of physical activity restrictions and limitations based on
+        scales of activities of daily living and instrumental activities of daily
+        living is particularly important. Both the 1998 and 2003 National Household
+        Survey Health Interviews have allowed for an analysis of activity limitation
+        patterns of the Brazilian population aged 14 years and older. In the present
+        study we present different indicators of varying degrees of limitation elaborated
+        using data from the 2003 survey. Preliminary results showed varying patterns
+        of activity limitation according to sex and age. In general, limitations were
+        referred more frequently and to a higher degree among women and the elderly.
+        The concern with information bias is justified by the fact that half of the
+        questions were answered by proxy informants.", "title": "Metodologias e indicadores
+        para avalia\u00e7\u00e3o da capacidade funcional: an\u00e1lise preliminar
+        do Suplemento Sa\u00fade da Pesquisa Nacional por Amostra de - Domic\u00edlios
+        PNAD, Brasil, 2003 Methods and measures for the evaluation of functional capacity:
+        a preliminary analysis based on the National Household Sample Survey Health
+        Interviews - PNAD, Brazil, 2003", "month": "12", "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232006000400015",
+        "type": "fulltext"}], "year": "2006", "keywords": ["Limita\u00e7\u00e3o das
+        atividades habituais", "Incapacidade funcional", "Inqu\u00e9ritos de sa\u00fade",
+        "Daily activity limitation", "Functional disability", "Health surveys"], "identifier":
+        [{"type": "doi", "id": "10.1590/S1413-81232006000400015"}, {"type": "pissn",
+        "id": "1413-8123"}, {"type": "eissn", "id": "1678-4561"}], "journal": {"publisher":
+        "Associa\u00e7\u00e3o Brasileira de P\u00f3s-Gradua\u00e7\u00e3o em Sa\u00fade
+        Coletiva", "language": ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/csc/isubscrp.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Ci\u00eancia
+        & Sa\u00fade Coletiva", "country": "BR", "number": "4", "volume": "11", "issns":
+        ["1413-8123", "1678-4561"]}, "subject": [{"scheme": "LCC", "term": "Public
+        aspects of medicine", "code": "RA1-1270"}]}, "created_date": "2013-09-04T17:16:08Z"},
+        {"last_updated": "2018-01-02T03:20:30Z", "id": "ab8c04221f0d49198736af7b40adcec0",
+        "bibjson": {"start_page": "e02028-16", "author": [{"name": "Sasisekhar Bennuru"},
+        {"name": "James A. Cotton"}, {"name": "Jose M. C. Ribeiro"}, {"name": "Alexandra
+        Grote"}, {"name": "Bhavana Harsha"}, {"name": "Nancy Holroyd"}, {"name": "Amruta
+        Mhashilkar"}, {"name": "Douglas M. Molina"}, {"name": "Arlo Z. Randall"},
+        {"name": "Adam D. Shandling"}, {"name": "Thomas R. Unnasch"}, {"name": "Elodie
+        Ghedin"}, {"name": "Matthew Berriman"}, {"name": "Sara Lustigman"}, {"name":
+        "Thomas B. Nutman"}], "journal": {"publisher": "American Society for Microbiology",
+        "language": ["EN"], "license": [{"url": "http://mbio.asm.org/site/misc/authors.xhtml",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "mBio",
+        "country": "US", "number": "6", "volume": "7", "issns": ["2150-7511"]}, "title":
+        "Stage-Specific Transcriptome and Proteome Analyses of the Filarial Parasite
+        Onchocerca volvulus and Its Wolbachia Endosymbiont", "month": "11", "link":
+        [{"url": "http://mbio.asm.org/cgi/content/full/7/6/e02028-16", "type": "fulltext",
+        "content_type": "html"}], "year": "2016", "identifier": [{"type": "eissn",
+        "id": "2150-7511"}, {"type": "doi", "id": "10.1128/mBio.02028-16"}], "abstract":
+        "Onchocerciasis (river blindness) is a neglected tropical disease that has
+        been successfully targeted by mass drug treatment programs in the Americas
+        and small parts of Africa. Achieving the long-term goal of elimination of
+        onchocerciasis, however, requires additional tools, including drugs, vaccines,
+        and biomarkers of infection. Here, we describe the transcriptome and proteome
+        profiles of the major vector and the human host stages (L1, L2, L3, molting
+        L3, L4, adult male, and adult female) of Onchocerca volvulus along with the
+        proteome of each parasitic stage and of its Wolbachia endosymbiont (wOv).
+        In so doing, we have identified stage-specific pathways important to the parasite\u2019s
+        adaptation to its human host during its early development. Further, we generated
+        a protein array that, when screened with well-characterized human samples,
+        identified novel diagnostic biomarkers of O.\u00a0volvulus infection and new
+        potential vaccine candidates. This immunomic approach not only demonstrates
+        the power of this postgenomic discovery platform but also provides additional
+        tools for onchocerciasis control programs.", "subject": [{"scheme": "LCC",
+        "term": "Microbiology", "code": "QR1-502"}]}, "created_date": "2017-01-03T14:30:15Z"},
+        {"last_updated": "2018-01-02T03:21:35Z", "id": "ab2d5100c6d04bafb7b29564aa86023c",
+        "bibjson": {"start_page": "685", "author": [{"name": "Riesco Maria Luiza Gonzalez"},
+        {"name": "Fonseca Rosa Maria Godoy Serpa da"}], "journal": {"publisher": "Escola
+        Nacional de Sa\u00fade P\u00fablica, Funda\u00e7\u00e3o Oswaldo Cruz", "language":
+        ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/csp/iaboutj.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Cadernos
+        de Sa\u00fade P\u00fablica", "country": "BR", "number": "3", "volume": "18",
+        "issns": ["0102-311X", "1678-4464"]}, "title": "Elementos constitutivos da
+        forma\u00e7\u00e3o e inser\u00e7\u00e3o de profissionais n\u00e3o-m\u00e9dicos
+        na assist\u00eancia ao parto", "subject": [{"scheme": "LCC", "term": "Medicine",
+        "code": "R"}, {"scheme": "LCC", "term": "Public aspects of medicine", "code":
+        "RA1-1270"}], "link": [{"url": "http://www.scielosp.org/scielo.php?script=sci_arttext&pid=S0102-311X2002000300017",
+        "type": "fulltext"}], "year": "2002", "keywords": ["Enfermagem Obst\u00e9trica",
+        "Parteira Leiga", "Parto"], "identifier": [{"type": "pissn", "id": "0102-311X"},
+        {"type": "eissn", "id": "1678-4464"}], "abstract": "O estudo teve como objetivos
+        identificar a parteira, segundo a concep\u00e7\u00e3o de profissionais da
+        \u00e1rea de sa\u00fade, e desvelar os pressupostos ideol\u00f3gicos que justificam
+        sua forma\u00e7\u00e3o. Os dados de entrevistas com nove obstetrizes, enfermeiras
+        e m\u00e9dicos foram tratados pela an\u00e1lise de discurso, resultando nas
+        categorias emp\u00edricas \"Situa\u00e7\u00e3o da Assist\u00eancia ao Parto
+        no Brasil\" e \"A Parteira que Queremos (ou Devemos) e a Parteira que Podemos\".
+        Mediante a interpreta\u00e7\u00e3o dos dados foi poss\u00edvel vislumbrar
+        uma \"parteira em constru\u00e7\u00e3o\", que emergiu a partir da supera\u00e7\u00e3o
+        dial\u00e9tica da \"parteira ideal\".", "end_page": "698"}, "created_date":
+        "2004-05-31T00:00:00Z"}, {"last_updated": "2018-01-02T03:21:35Z", "id": "ab2d6885609b499294ad1a19c1aa3a6c",
+        "bibjson": {"start_page": "23803", "author": [{"affiliation": "", "name":
+        " \t E.R. Bittner"}], "journal": {"publisher": "Institute for Condensed Matter
+        Physics", "language": ["EN"], "license": [{"url": "http://www.icmp.lviv.ua/journal/index.html",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Condensed
+        Matter Physics", "country": "UA", "number": "2", "volume": "19", "issns":
+        ["1607-324X", "2224-9079"]}, "title": "An effective Hamiltonian approach for
+        Donor-Bridge-Acceptor electronic transitions: Exploring the role of bath memory",
+        "month": "3", "link": [{"url": "http://dx.doi.org/10.5488/CMP.19.23803", "type":
+        "fulltext"}], "year": "2016", "keywords": ["super-exchange", "electron transfer
+        theory", "organic photovoltaics", "ultrafast dynamics", "charge transfer"],
+        "identifier": [{"type": "doi", "id": "10.5488/CMP.19.23803"}, {"type": "pissn",
+        "id": "1607-324X"}], "abstract": "We present here a formally exact model for
+        electronic transitions between an initial (donor) and final (acceptor) states
+        linked by an intermediate (bridge) state. Our model incorporates a common
+        set of vibrational modes that are coupled to the donor, bridge, and acceptor
+        states and serves as a dissipative bath that destroys quantum coherence between
+        the donor and acceptor. Taking the memory time of the bath as a free parameter,
+        we calculate transition rates for a heuristic 3-state/2 mode Hamiltonian system
+        parameterized to represent the energetics and couplings in a typical organic
+        photovoltaic system. Our results indicate that if the memory time of the bath
+        is of the order of 10-100 fs, a two-state kinetic (i.e., incoherent hopping)
+        model will grossly underestimate overall transition rate.", "subject": [{"scheme":
+        "LCC", "term": "Physics", "code": "QC1-999"}]}, "created_date": "2016-03-16T14:29:41Z"},
+        {"last_updated": "2018-01-02T03:21:38Z", "id": "ab30bf1f487b4a0585da06de1a92b673",
+        "bibjson": {"start_page": "163", "author": [{"name": "HENRIQUES Gilberto Simeone"},
+        {"name": "COZZOLINO Silvia Maria Franciscato"}], "journal": {"publisher":
+        "Pontif\u00edcia Universidade Cat\u00f3lica de Campinas", "language": ["EN",
+        "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/rn/iinstruc.htm",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Revista
+        de Nutri\u00e7\u00e3o", "country": "BR", "number": "3", "volume": "14", "issns":
+        ["1415-5273", "1678-9865"]}, "title": "Determination of metallothionein levels
+        in tissues of young rats fed zinc-enriched diets", "subject": [{"scheme":
+        "LCC", "term": "Nutrition. Foods and food supply", "code": "TX341-641"}],
+        "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1415-52732001000300001",
+        "type": "fulltext"}], "year": "2001", "keywords": ["metallothionein", "zinc",
+        "biological availability", "experimental diets"], "identifier": [{"type":
+        "pissn", "id": "1415-5273"}, {"type": "eissn", "id": "1678-9865"}], "abstract":
+        "The objective of this work was to quantify metallothioneins (MT''s) in tissues
+        of rats fed different concentrations of zinc, in order to observe the animal
+        response to the metal in relation to different types of diets, and to assess
+        the nutritional status relating to zinc in the diets. Thirty-two Wistar newly-weaned
+        male rats were distributed into four experimental groups and housed in individual
+        cages. They had free access to water and diet containing different zinc concentrations,
+        named RC (AIN 93-like diet), RH (customary diet of the university restaurant),
+        both non-supplemented, and RCS and RHS, supplemented. After four weeks, the
+        animals were killed and liver, kidneys, femurs and testes were isolated to
+        determine metallothionein levels by a Cd/Hb affinity assay. Zinc content was
+        determined by Flame Atomic Absorption Spectroscopy (FAAS). The results showed
+        that zinc supplementation produced no change in the tissue metallothionein
+        profile in the doses under analysis. The highest metallothionein mean concentration
+        was found in the liver - 36.21 \u00b1 0.88 \u00b5g/g (mean for RC-RCS groups),
+        and 28.92 \u00b1 5.32 \u00b5g/g (mean for RH-RHS groups). Metallothionein
+        concentrations in testes were quite high, considering the small volume of
+        the organ - 19.29 \u00b1 0.54 \u00b5g/g (mean for RC-RCS groups), and 17.22
+        \u00b1 1.07 \u00b5g/g (mean for RH-RHS groups). Significant increases in zinc
+        concentration were observed in the liver of young supplemented rats - 38.94
+        \u00b1 3.43 \u00b5g/g of tissue for RCS, and 42.83 \u00b1 2.78 \u00b5g/g of
+        tissue for RHS, and in the femurs - 140.04 \u00b1 6.03 \u00b5g/g of tissue
+        for RCS, and 86.57 \u00b1 6.95 \u00b5g/g of tissue for RHS. The different
+        carrying zinc food matrices caused no change in the adaptive response to metallothionein
+        metabolism, and the lack of responsiveness towards metallothionein synthesis
+        did not invalidate the results of tissue zinc concentration parameters, which
+        suggest different degrees for zinc bioavailability.", "end_page": "169"},
+        "created_date": "2004-05-31T00:00:00Z"}], "next": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10",
+        "query": "license:CC-BY", "total": 3374481, "page": 1}'
+  recorded_at: 2018-10-29 17:38:49 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8

@@ -7,7 +7,7 @@ Description: Client for the Directory of Open Access Journals ('DOAJ')
     all 'DOAJ' API routes: fetch article information by identifier,
     search for articles, fetch journal information by identifier,
     and search for journals.
-Version: 0.1.1.9100
+Version: 0.1.1.9300
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus+r@gmail.com", 
@@ -28,6 +28,7 @@ Suggests:
     roxygen2 (>= 6.1.0),
     testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    vcr
 RoxygenNote: 6.1.0
 VignetteBuilder: knitr
