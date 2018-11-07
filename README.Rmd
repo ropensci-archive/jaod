@@ -66,15 +66,15 @@ jaod_article_search(query = "license:CC-BY")
 ## get article by id
 
 ```{r}
-out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
-names(out$bibjson)
+out2 <- jaod_article(id = "0005e11ec616453f854070069385e057")
+names(out2$bibjson)
 ```
 
 ```{r}
-out$bibjson$author
-out$bibjson$link
-out$bibjson$identifier
-out$bibjson$subject
+out2$bibjson$author
+out2$bibjson$link
+out2$bibjson$identifier
+out2$bibjson$subject
 ```
 
 
@@ -85,5 +85,5 @@ out$bibjson$subject
 * Get citation information for `jaod` in R doing `citation(package = jaod')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![ropensci_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
 

@@ -38,7 +38,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2018-0822T16:58:59Z"
+#> [1] "2018-1107T23:01:18Z"
 #> 
 #> $page
 #> [1] 1
@@ -50,13 +50,13 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 #> [1] "bibjson.keywords:heritage"
 #> 
 #> $total
-#> [1] 79
+#> [1] 83
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=8&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=9&pageSize=10"
 #> 
 #> $results
 #> # A tibble: 10 x 39
@@ -66,12 +66,12 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 #>  2 2018-05-10T… 1642… 2012-07-13T… TRUE             <chr [1]>       
 #>  3 2018-05-10T… a775… 2016-01-21T… TRUE             <chr [2]>       
 #>  4 2018-05-10T… 6f6f… 2016-06-03T… TRUE             <chr [3]>       
-#>  5 2018-05-10T… 3858… 2016-03-09T… FALSE            <chr [4]>       
-#>  6 2018-06-12T… ff06… 2018-02-11T… TRUE             <chr [3]>       
-#>  7 2018-05-22T… 2c6c… 2018-05-22T… TRUE             <chr [4]>       
-#>  8 2018-06-12T… b90f… 2018-04-04T… TRUE             <chr [4]>       
-#>  9 2018-05-10T… 3811… 2016-02-17T… TRUE             <chr [3]>       
-#> 10 2018-05-10T… dd81… 2016-01-07T… TRUE             <chr [5]>       
+#>  5 2018-05-22T… 2c6c… 2018-05-22T… TRUE             <chr [4]>       
+#>  6 2018-05-10T… 3811… 2016-02-17T… TRUE             <chr [3]>       
+#>  7 2018-06-12T… b90f… 2018-04-04T… TRUE             <chr [4]>       
+#>  8 2018-10-24T… 7f2c… 2018-10-24T… FALSE            <chr [3]>       
+#>  9 2018-05-10T… 3858… 2016-03-09T… FALSE            <chr [4]>       
+#> 10 2018-06-12T… ff06… 2018-02-11T… TRUE             <chr [3]>       
 #> # ... with 34 more variables: bibjson.subject <list>, bibjson.title <chr>,
 #> #   bibjson.publication_time <int>, bibjson.provider <chr>,
 #> #   bibjson.format <list>, bibjson.apc_url <chr>, bibjson.link <list>,
@@ -155,7 +155,7 @@ out$bibjson$author_publishing_rights
 ```r
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
-#> [1] "2018-0822T16:59:00Z"
+#> [1] "2018-1107T23:01:19Z"
 #> 
 #> $page
 #> [1] 1
@@ -167,32 +167,31 @@ jaod_article_search(query = "license:CC-BY")
 #> [1] "license:CC-BY"
 #> 
 #> $total
-#> [1] 3216177
+#> [1] 3398084
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=321618&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=339809&pageSize=10"
 #> 
 #> $results
-#> # A tibble: 10 x 22
+#> # A tibble: 10 x 20
 #>    last_updated id    created_date bibjson.start_p… bibjson.author
 #>  * <chr>        <chr> <chr>        <chr>            <list>        
-#>  1 2017-12-11T… 0086… 2016-12-11T… 930              <data.frame […
-#>  2 2017-12-11T… 0087… 2016-06-15T… e43016           <data.frame […
-#>  3 2017-12-11T… 0088… 2016-06-14T… e33417           <data.frame […
-#>  4 2017-12-11T… 0089… 2016-12-05T… 51               <data.frame […
-#>  5 2017-12-11T… 0089… 2016-06-15T… e97781           <data.frame […
-#>  6 2017-12-11T… 008a… 2016-06-14T… e50364           <data.frame […
-#>  7 2017-12-11T… 008b… 2016-06-15T… e94601           <data.frame […
-#>  8 2017-12-11T… 007c… 2016-06-14T… e44718           <data.frame […
-#>  9 2017-12-11T… 007e… 2016-06-21T… e0156940         <data.frame […
-#> 10 2017-12-11T… 007f… 2016-06-15T… e1001328         <data.frame […
-#> # ... with 17 more variables: bibjson.title <chr>, bibjson.subject <list>,
-#> #   bibjson.link <list>, bibjson.keywords <list>,
-#> #   bibjson.identifier <list>, bibjson.abstract <chr>,
-#> #   bibjson.end_page <chr>, bibjson.month <chr>, bibjson.year <chr>,
+#>  1 2018-05-02T… 0b56… 2016-06-15T… e0123810         <data.frame […
+#>  2 2018-05-02T… 1545… 2016-06-15T… e0123048         <data.frame […
+#>  3 2018-05-02T… a693… 2016-06-10T… e0124519         <data.frame […
+#>  4 2018-05-02T… 1508… 2016-06-15T… e0123036         <data.frame […
+#>  5 2018-05-02T… 1cc3… 2016-06-15T… e0122588         <data.frame […
+#>  6 2018-05-02T… d856… 2016-06-15T… e0123290         <data.frame […
+#>  7 2018-05-02T… 1c1e… 2016-06-15T… e0119259         <data.frame […
+#>  8 2018-05-02T… f858… 2016-06-15T… e0123734         <data.frame […
+#>  9 2018-05-02T… b7ad… 2016-06-10T… e0123345         <data.frame […
+#> 10 2018-05-02T… c95f… 2016-06-15T… e0123458         <data.frame […
+#> # ... with 15 more variables: bibjson.title <chr>, bibjson.month <chr>,
+#> #   bibjson.link <list>, bibjson.year <chr>, bibjson.identifier <list>,
+#> #   bibjson.abstract <chr>, bibjson.subject <list>,
 #> #   bibjson.journal.publisher <chr>, bibjson.journal.language <list>,
 #> #   bibjson.journal.license <list>, bibjson.journal.title <chr>,
 #> #   bibjson.journal.country <chr>, bibjson.journal.number <chr>,
@@ -203,50 +202,33 @@ jaod_article_search(query = "license:CC-BY")
 
 
 ```r
-out <- jaod_article(id = "0004c9e6a3c64ec9848607e51b7edbca")
-#> Error: Internal Server Error (HTTP 500)
-names(out$bibjson)
-#>  [1] "allows_fulltext_indexing"     "archiving_policy"            
-#>  [3] "persistent_identifier_scheme" "keywords"                    
-#>  [5] "apc"                          "deposit_policy"              
-#>  [7] "article_statistics"           "title"                       
-#>  [9] "publication_time"             "provider"                    
-#> [11] "subject"                      "format"                      
-#> [13] "plagiarism_detection"         "apc_url"                     
-#> [15] "link"                         "oa_start"                    
-#> [17] "editorial_review"             "author_copyright"            
-#> [19] "publisher"                    "language"                    
-#> [21] "license"                      "country"                     
-#> [23] "submission_charges_url"       "author_publishing_rights"    
-#> [25] "identifier"
+out2 <- jaod_article(id = "0005e11ec616453f854070069385e057")
+names(out2$bibjson)
+#> [1] "title"      "journal"    "author"     "month"      "link"      
+#> [6] "year"       "identifier" "subject"
 ```
 
 
 ```r
-out$bibjson$author
-#> NULL
-out$bibjson$link
-#>                                                                                   url
-#> 1                                               http://journals.plos.org/plosbiology/
-#> 2 https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/
-#> 3                              http://journals.plos.org/plosbiology/s/editorial-board
-#> 4                http://journals.plos.org/plosbiology/s/journal-information#loc-scope
-#> 5                        http://journals.plos.org/plosbiology/s/submission-guidelines
-#> 6          http://journals.plos.org/plosbiology/s/journal-information#loc-open-access
-#>                  type
-#> 1            homepage
-#> 2       waiver_policy
-#> 3     editorial_board
-#> 4          aims_scope
-#> 5 author_instructions
-#> 6        oa_statement
-out$bibjson$identifier
-#>    type        id
-#> 1 pissn 1544-9173
-#> 2 eissn 1545-7885
-out$bibjson$subject
-#>   scheme              term        code
-#> 1    LCC Biology (General) QH301-705.5
+out2$bibjson$author
+#>                                                                                       affiliation
+#> 1 Centre for Molecular Biology and Neuroscience & Institute for basic medical sciences, Univ Oslo
+#> 2                                                            San Diego Supercomputer Center, UCSD
+#>                 name
+#> 1 Trygve B Leergaard
+#> 2     Ilya Zaslavsky
+out2$bibjson$link
+#>                                                                     url
+#> 1 http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full
+#>       type content_type
+#> 1 fulltext         HTML
+out2$bibjson$identifier
+#>    type                        id
+#> 1 eissn                 1662-5196
+#> 2   doi 10.3389/neuro.11.009.2007
+out2$bibjson$subject
+#>   scheme                                                  term      code
+#> 1    LCC Neurosciences. Biological psychiatry. Neuropsychiatry RC321-571
 ```
 
 
@@ -257,5 +239,5 @@ out$bibjson$subject
 * Get citation information for `jaod` in R doing `citation(package = jaod')`
 * Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![ropensci_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
 
