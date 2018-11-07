@@ -11,6 +11,8 @@ jaod
 
 `jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
 
+get started with the package docs: <https://ropensci.github.io/jaod/>
+
 ## installation
 
 stable CRAN version
