@@ -30,7 +30,6 @@ Or the development version:
 devtools::install_github("ropensci/jaod")
 ```
 
-After installation this should ran without any errors:
 ```{r}
 library("jaod")
 ```
@@ -40,8 +39,10 @@ library("jaod")
 To search for a journal you can use the `jaod_journal_search`, 
 which provides information abut the search result, query and relevant information.
 For instance looking for heritage:
+
 ```{r}
 bibliography <- jaod_journal_search(query = "bibjson.keywords:heritage")
+bibliography$results
 ```
 
 We can see with `bibliography$total` the total amount of results: `r bibliography$total`.
@@ -56,6 +57,7 @@ We can retrieve who administrate it, when was last updated, other bibliographic 
 ```{r}
 journal <- jaod_journal(id = bibliography$result$id[1])
 ```
+
 So for intance looking at the subject `journal$bibjson$subject` we can see that
 is based on Ethnology, social and cultural antrophology.
 Or that author doesn't keep the publishing rights (`journal$bibjson$author_publishing_rights$publishing_rights`)
@@ -66,6 +68,7 @@ We might be looking for an article with some licensing
 
 ```{r}
 articles <- jaod_article_search(query = "license:CC-BY", sort = "bibjson.year:desc")
+articles$results
 ```
 
 So we learn that there are `r articles$total` with CC-BY license. 
@@ -83,7 +86,7 @@ If you are interested in information about the article you can use the id:
 article <- jaod_article(articles$results$id[1])
 ```
 
-We can access the title `r article$bibjson$title`, or authors.
+We can access the title _`r article$bibjson$title`_, authors, and more.
 
 
 # SessionInfo {-}
