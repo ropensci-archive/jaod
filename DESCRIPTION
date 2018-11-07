@@ -27,5 +27,8 @@ Imports:
 Suggests:
     roxygen2 (>= 6.1.0),
     testthat,
+    knitr,
+    rmarkdown,
     vcr
 RoxygenNote: 6.1.0
+VignetteBuilder: knitr

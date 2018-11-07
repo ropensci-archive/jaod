@@ -1,0 +1,93 @@
+---
+title: "Directory of Open Access Journals"
+author: "Lluís Revilla Sancho"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Directory of Open Access Journals}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Installation
+
+You can install the stable CRAN version
+
+```{r eval=FALSE}
+install.packages("jaod")
+```
+
+Or the development version:
+
+```{r eval=FALSE}
+devtools::install_github("ropensci/jaod")
+```
+
+After installation this should ran without any errors:
+```{r}
+library("jaod")
+```
+
+# Searching journals
+
+To search for a journal you can use the `jaod_journal_search`, 
+which provides information abut the search result, query and relevant information.
+For instance looking for heritage:
+```{r}
+bibliography <- jaod_journal_search(query = "bibjson.keywords:heritage")
+```
+
+We can see with `bibliography$total` the total amount of results: `r bibliography$total`.
+On the `bibliography$results` we have the information about each entry, title, creation, update, title, subject.
+We have for instance the id of the journal in `bibliography$results$id`
+
+## Getting detailed information about a journal.
+
+Once we have a journal we might be interested in more information.
+We can retrieve who administrate it, when was last updated, other bibliographic references:
+
+```{r}
+journal <- jaod_journal(id = bibliography$result$id[1])
+```
+So for intance looking at the subject `journal$bibjson$subject` we can see that
+is based on Ethnology, social and cultural antrophology.
+Or that author doesn't keep the publishing rights (`journal$bibjson$author_publishing_rights$publishing_rights`)
+
+# Searching articles
+
+We might be looking for an article with some licensing
+
+```{r}
+articles <- jaod_article_search(query = "license:CC-BY", sort = "bibjson.year:desc")
+```
+
+So we learn that there are `r articles$total` with CC-BY license. 
+Or to know the dois, or other identifiers:
+
+```{r}
+articles$results$bibjson.identifier[[1]]
+```
+
+## Searching more detailed information about an article
+
+If you are interested in information about the article you can use the id:
+
+```{r}
+article <- jaod_article(articles$results$id[1])
+```
+
+We can access the title `r article$bibjson$title`, or authors.
+
+
+# SessionInfo {-}
+
+```{r}
+sessionInfo()
+```
