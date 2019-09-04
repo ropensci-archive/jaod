@@ -11,7 +11,7 @@ jaod_article(id, ...)
 is not a DOI, but you can use \code{\link[=jaod_article_search]{jaod_article_search()}} to search by ISSN to
 get DOAJ article ids}
 
-\item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
+\item{...}{curl options passed on to \code{\link[crul]{verb-GET}},
 see \code{?curl::curl_options} for help on curl options}
 }
 \value{

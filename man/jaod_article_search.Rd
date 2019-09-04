@@ -17,7 +17,7 @@ Default: 10}
 \item{sort}{(character) one of asc or desc, or sort by a specific field,
 either asc or desc, see examples. If asc or desc not given, asc is used}
 
-\item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
+\item{...}{curl options passed on to \code{\link[crul]{verb-GET}},
 see \code{?curl::curl_options} for help on curl options}
 }
 \value{

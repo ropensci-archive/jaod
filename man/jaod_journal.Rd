@@ -11,7 +11,7 @@ jaod_journal(id, ...)
 is not an ISSN, but you can use \code{\link[=jaod_journal_search]{jaod_journal_search()}} to
 search by ISSN to get the DOAJ id}
 
-\item{...}{curl options passed on to \code{\link[crul]{HttpClient}},
+\item{...}{curl options passed on to \code{\link[crul]{verb-GET}},
 see \code{?curl::curl_options} for help on curl options}
 }
 \value{
