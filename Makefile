@@ -1,3 +1,5 @@
+RSCRIPT = Rscript --no-init-file
+
 all: move rmd2md
 
 move:
@@ -7,8 +9,23 @@ rmd2md:
 		cd vignettes;\
 		mv geojson_vignette.md geojson_vignette.Rmd
 
+install: doc build
+	R CMD INSTALL . && rm *.tar.gz
+
+build:
+	R CMD build .
+
+doc:
+	${RSCRIPT} -e "devtools::document()"
+
+eg:
+	${RSCRIPT} -e "devtools::run_examples()"
+
 check:
-		Rscript -e 'rcmdcheck::rcmdcheck()'
+	${RSCRIPT} -e "rcmdcheck::rcmdcheck()"
 
 test:
-		Rscript -e 'devtools::test()'
+	${RSCRIPT} -e "devtools::test()"
+
+pkgdocs:
+	${RSCRIPT} -e "pkgdown::build_site()"
