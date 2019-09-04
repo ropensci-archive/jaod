@@ -12,6 +12,8 @@ jaod
 
 `jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
 
+DOAJ API FAQ: <https://doaj.org/faq#apikey>
+
 get started with the package docs: <https://ropensci.github.io/jaod/>
 
 ## installation
@@ -41,7 +43,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2019-09-04T16:53:21.260315Z"
+#> [1] "2019-09-04T16:58:15.006551Z"
 #> 
 #> $page
 #> [1] 1
@@ -158,7 +160,7 @@ out$bibjson$author_publishing_rights
 ```r
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
-#> [1] "2019-09-04T16:53:22.366669Z"
+#> [1] "2019-09-04T16:58:15.841886Z"
 #> 
 #> $page
 #> [1] 1

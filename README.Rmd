@@ -19,6 +19,8 @@ knitr::opts_chunk$set(
 
 `jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
 
+DOAJ API FAQ: <https://doaj.org/faq#apikey>
+
 get started with the package docs: <https://ropensci.github.io/jaod/>
 
 ## installation

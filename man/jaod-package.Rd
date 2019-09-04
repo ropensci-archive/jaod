@@ -16,6 +16,8 @@ to be the starting point for all information searches for quality, peer
 reviewed open access material."
 
 DOAJ API documentation can be found at \url{https://doaj.org/api/v1/docs}.
+
+DOAJ API FAQ: \url{https://doaj.org/faq#apikey}
 }
 
 \section{Package API}{

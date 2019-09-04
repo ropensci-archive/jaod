@@ -9,6 +9,8 @@
 #' reviewed open access material."
 #'
 #' DOAJ API documentation can be found at <https://doaj.org/api/v1/docs>.
+#' 
+#' DOAJ API FAQ: <https://doaj.org/faq#apikey>
 #'
 #' @section Package API:
 #' * [jaod_article()] - Get an article by ID
