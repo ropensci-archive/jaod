@@ -1,0 +1,61 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://doaj.org/api/v1/journals/f3f2e7f23d444370ae5f5199f85bc100
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: 'HTTP/2 200 '
+      date: Wed, 04 Sep 2019 17:03:44 GMT
+      content-type: application/json
+      access-control-allow-origin: '*'
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server: cloudflare
+      cf-ray: 511189df39222aa7-SEA
+      content-encoding: gzip
+    body:
+      encoding: UTF-8
+      string: '{"admin": {"owner": "15449173", "ticked": true, "contact": [{"email":
+        "hatkins@plos.org", "name": "Helen Atkins"}], "in_doaj": true, "seal": true},
+        "last_updated": "2018-05-10T10:17:18Z", "id": "f3f2e7f23d444370ae5f5199f85bc100",
+        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
+        "http://journals.plos.org/plosbiology/s/publishing-information", "policy":
+        [{"name": "LOCKSS"}, {"name": "PMC/Europe PMC/PMC Canada"}]}, "persistent_identifier_scheme":
+        ["DOI"], "keywords": ["biology", "molecular biology", "ecology"], "apc": {"currency":
+        "USD", "average_price": 2900}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
+        {"url": "http://www.lagotto.io/plos/", "statistics": true}, "title": "PLoS
+        Biology ", "publication_time": 28, "provider": "Public Library of Science
+        (PLoS)", "subject": [{"scheme": "LCC", "term": "Biology (General)", "code":
+        "QH301-705.5"}], "format": ["PDF", "HTML", "XML"], "plagiarism_detection":
+        {"detection": true, "url": "http://journals.plos.org/plosbiology/s/ethical-publishing-practice#loc-plagiarism"},
+        "apc_url": "http://journals.plos.org/plosbiology/s/publication-fees", "link":
+        [{"url": "http://journals.plos.org/plosbiology/", "type": "homepage"}, {"url":
+        "https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/",
+        "type": "waiver_policy"}, {"url": "http://journals.plos.org/plosbiology/s/editorial-board",
+        "type": "editorial_board"}, {"url": "http://journals.plos.org/plosbiology/s/journal-information#loc-scope",
+        "type": "aims_scope"}, {"url": "http://journals.plos.org/plosbiology/s/submission-guidelines",
+        "type": "author_instructions"}, {"url": "http://journals.plos.org/plosbiology/s/journal-information#loc-open-access",
+        "type": "oa_statement"}], "oa_start": {"year": 2003}, "editorial_review":
+        {"process": "Peer review", "url": "http://journals.plos.org/plosbiology/s/editorial-and-peer-review-process"},
+        "author_copyright": {"url": "http://journals.plos.org/plosbiology/s/content-license",
+        "copyright": "True"}, "publisher": "Public Library of Science (PLoS)", "language":
+        ["en"], "license": [{"open_access": true, "embedded": true, "title": "CC BY",
+        "url": "http://journals.plos.org/plosbiology/s/content-license", "NC": false,
+        "ND": false, "embedded_example_url": "http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002339",
+        "SA": false, "type": "CC BY", "BY": true}], "country": "US", "submission_charges_url":
+        "http://journals.plos.org/plosbiology/s/publication-fees", "author_publishing_rights":
+        {"url": "http://journals.plos.org/plosbiology/s/content-license", "publishing_rights":
+        "True"}, "identifier": [{"type": "pissn", "id": "1544-9173"}, {"type": "eissn",
+        "id": "1545-7885"}]}, "created_date": "2003-10-09T00:00:00Z"}'
+  recorded_at: 2019-09-04 17:03:44 GMT
+  recorded_with: vcr/0.3.0, webmockr/0.4.0
