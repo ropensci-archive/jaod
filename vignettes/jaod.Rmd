@@ -39,7 +39,7 @@ library("jaod")
 
 # Searching journals
 
-To search for a journal you can use the `jaod_journal_search`, 
+To search for a journal you can use the `jaod_journal_search`,
 which provides information abut the search result, query and relevant information.
 For instance looking for heritage:
 
@@ -48,7 +48,7 @@ bibliography <- jaod_journal_search(query = "bibjson.keywords:heritage")
 bibliography$results
 ```
 
-We can see with `bibliography$total` the total amount of results: `r bibliography$total`.
+We can see with `bibliography$total` the total amount of results with `bibliography$total`.
 On the `bibliography$results` we have the information about each entry, title, creation, update, title, subject.
 We have for instance the id of the journal in `bibliography$results$id`
 
@@ -74,7 +74,14 @@ articles <- jaod_article_search(query = "license:CC-BY", sort = "bibjson.year:de
 articles$results
 ```
 
-So we learn that there are `r articles$total` with CC-BY license. 
+So we learn that there are
+
+```{r}
+articles$total
+```
+
+with CC-BY license.
+
 Or to know the dois, or other identifiers:
 
 ```{r}
@@ -89,7 +96,7 @@ If you are interested in information about the article you can use the id:
 article <- jaod_article(articles$results$id[1])
 ```
 
-We can access the title _`r article$bibjson$title`_, authors, and more.
+We can access the title, authors, and more.
 
 
 # SessionInfo {-}
