@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,21 +15,18 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      access-control-allow-origin: '*'
-      connection: keep-alive
-      content-encoding: gzip
+      status: 'HTTP/2 200 '
+      date: Wed, 04 Sep 2019 17:00:25 GMT
       content-type: application/json
-      date: Mon, 29 Oct 2018 17:37:32 GMT
-      server: nginx/1.4.6 (Ubuntu)
-      status: HTTP/1.1 200 OK
-      transfer-encoding: chunked
-      vary:
-      - Accept-Encoding
-      - Accept-Encoding
+      access-control-allow-origin: '*'
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server: cloudflare
+      cf-ray: 511185016cace35a-SEA
+      content-encoding: gzip
     body:
       encoding: UTF-8
       string: '{"admin": {"upload_id": "256446be45eb4d5197fc1131a1a8a6a0", "in_doaj":
-        true, "publisher_record_id": "S0100-67622015000200215"}, "last_updated": "2018-01-02T11:11:01Z",
+        true, "publisher_record_id": "S0100-67622015000200215"}, "last_updated": "2019-02-21T15:26:49Z",
         "id": "73f781ad57094b98a0b46d8903fdc2c2", "bibjson": {"title": "SISTEMA DE
         INFORMA\u00c7\u00c3O GEOGR\u00c1FICA APLICADO AO LEVANTAMENTO DE SOLOS E APTID\u00c3O
         AGR\u00cdCOLA DAS TERRAS COMO SUBS\u00cdDIOS PARA O PLANEJAMENTO AMBIENTAL
@@ -61,8 +58,8 @@ http_interactions:
         "ES", "PT"], "title": "Revista \u00c1rvore", "country": "BR", "number": "2",
         "volume": "39", "end_page": "223"}, "subject": [{"scheme": "LCC", "term":
         "Forestry", "code": "SD1-669.5"}]}, "created_date": "2015-08-30T20:20:02Z"}'
-  recorded_at: 2018-10-29 17:37:32 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8
+  recorded_at: 2019-09-04 17:00:25 GMT
+  recorded_with: vcr/0.3.0, webmockr/0.4.0
 - request:
     method: get
     uri: https://doaj.org/api/v1/articles/0005e11ec616453f854070069385e057
@@ -70,7 +67,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -79,21 +76,18 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      access-control-allow-origin: '*'
-      connection: keep-alive
-      content-encoding: gzip
+      status: 'HTTP/2 200 '
+      date: Wed, 04 Sep 2019 17:00:25 GMT
       content-type: application/json
-      date: Mon, 29 Oct 2018 17:37:32 GMT
-      server: nginx/1.4.6 (Ubuntu)
-      status: HTTP/1.1 200 OK
-      transfer-encoding: chunked
-      vary:
-      - Accept-Encoding
-      - Accept-Encoding
+      access-control-allow-origin: '*'
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server: cloudflare
+      cf-ray: 511185042a9be35a-SEA
+      content-encoding: gzip
     body:
       encoding: UTF-8
       string: '{"admin": {"seal": true, "upload_id": "f5bc15c78aa341eda23d2ba578107cbc",
-        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2017-12-11T13:54:49Z",
+        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2019-02-21T13:48:23Z",
         "id": "0005e11ec616453f854070069385e057", "bibjson": {"title": "Where in the
         brain are the genes expressed", "journal": {"publisher": "Frontiers Media
         S.A.", "language": ["EN"], "license": [{"url": "http://journal.frontiersin.org/journal/neuroinformatics#about",
@@ -107,5 +101,5 @@ http_interactions:
         [{"type": "eissn", "id": "1662-5196"}, {"type": "doi", "id": "10.3389/neuro.11.009.2007"}],
         "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological psychiatry.
         Neuropsychiatry", "code": "RC321-571"}]}, "created_date": "2014-05-22T09:30:38Z"}'
-  recorded_at: 2018-10-29 17:37:32 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8
+  recorded_at: 2019-09-04 17:00:25 GMT
+  recorded_with: vcr/0.3.0, webmockr/0.4.0

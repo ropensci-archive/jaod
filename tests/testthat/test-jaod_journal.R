@@ -35,7 +35,7 @@ test_that("jaod_journal fails well", {
   expect_error(jaod_journal(), "argument \"id\" is missing")
 
   # not found
-  expect_error(jaod_journal("asdf"), "HTTP 404")
+  expect_error(jaod_journal("asdf"), "HTTP 404", class = "error")
 
   # wrong type
   expect_error(jaod_journal(5), "id must be of class character")

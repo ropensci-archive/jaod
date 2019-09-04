@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,363 +15,393 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      access-control-allow-origin: '*'
-      connection: keep-alive
-      content-encoding: gzip
+      status: 'HTTP/2 200 '
+      date: Wed, 04 Sep 2019 17:00:47 GMT
       content-type: application/json
-      date: Mon, 29 Oct 2018 17:38:49 GMT
-      link: <https://doaj.org/api/v1/search/articles/license:CC-BY?page=337449&pageSize=10>;
+      access-control-allow-origin: '*'
+      link: <https://doaj.org/api/v1/search/articles/license:CC-BY?page=417557&pageSize=10>;
         rel=last, <https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10>;
         rel=next
-      server: nginx/1.4.6 (Ubuntu)
-      status: HTTP/1.1 200 OK
-      transfer-encoding: chunked
-      vary:
-      - Accept-Encoding
-      - Accept-Encoding
-      x-total-count: '3374481'
+      x-total-count: '4175566'
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server: cloudflare
+      cf-ray: 5111858d2e2cc9a1-SEA
+      content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"last": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=337449&pageSize=10",
-        "pageSize": 10, "timestamp": "2018-1029T17:38:49Z", "results": [{"last_updated":
-        "2018-01-02T03:20:27Z", "id": "abbc2add34024e108151613949c0a5e5", "bibjson":
-        {"end_page": "8", "start_page": "5", "author": [{"name": "Zoran Marjanovi\u0107"},
-        {"name": "Maja Slavkovi\u0107-Jovanovi\u0107"}, {"name": "An\u0111elka Slavkovi\u0107"},
-        {"name": "Ivona \u0110or\u0111evi\u0107"}], "abstract": "Penetration of air
-        from the lungs into the space between the parietal and visceral pleura occurs
-        in the neonatal population, and is potentially a very serious problem with
-        the frequency 1-2%. It occurs idiopatically, though may be secondary, mostly
-        in the field of the lung pathology or previous trauma of the lung parenchyma.
-        The aim of the study was to assess the morbidity and mortality among hospitalized
-        neonates with the clinical presentation of pneumothorax. Retrospective analysis
-        involved 16 neonates hospitalized during a 5-year period in the Pediatric
-        Surgery Clinic in Ni\u0161. We analyzed the gestational age, body mass, existence
-        of previous lung pathology, Apgar score and treatment. Neonatal pneumothorax
-        was more common in boys (m:f=2,2:1), in patients with Apgar score below 3,
-        prematured babies and patients with previous lung disease. Treatment was surgical
-        in all patients, and involved thoracotomy (in 75% of patients), while in the
-        remaining 25% thoracocentesis was performed. Mortality reached 30% and was
-        recorded in the population of patients at risk with low Apgar score, in premature
-        babies, and in patients with previous lung disorders. Any child with signs
-        of ARDS must be carefully examined by neonatologist and pediatric surgeon.
-        If pneumothorax is timely diagnosed, even in a group of children with increased
-        risk, treatment is effective.", "title": "INFLUENCE OF RISK FACTORS ON FREQUENCY
-        AND PROGNOSIS OF NEONATAL PNEUMOTHORAX, FIVE-YEAR EXPERIENCE", "month": "06",
-        "link": [{"url": "http://publisher.medfak.ni.ac.rs/2010-html/2-broj/Ivona%20%C3%90ordevic-Influence%20of%20risk%20factors.pdf",
-        "type": "fulltext"}], "year": "2010", "keywords": ["gastrscopy", "gastric
-        cancer", "pathohistological result"], "identifier": [{"type": "pissn", "id":
-        "0365-4478"}], "journal": {"publisher": "University in Nis, Faculty of Medicine",
-        "language": ["EN"], "license": [{"url": "http://publisher.medfak.ni.ac.rs/Index/Open%20Access%20Policy.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Medica
-        Medianae", "country": "RS", "number": "2", "volume": "49", "issns": ["0365-4478",
-        "1821-2794"]}, "subject": [{"scheme": "LCC", "term": "Medicine", "code": "R"}]},
-        "created_date": "2010-07-15T17:12:54Z"}, {"last_updated": "2018-01-02T03:20:28Z",
-        "id": "abbdb71923c74bb186e7f02799bfb748", "bibjson": {"start_page": "66",
-        "author": [{"name": "Gerald Gutenschwager"}], "journal": {"publisher": "Risk
-        Institute, Trieste- Geneva", "language": ["EN"], "license": [{"url": "http://cadmusjournal.org/content/copyright-policy",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Cadmus",
-        "country": "IT", "number": "6", "volume": "1", "issns": ["2038-5242", "2038-5250"]},
-        "title": "From Epicurus to Maslow:  Happiness Then and Now and the Place of
-        the  Human Being in Social Theory", "subject": [{"scheme": "LCC", "term":
-        "International relations", "code": "JZ2-6530"}, {"scheme": "LCC", "term":
-        "Economic growth, development, planning", "code": "HD72-88"}], "month": "05",
-        "link": [{"url": "http://www.cadmusjournal.org/article/issue-6/epicurus-maslow",
-        "type": "fulltext"}], "year": "2013", "identifier": [{"type": "pissn", "id":
-        "2038-5242"}, {"type": "eissn", "id": "2038-5250"}], "abstract": "Protagoras
-        said, \"The human being is the measure of all things\". This implies, among
-        other things, that language, science and religion are human inventions, as
-        are economics, money, efficiency, race, conflict, etc. As symbol-using animals,
-        we have created these concepts to serve our purposes. But as our societies
-        have increased in size and our concepts have become more abstract, there is
-        a danger that we will forget our authorship and reify these symbols. This
-        inhibits change in the way we name things, so we are always in danger of misunderstanding
-        the reality we are describing. We seem to be at such a stage now as we employ
-        18th and 19th century theories to describe and, more importantly, create 21st
-        century reality. One such idea has to do with human needs. Influenced by the
-        abstract (economic) concepts we use, we have lost our sense of what we truly
-        need. Epicurus and Maslow may help to review and reassess those concepts.
-        Epicurus, by suggesting that our material needs are quite simple but that
-        emotional and spiritual need satisfaction requires a small scale loving community,
-        free from fear, and Maslow, by suggesting that our emotional development is
-        age-related, which, besides therapy, may help in suggesting revisions in socioeconomic
-        theory that would ensure the social conditions that would allow this development
-        to take place successfully.", "end_page": "90"}, "created_date": "2013-05-17T06:37:31Z"},
-        {"last_updated": "2018-01-02T03:20:28Z", "id": "abbdc73644994805a92adb87bc307a49",
-        "bibjson": {"end_page": "183", "start_page": "175", "author": [{"name": "Tania
-        F. Salvini"}, {"name": "Jo\u00e3o L. Q. Durigan"}, {"name": "Sabrina M. Peviani"},
-        {"name": "Thiago L. Russo"}], "abstract": "BACKGROUND: This review will describe
-        the main cellular mechanisms involved in the reduction and increase of myoproteins
-        synthesis commonly associated with muscle atrophy and hypertrophy, respectively.
-        OBJECTIVE: We analyzed the effects of electrical stimulation (ES) and stretching
-        exercise on the molecular pathways involved in muscle atrophy and hypertrophy.
-        We also described the main effects and limits of these resources in the skeletal
-        muscle, particularly on the denervated muscle. DISCUSSION: Recently, our studies
-        showed that the ES applied in a similar manner as performed in clinical practice
-        is able to attenuate the increase of genes expression involved in muscle atrophy.
-        However, ES was not effective to prevent the loss of muscle mass caused by
-        denervation. Regarding to stretching exercises, their mechanisms of action
-        on the denervated muscle are not fully understood and studies on this area
-        are scarce. Studies from our laboratory have found that stretching exercise
-        increased the extracellular matrix remodeling and decreased genes expression
-        related to atrophy in denervated muscle. Nevertheless, it was not enough to
-        prevent muscle atrophy after denervation. CONCLUSIONS: In spite of the use
-        of stretching exercise and ES in clinical practice in order to minimize the
-        atrophy of denervated muscle, there is still lack of scientific evidence to
-        justify the effectiveness of these resources to prevent muscle atrophy in
-        denervated muscle.<br>CONTEXTUALIZA\u00c7\u00c3O: Esta revis\u00e3o abordar\u00e1
-        os principais mecanismos celulares envolvidos na redu\u00e7\u00e3o e aumento
-        da s\u00edntese de mioprote\u00ednas comumente associadas \u00e0s situa\u00e7\u00f5es
-        de atrofia e hipertrofia muscular, respectivamente. OBJETIVO: Analisaremos
-        os efeitos da estimula\u00e7\u00e3o el\u00e9trica (EE) e do exerc\u00edcio
-        de alongamento sobre as vias moleculares envolvidas na atrofia e hipertrofia
-        muscular. Ser\u00e3o descritos os principais efeitos e os limites desses recursos
-        no m\u00fasculo esquel\u00e9tico, particularmente sobre o m\u00fasculo desnervado.
-        DISCUSS\u00c3O: Recentemente, nossos estudos mostraram que a EE, aplicada
-        de modo semelhante ao realizado na pr\u00e1tica cl\u00ednica, \u00e9 capaz
-        de amenizar o aumento da express\u00e3o de genes envolvidos na atrofia muscular.
-        Entretanto, a EE n\u00e3o foi efetiva para deter a perda de massa muscular
-        decorrente da desnerva\u00e7\u00e3o. Em rela\u00e7\u00e3o ao alongamento,
-        seus mecanismos de a\u00e7\u00e3o sobre o m\u00fasculo desnervado n\u00e3o
-        s\u00e3o totalmente conhecidos, e os trabalhos nessa \u00e1rea s\u00e3o escassos.
-        Estudos do nosso laborat\u00f3rio identificaram que o alongamento aumentou
-        o remodelamento da matriz extracelular e diminuiu a express\u00e3o de genes
-        relacionados \u00e0 atrofia no m\u00fasculo desnervado. Por\u00e9m, tamb\u00e9m
-        n\u00e3o foi suficiente para impedir a atrofia muscular ap\u00f3s a desnerva\u00e7\u00e3o.
-        CONCLUS\u00d5ES: Apesar do uso da EE e do alongamento muscular na pr\u00e1tica
-        cl\u00ednica, com objetivo de minimizar a atrofia do m\u00fasculo desnervado,
-        ainda h\u00e1 car\u00eancia de informa\u00e7\u00f5es cient\u00edficas que
-        justifiquem a efic\u00e1cia desses recursos para prevenir a atrofia no m\u00fasculo
-        desnervado.", "title": "Effects of electrical stimulation and stretching on
-        the adaptation of denervated skeletal muscle: implications for physical therapy
-        Efeitos da eletroestimula\u00e7\u00e3o e do alongamento muscular sobre a adapta\u00e7\u00e3o
-        do m\u00fasculo desnervado: implica\u00e7\u00f5es para a fisioterapia", "month":
-        "06", "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-35552012000300002",
-        "type": "fulltext"}], "year": "2012", "keywords": ["reabilita\u00e7\u00e3o",
-        "estimula\u00e7\u00e3o el\u00e9trica", "les\u00e3o nervosa perif\u00e9rica",
-        "atrofia muscular", "alongamento", "rehabilitation", "electric stimulation",
-        "peripheral nerve injury", "muscle atrophy", "stretching"], "identifier":
-        [{"type": "pissn", "id": "1413-3555"}], "journal": {"publisher": "Associa\u00e7\u00e3o
-        Brasileira de Pesquisa e P\u00f3s-Gradua\u00e7\u00e3o em Fisioterapia", "language":
-        ["EN"], "license": [{"url": "http://www.scielo.br/revistas/rbfis/iaboutj.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Brazilian
-        Journal of Physical Therapy", "country": "BR", "number": "3", "volume": "16",
-        "issns": ["1413-3555", "1809-9246"]}, "subject": [{"scheme": "LCC", "term":
-        "Therapeutics. Pharmacology", "code": "RM1-950"}]}, "created_date": "2013-09-05T09:59:39Z"},
-        {"last_updated": "2018-01-02T03:20:29Z", "id": "ab8a5abc4f42454aaf68d24246c64d7f",
-        "bibjson": {"start_page": "o524", "author": [{"name": "A. Matos Beja"}, {"name":
-        "J. A. Paix&amp;#227;o"}, {"name": "M. Ramos Silva"}, {"name": "P. S. Pereira
-        Silva"}], "journal": {"publisher": "International Union of Crystallography",
-        "language": ["EN"], "license": [{"url": "http://journals.iucr.org/services/oa/oalicenceshort.html",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Crystallographica
-        Section E", "country": "GB", "number": "3", "volume": "66", "issns": ["1600-5368"]},
-        "title": "Guanidinium 4-aminobenzoate", "subject": [{"scheme": "LCC", "term":
-        "Chemistry", "code": "QD1-999"}], "month": "03", "link": [{"url": "http://scripts.iucr.org/cgi-bin/paper?S160053681000396X",
-        "type": "fulltext"}], "year": "2010", "identifier": [{"type": "doi", "id":
-        "10.1107/S160053681000396X"}, {"type": "pissn", "id": "1600-5368"}], "abstract":
-        "In the title compound, CH6N3+&amp;#183;C7H6NO2&amp;#8722;, the cation and
-        anion lie on crystallographic mirror planes. The 4-aminobenzoate anion is
-        almost in a planar conformation with a maximum deviation of 0.024&amp;#8197;(2)&amp;#8197;&amp;#197;
-        for the N atom. The bond length in the deprotonated carboxyl group is intermediate
-        between those of normal single and double Csp2=O bonds, indicating delocalization
-        of the charge over both O atoms of the COO&amp;#8722; group. In the crystal,
-        N&amp;#8212;H...O hydrogen bonds assemble the ions in layers propagating in
-        the bc plane. This structure is very similar to that of guanidinium benzoate.
-        ", "end_page": "o524"}, "created_date": "2010-03-04T12:25:30Z"}, {"last_updated":
-        "2018-01-02T03:20:29Z", "id": "ab8aaf6f569a4dd0ae8f1df3666cf706", "bibjson":
-        {"end_page": "109", "start_page": "87", "author": [{"name": "Eleut\u00e9rio
-        Sampaio"}], "abstract": "Este artigo perspectiva alguns programas televisivos
-        de car\u00e1cter l\u00fadico como actividades mim\u00e9ticas, na linha interpretativa
-        de Elias e Dunning. Preconiza-se que nesse tipo de actividades t\u00eam lugar
-        manifesta\u00e7\u00f5es afectivo-emocionais que se confrontam com as do quotidiano
-        \"s\u00e9rio\", constituindo-se ao mesmo tempo como seu complemento incontorn\u00e1vel.
-        Tra\u00e7ar-se-\u00e3o alguns aspectos definidores das actividades mim\u00e9ticas,
-        real\u00e7ando o desenvolvimento no seu seio de emo\u00e7\u00f5es espec\u00edficas
-        socialmente produzidas, dando corpo a uma sociabilidade emocional que estaria
-        no cerne da considera\u00e7\u00e3o do hedonismo como objectivo principal a
-        alcan\u00e7ar.", "title": "O mimetismo emocional e a televis\u00e3o", "month":
-        "09", "link": [{"url": "http://www.scielo.oces.mctes.pt/scielo.php?script=sci_arttext&pid=S0873-65292000000200005",
-        "type": "fulltext"}], "year": "2000", "keywords": ["Actividades mim\u00e9ticas",
-        "sociabilidade emocional", "hedonismo"], "identifier": [{"type": "pissn",
-        "id": "0873-6529"}], "journal": {"publisher": "Editora Mundos Sociais", "license":
-        [{"url": "http://revistas.rcaap.pt/sociologiapp/about/submissions#copyrightNotice",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN",
-        "ES", "PT"], "title": "Sociologia", "country": "PT", "number": "33", "issns":
-        ["0873-6529"]}, "subject": [{"scheme": "LCC", "term": "Social Sciences", "code":
-        "H"}, {"scheme": "LCC", "term": "Sociology (General)", "code": "HM401-1281"}]},
-        "created_date": "2013-08-30T10:44:23Z"}, {"last_updated": "2018-01-02T03:20:29Z",
-        "id": "ab8b51a0b510498fa5827df1ebd8c5d6", "bibjson": {"end_page": "940", "start_page":
-        "927", "author": [{"name": "Antonio Jos\u00e9 Leal Costa"}], "abstract": "A
-        avalia\u00e7\u00e3o das conseq\u00fc\u00eancias dos problemas de sa\u00fade
-        \u00e9 um tema marcado pela diversidade conceitual e metodol\u00f3gica. Diferentes
-        modelos conceituais s\u00e3o utilizados para o desenvolvimento de m\u00e9todos
-        para avalia\u00e7\u00e3o dos n\u00edveis de sa\u00fade de popula\u00e7\u00f5es
-        humanas. A avalia\u00e7\u00e3o das limita\u00e7\u00f5es e restri\u00e7\u00f5es
-        da atividade f\u00edsica, devido a sua import\u00e2ncia no \u00e2mbito das
-        conseq\u00fc\u00eancias das doen\u00e7as cr\u00f4nicas, tem sido contemplada
-        em inqu\u00e9ritos populacionais. Tais an\u00e1lises baseiam-se nas escalas
-        de avalia\u00e7\u00e3o das atividades di\u00e1rias da vida ou das atividades
-        instrumentais di\u00e1rias da vida. A PNAD, por meio do seu Suplemento Sa\u00fade
-        realizado em 1998 e 2003, tem possibilitado a an\u00e1lise dos padr\u00f5es
-        de limita\u00e7\u00e3o das atividades habituais na popula\u00e7\u00e3o brasileira
-        com idade superior a 13 anos. Neste estudo foram apresentados indicadores
-        de diferentes graus de limita\u00e7\u00e3o, desenvolvidos com os dados da
-        PNAD 2003. Os resultados preliminares mostram perfis diferenciados de limita\u00e7\u00e3o
-        das atividades, segundo categorias das vari\u00e1veis sexo e faixa et\u00e1ria.
-        As mulheres e os indiv\u00edduos com mais idade apresentaram limita\u00e7\u00f5es
-        com maior freq\u00fc\u00eancia e em maior grau. A preocupa\u00e7\u00e3o com
-        o vi\u00e9s do informante se justifica pelo fato de metade das respostas ter
-        sido fornecida por terceiros.<br>The evaluation of the consequences of health
-        problems is a subject characterized by conceptual and methodological diversity.
-        Different conceptual models have been used for developing methods aimed at
-        evaluating the health of populations. In the context of chronic diseases,
-        the evaluation of physical activity restrictions and limitations based on
-        scales of activities of daily living and instrumental activities of daily
-        living is particularly important. Both the 1998 and 2003 National Household
-        Survey Health Interviews have allowed for an analysis of activity limitation
-        patterns of the Brazilian population aged 14 years and older. In the present
-        study we present different indicators of varying degrees of limitation elaborated
-        using data from the 2003 survey. Preliminary results showed varying patterns
-        of activity limitation according to sex and age. In general, limitations were
-        referred more frequently and to a higher degree among women and the elderly.
-        The concern with information bias is justified by the fact that half of the
-        questions were answered by proxy informants.", "title": "Metodologias e indicadores
-        para avalia\u00e7\u00e3o da capacidade funcional: an\u00e1lise preliminar
-        do Suplemento Sa\u00fade da Pesquisa Nacional por Amostra de - Domic\u00edlios
-        PNAD, Brasil, 2003 Methods and measures for the evaluation of functional capacity:
-        a preliminary analysis based on the National Household Sample Survey Health
-        Interviews - PNAD, Brazil, 2003", "month": "12", "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232006000400015",
-        "type": "fulltext"}], "year": "2006", "keywords": ["Limita\u00e7\u00e3o das
-        atividades habituais", "Incapacidade funcional", "Inqu\u00e9ritos de sa\u00fade",
-        "Daily activity limitation", "Functional disability", "Health surveys"], "identifier":
-        [{"type": "doi", "id": "10.1590/S1413-81232006000400015"}, {"type": "pissn",
-        "id": "1413-8123"}, {"type": "eissn", "id": "1678-4561"}], "journal": {"publisher":
-        "Associa\u00e7\u00e3o Brasileira de P\u00f3s-Gradua\u00e7\u00e3o em Sa\u00fade
-        Coletiva", "language": ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/csc/isubscrp.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Ci\u00eancia
-        & Sa\u00fade Coletiva", "country": "BR", "number": "4", "volume": "11", "issns":
-        ["1413-8123", "1678-4561"]}, "subject": [{"scheme": "LCC", "term": "Public
-        aspects of medicine", "code": "RA1-1270"}]}, "created_date": "2013-09-04T17:16:08Z"},
-        {"last_updated": "2018-01-02T03:20:30Z", "id": "ab8c04221f0d49198736af7b40adcec0",
-        "bibjson": {"start_page": "e02028-16", "author": [{"name": "Sasisekhar Bennuru"},
-        {"name": "James A. Cotton"}, {"name": "Jose M. C. Ribeiro"}, {"name": "Alexandra
-        Grote"}, {"name": "Bhavana Harsha"}, {"name": "Nancy Holroyd"}, {"name": "Amruta
-        Mhashilkar"}, {"name": "Douglas M. Molina"}, {"name": "Arlo Z. Randall"},
-        {"name": "Adam D. Shandling"}, {"name": "Thomas R. Unnasch"}, {"name": "Elodie
-        Ghedin"}, {"name": "Matthew Berriman"}, {"name": "Sara Lustigman"}, {"name":
-        "Thomas B. Nutman"}], "journal": {"publisher": "American Society for Microbiology",
-        "language": ["EN"], "license": [{"url": "http://mbio.asm.org/site/misc/authors.xhtml",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "mBio",
-        "country": "US", "number": "6", "volume": "7", "issns": ["2150-7511"]}, "title":
-        "Stage-Specific Transcriptome and Proteome Analyses of the Filarial Parasite
-        Onchocerca volvulus and Its Wolbachia Endosymbiont", "month": "11", "link":
-        [{"url": "http://mbio.asm.org/cgi/content/full/7/6/e02028-16", "type": "fulltext",
-        "content_type": "html"}], "year": "2016", "identifier": [{"type": "eissn",
-        "id": "2150-7511"}, {"type": "doi", "id": "10.1128/mBio.02028-16"}], "abstract":
-        "Onchocerciasis (river blindness) is a neglected tropical disease that has
-        been successfully targeted by mass drug treatment programs in the Americas
-        and small parts of Africa. Achieving the long-term goal of elimination of
-        onchocerciasis, however, requires additional tools, including drugs, vaccines,
-        and biomarkers of infection. Here, we describe the transcriptome and proteome
-        profiles of the major vector and the human host stages (L1, L2, L3, molting
-        L3, L4, adult male, and adult female) of Onchocerca volvulus along with the
-        proteome of each parasitic stage and of its Wolbachia endosymbiont (wOv).
-        In so doing, we have identified stage-specific pathways important to the parasite\u2019s
-        adaptation to its human host during its early development. Further, we generated
-        a protein array that, when screened with well-characterized human samples,
-        identified novel diagnostic biomarkers of O.\u00a0volvulus infection and new
-        potential vaccine candidates. This immunomic approach not only demonstrates
-        the power of this postgenomic discovery platform but also provides additional
-        tools for onchocerciasis control programs.", "subject": [{"scheme": "LCC",
-        "term": "Microbiology", "code": "QR1-502"}]}, "created_date": "2017-01-03T14:30:15Z"},
-        {"last_updated": "2018-01-02T03:21:35Z", "id": "ab2d5100c6d04bafb7b29564aa86023c",
-        "bibjson": {"start_page": "685", "author": [{"name": "Riesco Maria Luiza Gonzalez"},
-        {"name": "Fonseca Rosa Maria Godoy Serpa da"}], "journal": {"publisher": "Escola
-        Nacional de Sa\u00fade P\u00fablica, Funda\u00e7\u00e3o Oswaldo Cruz", "language":
-        ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/csp/iaboutj.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Cadernos
-        de Sa\u00fade P\u00fablica", "country": "BR", "number": "3", "volume": "18",
-        "issns": ["0102-311X", "1678-4464"]}, "title": "Elementos constitutivos da
-        forma\u00e7\u00e3o e inser\u00e7\u00e3o de profissionais n\u00e3o-m\u00e9dicos
-        na assist\u00eancia ao parto", "subject": [{"scheme": "LCC", "term": "Medicine",
-        "code": "R"}, {"scheme": "LCC", "term": "Public aspects of medicine", "code":
-        "RA1-1270"}], "link": [{"url": "http://www.scielosp.org/scielo.php?script=sci_arttext&pid=S0102-311X2002000300017",
-        "type": "fulltext"}], "year": "2002", "keywords": ["Enfermagem Obst\u00e9trica",
-        "Parteira Leiga", "Parto"], "identifier": [{"type": "pissn", "id": "0102-311X"},
-        {"type": "eissn", "id": "1678-4464"}], "abstract": "O estudo teve como objetivos
-        identificar a parteira, segundo a concep\u00e7\u00e3o de profissionais da
-        \u00e1rea de sa\u00fade, e desvelar os pressupostos ideol\u00f3gicos que justificam
-        sua forma\u00e7\u00e3o. Os dados de entrevistas com nove obstetrizes, enfermeiras
-        e m\u00e9dicos foram tratados pela an\u00e1lise de discurso, resultando nas
-        categorias emp\u00edricas \"Situa\u00e7\u00e3o da Assist\u00eancia ao Parto
-        no Brasil\" e \"A Parteira que Queremos (ou Devemos) e a Parteira que Podemos\".
-        Mediante a interpreta\u00e7\u00e3o dos dados foi poss\u00edvel vislumbrar
-        uma \"parteira em constru\u00e7\u00e3o\", que emergiu a partir da supera\u00e7\u00e3o
-        dial\u00e9tica da \"parteira ideal\".", "end_page": "698"}, "created_date":
-        "2004-05-31T00:00:00Z"}, {"last_updated": "2018-01-02T03:21:35Z", "id": "ab2d6885609b499294ad1a19c1aa3a6c",
-        "bibjson": {"start_page": "23803", "author": [{"affiliation": "", "name":
-        " \t E.R. Bittner"}], "journal": {"publisher": "Institute for Condensed Matter
-        Physics", "language": ["EN"], "license": [{"url": "http://www.icmp.lviv.ua/journal/index.html",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Condensed
-        Matter Physics", "country": "UA", "number": "2", "volume": "19", "issns":
-        ["1607-324X", "2224-9079"]}, "title": "An effective Hamiltonian approach for
-        Donor-Bridge-Acceptor electronic transitions: Exploring the role of bath memory",
-        "month": "3", "link": [{"url": "http://dx.doi.org/10.5488/CMP.19.23803", "type":
-        "fulltext"}], "year": "2016", "keywords": ["super-exchange", "electron transfer
-        theory", "organic photovoltaics", "ultrafast dynamics", "charge transfer"],
-        "identifier": [{"type": "doi", "id": "10.5488/CMP.19.23803"}, {"type": "pissn",
-        "id": "1607-324X"}], "abstract": "We present here a formally exact model for
-        electronic transitions between an initial (donor) and final (acceptor) states
-        linked by an intermediate (bridge) state. Our model incorporates a common
-        set of vibrational modes that are coupled to the donor, bridge, and acceptor
-        states and serves as a dissipative bath that destroys quantum coherence between
-        the donor and acceptor. Taking the memory time of the bath as a free parameter,
-        we calculate transition rates for a heuristic 3-state/2 mode Hamiltonian system
-        parameterized to represent the energetics and couplings in a typical organic
-        photovoltaic system. Our results indicate that if the memory time of the bath
-        is of the order of 10-100 fs, a two-state kinetic (i.e., incoherent hopping)
-        model will grossly underestimate overall transition rate.", "subject": [{"scheme":
-        "LCC", "term": "Physics", "code": "QC1-999"}]}, "created_date": "2016-03-16T14:29:41Z"},
-        {"last_updated": "2018-01-02T03:21:38Z", "id": "ab30bf1f487b4a0585da06de1a92b673",
-        "bibjson": {"start_page": "163", "author": [{"name": "HENRIQUES Gilberto Simeone"},
-        {"name": "COZZOLINO Silvia Maria Franciscato"}], "journal": {"publisher":
-        "Pontif\u00edcia Universidade Cat\u00f3lica de Campinas", "language": ["EN",
-        "ES", "PT"], "license": [{"url": "http://www.scielo.br/revistas/rn/iinstruc.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Revista
-        de Nutri\u00e7\u00e3o", "country": "BR", "number": "3", "volume": "14", "issns":
-        ["1415-5273", "1678-9865"]}, "title": "Determination of metallothionein levels
-        in tissues of young rats fed zinc-enriched diets", "subject": [{"scheme":
-        "LCC", "term": "Nutrition. Foods and food supply", "code": "TX341-641"}],
-        "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1415-52732001000300001",
-        "type": "fulltext"}], "year": "2001", "keywords": ["metallothionein", "zinc",
-        "biological availability", "experimental diets"], "identifier": [{"type":
-        "pissn", "id": "1415-5273"}, {"type": "eissn", "id": "1678-9865"}], "abstract":
-        "The objective of this work was to quantify metallothioneins (MT''s) in tissues
-        of rats fed different concentrations of zinc, in order to observe the animal
-        response to the metal in relation to different types of diets, and to assess
-        the nutritional status relating to zinc in the diets. Thirty-two Wistar newly-weaned
-        male rats were distributed into four experimental groups and housed in individual
-        cages. They had free access to water and diet containing different zinc concentrations,
-        named RC (AIN 93-like diet), RH (customary diet of the university restaurant),
-        both non-supplemented, and RCS and RHS, supplemented. After four weeks, the
-        animals were killed and liver, kidneys, femurs and testes were isolated to
-        determine metallothionein levels by a Cd/Hb affinity assay. Zinc content was
-        determined by Flame Atomic Absorption Spectroscopy (FAAS). The results showed
-        that zinc supplementation produced no change in the tissue metallothionein
-        profile in the doses under analysis. The highest metallothionein mean concentration
-        was found in the liver - 36.21 \u00b1 0.88 \u00b5g/g (mean for RC-RCS groups),
-        and 28.92 \u00b1 5.32 \u00b5g/g (mean for RH-RHS groups). Metallothionein
-        concentrations in testes were quite high, considering the small volume of
-        the organ - 19.29 \u00b1 0.54 \u00b5g/g (mean for RC-RCS groups), and 17.22
-        \u00b1 1.07 \u00b5g/g (mean for RH-RHS groups). Significant increases in zinc
-        concentration were observed in the liver of young supplemented rats - 38.94
-        \u00b1 3.43 \u00b5g/g of tissue for RCS, and 42.83 \u00b1 2.78 \u00b5g/g of
-        tissue for RHS, and in the femurs - 140.04 \u00b1 6.03 \u00b5g/g of tissue
-        for RCS, and 86.57 \u00b1 6.95 \u00b5g/g of tissue for RHS. The different
-        carrying zinc food matrices caused no change in the adaptive response to metallothionein
-        metabolism, and the lack of responsiveness towards metallothionein synthesis
-        did not invalidate the results of tissue zinc concentration parameters, which
-        suggest different degrees for zinc bioavailability.", "end_page": "169"},
-        "created_date": "2004-05-31T00:00:00Z"}], "next": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10",
-        "query": "license:CC-BY", "total": 3374481, "page": 1}'
-  recorded_at: 2018-10-29 17:38:49 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8
+      string: '{"last": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=417557&pageSize=10",
+        "pageSize": 10, "timestamp": "2019-09-04T17:00:47.818530Z", "results": [{"last_updated":
+        "2019-08-29T17:51:43Z", "id": "00000d914fd04a18adf84e756444ec98", "bibjson":
+        {"end_page": "440", "start_page": "431", "author": [{"name": "Mitidieri, Andr\u00e9
+        Luis"}, {"name": "Guimar\u00e3es, Let\u00edcia Batista"}, {"name": "Mazzutti,
+        Luciana Helena Cajas"}], "abstract": "O presente artigo centra-se em Las memorias
+        del General (1996) e Las vidas del General (2004), do ficcionista e jornalista
+        argentino Tom\u00e1s Eloy Mart\u00ednez, enfatizando o sujeito do enunciado
+        e o referente hist\u00f3rico. Apresentamos as reformula\u00e7\u00f5es julgadas
+        significativas entre a primeira e a segunda dessas edi\u00e7\u00f5es, antes
+        de procedermos \u00e0 an\u00e1lise do papel desempenhado pela mem\u00f3ria,
+        pela narrativa e pela reescrita do eu nos artigos que as comp\u00f5em: 1)
+        \u0093Las memorias de Puerta de Hierro\u0094; 2) \u0093D\u00edas de exilio
+        en Madrid \u0094; 3) \u0093Per\u00f3n y sus novelas\u0094. A voz autobiogr\u00e1fica
+        do ex-presidente da Argentina, impressa nas entrevistas concedidas a Mart\u00ednez,
+        passa pelas reavalia\u00e7\u00f5es do autor no primeiro artigo, deposita-se
+        residualmente no segundo texto, de car\u00e1ter biogr\u00e1fico, e se une
+        \u00e0 pr\u00f3pria voz autobiogr\u00e1fica do escritor no terceiro e nos
+        paratextos dos livros analisados, em processo que permite notar as fronteiras
+        cont\u00edguas entre narrativas memorial\u00edsticas, biogr\u00e1ficas, hist\u00f3ricas
+        e autobiogr\u00e1ficas", "title": "Tom\u00e1s Eloy Mart\u00ednez e as (des)mem\u00f3rias
+        de Juan Domingo Per\u00f3n = Tom\u00e1s Eloy Mart\u00ednez and the (des)memories
+        of Juan Domingo Per\u00f3n", "month": "1", "link": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/article/view/15435/10129",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2013", "keywords": ["LITERATURA
+        ARGENTINA", "ESCRITORES ARGENTINOS - CR\u00cdTICA E INTERPRETA\u00c7\u00c3O",
+        "MARTINEZ, TOM\u00c1S ELOY - CR\u00cdTICA E INTERPRETA\u00c7\u00c3O", "AUTOBIOGRAFIAS",
+        "PERONISMO (ARGENTINA)", "PERON, JUAN DOMINGO - BIOGRAFIA"], "identifier":
+        [{"type": "pissn", "id": "0101-3335"}], "journal": {"publisher": "Pontif\u00edcia
+        Universidade Cat\u00f3lica do Rio Grande do Sul", "language": ["ES", "PT"],
+        "license": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/index",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Letras
+        de Hoje", "country": "BR", "number": "4", "volume": "48", "issns": ["0101-3335",
+        "1984-7726"]}, "subject": [{"scheme": "LCC", "term": "Philology. Linguistics",
+        "code": "P1-1091"}, {"scheme": "LCC", "term": "Literature (General)", "code":
+        "PN1-6790"}]}, "created_date": "2019-06-26T11:40:25Z"}, {"last_updated": "2019-02-21T14:47:55Z",
+        "id": "000011857dbc42afb0f1a8c7e35ab46f", "bibjson": {"end_page": "1740",
+        "start_page": "1737", "author": [{"affiliation": "Department of Ophthalmology,
+        No.2 People''s Hospital of Xintai, Xintai 271200, Shandong Province, China",
+        "name": "Bo Gao"}, {"affiliation": "Department of Ophthalmology, Yankuang
+        Group General Hospital, Jining 273500, Shandong Province, China", "name":
+        "Mao-Lan Yang"}, {"affiliation": "Department of Ophthalmology, Affiliated
+        Hospital of Taishan Medical University, Tai''an 271000, Shandong Province,
+        China", "name": "Jiu-Min Yuan"}], "abstract": "As the progress of modern techniques
+        for cataract extraction surgery and various needs of intraocular lens(IOL)implantation,
+        continuous curvilinear capsulorhexis(CCC)is still in absolute dominance among
+        different ways of incision of anterior capsular lens in clinical practices,
+        due to its advantages such as smoothness of capsulor opening, strong anti-tearing
+        ability, integrity of supporting capsular bag, and strength at maintaining
+        IOL stability. This article describes in general the historical development
+        of CCC and complementary methods adapted to raise success rate when it is
+        used in special cases of cataract extraction surgery. Meanwhile, the article
+        also discusses briefly and envisions the prospects of femotsecond laser applied
+        in CCC technique for cataract extraction.", "title": "Study progresses on
+        continuous curvilinear capsulorhexis", "month": "10", "link": [{"url": "http://ies.ijo.cn/cn_publish/2015/10/201510016.pdf",
+        "type": "fulltext"}], "year": "2015", "keywords": ["continuous curvilinear
+        capsulorhexis", "special cataracts", "puncture of posterior chamber central
+        canal of stilling", "femtosecond laser"], "identifier": [{"type": "doi", "id":
+        "10.3980/j.issn.1672-5123.2015.10.16"}, {"type": "pissn", "id": "1672-5123"},
+        {"type": "eissn", "id": "1672-5123"}], "journal": {"publisher": "Press of
+        International Journal of Ophthalmology (IJO PRESS)", "language": ["EN"], "license":
+        [{"url": "http://ies.ijo.cn/gjykcn/ch/reader/view_news.aspx?id=20130815015707001",
+        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
+        "Guoji Yanke Zazhi", "country": "CN", "number": "10", "volume": "15", "issns":
+        ["1672-5123"]}, "subject": [{"scheme": "LCC", "term": "Ophthalmology", "code":
+        "RE1-994"}]}, "created_date": "2015-10-13T08:51:37Z"}, {"last_updated": "2019-02-21T17:54:48Z",
+        "id": "000019e3e0d146eaaff4d5163afda4de", "bibjson": {"end_page": "418", "start_page":
+        "399", "author": [{"name": "Sultan  G\u00dc\u00c7L\u00dc"}, {"affiliation":
+        "Ankara University", "name": "Meral  UYSAL"}], "abstract": "Bu ara\u015ft\u0131rman\u0131n
+        genel amac\u0131, k\u0131rsal kesimde ya\u015fayan\n kad\u0131nlar i\u00e7in
+        geli\u015ftirilecek \u201cHalk Sa\u011fl\u0131\u011f\u0131\u201d konulu bir
+        program\u0131n\n kad\u0131nlar\u0131n sa\u011fl\u0131k risk alg\u0131lamalar\u0131
+        ve sa\u011fl\u0131kla ilgili davran\u0131\u015flar\u0131\n \u00fczerindeki
+        etkisinin belirlenmesidir. Ara\u015ft\u0131rma grubunu, K\u00fctahya \u0130li\n
+        K\u00f6pr\u00fc\u00f6ren K\u00f6y\u00fc Halk E\u011fitim Merkezi\u2019ne ba\u011fl\u0131
+        kurslara devam eden,\n 15 ya\u015f\u0131ndan b\u00fcy\u00fck, okuma-yazma
+        bilen kad\u0131n kursiyerler\n olu\u015fturmaktad\u0131r. \u00c7al\u0131\u015fmada
+        veriler, anket, g\u00f6r\u00fc\u015fme ve odak grup\n g\u00f6r\u00fc\u015fmeleriyle
+        toplanm\u0131\u015ft\u0131r. 20 g\u00fcnl\u00fck bir e\u011fitim program\u0131n\u0131n\n
+        tamamlanmas\u0131n\u0131n ard\u0131ndan kat\u0131l\u0131mc\u0131lara \u00f6ntest
+        olarak uygulanan\n testler 10 g\u00fcn sonra sontest olarak tekrar uygulanm\u0131\u015ft\u0131r.
+        \u00c7al\u0131\u015fman\u0131n\n sonucunda, 20 g\u00fcn s\u00fcren programl\u0131
+        bir e\u011fitim \u00e7al\u0131\u015fmas\u0131n\u0131n etkili oldu\u011fu\n
+        g\u00f6r\u00fclm\u00fc\u015ft\u00fcr.", "title": "Kad\u0131nlar\u0131n\u0131n
+        sa\u011fl\u0131k e\u011fitimi ihtiya\u00e7lar\u0131n\u0131n odak grup g\u00f6r\u00fc\u015fmesi
+        y\u00f6ntemi ile belirlenmesi", "month": "10", "link": [{"url": "http://dergipark.gov.tr/auebfd/issue/38379/445027?publisher=ankara",
+        "type": "fulltext", "content_type": "html"}], "year": "2013", "keywords":
+        ["Adult education", " health education", " public health", " focus group conservation",
+        " woman education in rural areas", "Yeti\u015fkin e\u011fitimi", " sa\u011fl\u0131k
+        e\u011fitimi", " halk sa\u011fl\u0131\u011f\u0131", " odak grup g\u00f6r\u00fc\u015fmesi",
+        " k\u0131rsal kesimde kad\u0131n e\u011fitimi"], "identifier": [{"type": "pissn",
+        "id": "1301-3718"}, {"type": "eissn", "id": "2458-8342"}], "journal": {"publisher":
+        "Ankara University", "language": ["TR"], "license": [{"url": "http://dergipark.gov.tr/auebfd/page/3887",
+        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
+        "Ankara \u00dcniversitesi E\u011fitim Bilimleri Fak\u00fcltesi Dergisi", "country":
+        "TR", "number": "2", "volume": "46", "issns": ["1301-3718", "2458-8342"]},
+        "subject": [{"scheme": "LCC", "term": "Education", "code": "L"}, {"scheme":
+        "LCC", "term": "Education (General)", "code": "L7-991"}]}, "created_date":
+        "2018-07-18T16:46:33Z"}, {"last_updated": "2019-04-02T13:48:52Z", "id": "00001cb7350c4c5ba3cefe297098f736",
+        "bibjson": {"start_page": "282", "author": [{"name": "Isac Karimi"}, {"name":
+        "Ali Amini"}, {"name": "Mehri Azadbakht"}, {"name": "Zahra Rashidi"}], "journal":
+        {"publisher": "Royan Institute (ACECR), Tehran", "language": ["EN"], "license":
+        [{"url": "http://celljournal.org/us", "open_access": true, "type": "CC BY-NC",
+        "title": "CC BY-NC"}], "title": "Cell Journal", "country": "IR", "number":
+        "4", "volume": "15", "issns": ["2228-5806", "2228-5814"]}, "title": "Hydrostatic
+        Pressure Affects In Vitro Maturation of Oocytes and Follicles and Increases
+        Granulosa Cell Death", "subject": [{"scheme": "LCC", "term": "Medicine", "code":
+        "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}], "link": [{"url":
+        "http://celljournal.org/library/upload/article/af_4242286323327245323625234522626624742334Rashidi-1.pdf",
+        "type": "fulltext"}], "year": "2013", "keywords": ["In vitro Maturation",
+        "Oocyte", "Hydrostatic Pressure", "Apoptosis", "Mouse"], "identifier": [{"type":
+        "pissn", "id": "2228-5806"}, {"type": "eissn", "id": "2228-5814"}], "abstract":
+        "Objective: This study examines the effects of hydrostatic pressure on in
+        vitro maturation (IVM) of oocytes derived from in vitro grown follicles.Materials
+        and Methods: In this experimental study, preantral follicles were isolated
+        from 12-day-old female NMRI mice. Each follicle was cultured individually
+        in Alpha Minimal Essential Medium (\u03b1-MEM) under mineral oil for 12 days.
+        Then, follicles were induced for IVM and divided into two groups, control
+        and experiment. In the experiment group follicles were subjected to 20 mmHg
+        pressure for 30 minutes and cultured for 24-48 hours. We assessed for viability
+        and IVM of the oocytes. The percentage of apoptosis in cumulus cells was determined
+        by the TUNEL assay. A comparison between groups was made using the student\u2019s
+        t test.Results: The percentage of metaphase II oocytes (MII) increased in
+        hydrostatic pressure-treated follicles compared to controls (p<0.05). Cumulus
+        cell viability reduced in hydrostatic pressure-treated follicles compared
+        to controls (p<0.05). Exposure of follicles to pressure increased apoptosis
+        in cumulus cells compared to controls (p<0.05).Conclusion: Hydrostatic pressure,
+        by inducing apoptosis in cumulus cells, participates in the cumulus oocyte
+        coupled relationship with oocyte maturation.", "end_page": "293"}, "created_date":
+        "2013-11-20T07:00:09Z"}, {"last_updated": "2019-08-29T17:50:39Z", "id": "00001f91067541608ff350508b3af10e",
+        "bibjson": {"end_page": "126", "start_page": "109", "author": [{"name": "Peres,
+        Thais Helena de Alc\u00e2ntara"}], "abstract": "Este artigo analisa o Programa
+        Comunidade Solid\u00e1ria, criado pelo primeiro governo Fernando Henrique
+        Cardoso (1995-1998) para a condu\u00e7\u00e3o de pol\u00edticas sociais em
+        parceria com a iniciativa privada e articuladas com a sociedade atrav\u00e9s
+        das Organiza\u00e7\u00f5es N\u00e3o-Governamentais (ONGs). Tal \"inova\u00e7\u00e3o\"
+        tinha como prop\u00f3sito a supera\u00e7\u00e3o da ordem pol\u00edtica patrimonialista
+        vigente no pa\u00eds. A concep\u00e7\u00e3o e as inten\u00e7\u00f5es do Programa
+        Comunidade Solid\u00e1ria s\u00e3o cotejadas com os preceitos estabelecidos
+        pela Constitui\u00e7\u00e3o de 1988 \u00e0 seguridade social, especificamente
+        no campo da assist\u00eancia social, e regulamentados em 1993 pela Lei Org\u00e2nica
+        Social (LOAS). Conclui, a partir dos dados do Alfabetiza\u00e7\u00e3o Solid\u00e1ria,
+        programa de combate ao analfabetismo idealizado pelo Comunidade Solid\u00e1ria,
+        que o modelo para o desenvolvimento de pol\u00edticas sociais proposto pode
+        significar avan\u00e7os para a democratiza\u00e7\u00e3o da rela\u00e7\u00e3o
+        Estado/sociedsade no Brasil", "title": "Comunidade solid\u00e1ria: a proposta
+        de um outro modelo para as pol\u00edticas sociais", "month": "1", "link":
+        [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/article/viewFile/37/1609",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2005", "keywords": ["SOCIOLOGIA",
+        "POL\u00cdTICAS P\u00daBLICAS"], "identifier": [{"type": "pissn", "id": "1984-7289"}],
+        "journal": {"publisher": "Pontif\u00edcia Universidade Cat\u00f3lica do Rio
+        Grande do Sul (EDIPUCRS)", "language": ["PT"], "license": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/index",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Civitas
+        - Revista de Ci\u00eancias Sociais", "country": "BR", "number": "1", "volume":
+        "5", "issns": ["1519-6089", "1984-7289"]}, "subject": [{"scheme": "LCC", "term":
+        "Social sciences (General)", "code": "H1-99"}]}, "created_date": "2019-06-26T11:39:30Z"},
+        {"last_updated": "2019-02-21T11:34:22Z", "id": "000020ccd46f45b59f7ebbf88614b7f1",
+        "bibjson": {"start_page": "205", "author": [{"name": "Eyherabide Juan Jos\u00e9"},
+        {"name": "Leaden Mar\u00eda In\u00e9s"}, {"name": "Alonso Sara"}], "journal":
+        {"publisher": "Embrapa Informa\u00e7\u00e3o Tecnol\u00f3gica", "language":
+        ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/scielo.php?pid=0100-204X&script=sci_serial",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Pesquisa
+        Agropecu\u00e1ria Brasileira", "country": "BR", "number": "1", "volume": "36",
+        "issns": ["0100-204X", "1678-3921"]}, "title": "Yellow and purple nutsedges
+        survey in the southeastern Buenos Aires Province, Argentina", "subject": [{"scheme":
+        "LCC", "term": "Agriculture (General)", "code": "S1-972"}], "link": [{"url":
+        "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-204X2001000100025",
+        "type": "fulltext"}], "year": "2001", "keywords": ["Cyperus", "weed plants",
+        "agronomic crop production", "horticultural crop production"], "identifier":
+        [{"type": "pissn", "id": "0100-204X"}, {"type": "eissn", "id": "1678-3921"}],
+        "abstract": "A survey of 79 fields was conducted between December 1993 and
+        January 1994, to determine the distribution and relative importance of species
+        of the genus Cyperus, to justify developing management strategies in the southeastern
+        of Buenos Aires Province, Argentina. Yellow and purple nutsedge were found
+        in 43% and 9% respectively of the surveyed fields. Thirty eight per cent of
+        the surveyed area showed a heavy infestation of yellow nutsedge, and in 90%
+        of cases yellow nutsedge was invading fields cultivated with summer crops
+        and associated with one or more of other seven perennial weeds, mainly bermudagrass.",
+        "end_page": "209"}, "created_date": "2004-05-31T00:00:00Z"}, {"admin": {"seal":
+        true}, "last_updated": "2019-02-21T12:40:20Z", "id": "000028c72ae5477c8014dcdb65beea11",
+        "bibjson": {"author": [{"affiliation": "Karlsruhe Institute of Technology",
+        "name": "Anne eFocke"}, {"affiliation": "Karlsruhe Institute of Technology",
+        "name": "Christian eStockinger"}, {"affiliation": "Karlsruhe Institute of
+        Technology", "name": "Christina eDiepold"}, {"affiliation": "Max Planck Institute
+        for Human Cognitive and Brain Sciences Leipzig", "name": "Marco eTaubert"},
+        {"affiliation": "Karlsruhe Institute of Technology", "name": "Thorsten eStein"}],
+        "journal": {"publisher": "Frontiers Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/psychology#about",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
+        "title": "Frontiers in Psychology", "country": "CH", "volume": "4", "issns":
+        ["1664-1078"]}, "title": "The influence of catch trials on the consolidation
+        of motor memory in force field adaptation tasks", "month": "7", "link": [{"url":
+        "http://journal.frontiersin.org/Journal/10.3389/fpsyg.2013.00479/full", "type":
+        "fulltext", "content_type": "HTML"}], "year": "2013", "keywords": ["interference",
+        "motor learning", "reaching movements", "after-effects", "manipulandum"],
+        "identifier": [{"type": "eissn", "id": "1664-1078"}, {"type": "doi", "id":
+        "10.3389/fpsyg.2013.00479"}], "abstract": "In computational neuroscience it
+        is generally accepted that human motor memory contains neural representations
+        of the physics of the musculoskeletal system and the objects in the environment.
+        These representations are called internal models. Force field studies, in
+        which subjects have to adapt to dynamic perturbations induced by a robotic
+        manipulandum, are an established tool to analyze the characteristics of such
+        internal models. The aim of the current study was to investigate whether catch
+        trials during force field learning could influence the consolidation of motor
+        memory in more complex tasks. Thereby, the force field was more than double
+        the force field of previous studies (35 Ns/m). Moreover, the arm of the subjects
+        was not supported. A total of forty-six subjects participated in this study
+        and performed center-out movements at a robotic manipulandum in two different
+        force fields. Two control groups learned force field A on day 1 and were retested
+        in the same force field on day 3 (AA). Two test groups additionally learned
+        an interfering force field B (=-A) on day 2 (ABA). The difference between
+        the two test and control groups, respectively, was the absence (0%) or presence
+        (19%) of catch trials, in which the force field was turned off suddenly. The
+        results showed consolidation of force field A on day 3 for both control groups.
+        Test groups showed no consolidation of force field A (19% catch trials) and
+        even poorer performance on day 3 (0% catch trials). In conclusion, it can
+        be stated that catch trials seem to have a positive effect on the performance
+        on day 3 but do not trigger a consolidation process as shown in previous studies
+        that used a lower force field viscosity with supported arm. These findings
+        indicate that the results of previous studies in which less complex tasks
+        were analyzed, cannot be fully transferred to more complex tasks. Moreover,
+        the effects of catch trials in these situations are insufficiently understood
+        and further research is needed.", "subject": [{"scheme": "LCC", "term": "Psychology",
+        "code": "BF1-990"}]}, "created_date": "2014-05-22T09:41:53Z"}, {"admin": {"seal":
+        true}, "last_updated": "2019-02-21T16:48:48Z", "id": "00002efb01964f67914e8246d36dfe60",
+        "bibjson": {"start_page": "12", "author": [{"affiliation": "Faculty of Economics
+        and Management of Sousse, LAMIDED, University of Sousse, Sousse 4023, Tunisia",
+        "name": "Hasna Khemili"}, {"affiliation": "Faculty of Economics and Management
+        of Sousse, LAMIDED, University of Sousse, Sousse 4023, Tunisia", "name": "Mounir
+        Belloumi"}], "journal": {"publisher": "MDPI AG", "language": ["EN"], "license":
+        [{"url": "http://www.mdpi.com/journal/economies/about", "open_access": true,
+        "type": "CC BY", "title": "CC BY"}], "title": "Economies", "country": "CH",
+        "number": "1", "volume": "6", "issns": ["2227-7099"]}, "title": "Social Security
+        and Fighting Poverty in Tunisia", "month": "2", "link": [{"url": "http://www.mdpi.com/2227-7099/6/1/12",
+        "type": "fulltext", "content_type": "pdf"}], "year": "2018", "keywords": ["poverty",
+        "social security", "inequality", "shocks", "economic growth", "Tunisia"],
+        "identifier": [{"type": "eissn", "id": "2227-7099"}, {"type": "doi", "id":
+        "10.3390/economies6010012"}], "abstract": "The objective of this study was
+        to examine the role of social security in fighting poverty in Metlaoui, Tunisia,
+        using survey data collected between July 2012 and January 2014, covering 200
+        poor households. We used questionnaire data, which gave a thorough analysis
+        of the reactions, behavior, and strategies adopted by poor households as a
+        result of various forms of risk. Social security has an effect on a number
+        of different areas, including health, education, housing, and income. Our
+        methodology explored both complete and partial risk-sharing, to investigate
+        the impact of social security schemes on the strategies adopted by households
+        to cope with economic shocks. The estimation results of different models showed
+        that social security could help social security-covered households choose
+        less costly strategies to cope with risks. However, the role of social security
+        remains insufficient, given that covered households had less confidence in
+        its services and they adopted strategies of self-insurance or income smoothing.
+        Overall, the results showed that social security plays an important role in
+        Metlaoui, but it remains insufficient, especially for households that are
+        not covered by social security and are suffering from heavy health expenditures.",
+        "subject": [{"scheme": "LCC", "term": "Economics as a science", "code": "HB71-74"}]},
+        "created_date": "2018-02-19T19:59:36Z"}, {"admin": {"seal": true}, "last_updated":
+        "2019-02-21T18:01:53Z", "id": "00003741594643f4996e2555a01e03c7", "bibjson":
+        {"end_page": "9", "start_page": "1", "author": [{"affiliation": "Boston University
+        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
+        "name": "Jonathan D. Cherry"}, {"affiliation": "Boston University Alzheimer\u2019s
+        Disease and CTE Center, Boston University School of Medicine", "name": "Jesse
+        Mez"}, {"affiliation": "Department of Pathology, Fishberg Department of Neuroscience,
+        Friedman Brain Institute, Ronald M. Loeb Center for Alzheimer\u2019s Disease,
+        Icahn School of Medicine at Mount Sinai School", "name": "John F. Crary"},
+        {"affiliation": "Department of Biostatistics, Boston University School of
+        Public Health", "name": "Yorghos Tripodis"}, {"affiliation": "Boston University
+        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
+        "name": "Victor E. Alvarez"}, {"affiliation": "Boston University Alzheimer\u2019s
+        Disease and CTE Center, Boston University School of Medicine", "name": "Ian
+        Mahar"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE
+        Center, Boston University School of Medicine", "name": "Bertrand R. Huber"},
+        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
+        Boston University School of Medicine", "name": "Michael L. Alosco"}, {"affiliation":
+        "Department of Veterans Affairs Medical Center", "name": "Raymond Nicks"},
+        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
+        Boston University School of Medicine", "name": "Bobak Abdolmohammadi"}, {"affiliation":
+        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
+        School of Medicine", "name": "Patrick T. Kiernan"}, {"affiliation": "Boston
+        University Alzheimer\u2019s Disease and CTE Center, Boston University School
+        of Medicine", "name": "Laney Evers"}, {"affiliation": "Boston University Alzheimer\u2019s
+        Disease and CTE Center, Boston University School of Medicine", "name": "Sarah
+        Svirsky"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and
+        CTE Center, Boston University School of Medicine", "name": "Katharine Babcock"},
+        {"affiliation": "VA Boston Healthcare System", "name": "Hannah M. Gardner"},
+        {"affiliation": "VA Boston Healthcare System", "name": "Gaoyuan Meng"}, {"affiliation":
+        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
+        School of Medicine", "name": "Christopher J. Nowinski"}, {"affiliation": "Department
+        of Biostatistics, Boston University School of Public Health", "name": "Brett
+        M. Martin"}, {"affiliation": "Department of Neurology, Boston University School
+        of Medicine", "name": "Brigid Dwyer"}, {"affiliation": "Boston University
+        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
+        "name": "Neil W. Kowall"}, {"affiliation": "Department of Anatomy and Neurobiology,
+        Boston University School of Medicine", "name": "Robert C. Cantu"}, {"affiliation":
+        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
+        School of Medicine", "name": "Lee E. Goldstein"}, {"affiliation": "Department
+        of Neurology, Boston University School of Medicine", "name": "Douglas I. Katz"},
+        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
+        Boston University School of Medicine", "name": "Robert A. Stern"}, {"affiliation":
+        "Department of Neurology, Boston University School of Medicine", "name": "Lindsay
+        A. Farrer"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and
+        CTE Center, Boston University School of Medicine", "name": "Ann C. McKee"},
+        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
+        Boston University School of Medicine", "name": "Thor D. Stein"}], "abstract":
+        "Abstract The genetic basis of chronic traumatic encephalopathy (CTE) is poorly
+        understood. Variation in transmembrane protein 106B (TMEM106B) has been associated
+        with enhanced neuroinflammation during aging and with TDP-43-related neurodegenerative
+        disease, and rs3173615, a missense coding SNP in TMEM106B, has been implicated
+        as a functional variant in these processes. Neuroinflammation and TDP-43 pathology
+        are prominent features in CTE. The purpose of this study was to determine
+        whether genetic variation in TMEM106B is associated with CTE risk, pathological
+        features, and ante-mortem dementia. Eighty-six deceased male athletes with
+        a history of participation in American football, informant-reported Caucasian,
+        and a positive postmortem diagnosis of CTE without comorbid neurodegenerative
+        disease were genotyped for rs3173615. The minor allele frequency (MAF\u2009=\u20090.42)
+        in participants with CTE did not differ from previously reported neurologically
+        normal controls (MAF\u2009=\u20090.43). However, in a case-only analysis among
+        CTE cases, the minor allele was associated with reduced phosphorylated tau
+        (ptau) pathology in the dorsolateral frontal cortex (DLFC) (AT8 density, odds
+        ratio [OR] of increasing one quartile\u2009=\u20090.42, 95% confidence interval
+        [CI] 0.22\u20130.79, p\u2009=\u20090.008), reduced neuroinflammation in the
+        DLFC (CD68 density, OR of increasing one quartile\u2009=\u20090.53, 95% CI
+        0.29\u20130.98, p\u2009=\u20090.043), and increased synaptic protein density
+        (\u03b2\u2009=\u20090.306, 95% CI 0.065\u20130.546, p\u2009=\u20090.014).
+        Among CTE cases, TMEM106B minor allele was also associated with reduced ante-mortem
+        dementia (OR\u2009=\u20090.40, 95% CI 0.16\u20130.99, p\u2009=\u20090.048),
+        but was not associated with TDP-43 pathology. All case-only models were adjusted
+        for age at death and duration of football play. Taken together, variation
+        in TMEM106B may have a protective effect on CTE-related outcomes.", "title":
+        "Variation in TMEM106B in chronic traumatic encephalopathy", "month": "11",
+        "link": [{"url": "http://link.springer.com/article/10.1186/s40478-018-0619-9",
+        "type": "fulltext", "content_type": "HTML"}], "year": "2018", "keywords":
+        ["Chronic traumatic encephalopathy", "TMEM106B", "Neuroinflammation", "Football",
+        "Traumatic brain injury", "Tau"], "identifier": [{"type": "doi", "id": "10.1186/s40478-018-0619-9"},
+        {"type": "eissn", "id": "2051-5960"}], "journal": {"publisher": "BMC", "language":
+        ["EN"], "license": [{"url": "https://actaneurocomms.biomedcentral.com/submission-guidelines/copyright",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Neuropathologica
+        Communications", "country": "GB", "number": "1", "volume": "6", "issns": ["2051-5960"]},
+        "subject": [{"scheme": "LCC", "term": "Neurology. Diseases of the nervous
+        system", "code": "RC346-429"}]}, "created_date": "2018-11-04T12:37:46Z"},
+        {"last_updated": "2019-02-21T18:26:32Z", "id": "00003b1f9857400494e87ee739ed2098",
+        "bibjson": {"end_page": "620", "start_page": "616", "author": [{"affiliation":
+        "Department of Neurology, the Second Hospital of Hebei Medical University,
+        Shijiazhuang 050000, Hebei, China", "name": "Kun HONG"}, {"affiliation": "Department
+        of Neurology, Hebei General Hospital, Shijiazhuang 050051, Hebei, China",
+        "name": "Yan-hong DONG"}, {"affiliation": "Department of Geriatrics, the First
+        Hospital of Shijiazhuang City, Shijiazhuang 050011, Hebei, China", "name":
+        "Yuan-yuan ZHOU"}, {"affiliation": "Department of Geriatrics, the First Hospital
+        of Shijiazhuang City, Shijiazhuang 050011, Hebei, China", "name": "Hui-ying
+        ZHAO"}, {"affiliation": "Department of Neurology, the Second Hospital of Hebei
+        Medical University, Shijiazhuang 050000, Hebei, China", "name": "Jun-ying
+        HE"}, {"affiliation": "Department of Neurology, the Second Hospital of Hebei
+        Medical University, Shijiazhuang 050000, Hebei, China", "name": "Yue-li ZOU"},
+        {"affiliation": "Department of Neurology, the Second Hospital of Hebei Medical
+        University, Shijiazhuang 050000, Hebei, China", "name": "Yi LI"}, {"affiliation":
+        "Department of Neurology, the Second Hospital of Hebei Medical University,
+        Shijiazhuang 050000, Hebei, China", "name": "Ya-juan LIU"}, {"affiliation":
+        "Department of Neurology, the Second Hospital of Hebei Medical University,
+        Shijiazhuang 050000, Hebei, China", "name": "Jun-zhao CUI"}, {"affiliation":
+        "Department of Neurology, the Second Hospital of Hebei Medical University,
+        Shijiazhuang 050000, Hebei, China", "name": "Qin-qin ZHANG"}, {"affiliation":
+        "Department of Neurology, the Second Hospital of Hebei Medical University,
+        Shijiazhuang 050000, Hebei, China", "name": "Xin LIU"}, {"affiliation": "Department
+        of Neurology, the Second Hospital of Hebei Medical University, Shijiazhuang
+        050000, Hebei, China", "name": "Hui BU"}], "abstract": "<strong>DOI: </strong>10.3969/j.issn.1672-6731.2016.09.012",
+        "title": "Anti-N-methyl-D-aspartate receptor encephalitis combined with teratoma:
+        two cases report", "month": "9", "link": [{"url": "http://www.cjcnn.org/index.php/cjcnn/article/view/1462",
+        "type": "fulltext", "content_type": "html"}], "year": "2016", "keywords":
+        ["Encephalitis", "Receptors, N-methyl-D-aspartate", "Teratoma", "Case reports"],
+        "identifier": [{"type": "pissn", "id": "1672-6731"}], "journal": {"publisher":
+        "Tianjin Huanhu Hospital", "language": ["EN", "ZH"], "license": [{"url": "http://www.cjcnn.org/index.php/cjcnn/about/editorialPolicies#custom-1",
+        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Chinese
+        Journal of Contemporary Neurology and Neurosurgery", "country": "CN", "number":
+        "9", "volume": "16", "issns": ["1672-6731"]}, "subject": [{"scheme": "LCC",
+        "term": "Neurology. Diseases of the nervous system", "code": "RC346-429"}]},
+        "created_date": "2016-10-24T05:00:05Z"}], "next": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10",
+        "query": "license:CC-BY", "total": 4175566, "page": 1}'
+  recorded_at: 2019-09-04 17:00:48 GMT
+  recorded_with: vcr/0.3.0, webmockr/0.4.0

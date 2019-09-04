@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,21 +15,18 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      access-control-allow-origin: '*'
-      connection: keep-alive
-      content-encoding: gzip
+      status: 'HTTP/2 200 '
+      date: Wed, 04 Sep 2019 17:00:24 GMT
       content-type: application/json
-      date: Mon, 29 Oct 2018 17:37:31 GMT
-      server: nginx/1.4.6 (Ubuntu)
-      status: HTTP/1.1 200 OK
-      transfer-encoding: chunked
-      vary:
-      - Accept-Encoding
-      - Accept-Encoding
+      access-control-allow-origin: '*'
+      expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server: cloudflare
+      cf-ray: 511184fd2afee35a-SEA
+      content-encoding: gzip
     body:
       encoding: UTF-8
       string: '{"admin": {"seal": true, "upload_id": "f5bc15c78aa341eda23d2ba578107cbc",
-        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2017-12-11T13:54:49Z",
+        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2019-02-21T13:48:23Z",
         "id": "0005e11ec616453f854070069385e057", "bibjson": {"title": "Where in the
         brain are the genes expressed", "journal": {"publisher": "Frontiers Media
         S.A.", "language": ["EN"], "license": [{"url": "http://journal.frontiersin.org/journal/neuroinformatics#about",
@@ -43,5 +40,5 @@ http_interactions:
         [{"type": "eissn", "id": "1662-5196"}, {"type": "doi", "id": "10.3389/neuro.11.009.2007"}],
         "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological psychiatry.
         Neuropsychiatry", "code": "RC321-571"}]}, "created_date": "2014-05-22T09:30:38Z"}'
-  recorded_at: 2018-10-29 17:37:31 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8
+  recorded_at: 2019-09-04 17:00:24 GMT
+  recorded_with: vcr/0.3.0, webmockr/0.4.0
