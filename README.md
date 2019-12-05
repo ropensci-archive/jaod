@@ -14,7 +14,7 @@ jaod
 
 DOAJ API FAQ: <https://doaj.org/faq#apikey>
 
-get started with the package docs: <https://ropensci.github.io/jaod/>
+get started with the package docs: <https://docs.ropensci.org/jaod/>
 
 ## installation
 
