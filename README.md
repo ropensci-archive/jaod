@@ -29,7 +29,7 @@ development version
 
 
 ```r
-devtools::install_github("ropensci/jaod")
+resmotes::install_github("ropensci/jaod")
 ```
 
 
@@ -43,7 +43,7 @@ library("jaod")
 ```r
 jaod_journal_search(query = "bibjson.keywords:heritage")
 #> $timestamp
-#> [1] "2019-09-04T16:58:15.006551Z"
+#> [1] "2020-06-23T18:59:00.749938Z"
 #> 
 #> $page
 #> [1] 1
@@ -55,51 +55,49 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 #> [1] "bibjson.keywords:heritage"
 #> 
 #> $total
-#> [1] 95
+#> [1] 108
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=10&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=11&pageSize=10"
 #> 
 #> $results
 #> # A tibble: 10 x 40
-#>    last_updated id    created_date admin.ticked admin.seal bibjson.allows_…
-#>    <chr>        <chr> <chr>        <lgl>        <lgl>      <lgl>           
-#>  1 2017-12-11T… 0110… 2014-05-19T… TRUE         NA         TRUE            
-#>  2 2018-05-10T… 0223… 2017-06-30T… TRUE         FALSE      TRUE            
-#>  3 2018-05-10T… 08d5… 2010-12-21T… TRUE         FALSE      TRUE            
-#>  4 2018-05-10T… 097b… 2018-02-09T… TRUE         FALSE      TRUE            
-#>  5 2019-04-23T… 1005… 2018-07-23T… TRUE         FALSE      TRUE            
-#>  6 2018-05-10T… 1642… 2012-07-13T… TRUE         FALSE      TRUE            
-#>  7 2018-10-30T… 1891… 2018-10-30T… TRUE         TRUE       TRUE            
-#>  8 2019-07-29T… 1932… 2018-08-24T… TRUE         FALSE      TRUE            
-#>  9 2018-05-10T… 1940… 2011-02-07T… TRUE         FALSE      TRUE            
-#> 10 2019-04-06T… 1b3a… 2019-04-06T… TRUE         FALSE      TRUE            
-#> # … with 34 more variables: bibjson.keywords <list>,
-#> #   bibjson.deposit_policy <list>, bibjson.title <chr>,
-#> #   bibjson.publication_time <int>, bibjson.provider <chr>,
-#> #   bibjson.subject <list>, bibjson.format <list>, bibjson.link <list>,
-#> #   bibjson.active <lgl>, bibjson.institution <chr>,
-#> #   bibjson.publisher <chr>, bibjson.language <list>,
-#> #   bibjson.license <list>, bibjson.alternative_title <chr>,
-#> #   bibjson.country <chr>, bibjson.identifier <list>,
-#> #   bibjson.apc_url <chr>, bibjson.submission_charges_url <chr>,
-#> #   bibjson.persistent_identifier_scheme <list>,
-#> #   bibjson.author_publishing_rights.url <chr>,
-#> #   bibjson.author_publishing_rights.publishing_rights <chr>,
-#> #   bibjson.article_statistics.url <chr>,
-#> #   bibjson.article_statistics.statistics <lgl>,
+#>    id    created_date last_updated bibjson.title bibjson.active bibjson.alterna…
+#>    <chr> <chr>        <chr>        <chr>         <lgl>          <chr>           
+#>  1 0110… 2014-05-19T… 2020-02-03T… "Nailos: Est… TRUE           Nailos          
+#>  2 0223… 2017-06-30T… 2020-02-03T… "Journal Sam… TRUE           Sampurasun Inte…
+#>  3 041b… 2020-05-28T… 2020-05-28T… "Cuadernos d… TRUE           <NA>            
+#>  4 08d5… 2010-12-21T… 2020-02-03T… "Ge-conserva… NA             Ge conservación 
+#>  5 097b… 2018-02-09T… 2020-02-03T… "Terr@ Plura… TRUE           <NA>            
+#>  6 1005… 2018-07-23T… 2020-02-03T… "Turismo y P… TRUE           Revista Turismo…
+#>  7 1642… 2012-07-13T… 2020-02-03T… "In Situ : R… TRUE           <NA>            
+#>  8 1891… 2018-10-30T… 2020-04-29T… "ZoneModa Jo… NA             Zone Moda Journ…
+#>  9 1924… 2020-04-14T… 2020-04-14T… "Herança"     TRUE           Herança: Revist…
+#> 10 1932… 2018-08-24T… 2020-02-03T… "Heritage"    NA             <NA>            
+#> # … with 34 more variables: bibjson.country <chr>, bibjson.publisher <chr>,
+#> #   bibjson.provider <chr>, bibjson.institution <chr>,
+#> #   bibjson.allows_fulltext_indexing <lgl>, bibjson.publication_time <int>,
+#> #   bibjson.identifier <list>, bibjson.keywords <list>, bibjson.link <list>,
+#> #   bibjson.subject <list>, bibjson.language <list>,
+#> #   bibjson.deposit_policy <list>, bibjson.format <list>,
+#> #   bibjson.license <list>, bibjson.apc_url <chr>,
+#> #   bibjson.submission_charges_url <chr>,
+#> #   bibjson.persistent_identifier_scheme <list>, bibjson.oa_start.year <int>,
+#> #   bibjson.editorial_review.process <chr>, bibjson.editorial_review.url <chr>,
 #> #   bibjson.plagiarism_detection.detection <lgl>,
-#> #   bibjson.plagiarism_detection.url <chr>, bibjson.oa_start.year <int>,
-#> #   bibjson.editorial_review.process <chr>,
-#> #   bibjson.editorial_review.url <chr>,
-#> #   bibjson.author_copyright.url <chr>,
+#> #   bibjson.plagiarism_detection.url <chr>,
+#> #   bibjson.article_statistics.statistics <lgl>,
+#> #   bibjson.article_statistics.url <chr>,
 #> #   bibjson.author_copyright.copyright <chr>,
-#> #   bibjson.archiving_policy.url <chr>,
-#> #   bibjson.archiving_policy.nat_lib <chr>, bibjson.apc.currency <chr>,
-#> #   bibjson.apc.average_price <int>
+#> #   bibjson.author_copyright.url <chr>,
+#> #   bibjson.author_publishing_rights.publishing_rights <chr>,
+#> #   bibjson.author_publishing_rights.url <chr>,
+#> #   bibjson.archiving_policy.url <chr>, bibjson.archiving_policy.nat_lib <chr>,
+#> #   bibjson.apc.currency <chr>, bibjson.apc.average_price <int>,
+#> #   admin.ticked <lgl>, admin.seal <lgl>
 ```
 
 ## get journal by id
@@ -108,19 +106,19 @@ jaod_journal_search(query = "bibjson.keywords:heritage")
 ```r
 out <- jaod_journal(id = "f3f2e7f23d444370ae5f5199f85bc100")
 names(out$bibjson)
-#>  [1] "allows_fulltext_indexing"     "archiving_policy"            
-#>  [3] "persistent_identifier_scheme" "keywords"                    
-#>  [5] "apc"                          "deposit_policy"              
-#>  [7] "article_statistics"           "title"                       
-#>  [9] "publication_time"             "provider"                    
-#> [11] "subject"                      "format"                      
-#> [13] "plagiarism_detection"         "apc_url"                     
-#> [15] "link"                         "oa_start"                    
-#> [17] "editorial_review"             "author_copyright"            
-#> [19] "publisher"                    "language"                    
-#> [21] "license"                      "country"                     
-#> [23] "submission_charges_url"       "author_publishing_rights"    
-#> [25] "identifier"
+#>  [1] "allows_fulltext_indexing"     "apc_url"                     
+#>  [3] "country"                      "provider"                    
+#>  [5] "publication_time"             "publisher"                   
+#>  [7] "submission_charges_url"       "title"                       
+#>  [9] "apc"                          "archiving_policy"            
+#> [11] "article_statistics"           "author_copyright"            
+#> [13] "author_publishing_rights"     "editorial_review"            
+#> [15] "oa_start"                     "plagiarism_detection"        
+#> [17] "deposit_policy"               "format"                      
+#> [19] "identifier"                   "keywords"                    
+#> [21] "language"                     "license"                     
+#> [23] "link"                         "persistent_identifier_scheme"
+#> [25] "subject"
 ```
 
 
@@ -140,17 +138,17 @@ out$bibjson$apc
 #> $average_price
 #> [1] 2900
 out$bibjson$article_statistics
-#> $url
-#> [1] "http://www.lagotto.io/plos/"
-#> 
 #> $statistics
 #> [1] TRUE
-out$bibjson$author_publishing_rights
-#> $url
-#> [1] "http://journals.plos.org/plosbiology/s/content-license"
 #> 
+#> $url
+#> [1] "http://www.lagotto.io/plos/"
+out$bibjson$author_publishing_rights
 #> $publishing_rights
 #> [1] "True"
+#> 
+#> $url
+#> [1] "http://journals.plos.org/plosbiology/s/content-license"
 ```
 
 
@@ -160,7 +158,7 @@ out$bibjson$author_publishing_rights
 ```r
 jaod_article_search(query = "license:CC-BY")
 #> $timestamp
-#> [1] "2019-09-04T16:58:15.841886Z"
+#> [1] "2020-06-23T18:59:02.032860Z"
 #> 
 #> $page
 #> [1] 1
@@ -172,37 +170,36 @@ jaod_article_search(query = "license:CC-BY")
 #> [1] "license:CC-BY"
 #> 
 #> $total
-#> [1] 4175566
+#> [1] 4935314
 #> 
 #> $`next`
 #> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10"
 #> 
 #> $last
-#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=417557&pageSize=10"
+#> [1] "https://doaj.org/api/v1/search/articles/license:CC-BY?page=493532&pageSize=10"
 #> 
 #> $results
 #> # A tibble: 10 x 23
-#>    last_updated id    created_date bibjson.end_page bibjson.start_p…
-#>    <chr>        <chr> <chr>        <chr>            <chr>           
-#>  1 2019-08-29T… 0000… 2019-06-26T… 440              431             
-#>  2 2019-02-21T… 0000… 2015-10-13T… 1740             1737            
-#>  3 2019-02-21T… 0000… 2018-07-18T… 418              399             
-#>  4 2019-04-02T… 0000… 2013-11-20T… 293              282             
-#>  5 2019-08-29T… 0000… 2019-06-26T… 126              109             
-#>  6 2019-02-21T… 0000… 2004-05-31T… 209              205             
-#>  7 2019-02-21T… 0000… 2014-05-22T… <NA>             <NA>            
-#>  8 2019-02-21T… 0000… 2018-02-19T… <NA>             12              
-#>  9 2019-02-21T… 0000… 2018-11-04T… 9                1               
-#> 10 2019-02-21T… 0000… 2016-10-24T… 620              616             
-#> # … with 18 more variables: bibjson.author <list>, bibjson.abstract <chr>,
-#> #   bibjson.title <chr>, bibjson.month <chr>, bibjson.link <list>,
-#> #   bibjson.year <chr>, bibjson.keywords <list>,
-#> #   bibjson.identifier <list>, bibjson.subject <list>,
+#>    last_updated id    created_date bibjson.identif… bibjson.month
+#>    <chr>        <chr> <chr>        <list>           <chr>        
+#>  1 2020-04-19T… 0000… 2020-04-19T… <df[,2] [2 × 2]> 4            
+#>  2 2020-03-06T… 0000… 2019-06-26T… <df[,2] [1 × 2]> 1            
+#>  3 2020-02-03T… 0000… 2015-10-13T… <df[,2] [3 × 2]> 10           
+#>  4 2020-02-04T… 0000… 2019-11-11T… <df[,2] [2 × 2]> July         
+#>  5 2020-03-02T… 0000… 2019-11-23T… <df[,2] [2 × 2]> November     
+#>  6 2020-02-04T… 0000… 2018-07-18T… <df[,2] [2 × 2]> 10           
+#>  7 2020-04-02T… 0000… 2013-11-20T… <df[,2] [2 × 2]> <NA>         
+#>  8 2020-03-06T… 0000… 2019-06-26T… <df[,2] [1 × 2]> 1            
+#>  9 2020-05-31T… 0000… 2020-05-31T… <df[,2] [2 × 2]> 5            
+#> 10 2020-02-04T… 0000… 2004-05-31T… <df[,2] [2 × 2]> <NA>         
+#> # … with 18 more variables: bibjson.end_page <chr>, bibjson.year <chr>,
+#> #   bibjson.start_page <chr>, bibjson.subject <list>, bibjson.author <list>,
+#> #   bibjson.link <list>, bibjson.abstract <chr>, bibjson.title <chr>,
+#> #   bibjson.keywords <list>, bibjson.journal.volume <chr>,
+#> #   bibjson.journal.number <chr>, bibjson.journal.country <chr>,
+#> #   bibjson.journal.license <list>, bibjson.journal.issns <list>,
 #> #   bibjson.journal.publisher <chr>, bibjson.journal.language <list>,
-#> #   bibjson.journal.license <list>, bibjson.journal.title <chr>,
-#> #   bibjson.journal.country <chr>, bibjson.journal.number <chr>,
-#> #   bibjson.journal.volume <chr>, bibjson.journal.issns <list>,
-#> #   admin.seal <lgl>
+#> #   bibjson.journal.title <chr>, admin.seal <lgl>
 ```
 
 ## get article by id
@@ -211,24 +208,26 @@ jaod_article_search(query = "license:CC-BY")
 ```r
 out2 <- jaod_article(id = "0005e11ec616453f854070069385e057")
 names(out2$bibjson)
-#> [1] "title"      "journal"    "author"     "month"      "link"      
-#> [6] "year"       "identifier" "subject"
+#> [1] "title"      "year"       "month"      "journal"    "identifier"
+#> [6] "link"       "author"     "subject"
 ```
 
 
 ```r
 out2$bibjson$author
-#>                                                                                       affiliation
-#> 1 Centre for Molecular Biology and Neuroscience & Institute for basic medical sciences, Univ Oslo
-#> 2                                                            San Diego Supercomputer Center, UCSD
 #>                 name
 #> 1 Trygve B Leergaard
 #> 2     Ilya Zaslavsky
+#>                                                                                       affiliation
+#> 1 Centre for Molecular Biology and Neuroscience & Institute for basic medical sciences, Univ Oslo
+#> 2                                                            San Diego Supercomputer Center, UCSD
 out2$bibjson$link
+#>       type
+#> 1 fulltext
 #>                                                                     url
 #> 1 http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full
-#>       type content_type
-#> 1 fulltext         HTML
+#>   content_type
+#> 1         HTML
 out2$bibjson$identifier
 #>    type                        id
 #> 1 eissn                 1662-5196
