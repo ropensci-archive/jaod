@@ -17,7 +17,7 @@ Authors@R: c(
         comment = "https://ropensci.org/")
     )
 License: MIT + file LICENSE
-URL: https://github.com/ropensci/jaod
+URL: https://docs.ropensci.org/jaod, https://github.com/ropensci/jaod
 BugReports: https://github.com/ropensci/jaod/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)
