@@ -9,3 +9,4 @@ man-roxygen
 Makefile
 ^codemeta\.json$
 ^docs$
+.github
