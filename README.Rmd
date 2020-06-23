@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![cran checks](https://cranchecks.info/badges/worst/jaod)](https://cranchecks.info/pkgs/jaod)
-[![Build Status](https://travis-ci.org/ropensci/jaod.svg?branch=master)](https://travis-ci.org/ropensci/jaod)
+[![R-check](https://github.com/ropensci/jaod/workflows/R-check/badge.svg)](https://github.com/ropensci/jaod/actions?query=workflow%3AR-check)
 [![codecov.io](https://codecov.io/github/ropensci/jaod/coverage.svg?branch=master)](https://codecov.io/github/ropensci/jaod?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/jaod)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/jaod)](https://cran.r-project.org/package=jaod)
@@ -34,54 +34,12 @@ install.packages("jaod")
 development version
 
 ```{r eval=FALSE}
-resmotes::install_github("ropensci/jaod")
+remotes::install_github("ropensci/jaod")
 ```
 
 ```{r}
 library("jaod")
 ```
-
-## search journals
-
-```{r}
-jaod_journal_search(query = "bibjson.keywords:heritage")
-```
-
-## get journal by id
-
-```{r}
-out <- jaod_journal(id = "f3f2e7f23d444370ae5f5199f85bc100")
-names(out$bibjson)
-```
-
-```{r}
-out$bibjson$archiving_policy
-out$bibjson$apc
-out$bibjson$article_statistics
-out$bibjson$author_publishing_rights
-```
-
-
-## search articles
-
-```{r}
-jaod_article_search(query = "license:CC-BY")
-```
-
-## get article by id
-
-```{r}
-out2 <- jaod_article(id = "0005e11ec616453f854070069385e057")
-names(out2$bibjson)
-```
-
-```{r}
-out2$bibjson$author
-out2$bibjson$link
-out2$bibjson$identifier
-out2$bibjson$subject
-```
-
 
 ## Meta
 
