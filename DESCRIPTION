@@ -25,7 +25,6 @@ Imports:
     crul (>= 0.3.8),
     tibble (>= 1.3.4)
 Suggests:
-    roxygen2 (>= 6.1.0),
     testthat,
     knitr,
     rmarkdown,
