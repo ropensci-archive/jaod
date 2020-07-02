@@ -7,7 +7,7 @@ Description: Client for the Directory of Open Access Journals ('DOAJ')
     all 'DOAJ' API routes: fetch article information by identifier,
     search for articles, fetch journal information by identifier,
     and search for journals.
-Version: 0.2.1.91
+Version: 0.2.1.92
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
         email = "myrmecocystus+r@gmail.com", 

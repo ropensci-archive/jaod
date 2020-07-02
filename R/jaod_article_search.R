@@ -57,5 +57,6 @@ jaod_article_search <- function(query, page = 1, pageSize = 10, sort = NULL,
   res$results <- tibble::as_tibble(res$results)
   nmo <- c('timestamp', 'page', 'pageSize', 'query', 'total',
            'next', 'last', 'results')
-  return(res[nmo])
+  nmo_exist <- nmo[nmo %in% names(res)]
+  return(res[nmo_exist])
 }
