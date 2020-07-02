@@ -1,15 +1,6 @@
 PACKAGE := $(shell grep '^Package:' DESCRIPTION | sed -E 's/^Package:[[:space:]]+//')
 RSCRIPT = Rscript --no-init-file
 
-all: move rmd2md
-
-move:
-		cp inst/vign/geojson_vignette.md vignettes/
-
-rmd2md:
-		cd vignettes;\
-		mv geojson_vignette.md geojson_vignette.Rmd
-
 install: doc build
 	R CMD INSTALL . && rm *.tar.gz
 
@@ -21,6 +12,9 @@ doc:
 
 eg:
 	${RSCRIPT} -e "devtools::run_examples(run = TRUE)"
+
+test:
+	${RSCRIPT} -e "devtools::test()"
 
 check: build
 	_R_CHECK_CRAN_INCOMING_=FALSE R CMD CHECK --as-cran --no-manual --no-build-vignettes `ls -1tr ${PACKAGE}*gz | tail -n1`
