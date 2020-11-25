@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/journals/f3f2e7f23d444370ae5f5199f85bc100
+    uri: https://doaj.org/api/v2/journals/f3f2e7f23d444370ae5f5199f85bc100
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,58 +15,61 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:03:45 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:16 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d1ccfcf39626bd4acd46d864719b28ca21606319535; expires=Fri,
+        25-Dec-20 15:52:15 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b40f440000fd99320e9000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=QQoJOvhbSgGL0%2FjerdLjLoDUO4BmFXuiRpuTk%2BKb%2FSamzcFfW9cXLQjoBdSfZpodvzqSZrrdYQtkl8BfTVl7hosmebI%2FP1gNvQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511189e1da692aa7-SEA
+      cf-ray: 5f7c892b9e61fd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"admin": {"owner": "15449173", "ticked": true, "contact": [{"email":
-        "hatkins@plos.org", "name": "Helen Atkins"}], "in_doaj": true, "seal": true},
-        "last_updated": "2018-05-10T10:17:18Z", "id": "f3f2e7f23d444370ae5f5199f85bc100",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://journals.plos.org/plosbiology/s/publishing-information", "policy":
-        [{"name": "LOCKSS"}, {"name": "PMC/Europe PMC/PMC Canada"}]}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["biology", "molecular biology", "ecology"], "apc": {"currency":
-        "USD", "average_price": 2900}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
-        {"url": "http://www.lagotto.io/plos/", "statistics": true}, "title": "PLoS
-        Biology ", "publication_time": 28, "provider": "Public Library of Science
-        (PLoS)", "subject": [{"scheme": "LCC", "term": "Biology (General)", "code":
-        "QH301-705.5"}], "format": ["PDF", "HTML", "XML"], "plagiarism_detection":
-        {"detection": true, "url": "http://journals.plos.org/plosbiology/s/ethical-publishing-practice#loc-plagiarism"},
-        "apc_url": "http://journals.plos.org/plosbiology/s/publication-fees", "link":
-        [{"url": "http://journals.plos.org/plosbiology/", "type": "homepage"}, {"url":
-        "https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/",
-        "type": "waiver_policy"}, {"url": "http://journals.plos.org/plosbiology/s/editorial-board",
-        "type": "editorial_board"}, {"url": "http://journals.plos.org/plosbiology/s/journal-information#loc-scope",
-        "type": "aims_scope"}, {"url": "http://journals.plos.org/plosbiology/s/submission-guidelines",
-        "type": "author_instructions"}, {"url": "http://journals.plos.org/plosbiology/s/journal-information#loc-open-access",
-        "type": "oa_statement"}], "oa_start": {"year": 2003}, "editorial_review":
-        {"process": "Peer review", "url": "http://journals.plos.org/plosbiology/s/editorial-and-peer-review-process"},
-        "author_copyright": {"url": "http://journals.plos.org/plosbiology/s/content-license",
-        "copyright": "True"}, "publisher": "Public Library of Science (PLoS)", "language":
-        ["en"], "license": [{"open_access": true, "embedded": true, "title": "CC BY",
-        "url": "http://journals.plos.org/plosbiology/s/content-license", "NC": false,
-        "ND": false, "embedded_example_url": "http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002339",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "US", "submission_charges_url":
-        "http://journals.plos.org/plosbiology/s/publication-fees", "author_publishing_rights":
-        {"url": "http://journals.plos.org/plosbiology/s/content-license", "publishing_rights":
-        "True"}, "identifier": [{"type": "pissn", "id": "1544-9173"}, {"type": "eissn",
-        "id": "1545-7885"}]}, "created_date": "2003-10-09T00:00:00Z"}'
-  recorded_at: 2019-09-04 17:03:45 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"id": "f3f2e7f23d444370ae5f5199f85bc100", "created_date": "2003-10-09T00:00:00Z",
+        "last_updated": "2020-02-03T14:13:19Z", "last_manual_update": "2016-05-24T11:42:30Z",
+        "es_type": "journal", "bibjson": {"boai": true, "eissn": "1545-7885", "pissn":
+        "1544-9173", "publication_time_weeks": 28, "title": "PLoS Biology ", "apc":
+        {"has_apc": true, "url": "http://journals.plos.org/plosbiology/s/publication-fees",
+        "max": [{"currency": "USD", "price": 2900}]}, "article": {"license_display_example_url":
+        "http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002339",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://journals.plos.org/plosbiology/s/content-license"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "http://journals.plos.org/plosbiology/s/editorial-and-peer-review-process",
+        "board_url": "http://journals.plos.org/plosbiology/s/editorial-board", "review_process":
+        ["Peer review"]}, "other_charges": {"has_other_charges": false, "url": "http://journals.plos.org/plosbiology/s/publication-fees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://journals.plos.org/plosbiology/s/ethical-publishing-practice#loc-plagiarism"},
+        "preservation": {"has_preservation": true, "url": "http://journals.plos.org/plosbiology/s/publishing-information",
+        "service": ["LOCKSS", "PMC"]}, "publisher": {"name": "Public Library of Science
+        (PLoS)", "country": "US"}, "ref": {"oa_statement": "http://journals.plos.org/plosbiology/s/journal-information#loc-open-access",
+        "journal": "http://journals.plos.org/plosbiology/", "aims_scope": "http://journals.plos.org/plosbiology/s/journal-information#loc-scope",
+        "author_instructions": "http://journals.plos.org/plosbiology/s/submission-guidelines",
+        "license_terms": "http://journals.plos.org/plosbiology/s/content-license"},
+        "waiver": {"has_waiver": true, "url": "https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/"},
+        "keywords": ["biology", "molecular biology", "ecology"], "language": ["EN"],
+        "license": [{"type": "CC BY", "BY": true, "NC": false, "ND": false, "SA":
+        false}], "subject": [{"code": "QH301-705.5", "scheme": "LCC", "term": "Biology
+        (General)"}]}, "admin": {"in_doaj": true, "ticked": true, "seal": true}}'
+  recorded_at: 2020-11-25 15:52:16 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://doaj.org/api/v1/journals/9abfb36b06404e8a8566e1a44180bbdc
+    uri: https://doaj.org/api/v2/journals/9abfb36b06404e8a8566e1a44180bbdc
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -75,48 +78,52 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:03:45 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:16 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d2ff2d9c5b817bc1cb16d541137ccd79a1606319536; expires=Fri,
+        25-Dec-20 15:52:16 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b410720000fd9932b5f000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2BRhF4A21Ice9zczarHM%2BeDAMWIjdKz%2B2TjpJHPWgL2DJupuRqDis4DdFHxx9OckxLruYTzuvQfPpG130hWuux7xdbbjt6NBEBg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511189e48b912aa7-SEA
+      cf-ray: 5f7c892d8933fd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"admin": {"owner": "15449173", "ticked": true, "contact": [{"email":
-        "hatkins@plos.org", "name": "Helen Atkins"}], "in_doaj": true, "seal": true},
-        "last_updated": "2018-05-10T10:09:43Z", "id": "9abfb36b06404e8a8566e1a44180bbdc",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://journals.plos.org/plospathogens/s/publishing-information", "policy":
-        [{"name": "LOCKSS"}, {"name": "PMC/Europe PMC/PMC Canada"}]}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["pathogens", "bacteria", "fungi", "parasites", "prions",
-        "viruses"], "apc": {"currency": "USD", "average_price": 2250}, "deposit_policy":
-        ["Sherpa/Romeo"], "article_statistics": {"url": "http://www.lagotto.io/plos/",
-        "statistics": true}, "title": "PLoS Pathogens", "publication_time": 24, "provider":
-        "Public Library of Science (PLoS)", "subject": [{"scheme": "LCC", "term":
-        "Immunologic diseases. Allergy", "code": "RC581-607"}, {"scheme": "LCC", "term":
-        "Biology (General)", "code": "QH301-705.5"}], "format": ["PDF", "HTML", "XML"],
-        "plagiarism_detection": {"detection": true, "url": "http://journals.plos.org/plospathogens/s/ethical-publishing-practice#loc-plagiarism"},
-        "apc_url": "http://journals.plos.org/plospathogens/s/publication-fees", "link":
-        [{"url": "http://journals.plos.org/plospathogens/", "type": "homepage"}, {"url":
-        "https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/",
-        "type": "waiver_policy"}, {"url": "http://journals.plos.org/plospathogens/s/editorial-board",
-        "type": "editorial_board"}, {"url": "http://journals.plos.org/plospathogens/s/journal-information#loc-scope",
-        "type": "aims_scope"}, {"url": "http://journals.plos.org/plospathogens/s/submission-guidelines",
-        "type": "author_instructions"}, {"url": "http://journals.plos.org/plospathogens/s/journal-information#loc-open-access",
-        "type": "oa_statement"}], "oa_start": {"year": 2005}, "editorial_review":
-        {"process": "Peer review", "url": "http://journals.plos.org/plospathogens/s/editorial-and-peer-review-process"},
-        "author_copyright": {"url": "http://journals.plos.org/plospathogens/s/content-license",
-        "copyright": "True"}, "publisher": "Public Library of Science (PLoS)", "language":
-        ["en"], "license": [{"open_access": true, "embedded": true, "title": "CC BY",
-        "url": "http://journals.plos.org/plospathogens/s/content-license", "NC": false,
-        "ND": false, "embedded_example_url": "http://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1005354",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "US", "submission_charges_url":
-        "http://journals.plos.org/plospathogens/s/publication-fees", "author_publishing_rights":
-        {"url": "http://journals.plos.org/plospathogens/s/content-license", "publishing_rights":
-        "True"}, "identifier": [{"type": "pissn", "id": "1553-7366"}, {"type": "eissn",
-        "id": "1553-7374"}]}, "created_date": "2005-03-21T15:48:02Z"}'
-  recorded_at: 2019-09-04 17:03:45 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"id": "9abfb36b06404e8a8566e1a44180bbdc", "created_date": "2005-03-21T15:48:02Z",
+        "last_updated": "2020-02-03T14:17:05Z", "last_manual_update": "2016-05-24T11:44:27Z",
+        "es_type": "journal", "bibjson": {"boai": true, "eissn": "1553-7374", "pissn":
+        "1553-7366", "publication_time_weeks": 24, "title": "PLoS Pathogens", "apc":
+        {"has_apc": true, "url": "http://journals.plos.org/plospathogens/s/publication-fees",
+        "max": [{"currency": "USD", "price": 2250}]}, "article": {"license_display_example_url":
+        "http://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1005354",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://journals.plos.org/plospathogens/s/content-license"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "http://journals.plos.org/plospathogens/s/editorial-and-peer-review-process",
+        "board_url": "http://journals.plos.org/plospathogens/s/editorial-board", "review_process":
+        ["Peer review"]}, "other_charges": {"has_other_charges": false, "url": "http://journals.plos.org/plospathogens/s/publication-fees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://journals.plos.org/plospathogens/s/ethical-publishing-practice#loc-plagiarism"},
+        "preservation": {"has_preservation": true, "url": "http://journals.plos.org/plospathogens/s/publishing-information",
+        "service": ["LOCKSS", "PMC"]}, "publisher": {"name": "Public Library of Science
+        (PLoS)", "country": "US"}, "ref": {"oa_statement": "http://journals.plos.org/plospathogens/s/journal-information#loc-open-access",
+        "journal": "http://journals.plos.org/plospathogens/", "aims_scope": "http://journals.plos.org/plospathogens/s/journal-information#loc-scope",
+        "author_instructions": "http://journals.plos.org/plospathogens/s/submission-guidelines",
+        "license_terms": "http://journals.plos.org/plospathogens/s/content-license"},
+        "waiver": {"has_waiver": true, "url": "https://www.plos.org/publications/publication-fees/plos-publication-fee-assistance/"},
+        "keywords": ["pathogens", "bacteria", "fungi", "parasites", "prions", "viruses"],
+        "language": ["EN"], "license": [{"type": "CC BY", "BY": true, "NC": false,
+        "ND": false, "SA": false}], "subject": [{"code": "RC581-607", "scheme": "LCC",
+        "term": "Immunologic diseases. Allergy"}, {"code": "QH301-705.5", "scheme":
+        "LCC", "term": "Biology (General)"}]}, "admin": {"in_doaj": true, "ticked":
+        true, "seal": true}}'
+  recorded_at: 2020-11-25 15:52:16 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

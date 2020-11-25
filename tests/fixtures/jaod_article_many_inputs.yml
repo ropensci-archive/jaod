@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/articles/73f781ad57094b98a0b46d8903fdc2c2
+    uri: https://doaj.org/api/v2/articles/73f781ad57094b98a0b46d8903fdc2c2
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,59 +15,66 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:00:25 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:12 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d7606d7d370a7d860cef7a67e96b773b41606319532; expires=Fri,
+        25-Dec-20 15:52:12 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b401350000fd992f222000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xxYShE%2Bo48j3Jo%2Fis4NYDnUhDMAv7jZKxEYuJtzLT0bnYL9sAcsTmpR2yAvhmPb86IgQnZzO10flB%2FMlEAxY5%2BLS2nAlHt9VtQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511185016cace35a-SEA
+      cf-ray: 5f7c89152c0dfd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"admin": {"upload_id": "256446be45eb4d5197fc1131a1a8a6a0", "in_doaj":
-        true, "publisher_record_id": "S0100-67622015000200215"}, "last_updated": "2019-02-21T15:26:49Z",
-        "id": "73f781ad57094b98a0b46d8903fdc2c2", "bibjson": {"title": "SISTEMA DE
-        INFORMA\u00c7\u00c3O GEOGR\u00c1FICA APLICADO AO LEVANTAMENTO DE SOLOS E APTID\u00c3O
-        AGR\u00cdCOLA DAS TERRAS COMO SUBS\u00cdDIOS PARA O PLANEJAMENTO AMBIENTAL
-        DO MUNIC\u00cdPIO DE ITAARA, RS", "abstract": "O planejamento racional de
-        uso dos recursos naturais exige informa\u00e7\u00f5es a respeito dos solos,
-        as quais s\u00e3o escassas e frequentemente ignoradas pelos gestores ambientais.
-        Assim, objetivou-se realizar o levantamento de solos do Munic\u00edpio de
-        Itaara, RS, substituindo a fotointerpreta\u00e7\u00e3o tradicional pelo uso
-        de cartas topogr\u00e1ficas; determinar a aptid\u00e3o de uso das terras,
-        considerando a legisla\u00e7\u00e3o ambiental; e estabelecer os conflitos
-        de uso das terras. Utilizando t\u00e9cnicas de geoprocessamento na gera\u00e7\u00e3o
-        dos planos de informa\u00e7\u00f5es de solos, declividades, \u00e1reas de
-        preserva\u00e7\u00e3o permanentes, aptid\u00e3o agr\u00edcola e uso atual
-        das terras, foram determinadas as \u00e1reas que apresentam conflitos de uso
-        em rela\u00e7\u00e3o \u00e0 sua aptid\u00e3o agr\u00edcola e \u00e0 legisla\u00e7\u00e3o
-        ambiental. Itaara \u00e9 constitu\u00edda, predominantemente, por Neossolos
-        Lit\u00f3licos (34%), que apresentam baixo potencial agr\u00edcola devido
-        a caracter\u00edsticas do solo e do ambiente onde ocorrem. Por meio do geoprocessamento,
-        identificaram-se pelo menos 6,2% da \u00e1rea sendo superutilizada.", "author":
-        [{"name": "Everton Lu\u00eds Poelking"}, {"name": "Ricardo Sim\u00e3o Diniz
-        Dalmolin"}, {"name": "Fabr\u00edcio de Ara\u00fajo Pedron"}, {"name": "Jess\u00e9
-        Rodrigo Fink"}], "month": "4", "link": [{"url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-67622015000200215&lng=en&tlng=en",
-        "type": "fulltext", "content_type": "HTML"}], "year": "2015", "keywords":
-        ["Pedologia", "Sensoriamento remoto", "Conflitos de uso da terra"], "identifier":
+      file: no
+      string: '{"id": "73f781ad57094b98a0b46d8903fdc2c2", "created_date": "2015-08-30T20:20:02Z",
+        "last_updated": "2020-11-24T23:00:21Z", "es_type": "article", "admin": {"in_doaj":
+        true, "publisher_record_id": "S0100-67622015000200215", "upload_id": "256446be45eb4d5197fc1131a1a8a6a0"},
+        "bibjson": {"title": "SISTEMA DE INFORMA\u00c7\u00c3O GEOGR\u00c1FICA APLICADO
+        AO LEVANTAMENTO DE SOLOS E APTID\u00c3O AGR\u00cdCOLA DAS TERRAS COMO SUBS\u00cdDIOS
+        PARA O PLANEJAMENTO AMBIENTAL DO MUNIC\u00cdPIO DE ITAARA, RS", "year": "2015",
+        "month": "4", "abstract": "O planejamento racional de uso dos recursos naturais
+        exige informa\u00e7\u00f5es a respeito dos solos, as quais s\u00e3o escassas
+        e frequentemente ignoradas pelos gestores ambientais. Assim, objetivou-se
+        realizar o levantamento de solos do Munic\u00edpio de Itaara, RS, substituindo
+        a fotointerpreta\u00e7\u00e3o tradicional pelo uso de cartas topogr\u00e1ficas;
+        determinar a aptid\u00e3o de uso das terras, considerando a legisla\u00e7\u00e3o
+        ambiental; e estabelecer os conflitos de uso das terras. Utilizando t\u00e9cnicas
+        de geoprocessamento na gera\u00e7\u00e3o dos planos de informa\u00e7\u00f5es
+        de solos, declividades, \u00e1reas de preserva\u00e7\u00e3o permanentes, aptid\u00e3o
+        agr\u00edcola e uso atual das terras, foram determinadas as \u00e1reas que
+        apresentam conflitos de uso em rela\u00e7\u00e3o \u00e0 sua aptid\u00e3o agr\u00edcola
+        e \u00e0 legisla\u00e7\u00e3o ambiental. Itaara \u00e9 constitu\u00edda, predominantemente,
+        por Neossolos Lit\u00f3licos (34%), que apresentam baixo potencial agr\u00edcola
+        devido a caracter\u00edsticas do solo e do ambiente onde ocorrem. Por meio
+        do geoprocessamento, identificaram-se pelo menos 6,2% da \u00e1rea sendo superutilizada.",
+        "journal": {"start_page": "215", "end_page": "223", "volume": "39", "number":
+        "2", "publisher": "Sociedade de Investiga\u00e7\u00f5es Florestais", "title":
+        "Revista \u00c1rvore", "country": "BR", "language": ["EN", "ES", "PT"]}, "identifier":
         [{"type": "pissn", "id": "1806-9088"}, {"type": "doi", "id": "10.1590/0100-67622015000200001"}],
-        "journal": {"publisher": "Sociedade de Investiga\u00e7\u00f5es Florestais",
-        "start_page": "215", "license": [{"url": "http://www.scielo.br/revistas/rarv/isubscrp.htm",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN",
-        "ES", "PT"], "title": "Revista \u00c1rvore", "country": "BR", "number": "2",
-        "volume": "39", "end_page": "223"}, "subject": [{"scheme": "LCC", "term":
-        "Forestry", "code": "SD1-669.5"}]}, "created_date": "2015-08-30T20:20:02Z"}'
-  recorded_at: 2019-09-04 17:00:25 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+        "link": [{"type": "fulltext", "url": "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-67622015000200215&lng=en&tlng=en",
+        "content_type": "HTML"}], "author": [{"name": "Everton Lu\u00eds Poelking"},
+        {"name": "Ricardo Sim\u00e3o Diniz Dalmolin"}, {"name": "Fabr\u00edcio de
+        Ara\u00fajo Pedron"}, {"name": "Jess\u00e9 Rodrigo Fink"}], "keywords": ["Pedologia",
+        "Sensoriamento remoto", "Conflitos de uso da terra"], "subject": [{"scheme":
+        "LCC", "term": "Forestry", "code": "SD1-669.5"}]}}'
+  recorded_at: 2020-11-25 15:52:13 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://doaj.org/api/v1/articles/0005e11ec616453f854070069385e057
+    uri: https://doaj.org/api/v2/articles/0005e11ec616453f854070069385e057
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -76,30 +83,38 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:00:25 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:12 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d7606d7d370a7d860cef7a67e96b773b41606319532; expires=Fri,
+        25-Dec-20 15:52:12 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b403160000fd992f23a000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=xi3LCjfpwcegdFU7ARjPg5C9PcXqUYI8rvATHjFJZ%2B5wDt%2Fcelo6nWP8iCioJynka%2BjlU0ProuJ9B29hMGGJh%2Fi4dyunCBFLBQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511185042a9be35a-SEA
+      cf-ray: 5f7c89182fadfd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"admin": {"seal": true, "upload_id": "f5bc15c78aa341eda23d2ba578107cbc",
-        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2019-02-21T13:48:23Z",
-        "id": "0005e11ec616453f854070069385e057", "bibjson": {"title": "Where in the
-        brain are the genes expressed", "journal": {"publisher": "Frontiers Media
-        S.A.", "language": ["EN"], "license": [{"url": "http://journal.frontiersin.org/journal/neuroinformatics#about",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Frontiers
-        in Neuroinformatics", "country": "CH", "volume": "2"}, "author": [{"affiliation":
-        "Centre for Molecular Biology and Neuroscience & Institute for basic medical
-        sciences, Univ Oslo", "name": "Trygve B Leergaard"}, {"affiliation": "San
-        Diego Supercomputer Center, UCSD", "name": "Ilya Zaslavsky"}], "month": "4",
-        "link": [{"url": "http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full",
-        "type": "fulltext", "content_type": "HTML"}], "year": "2008", "identifier":
-        [{"type": "eissn", "id": "1662-5196"}, {"type": "doi", "id": "10.3389/neuro.11.009.2007"}],
-        "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological psychiatry.
-        Neuropsychiatry", "code": "RC321-571"}]}, "created_date": "2014-05-22T09:30:38Z"}'
-  recorded_at: 2019-09-04 17:00:25 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"id": "0005e11ec616453f854070069385e057", "created_date": "2014-05-22T09:30:38Z",
+        "last_updated": "2020-11-24T23:35:43Z", "es_type": "article", "admin": {"in_doaj":
+        true, "seal": true, "publisher_record_id": "1015", "upload_id": "f5bc15c78aa341eda23d2ba578107cbc"},
+        "bibjson": {"title": "Where in the brain are the genes expressed", "year":
+        "2008", "month": "4", "journal": {"volume": "2", "publisher": "Frontiers Media
+        S.A.", "title": "Frontiers in Neuroinformatics", "country": "CH", "language":
+        ["EN"]}, "identifier": [{"type": "eissn", "id": "1662-5196"}, {"type": "doi",
+        "id": "10.3389/neuro.11.009.2007"}], "link": [{"type": "fulltext", "url":
+        "http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full", "content_type":
+        "HTML"}], "author": [{"name": "Trygve B Leergaard", "affiliation": "Centre
+        for Molecular Biology and Neuroscience & Institute for basic medical sciences,
+        Univ Oslo"}, {"name": "Ilya Zaslavsky", "affiliation": "San Diego Supercomputer
+        Center, UCSD"}], "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological
+        psychiatry. Neuropsychiatry", "code": "RC321-571"}]}}'
+  recorded_at: 2020-11-25 15:52:13 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

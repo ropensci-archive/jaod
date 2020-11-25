@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/search/journals/publisher:dove?page=1&pageSize=2
+    uri: https://doaj.org/api/v2/search/journals/bibjson.publisher.name:ecology?page=1&pageSize=2
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,93 +15,91 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:01:59 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 16:06:17 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d157359c656a201b4818d6f614cbdfaa01606320377; expires=Fri,
+        25-Dec-20 16:06:17 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
-      link: <https://doaj.org/api/v1/search/journals/publisher:dove?page=52&pageSize=2>;
-        rel=last, <https://doaj.org/api/v1/search/journals/publisher:dove?page=2&pageSize=2>;
-        rel=next
-      x-total-count: '103'
+      link: <https://doaj.org/api/v2/search/journals/bibjson.publisher.name:ecology?page=2&pageSize=2>;
+        rel=next, <https://doaj.org/api/v2/search/journals/bibjson.publisher.name:ecology?page=5&pageSize=2>;
+        rel=last
+      x-total-count: '10'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1c0e65f0000bcae968f7000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=krRhy79%2BshVFG7mKgN06xsFbJLzpchQC692gFDhRzNydExv38CUUrAdEJHkRYdm5M29Q0P%2Fl6mpTN25UociuNU91lmzZGc8tVA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 5111874ec8f8e38a-SEA
+      cf-ray: 5f7c9db6f838bcae-SEA
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"last": "https://doaj.org/api/v1/search/journals/publisher:dove?page=52&pageSize=2",
-        "pageSize": 2, "timestamp": "2019-09-04T17:01:59.591160Z", "results": [{"admin":
-        {"ticked": true, "seal": false}, "last_updated": "2018-05-10T09:57:11Z", "id":
-        "0172cf70305845508fb05fe7bcae115f", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "http://www.dovepress.com/why_publish_with_dove.php?content_id=3365",
-        "known": ["LOCKSS", "CLOCKSS", "PMC/Europe PMC/PMC Canada"]}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["patient satisfaction"], "apc": {"currency": "USD",
-        "average_price": 2310}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
-        {"url": "https://www.dovepress.com/why_publish_with_dove.php?content_id=3044",
-        "statistics": true}, "title": "Patient Preference and Adherence", "publication_time":
-        16, "provider": "Dove Medical Press", "subject": [{"code": "R5-920", "term":
-        "Medicine (General)", "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "http://www.dovepress.com/why_publish_with_dove.php?content_id=3225"},
-        "apc_url": "http://www.dovepress.com/journal_pricing_bands.php?journal_id=20",
-        "link": [{"url": "http://www.dovepress.com/articles.php?journal_id=20", "type":
-        "homepage"}, {"url": "http://www.dovepress.com/journal_pricing_bands.php?journal_id=20",
-        "type": "waiver_policy"}, {"url": "http://www.dovepress.com/journal-editor-patient-preference-and-adherence-eic20",
-        "type": "editorial_board"}, {"url": "http://www.dovepress.com/aims-and-scope-patient-preference-and-adherence-d16-j20",
-        "type": "aims_scope"}, {"url": "http://www.dovepress.com/author_guidelines.php",
-        "type": "author_instructions"}, {"url": "http://www.dovepress.com/why_publish_with_dove.php?content_id=3045",
-        "type": "oa_statement"}], "oa_start": {"year": 2007}, "editorial_review":
-        {"process": "Blind peer review", "url": "http://www.dovepress.com/peer_review_guidelines.php?content_id=2093"},
-        "author_copyright": {"url": "http://www.dovepress.com/author_guidelines.php?content_id=695",
-        "copyright": "False"}, "publisher": "Dove Medical Press", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC", "url":
-        "http://www.dovepress.com/why_publish_with_dove.php?content_id=3045", "NC":
-        true, "ND": false, "embedded_example_url": "http://www.dovepress.com/patient-preference-and-ease-of-use-for-different-coagulation-factor-vi-peer-reviewed-article-PPA",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "country": "GB", "submission_charges_url":
-        "http://www.dovepress.com/journal_pricing_bands.php?journal_id=20", "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "identifier": [{"type": "pissn",
-        "id": "1177-889X"}]}, "created_date": "2008-08-15T11:43:17Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2018-05-10T09:57:17Z", "id": "0268c76aee4b46d0b14370b783faab06",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://www.dovepress.com/why_publish_with_dove.php?content_id=3365", "known":
-        ["LOCKSS", "CLOCKSS"]}, "persistent_identifier_scheme": ["DOI"], "keywords":
-        ["transplantation"], "apc": {"currency": "USD", "average_price": 1780}, "subject":
-        [{"code": "R", "term": "Medicine", "scheme": "LCC"}, {"code": "R5-920", "term":
-        "Medicine (General)", "scheme": "LCC"}, {"code": "R5-130.5", "term": "General
-        works", "scheme": "LCC"}, {"code": "R723-726", "term": "Medical philosophy.
-        Medical ethics", "scheme": "LCC"}], "article_statistics": {"url": "https://www.dovepress.com/why_publish_with_dove.php?content_id=3044",
-        "statistics": true}, "title": "Transplant Research and Risk Management", "publication_time":
-        16, "format": ["PDF", "HTML"], "provider": "Dove Medical Press", "deposit_policy":
-        ["Sherpa/Romeo"], "plagiarism_detection": {"detection": true, "url": "http://www.dovepress.com/why_publish_with_dove.php?content_id=3225"},
-        "apc_url": "http://www.dovepress.com/journal_pricing_bands.php?journal_id=57",
-        "link": [{"url": "http://www.dovepress.com/transplant-research-and-risk-management-journal",
-        "type": "homepage"}, {"url": "http://www.dovepress.com/journal_pricing_bands.php?journal_id=57",
-        "type": "waiver_policy"}, {"url": "http://www.dovepress.com/journal-editor-transplant-research-and-risk-management-eic57",
-        "type": "editorial_board"}, {"url": "http://www.dovepress.com/aims-and-scope-transplant-research-and-risk-management-d49-j57",
-        "type": "aims_scope"}, {"url": "http://www.dovepress.com/author_guidelines.php",
-        "type": "author_instructions"}, {"url": "http://www.dovepress.com/why_publish_with_dove.php?content_id=3045",
-        "type": "oa_statement"}], "oa_start": {"year": 2010}, "editorial_review":
-        {"process": "Blind peer review", "url": "http://www.dovepress.com/peer_review_guidelines.php?content_id=2093"},
-        "author_copyright": {"url": "http://www.dovepress.com/author_guidelines.php?content_id=695",
-        "copyright": "False"}, "publisher": "Dove Medical Press", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC", "url":
-        "http://www.dovepress.com/why_publish_with_dove.php?content_id=3045", "NC":
-        true, "ND": false, "embedded_example_url": "http://www.dovepress.com/transplant-coronary-heart-disease-challenges-and-solutions-peer-reviewed-article-TRRM",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "alternative_title": "Transplant
-        Research & Risk Management", "country": "GB", "submission_charges_url": "http://www.dovepress.com/journal_pricing_bands.php?journal_id=57",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "1179-1616"}]}, "created_date": "2010-12-15T11:03:03Z"}],
-        "next": "https://doaj.org/api/v1/search/journals/publisher:dove?page=2&pageSize=2",
-        "query": "publisher:dove", "total": 103, "page": 1}'
-  recorded_at: 2019-09-04 17:02:00 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"total": 10, "page": 1, "pageSize": 2, "timestamp": "2020-11-25T16:06:17.567157Z",
+        "query": "bibjson.publisher.name:ecology", "results": [{"id": "0820f23b681245f2bca8ab6f50148432",
+        "created_date": "2012-08-24T12:06:32Z", "last_updated": "2020-09-02T07:15:16Z",
+        "bibjson": {"boai": true, "eissn": "2220-721X", "publication_time_weeks":
+        5, "title": "Computational Ecology and Software", "apc": {"has_apc": false,
+        "url": "http://www.iaees.org/publications/journals/ces/author-guidelines.asp"},
+        "article": {"license_display_example_url": "http://www.iaees.org/publications/journals/ces/articles/2015-5%281%29/local-stability-of-an-open-access-anchovy-fishery-model.pdf",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://www.iaees.org/publications/journals/ces/ethics.asp"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "http://www.iaees.org/publications/journals/ces/ethics.asp", "board_url":
+        "http://www.iaees.org/publications/journals/ces/editorial.asp", "review_process":
+        ["Double blind peer review"]}, "other_charges": {"has_other_charges": false,
+        "url": "http://www.iaees.org/publications/journals/ces/author-guidelines.asp"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": true,
+        "url": "http://www.iaees.org/publications/journals/ces/ethics.asp"}, "preservation":
+        {"has_preservation": false}, "publisher": {"name": "International Academy
+        of Ecology and Environmental Sciences", "country": "HK"}, "ref": {"oa_statement":
+        "http://www.iaees.org/publications/journals/ces/ces.asp", "journal": "http://www.iaees.org/publications/journals/ces/online-version.asp",
+        "aims_scope": "http://www.iaees.org/publications/journals/ces/ces.asp", "author_instructions":
+        "http://www.iaees.org/publications/journals/ces/author-guidelines.asp", "license_terms":
+        "http://www.iaees.org/publications/journals/ces/ethics.asp"}, "waiver": {"has_waiver":
+        false}, "keywords": ["ecology", "computer software", "artificial life", "technology",
+        "computational mathematics"], "language": ["EN"], "license": [{"type": "CC
+        BY", "BY": true, "NC": false, "ND": false, "SA": false}], "subject": [{"code":
+        "T1-995", "scheme": "LCC", "term": "Technology (General)"}, {"code": "Q",
+        "scheme": "LCC", "term": "Science"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "30b58edb5eaf4fdca8245df8d5197a85", "created_date": "2020-07-20T09:08:01Z",
+        "last_updated": "2020-07-21T09:58:51Z", "bibjson": {"alternative_title": "Forest
+        Science Issues", "boai": true, "eissn": "2658-607X", "publication_time_weeks":
+        12, "title": "\u0412\u043e\u043f\u0440\u043e\u0441\u044b \u043b\u0435\u0441\u043d\u043e\u0439
+        \u043d\u0430\u0443\u043a\u0438", "apc": {"has_apc": false, "url": "http://jfsi.ru/en/"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://jfsi.ru/en/editorial-ethics/"}, "deposit_policy": {"has_policy":
+        false}, "editorial": {"review_url": "http://jfsi.ru/en/reviewing-procedure/",
+        "board_url": "http://jfsi.ru/en/editorial-staff/", "review_process": ["Open
+        peer review"]}, "institution": {"name": "Russian Academy of Sciences, Center
+        for Forest Ecology and Productivity"}, "other_charges": {"has_other_charges":
+        false, "url": "http://jfsi.ru/en/"}, "pid_scheme": {"has_pid_scheme": true,
+        "scheme": ["DOI"]}, "plagiarism": {"detection": true, "url": "http://jfsi.ru/en/"},
+        "preservation": {"has_preservation": true, "url": "https://elibrary.ru/title_about_new.asp?id=69396&langid=2",
+        "national_library": ["eLIBRARY "]}, "publisher": {"name": "Russian Academy
+        of Sciences, Center for Forest Ecology and Productivity", "country": "RU"},
+        "ref": {"oa_statement": "http://jfsi.ru/en/", "journal": "http://jfsi.ru/",
+        "aims_scope": "http://jfsi.ru/en/", "author_instructions": "http://jfsi.ru/en/article-typography-rules/",
+        "license_terms": "http://jfsi.ru/en/"}, "waiver": {"has_waiver": false}, "keywords":
+        ["ecology", "forests", "ecosystem functions", "ecosystem services", "gis technology"],
+        "language": ["EN", "RU"], "license": [{"type": "CC BY", "BY": true, "NC":
+        false, "ND": false, "SA": false}], "subject": [{"code": "SD1-669.5", "scheme":
+        "LCC", "term": "Forestry"}]}, "admin": {"seal": false, "ticked": true}}],
+        "next": "https://doaj.org/api/v2/search/journals/bibjson.publisher.name:ecology?page=2&pageSize=2",
+        "last": "https://doaj.org/api/v2/search/journals/bibjson.publisher.name:ecology?page=5&pageSize=2"}'
+  recorded_at: 2020-11-25 16:06:18 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://doaj.org/api/v1/search/journals/journal?page=1&pageSize=30&sort=bibjson.oa_start.year%3Adesc
+    uri: https://doaj.org/api/v2/search/journals/journal?page=1&pageSize=30&sort=bibjson.eissn%3Adesc
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -110,879 +108,733 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:02:00 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 16:06:18 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d157359c656a201b4818d6f614cbdfaa01606320377; expires=Fri,
+        25-Dec-20 16:06:17 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
-      link: <https://doaj.org/api/v1/search/journals/journal?sort=bibjson.oa_start.year%3Adesc&page=208&pageSize=30>;
-        rel=last, <https://doaj.org/api/v1/search/journals/journal?sort=bibjson.oa_start.year%3Adesc&page=2&pageSize=30>;
-        rel=next
-      x-total-count: '6213'
+      link: <https://doaj.org/api/v2/search/journals/journal?page=2&pageSize=30&sort=bibjson.eissn%3Adesc>;
+        rel=next, <https://doaj.org/api/v2/search/journals/journal?page=520&pageSize=30&sort=bibjson.eissn%3Adesc>;
+        rel=last
+      x-total-count: '15596'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1c0e87d0000bcae73957000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9AAeFdkHd6vNueWwxVc4GHM5OsvNPRpT%2BeIWgB4yBR6tpiTg1VfJNVWptpVRR3QoinyeV0GzlMa%2F4g6SE76LKjhA3AvvpwTFIg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511187536c50e38a-SEA
+      cf-ray: 5f7c9dba691cbcae-SEA
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"sort": "bibjson.oa_start.year:desc", "last": "https://doaj.org/api/v1/search/journals/journal?sort=bibjson.oa_start.year%3Adesc&page=208&pageSize=30",
-        "pageSize": 30, "timestamp": "2019-09-04T17:02:00.514667Z", "results": [{"admin":
-        {"ticked": true, "seal": false}, "last_updated": "2019-03-19T16:46:05Z", "id":
-        "1c0131a41ed34d3fbfd7afd45eb8aed3", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://publishingsupport.iopscience.iop.org/questions/digital-preservation-policy/"},
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "keywords":
-        ["energy networks", "fuel cells", "synthetic fuels", "biofuels", "renewable
-        energy"], "apc": {"currency": "GBP", "average_price": 1600}, "subject": [{"code":
-        "TK1001-1841", "term": "Production of electric energy or power. Powerplants.
-        Central stations", "scheme": "LCC"}, {"code": "TJ807-830", "term": "Renewable
-        energy sources", "scheme": "LCC"}], "article_statistics": {"url": "https://iopscience.iop.org/article/10.1088/2515-7655/aacd9f",
-        "statistics": true}, "title": "JPhys Energy", "publication_time": 12, "provider":
-        "IOPscience", "format": ["PDF", "HTML"], "plagiarism_detection": {"detection":
-        true, "url": "https://publishingsupport.iopscience.iop.org/ethical-policy-journals/"},
-        "apc_url": "https://iopscience.iop.org/journal/2515-7655/page/publication-charges",
-        "link": [{"url": "https://iopscience.iop.org/journal/2515-7655", "type": "homepage"},
-        {"url": "https://iopscience.iop.org/journal/2515-7655/page/key_info#Open_access,_copyright_and_APC_costs",
-        "type": "waiver_policy"}, {"url": "http://iopscience.iop.org/journal/2515-7655/page/editorial-board",
-        "type": "editorial_board"}, {"url": "https://iopscience.iop.org/journal/2515-7655/page/about-the-journal",
-        "type": "aims_scope"}, {"url": "https://publishingsupport.iopscience.iop.org",
-        "type": "author_instructions"}, {"url": "https://iopscience.iop.org/journal/2515-7655/page/key_info",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://iopscience.iop.org/journal/2515-7655/page/key_info"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Institute
-        of Physics", "publisher": "IOP Publishing", "language": ["EN"], "license":
-        [{"open_access": true, "embedded": true, "title": "CC BY", "url": "http://iopscience.iop.org/journal/2515-7655/page/key_info",
-        "NC": false, "ND": false, "embedded_example_url": "https://iopscience.iop.org/article/10.1088/2515-7655/aaeee5",
-        "SA": false, "type": "CC BY", "BY": true}], "alternative_title": "Journal
-        of Physics: Energy", "country": "GB", "submission_charges_url": "https://iopscience.iop.org/journal/2515-7655/page/publication-charges",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "eissn",
-        "id": "2515-7655"}]}, "created_date": "2019-03-19T16:46:05Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-07-03T13:51:00Z", "id": "102aa5b7c85a43c8b4bbc8487d92ac5c",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["parasite control", "parasitology", "animal health",
-        "helminthology", "protozoology", "entomology"], "apc": {"currency": "USD",
-        "average_price": 3200}, "subject": [{"code": "SF600-1100", "term": "Veterinary
-        medicine", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
-        false}, "title": "Veterinary Parasitology: X", "publication_time": 16, "provider":
-        "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/veterinary-parasitology-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/veterinary-parasitology-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/veterinary-parasitology-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/open-access-journal",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590138919300013",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/veterinary-parasitology-x/2590-1389/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1389"}]}, "created_date": "2019-07-03T13:51:00Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-06-21T14:29:50Z",
-        "id": "10cd78a0d5f84e70831586a57118119a", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://www.elsevier.com/about/our-business/policies/digital-archive"},
-        "persistent_identifier_scheme": ["DOI"], "keywords": ["chemical physics",
-        "physical chemistry", "condensed phases", "nanomaterials", "polymers", "biomolecular
-        systems"], "apc": {"currency": "USD", "average_price": 3050}, "subject": [{"code":
-        "QC1-999", "term": "Physics", "scheme": "LCC"}, {"code": "QD450-801", "term":
-        "Physical and theoretical chemistry", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Chemical Physics Letters: X",
-        "publication_time": 13, "provider": "www.sciencedirect.com", "format": ["PDF",
-        "HTML"], "plagiarism_detection": {"detection": true, "url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/chemical-physics-letters-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/chemical-physics-letters-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/chemical-physics-letters-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/open-access-journal",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590141919300017",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/chemical-physics-letters-x/2590-1419/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1419"}]}, "created_date": "2019-05-03T14:37:28Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-06-21T14:26:46Z",
-        "id": "2b09af1f8cfc4b54a4f26650b6c97efa", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://www.elsevier.com/about/our-business/policies/digital-archive"},
-        "persistent_identifier_scheme": ["DOI"], "keywords": ["materials science",
-        "novel materials"], "apc": {"currency": "USD", "average_price": 3100}, "subject":
-        [{"code": "TA401-492", "term": "Materials of engineering and construction.
-        Mechanics of materials", "scheme": "LCC"}], "article_statistics": {"url":
-        "", "statistics": false}, "title": "Materials Letters: X", "publication_time":
-        12, "provider": "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/materials-letters-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/materials-letters-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/materials-letters-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/open-access-journal",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/materials-letters-x/2590-1508/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590150819300286",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/materials-letters-x/2590-1508/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1508"}]}, "created_date": "2019-05-30T13:33:57Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-05-14T13:20:35Z",
-        "id": "17f9542fdace4deabededb54107e44e5", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "http://olabout.wiley.com/WileyCDA/Section/id-406156.html",
-        "known": ["CLOCKSS", "Portico"], "nat_lib": "National Science Library, Chinese
-        Academy of Sciences", "other": "Scholars Portal"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["biodiversity", "invasion ecology", "conservation biogeography",
-        "species distributions", "global change", "ecology"], "apc": {"currency":
-        "USD", "average_price": 2200}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Diversity and Distributions",
-        "publication_time": 20, "provider": "Wiley Online Library", "subject": [{"code":
-        "QH540-549.5", "term": "Ecology", "scheme": "LCC"}, {"code": "QH1-199.5",
-        "term": "General. Including nature conservation, geographical distribution",
-        "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection": {"detection":
-        true, "url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/14724642", "type":
-        "homepage"}, {"url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/editorialboard.html",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/productinformation.html",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/forauthors.html"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Wiley",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/fundedaccess.html",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1111/ddi.12871",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/14724642/homepage/productinformation.html",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "1472-4642"}]}, "created_date": "2019-05-14T13:20:35Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-05-30T12:58:41Z",
-        "id": "6dcc4be65e374fe4a217a2d2a9a8d1c0", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://publishingsupport.iopscience.iop.org/questions/digital-preservation-policy/",
-        "known": ["CLOCKSS"]}, "persistent_identifier_scheme": ["DOI"], "keywords":
-        ["environmental sciences", "earth sciences", "climate", "energy", "hydrology",
-        "atmospheric science"], "apc": {"currency": "GBP", "average_price": 1100},
-        "subject": [{"code": "GE1-350", "term": "Environmental sciences", "scheme":
-        "LCC"}, {"code": "QC851-999", "term": "Meteorology. Climatology", "scheme":
-        "LCC"}], "article_statistics": {"url": "https://iopscience.iop.org/article/10.1088/2515-7620/ab1042",
-        "statistics": true}, "title": "Environmental Research Communications", "publication_time":
-        14, "provider": "IOPscience", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://publishingsupport.iopscience.iop.org/questions/referencing-citation-novelty/"},
-        "apc_url": "https://iopscience.iop.org/journal/2515-7620/page/publication-charges",
-        "link": [{"url": "https://iopscience.iop.org/journal/2515-7620", "type": "homepage"},
-        {"url": "https://publishingsupport.iopscience.iop.org/questions/paying-for-open-access/",
-        "type": "waiver_policy"}, {"url": "https://iopscience.iop.org/journal/2515-7620/page/editorial-board",
-        "type": "editorial_board"}, {"url": "https://iopscience.iop.org/journal/2515-7620/page/about#aim",
-        "type": "aims_scope"}, {"url": "https://publishingsupport.iopscience.iop.org/",
-        "type": "author_instructions"}, {"url": "https://iopscience.iop.org/journal/2515-7620/page/about#OA",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://iopscience.iop.org/journal/2515-7620/page/about#board"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Institute
-        of Physics", "publisher": "IOP Publishing", "language": ["EN"], "license":
-        [{"open_access": true, "embedded": true, "title": "CC BY", "url": "https://iopscience.iop.org/journal/2515-7620/page/about#OA",
-        "NC": false, "ND": false, "embedded_example_url": "https://iopscience.iop.org/article/10.1088/2515-7620/ab121d",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://iopscience.iop.org/journal/2515-7620/page/publication-charges", "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "identifier": [{"type": "eissn",
-        "id": "2515-7620"}]}, "created_date": "2019-05-30T12:58:41Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-06-21T14:26:22Z", "id": "443cf09f9e0e469bb82117afd1eea185",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["epidemiology", "occupational disorders", "allergens",
-        "physiology", "respiratory medicine", "immunology"], "apc": {"currency": "USD",
-        "average_price": 3500}, "subject": [{"code": "RC705-779", "term": "Diseases
-        of the respiratory system", "scheme": "LCC"}, {"code": "RC581-607", "term":
-        "Immunologic diseases. Allergy", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Respiratory Medicine: X", "publication_time":
-        18, "provider": "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/respiratory-medicine-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/respiratory-medicine-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/respiratory-medicine-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/open-access-journal",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590143519300016",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/respiratory-medicine-x/2590-1435/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1435"}]}, "created_date": "2019-05-30T13:58:49Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-08-01T12:45:26Z",
-        "id": "7c7baff3dd1b4393b3292625b554bb3d", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "https://www.cambridge.org/core/journals/german-law-journal/information/instructions-contributors",
-        "known": ["Portico"]}, "persistent_identifier_scheme": ["DOI"], "keywords":
-        ["european law", "comparative law", "international law"], "subject": [{"code":
-        "KJ-KKZ", "term": "Law of Europe", "scheme": "LCC"}, {"code": "K1-7720", "term":
-        "Law in general. Comparative and uniform law. Jurisprudence", "scheme": "LCC"}],
-        "article_statistics": {"url": "https://www.cambridge.org/core/journals/german-law-journal/article/populism-authoritarianism-and-constitutionalism/344BB7C4B6D417DE3FB6ECE50B5B1386#fndtn-metrics",
-        "statistics": true}, "title": "German Law Journal", "publication_time": 12,
-        "provider": "Cambridge Core", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": false, "url": ""}, "apc_url": "https://www.cambridge.org/core/journals/german-law-journal/information/glj-cambridge-partners",
-        "link": [{"url": "https://www.cambridge.org/core/journals/german-law-journal",
-        "type": "homepage"}, {"url": "https://www.cambridge.org/core/journals/german-law-journal/information/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.cambridge.org/core/journals/german-law-journal/information",
-        "type": "aims_scope"}, {"url": "https://www.cambridge.org/core/journals/german-law-journal/information/instructions-contributors",
-        "type": "author_instructions"}, {"url": "https://www.cambridge.org/core/journals/german-law-journal/information/instructions-contributors",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "https://www.cambridge.org/core/journals/german-law-journal/information/instructions-contributors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "German
-        Law Journal e.V", "publisher": "Cambridge University Press", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND",
-        "url": "https://www.cambridge.org/core/journals/german-law-journal/information/instructions-contributors",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.cambridge.org/core/journals/german-law-journal/article/judicial-role-in-protecting-democracy-from-populism/99585581EB11E7AFCD98C773F2EBFAB0",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "alternative_title": "GLJ",
-        "country": "GB", "submission_charges_url": "https://www.cambridge.org/core/journals/german-law-journal/information/glj-cambridge-partners",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2071-8322"}]}, "created_date": "2019-08-01T12:45:26Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-08-30T10:03:59Z",
-        "id": "5647abed0acd4ac396fc025ffdd2e507", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "http://journal-isi.org/index.php/isi/openaccesspolicyarchiving"},
-        "persistent_identifier_scheme": ["DOI"], "keywords": ["Information systems",
-        "informatics", "computer science", "information technology", "Application
-        software"], "apc": {"currency": "IDR", "average_price": 300000}, "subject":
-        [{"code": "QA1-939", "term": "Mathematics", "scheme": "LCC"}, {"code": "QA75.5-76.95",
-        "term": "Electronic computers. Computer science", "scheme": "LCC"}], "article_statistics":
-        {"url": "http://journal-isi.org/index.php/isi", "statistics": true}, "title":
-        "Journal of Information Systems and Informatics", "publication_time": 10,
-        "provider": "OJS", "format": ["PDF"], "plagiarism_detection": {"detection":
-        true, "url": "http://journal-isi.org/index.php/isi/peerreviewprocess"}, "apc_url":
-        "http://journal-isi.org/index.php/isi/feeandinformation", "link": [{"url":
-        "http://journal-isi.org/index.php/isi", "type": "homepage"}, {"url": "http://journal-isi.org/index.php/isi/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://journal-isi.org/index.php/isi/about",
-        "type": "aims_scope"}, {"url": "http://journal-isi.org/index.php/isi/about/submissions",
-        "type": "author_instructions"}, {"url": "http://journal-isi.org/index.php/isi/openaccesspolicyarchiving",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Peer review", "url": "http://journal-isi.org/index.php/isi/peerreviewprocess"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Universitas
-        Bina Darma", "publisher": "Informatics Department, Faculty of Computer Science
-        Bina Darma University", "language": ["EN", "ID"], "license": [{"open_access":
-        true, "embedded": true, "title": "CC BY", "url": "http://journal-isi.org/index.php/isi",
-        "NC": false, "ND": false, "embedded_example_url": "http://journal-isi.org/index.php/isi/article/view/5/4",
-        "SA": false, "type": "CC BY", "BY": true}], "alternative_title": "Journal
-        ISI", "country": "ID", "submission_charges_url": "http://journal-isi.org/index.php/isi/feeandinformation",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "2656-5935"}, {"type": "eissn", "id": "2656-4882"}]},
-        "created_date": "2019-04-16T07:49:22Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-04-01T15:59:06Z", "id": "7d96e18f87cd4b7d8f6a5a21902205ab",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "https://librarianresources.taylorandfrancis.com/product-info/journals/title-by-title/",
-        "known": ["CLOCKSS", "LOCKSS", "Portico"], "other": "Scholars Portal"}, "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "keywords": ["hyperthermia", "thermal
-        therapy", "heat treatment", "thermal response", "thermal energy treatment
-        systems"], "apc": {"currency": "USD", "average_price": 1950}, "deposit_policy":
-        ["Sherpa/Romeo"], "article_statistics": {"url": "https://www.tandfonline.com/toc/ihyt20/35/1?nav=tocList",
-        "statistics": true}, "title": "International Journal of Hyperthermia", "publication_time":
-        25, "provider": "Taylor & Francis Online", "subject": [{"code": "R855-855.5",
-        "term": "Medical technology", "scheme": "LCC"}], "format": ["PDF", "HTML"],
-        "plagiarism_detection": {"detection": true, "url": "http://www.tandfonline.com/action/authorSubmission?journalCode=IHYT&page=instructions"},
-        "apc_url": "http://www.tandfonline.com/action/authorSubmission?journalCode=IHYT&page=instructions",
-        "link": [{"url": "http://www.tandfonline.com/IHYT", "type": "homepage"}, {"url":
-        "https://authorservices.taylorandfrancis.com/publishing-open-access/#Discounts",
-        "type": "waiver_policy"}, {"url": "http://www.tandfonline.com/action/journalInformation?show=editorialBoard&journalCode=IHYT",
-        "type": "editorial_board"}, {"url": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=IHYT",
-        "type": "aims_scope"}, {"url": "http://www.tandfonline.com/action/authorSubmission?journalCode=IHYT&page=instructions",
-        "type": "author_instructions"}, {"url": "http://www.tandfonline.com/action/authorSubmission?journalCode=IHYT&page=instructions",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "http://www.tandfonline.com/action/authorSubmission?journalCode=IHYT&page=instructions"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Society
-        for Thermal Medicine; European Society for Hyperthermic Oncology; Japanese
-        Society for Thermal Medicine", "publisher": "Taylor & Francis Group", "language":
-        ["EN"], "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC",
-        "url": "http://authorservices.taylorandfrancis.com/publishing-agreements-your-options/",
-        "NC": true, "ND": false, "embedded_example_url": "https://www.tandfonline.com/action/showCopyRight?scroll=top&doi=10.1080%2F02656736.2018.1528392",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://www.tandfonline.com/action/authorSubmission?journalCode=ihyt20&page=instructions",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "pissn",
-        "id": "0265-6736"}, {"type": "eissn", "id": "1464-5157"}]}, "created_date":
-        "2019-04-01T15:59:06Z"}, {"admin": {"ticked": true, "seal": false}, "last_updated":
-        "2019-04-05T08:10:37Z", "id": "4f005ec6969e440c92a11e881aec636c", "bibjson":
-        {"allows_fulltext_indexing": true, "archiving_policy": {"url": "http://www.wileyauthors.com/openaccess"},
-        "persistent_identifier_scheme": ["DOI"], "keywords": ["conservation", "biological
-        diversity", "ecosystem"], "apc": {"currency": "USD", "average_price": 1850},
-        "subject": [{"code": "QH540-549.5", "term": "Ecology", "scheme": "LCC"}, {"code":
-        "QH1-199.5", "term": "General. Including nature conservation, geographical
-        distribution", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
-        false}, "title": "Conservation Science and Practice", "publication_time":
-        10, "provider": "Wiley Online Library", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/author-guidelines"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/funderpayments?",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/25784854", "type":
-        "homepage"}, {"url": "http://www.wileyopenaccess.com/details/content/13707a1ddf6/Waivers-and-Discounts-on-Article-Publication-Charges.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/editorial-board",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/overview",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/author-guidelines",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/author-guidelines",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/author-guidelines"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Society
-        for Conservation Biology", "publisher": "Wiley", "language": ["EN"], "license":
-        [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND", "url": "https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/open-access-agreements.html",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1002/csp2.11",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "US", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/25784854/homepage/author-guidelines",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2578-4854"}]}, "created_date": "2019-04-05T08:10:37Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-05-21T11:09:26Z",
-        "id": "b800b5431e384fc8b2e2587f6841e5df", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "http://olabout.wiley.com/WileyCDA/Section/id-406156.html",
-        "known": ["CLOCKSS", "Portico"]}, "persistent_identifier_scheme": ["DOI"],
-        "keywords": ["cardiovascular medicine", "cardiovascular surgery", "preventive
-        cardiology"], "apc": {"currency": "USD", "average_price": 2250}, "deposit_policy":
-        ["Sherpa/Romeo"], "article_statistics": {"url": "", "statistics": false},
-        "title": "Clinical Cardiology", "publication_time": 11, "provider": "Wiley
-        Online Library", "subject": [{"code": "RD1-811", "term": "Surgery", "scheme":
-        "LCC"}, {"code": "RC666-701", "term": "Diseases of the circulatory (Cardiovascular)
-        system", "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/forauthors.html"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/apc",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/19328737", "type":
-        "homepage"}, {"url": "http://www.wileyopenaccess.com/details/content/13707a1ddf6/Waivers-and-Discounts-on-Article-Publication-Charges.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/editorialboard.html",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/productinformation.html",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/forauthors.html",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/fundedaccess.html",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/forauthors.html"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "American
-        Society for Preventive Cardiology", "publisher": "Wiley", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND",
-        "url": "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/fundedaccess.html",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1002/clc.23142",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "US", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/19328737/homepage/apc", "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "identifier": [{"type": "eissn",
-        "id": "1932-8737"}]}, "created_date": "2019-05-08T15:31:07Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-04-09T08:51:57Z", "id": "3dddd6c3c78241e6adcaf0eb14d5508f",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "http://www.keaipublishing.com/en/authors-and-editors/sciencedirect/", "known":
-        ["CLOCKSS", "Portico"], "nat_lib": "Koninklijke Bibliotheek"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["biohazardous releases", "biosecurity initiatives",
-        "bioterrorism", "biological invasions", "emerging infectious diseases", "biologcial
-        welfare"], "apc": {"currency": "USD", "average_price": 980}, "subject": [{"code":
-        "QH301-705.5", "term": "Biology (General)", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Journal of Biosafety and Biosecurity",
-        "publication_time": 15, "provider": "ScienceDirect", "format": ["PDF", "HTML",
-        "XML"], "plagiarism_detection": {"detection": true, "url": "https://www.elsevier.com/editors/perk/plagiarism-complaints/plagiarism-detection"},
-        "apc_url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/open-access-journal/",
-        "link": [{"url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/",
-        "type": "homepage"}, {"url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/editorial-board/",
-        "type": "editorial_board"}, {"url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/",
-        "type": "aims_scope"}, {"url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/guide-for-authors/",
-        "type": "author_instructions"}, {"url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/open-access-journal/",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/guide-for-authors/#1911469"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "KeAi
-        Communications Co. Ltd.", "language": ["EN"], "license": [{"open_access":
-        true, "embedded": false, "title": "CC BY-NC-ND", "url": "http://www.keaipublishing.com/en/journals/journal-of-biosafety-and-biosecurity/open-access-journal/",
-        "NC": true, "ND": true, "embedded_example_url": "", "SA": false, "type": "CC
-        BY-NC-ND", "BY": true}], "country": "CN", "submission_charges_url": "http://www.keaipublishing.com/en/authors-and-editors/benefits-of-publishing/",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2588-9338"}]}, "created_date": "2019-04-09T08:51:57Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-04-10T09:15:33Z",
-        "id": "a02d0937d89647a8b1e8a5a4a8071636", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "https://www.hindawi.com/journals/jitc/",
-        "known": ["Portico"]}, "persistent_identifier_scheme": ["DOI"], "keywords":
-        ["cardiovascular disease", "coronary disease", "cardiology", "heart diseases"],
-        "apc": {"currency": "USD", "average_price": 1600}, "deposit_policy": ["Sherpa/Romeo"],
-        "article_statistics": {"url": "https://www.hindawi.com/journals/jitc/2019/5819232/",
-        "statistics": true}, "title": "Journal of Interventional Cardiology", "publication_time":
-        22, "provider": "Hindawi", "subject": [{"code": "RC666-701", "term": "Diseases
-        of the circulatory (Cardiovascular) system", "scheme": "LCC"}], "format":
-        ["PDF", "HTML", "ePUB", "XML"], "plagiarism_detection": {"detection": true,
-        "url": "https://www.hindawi.com/journals/jitc/ethics/"}, "apc_url": "https://www.hindawi.com/journals/jitc/apc/",
-        "link": [{"url": "https://www.hindawi.com/journals/jitc/", "type": "homepage"},
-        {"url": "https://www.hindawi.com/journals/jitc/apc/", "type": "waiver_policy"},
-        {"url": "https://www.hindawi.com/journals/jitc/editors/", "type": "editorial_board"},
-        {"url": "https://www.hindawi.com/journals/jitc/aims/", "type": "aims_scope"},
-        {"url": "https://www.hindawi.com/journals/jitc/guidelines/", "type": "author_instructions"},
-        {"url": "https://www.hindawi.com/journals/jitc/", "type": "oa_statement"}],
-        "oa_start": {"year": 2019}, "editorial_review": {"process": "Blind peer review",
-        "url": "https://www.hindawi.com/journals/jitc/workflow/"}, "author_copyright":
-        {"url": "https://www.hindawi.com/journals/jitc/guidelines/", "copyright":
-        "True"}, "publisher": "Hindawi-Wiley", "language": ["EN"], "license": [{"open_access":
-        true, "embedded": true, "title": "CC BY", "url": "https://www.hindawi.com/journals/jitc/guidelines/",
-        "NC": false, "ND": false, "embedded_example_url": "https://www.hindawi.com/journals/jitc/2019/5819232/",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://www.hindawi.com/journals/jitc/apc/", "author_publishing_rights":
-        {"url": "https://www.hindawi.com/journals/jitc/guidelines/", "publishing_rights":
-        "True"}, "identifier": [{"type": "pissn", "id": "0896-4327"}, {"type": "eissn",
-        "id": "1540-8183"}]}, "created_date": "2019-04-02T13:48:05Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-05-29T15:16:39Z", "id": "978d0b1e54e1469ba0382adfd69ac246",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["forensic sciences", "criminology", "criminal justice"],
-        "apc": {"currency": "USD", "average_price": 1700}, "subject": [{"code": "K5000-5582",
-        "term": "Criminal law and procedure", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Forensic Science International:
-        Synergy", "publication_time": 6, "provider": "www.sciencedirect.com", "format":
-        ["PDF", "HTML"], "plagiarism_detection": {"detection": true, "url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871x/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871X/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/forensic-science-international-synergy",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/forensic-science-international-synergy/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/forensic-science-international-synergy",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871x/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871X/open-access-journal",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871x/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871X/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2589871X19300555",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/forensic-science-international-synergy/2589-871X/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2589-871X"}]}, "created_date": "2019-05-29T15:16:39Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-05-30T08:14:41Z",
-        "id": "c61c8f8aeb134f70a061918469a0d4f0", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://www.elsevier.com/about/our-business/policies/digital-archive",
-        "known": ["CLOCKSS", "Portico"], "other": "Scholars Portal"}, "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "keywords": ["materials processing",
-        "engineering materials", "materials science"], "apc": {"currency": "USD",
-        "average_price": 2000}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Materials & Design", "publication_time":
-        14, "provider": "www.sciencedirect.com", "subject": [{"code": "TA401-492",
-        "term": "Materials of engineering and construction. Mechanics of materials",
-        "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection": {"detection":
-        true, "url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/materials-and-design",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/materials-and-design/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/materials-and-design",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/open-access-journal",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S0264127518308402",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "alternative_title": "Materials
-        and Design", "country": "GB", "submission_charges_url": "https://www.elsevier.com/journals/materials-and-design/0264-1275/open-access-journal",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "pissn",
-        "id": "0264-1275"}, {"type": "eissn", "id": "1873-4197"}]}, "created_date":
-        "2019-05-30T08:14:41Z"}, {"admin": {"ticked": true, "seal": false}, "last_updated":
-        "2019-06-19T08:35:16Z", "id": "1e46d10e961c42239419e67d40205ee4", "bibjson":
-        {"allows_fulltext_indexing": true, "persistent_identifier_scheme": ["DOI"],
-        "keywords": ["applied mathematics", "engineering", "materials science", "mechanics",
-        "industrial engineering", "computational intelligence"], "subject": [{"code":
-        "T57-57.97", "term": "Applied mathematics. Quantitative methods", "scheme":
-        "LCC"}], "article_statistics": {"url": "https://www.aimspress.com/article/10.3934/Mine.2018.1.55",
-        "statistics": true}, "title": "Mathematics in Engineering", "publication_time":
-        12, "format": ["PDF", "HTML"], "plagiarism_detection": {"detection": true,
-        "url": "http://www.aimspress.com/news/283.html"}, "apc_url": "http://www.aimspress.com/journal/MinE",
-        "link": [{"url": "http://www.aimspress.com/journal/MinE", "type": "homepage"},
-        {"url": "http://www.aimspress.com/news/281.html", "type": "editorial_board"},
-        {"url": "http://www.aimspress.com/news/280.html", "type": "aims_scope"}, {"url":
-        "http://www.aimspress.com/news/284.html", "type": "author_instructions"},
-        {"url": "http://www.aimspress.com/about.html", "type": "oa_statement"}], "active":
-        true, "oa_start": {"year": 2019}, "editorial_review": {"process": "Blind peer
-        review", "url": "http://www.aimspress.com/news/282.html"}, "author_copyright":
-        {"url": "http://www.aimspress.com/about.html", "copyright": "True"}, "publisher":
-        "AIMS Press", "language": ["EN"], "license": [{"open_access": true, "embedded":
-        true, "title": "CC BY", "url": "http://www.aimspress.com/about.html", "NC":
-        false, "ND": false, "embedded_example_url": "http://www.aimspress.com/fileOther/PDF/MinE/mine-01-02-378.pdf",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "US", "submission_charges_url":
-        "http://www.aimspress.com/journal/MinE", "author_publishing_rights": {"url":
-        "http://www.aimspress.com/about.html", "publishing_rights": "True"}, "identifier":
-        [{"type": "eissn", "id": "2640-3501"}]}, "created_date": "2019-06-19T08:35:16Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-06-11T07:58:36Z",
-        "id": "a6ab57ba7f10420eb387a9a29718177e", "bibjson": {"allows_fulltext_indexing":
-        true, "archiving_policy": {"url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#archiving"},
-        "persistent_identifier_scheme": ["DOI"], "keywords": ["psychology", "clinical
-        psychology", "developmental psychology", "healt psychology"], "subject": [{"code":
-        "R", "term": "Medicine", "scheme": "LCC"}, {"code": "BF1-990", "term": "Psychology",
-        "scheme": "LCC"}], "article_statistics": {"url": "", "statistics": false},
-        "title": "Journal of Clinical & Developmental Psychology", "publication_time":
-        6, "provider": "OJS", "format": ["PDF"], "plagiarism_detection": {"detection":
-        false, "url": ""}, "apc_url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#openAccessPolicy",
-        "link": [{"url": "http://cab.unime.it/journals/index.php/JCDP/index", "type":
-        "homepage"}, {"url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#focusAndScope",
-        "type": "aims_scope"}, {"url": "http://cab.unime.it/journals/index.php/JCDP/about/submissions#authorGuidelines",
-        "type": "author_instructions"}, {"url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#openAccessPolicy",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#peerReviewProcess"},
-        "author_copyright": {"url": "http://cab.unime.it/journals/index.php/JCDP/about/submissions#copyrightNotice",
-        "copyright": "True"}, "institution": "University of Messina", "publisher":
-        "CeRIP", "language": ["EN"], "license": [{"open_access": true, "embedded":
-        true, "title": "CC BY", "url": "http://cab.unime.it/journals/index.php/JCDP/about/submissions#copyrightNotice",
-        "NC": false, "ND": false, "embedded_example_url": "http://cab.unime.it/journals/index.php/JCDP/article/view/2045/pdf",
-        "SA": false, "type": "CC BY", "BY": true}], "country": "IT", "submission_charges_url":
-        "http://cab.unime.it/journals/index.php/JCDP/about/editorialPolicies#openAccessPolicy",
-        "author_publishing_rights": {"url": "http://cab.unime.it/journals/index.php/JCDP/about/submissions#copyrightNotice",
-        "publishing_rights": "True"}, "identifier": [{"type": "eissn", "id": "2612-4033"}]},
-        "created_date": "2019-06-11T07:58:36Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-07-03T13:46:23Z", "id": "ad454c406f1b4edc83bc76e9584967ff",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive", "known":
-        ["Portico"]}, "persistent_identifier_scheme": ["DOI"], "keywords": ["obstetrics",
-        "perinatology", "reproductive medicine", "gynaecology", "materno-foetal medicine",
-        "sexual medicine"], "apc": {"currency": "USD", "average_price": 2500}, "subject":
-        [{"code": "RG1-991", "term": "Gynecology and obstetrics", "scheme": "LCC"}],
-        "article_statistics": {"url": "", "statistics": false}, "title": "European
-        Journal of Obstetrics & Gynecology and Reproductive Biology: X", "publication_time":
-        16, "provider": "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": false, "url": ""}, "apc_url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/guide-for-authors",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/open-access-journal",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590161319300432",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "NL", "submission_charges_url":
-        "https://www.elsevier.com/journals/european-journal-of-obstetrics-and-gynecology-and-reproductive-biology-x/2590-1613/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1613"}]}, "created_date": "2019-07-03T13:46:23Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-07-23T14:23:32Z",
-        "id": "d63a35a08f554f19a08f95208d441b52", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://thekeepers.org/journals?query=2040-6215",
-        "known": ["CLOCKSS", "LOCKSS", "PMC/Europe PMC/PMC Canada", "Portico"], "nat_lib":
-        "Koninklijke Bibliotheek", "other": "Scholars Portal"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["blood disorders", "blood diseases", "haematology"],
-        "apc": {"currency": "USD", "average_price": 2000}, "deposit_policy": ["Sherpa/Romeo"],
-        "article_statistics": {"url": "https://journals.sagepub.com/doi/metrics/10.1177/2040620719854171",
-        "statistics": true}, "title": "Therapeutic Advances in Hematology", "publication_time":
-        7, "provider": "Atypon", "subject": [{"code": "RC633-647.5", "term": "Diseases
-        of the blood and blood-forming organs", "scheme": "LCC"}], "format": ["PDF",
-        "HTML"], "plagiarism_detection": {"detection": true, "url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines"},
-        "apc_url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines",
-        "link": [{"url": "https://journals.sagepub.com/home/tah", "type": "homepage"},
-        {"url": "https://us.sagepub.com/en-us/nam/gold-open-access-article-processing-charge-waivers",
-        "type": "waiver_policy"}, {"url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#editorial-board",
-        "type": "editorial_board"}, {"url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#aims-and-scope",
-        "type": "aims_scope"}, {"url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines",
-        "type": "author_instructions"}, {"url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "SAGE
-        Publishing", "language": ["EN"], "license": [{"open_access": true, "embedded":
-        true, "title": "CC BY-NC", "url": "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines",
-        "NC": true, "ND": false, "embedded_example_url": "https://journals.sagepub.com/doi/full/10.1177/2040620719854596",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://us.sagepub.com/en-us/nam/journal/therapeutic-advances-hematology#submission-guidelines",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "2040-6207"}, {"type": "eissn", "id": "2040-6215"}]},
-        "created_date": "2019-07-23T14:23:32Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-07-15T09:47:51Z", "id": "c7bf710339de490c95b6d076ab3d3b93",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "http://www.keaipublishing.com/en/authors-and-editors/sciencedirect/", "known":
-        ["CLOCKSS", "Portico"], "nat_lib": "Koninklijke Bibliotheek"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["circuits and systems", "CMOS devices", "magnetic sensor",
-        "module", "memristive device", "power electronics device"], "apc": {"currency":
-        "USD", "average_price": 700}, "subject": [{"code": "TK1-9971", "term": "Electrical
-        engineering. Electronics. Nuclear engineering", "scheme": "LCC"}, {"code":
-        "TK7800-8360", "term": "Electronics", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Solid State Electronics Letters
-        ", "publication_time": 29, "provider": "ScienceDirect", "format": ["PDF",
-        "HTML", "XML"], "plagiarism_detection": {"detection": true, "url": "https://www.elsevier.com/editors/perk/plagiarism-complaints/plagiarism-detection"},
-        "apc_url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/guide-for-authors/#2260604",
-        "link": [{"url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/",
-        "type": "homepage"}, {"url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/editorial-board/",
-        "type": "editorial_board"}, {"url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/",
-        "type": "aims_scope"}, {"url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/guide-for-authors/",
-        "type": "author_instructions"}, {"url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/open-access-journal/",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/guide-for-authors/#2260606"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "KeAi
-        Communications Co., Ltd.", "language": ["EN"], "license": [{"open_access":
-        true, "embedded": true, "title": "CC BY-NC-ND", "url": "http://www.keaipublishing.com/en/journals/solid-state-electronics-letters/open-access-journal/",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2589208818300322",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "CN", "submission_charges_url":
-        "http://www.keaipublishing.com/en/authors-and-editors/benefits-of-publishing/",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2589-2088"}]}, "created_date": "2019-07-15T09:47:51Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-07-11T15:25:47Z",
-        "id": "7b44fa45e8374dc491b694818afb9902", "bibjson": {"allows_fulltext_indexing":
-        true, "persistent_identifier_scheme": ["DOI"], "keywords": ["media", "mass
-        culture", "cinema studies", "game studies", "media activism", "media literacy
-        skills"], "subject": [{"code": "P87-96", "term": "Communication. Mass media",
-        "scheme": "LCC"}], "article_statistics": {"url": "", "statistics": false},
-        "title": "\u0413\u0430\u043b\u0430\u043a\u0442\u0438\u043a\u0430 \u043c\u0435\u0434\u0438\u0430:
-        \u0436\u0443\u0440\u043d\u0430\u043b \u043c\u0435\u0434\u0438\u0430 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439",
-        "publication_time": 8, "provider": "OJS", "format": ["PDF"], "plagiarism_detection":
-        {"detection": true, "url": "https://galacticamedia.com/index.php/gmd/antiplagiarism"},
-        "apc_url": "https://galacticamedia.com/index.php/gmd/open", "link": [{"url":
-        "https://galacticamedia.com", "type": "homepage"}, {"url": "https://galacticamedia.com/index.php/gmd/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "https://galacticamedia.com/index.php/gmd/about",
-        "type": "aims_scope"}, {"url": "https://galacticamedia.com/index.php/gmd/instructions",
-        "type": "author_instructions"}, {"url": "https://galacticamedia.com/index.php/gmd/open",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "https://galacticamedia.com/index.php/gmd/reviewing"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Limited
-        Liability Company Scientific Industrial Enterprise \u201cGenesis. Frontier.
-        Science\u201d", "publisher": "Limited Liability Company Scientific Industrial
-        Enterprise \u201cGenesis. Frontier. Science\u201d", "language": ["EN", "RU"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND",
-        "url": "https://galacticamedia.com/index.php/gmd/lince", "NC": true, "ND":
-        true, "embedded_example_url": "https://galacticamedia.com/index.php/gmd/article/view/12/3",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "alternative_title": "Galactica
-        Media: Journal of Media Studies", "country": "RU", "submission_charges_url":
-        "https://galacticamedia.com/index.php/gmd/open", "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "identifier": [{"type": "eissn",
-        "id": "2658-7734"}]}, "created_date": "2019-07-11T14:49:03Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-03-06T17:19:53Z", "id": "82ea8685ac2f4633a3b08bbd7263bb77",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://olabout.wiley.com/WileyCDA/Section/id-406156.html", "known": ["CLOCKSS",
-        "Portico"], "nat_lib": "Library of Congress; National Science Library, Chinese
-        Academy of Sciences", "other": "Scholars Portal"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["stem cells", "regenerative medicine", "tissue engineering",
-        "cell biology", "cell proliferation", "cancer"], "apc": {"currency": "USD",
-        "average_price": 2150}, "deposit_policy": ["Sherpa/Romeo"], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Cell Proliferation", "publication_time":
-        7, "provider": "Wiley Online Library", "subject": [{"code": "RC254-282", "term":
-        "Neoplasms. Tumors. Oncology. Including cancer and carcinogens", "scheme":
-        "LCC"}, {"code": "QH573-671", "term": "Cytology", "scheme": "LCC"}], "format":
-        ["PDF", "HTML"], "plagiarism_detection": {"detection": true, "url": "https://onlinelibrary.wiley.com/page/journal/13652184/homepage/forauthors.html#editorial"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/13652184/article_publication_charges.html",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/13652184", "type":
-        "homepage"}, {"url": "http://www.wileyopenaccess.com/details/content/13707a1ddf6/Waivers-and-Discounts-on-Article-Publication-Charges.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13652184/homepage/editorialboard.html",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13652184/homepage/productinformation.html",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13652184/homepage/forauthors.html",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13652184/open_access_license_and_copyright.html",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/13652184/homepage/forauthors.html#editorial"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Wiley",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://onlinelibrary.wiley.com/page/journal/13652184/open_access_license_and_copyright.html",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1111/cpr.12511",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "US", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/13652184/article_publication_charges.html",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "0960-7722"}, {"type": "eissn", "id": "1365-2184"}]},
-        "created_date": "2019-03-06T17:19:53Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-05-14T11:08:26Z", "id": "dcd9ac5b3f9c41b186538cfb734b52eb",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://olabout.wiley.com/WileyCDA/Section/id-406156.html", "known": ["CLOCKSS"],
-        "nat_lib": "National Science Library, Chinese Academy of Sciences", "other":
-        "Scholars Portal"}, "author_publishing_rights": {"url": "", "publishing_rights":
-        "False"}, "keywords": ["molecular plant pathology", "molecular biology", "pathology",
-        "plant viruses", "plant-microbe interactions", "fungal pathogens"], "apc":
-        {"currency": "USD", "average_price": 2340}, "deposit_policy": ["Sherpa/Romeo"],
-        "article_statistics": {"url": "", "statistics": false}, "title": "Molecular
-        Plant Pathology", "publication_time": 14, "provider": "Wiley Online Library",
-        "subject": [{"code": "SB1-1110", "term": "Plant culture", "scheme": "LCC"},
-        {"code": "QK1-989", "term": "Botany", "scheme": "LCC"}], "format": ["PDF",
-        "HTML"], "plagiarism_detection": {"detection": true, "url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/forauthors.html"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/article_publication_charges.html",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/13643703", "type":
-        "homepage"}, {"url": "http://www.wileyopenaccess.com/details/content/13707a1ddf6/Waivers-and-Discounts-on-Article-Publication-Charges.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/editorialboard.html",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/productinformation.html",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/forauthors.html",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/article_publication_charges.html",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/forauthors.html"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "British
-        Society for Plant Pathology", "publisher": "Wiley", "language": ["EN"], "license":
-        [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND", "url": "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/openaccesslicenseandcopyright",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1111/mpp.12768",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/13643703/homepage/forauthors.html",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "eissn",
-        "id": "1364-3703"}]}, "created_date": "2019-05-14T11:08:26Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-06-21T14:27:05Z", "id": "55961bb761e14b85b09ff14b680fde81",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["applied mathematics", "computational physics", "mathematical
-        modelling", "computer science"], "apc": {"currency": "USD", "average_price":
-        2800}, "subject": [{"code": "QC1-999", "term": "Physics", "scheme": "LCC"},
-        {"code": "QA75.5-76.95", "term": "Electronic computers. Computer science",
-        "scheme": "LCC"}], "article_statistics": {"url": "", "statistics": false},
-        "title": "Journal of Computational Physics: X", "publication_time": 30, "provider":
-        "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/journal-of-computational-physics-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/journal-of-computational-physics-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/journal-of-computational-physics-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/open-access-journal",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590055219300356",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "US", "submission_charges_url":
-        "https://www.elsevier.com/journals/journal-of-computational-physics-x/2590-0552/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-0552"}]}, "created_date": "2019-05-30T13:26:31Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-08-08T08:44:22Z",
-        "id": "35cd2742fa704b4ea5fdcbd7cc710d60", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://thekeepers.org/journals?query=0974-9098",
-        "known": ["CLOCKSS", "LOCKSS", "Portico"]}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["orthodontics"], "deposit_policy": ["Sherpa/Romeo"],
-        "article_statistics": {"url": "https://journals.sagepub.com/doi/metrics/10.1177/0301574219840872",
-        "statistics": true}, "title": "Journal of Indian Orthodontic Society", "publication_time":
-        10, "provider": "Atypon", "subject": [{"code": "RK1-715", "term": "Dentistry",
-        "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection": {"detection":
-        true, "url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines"},
-        "apc_url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines",
-        "link": [{"url": "https://journals.sagepub.com/home/jio", "type": "homepage"},
-        {"url": "https://us.sagepub.com/en-us/nam/gold-open-access-article-processing-charge-waivers",
-        "type": "waiver_policy"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#editorial-board",
-        "type": "editorial_board"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#aims-and-scope",
-        "type": "aims_scope"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines",
-        "type": "author_instructions"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#aims-and-scope",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Double blind peer review", "url": "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Indian
-        Orthodontic Society", "publisher": "SAGE Publishing", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC", "url":
-        "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines",
-        "NC": true, "ND": false, "embedded_example_url": "https://journals.sagepub.com/doi/full/10.1177/0301574219862499",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "country": "IN", "submission_charges_url":
-        "https://us.sagepub.com/en-us/nam/journal-of-indian-orthodontic-society/journal203657#submission-guidelines",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "0301-5742"}, {"type": "eissn", "id": "0974-9098"}]},
-        "created_date": "2017-09-06T13:14:16Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-09-04T13:42:41Z", "id": "9c0259c1a9114ba69ab6d622c18d071f",
-        "bibjson": {"allows_fulltext_indexing": false, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["ocean science", "ocean technology", "ocean-climate
-        interactions", "marine facilities", "ocean processes"], "apc": {"currency":
-        "USD", "average_price": 900}, "subject": [{"code": "TC1501-1800", "term":
-        "Ocean engineering", "scheme": "LCC"}, {"code": "GC1-1581", "term": "Oceanography",
-        "scheme": "LCC"}], "article_statistics": {"url": "https://journals.sagepub.com/doi/metrics/10.1177/1759313118791113",
-        "statistics": true}, "title": "Journal of Ocean and Climate", "publication_time":
-        9, "provider": "Atypon", "format": ["PDF", "HTML", "ePUB"], "plagiarism_detection":
-        {"detection": true, "url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines"},
-        "apc_url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines",
-        "link": [{"url": "https://journals.sagepub.com/home/ocs", "type": "homepage"},
-        {"url": "https://us.sagepub.com/en-us/nam/gold-open-access-article-processing-charge-waivers",
-        "type": "waiver_policy"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#editorial-board",
-        "type": "editorial_board"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#aims-and-scope",
-        "type": "aims_scope"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines",
-        "type": "author_instructions"}, {"url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "SAGE
-        Publishing", "replaces": ["1759-314X"], "language": ["EN"], "license": [{"open_access":
-        true, "embedded": true, "title": "CC BY-NC", "url": "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines",
-        "NC": true, "ND": false, "embedded_example_url": "https://journals.sagepub.com/doi/full/10.1177/2516019219852603",
-        "SA": false, "type": "CC BY-NC", "BY": true}], "alternative_title": "Journal
-        of Ocean and Climate: Science, Technology and Impacts", "country": "GB", "submission_charges_url":
-        "https://us.sagepub.com/en-us/nam/journal-of-ocean-and-climate/journal203521#submission-guidelines",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2516-0192"}]}, "created_date": "2019-09-04T13:42:41Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-05-03T13:18:50Z",
-        "id": "5008c7ae4b8e4445b8e84d5ee5a476ec", "bibjson": {"allows_fulltext_indexing":
-        false, "archiving_policy": {"url": "https://www.elsevier.com/about/our-business/policies/digital-archive",
-        "known": ["CLOCKSS", "Portico"], "nat_lib": "Koninklijke Bibliotheek", "other":
-        "Scholars Portal"}, "author_publishing_rights": {"url": "", "publishing_rights":
-        "False"}, "keywords": ["electrochemistry", "electrochemical surface science",
-        "batteries", "interfaces"], "apc": {"currency": "USD", "average_price": 2450},
-        "deposit_policy": ["Sherpa/Romeo"], "article_statistics": {"url": "", "statistics":
-        false}, "title": "Electrochemistry Communications", "publication_time": 7,
-        "provider": "www.sciencedirect.com", "subject": [{"code": "TP250-261", "term":
-        "Industrial electrochemistry", "scheme": "LCC"}, {"code": "QD1-999", "term":
-        "Chemistry", "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/electrochemistry-communications",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/electrochemistry-communications/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/electrochemistry-communications",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/open-access-journal",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "International
-        Society of Electrochemistry", "publisher": "Elsevier", "language": ["EN"],
-        "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND",
-        "url": "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S1388248118303370",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "US", "submission_charges_url":
-        "https://www.elsevier.com/journals/electrochemistry-communications/1388-2481/open-access-journal",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "pissn",
-        "id": "1388-2481"}, {"type": "eissn", "id": "1873-1902"}]}, "created_date":
-        "2019-05-03T13:18:50Z"}, {"admin": {"ticked": true, "seal": false}, "last_updated":
-        "2019-05-08T15:37:08Z", "id": "5047788278074bf2981138cd744d268a", "bibjson":
-        {"allows_fulltext_indexing": true, "archiving_policy": {"url": "http://olabout.wiley.com/WileyCDA/Section/id-406156.html",
-        "known": ["PMC/Europe PMC/PMC Canada", "Portico"]}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["genetics", "inborn errors", "biochemics", "molecular
-        genetics", "inherited metabolic disorders"], "apc": {"currency": "USD", "average_price":
-        2000}, "subject": [{"code": "RC648-665", "term": "Diseases of the endocrine
-        glands. Clinical endocrinology", "scheme": "LCC"}, {"code": "QH426-470", "term":
-        "Genetics", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
-        false}, "title": "JIMD Reports", "publication_time": 12, "provider": "Wiley
-        Online Library", "format": ["PDF", "HTML"], "plagiarism_detection": {"detection":
-        true, "url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/author-guidelines"},
-        "apc_url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/article_publication_charges",
-        "link": [{"url": "https://onlinelibrary.wiley.com/journal/21928312", "type":
-        "homepage"}, {"url": "http://www.wileyopenaccess.com/details/content/13707a1ddf6/Waivers-and-Discounts-on-Article-Publication-Charges.html",
-        "type": "waiver_policy"}, {"url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/editorial-board",
-        "type": "editorial_board"}, {"url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/author-guidelines",
-        "type": "aims_scope"}, {"url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/author-guidelines",
-        "type": "author_instructions"}, {"url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/article_publication_charges",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/author-guidelines"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Society
-        for the Study of Inborn Errors of Metabolism", "publisher": "Wiley", "language":
-        ["EN"], "license": [{"open_access": true, "embedded": true, "title": "CC BY-NC-ND",
-        "url": "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/open_access_license_and_copyright.htm",
-        "NC": true, "ND": true, "embedded_example_url": "https://onlinelibrary.wiley.com/doi/10.1002/jmd2.12016",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://onlinelibrary.wiley.com/page/journal/21928312/homepage/author-guidelines",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "pissn", "id": "2192-8304"}, {"type": "eissn", "id": "2192-8312"}]},
-        "created_date": "2019-05-08T15:37:08Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2019-06-21T14:30:13Z", "id": "2d87df69f2384584a757e83bc878fd06",
-        "bibjson": {"allows_fulltext_indexing": false, "archiving_policy": {"url":
-        "https://www.elsevier.com/about/our-business/policies/digital-archive"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["atmosphere", "air quality", "human health", "climate
-        change", "ecosystem", "emission reductions"], "apc": {"currency": "USD", "average_price":
-        1400}, "subject": [{"code": "TD172-193.5", "term": "Environmental pollution",
-        "scheme": "LCC"}, {"code": "QC851-999", "term": "Meteorology. Climatology",
-        "scheme": "LCC"}], "article_statistics": {"url": "", "statistics": false},
-        "title": "Atmospheric Environment: X", "publication_time": 12, "provider":
-        "www.sciencedirect.com", "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/guide-for-authors"},
-        "apc_url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/open-access-journal",
-        "link": [{"url": "https://www.journals.elsevier.com/atmospheric-environment-x",
-        "type": "homepage"}, {"url": "https://www.elsevier.com/about/policies/pricing",
-        "type": "waiver_policy"}, {"url": "https://www.journals.elsevier.com/atmospheric-environment-x/editorial-board",
-        "type": "editorial_board"}, {"url": "https://www.journals.elsevier.com/atmospheric-environment-x",
-        "type": "aims_scope"}, {"url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/guide-for-authors",
-        "type": "author_instructions"}, {"url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/open-access-journal",
-        "type": "oa_statement"}], "oa_start": {"year": 2019}, "editorial_review":
-        {"process": "Blind peer review", "url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/guide-for-authors"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Elsevier",
-        "language": ["EN"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-NC-ND", "url": "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/open-access-journal",
-        "NC": true, "ND": true, "embedded_example_url": "https://www.sciencedirect.com/science/article/pii/S2590162119300139",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "GB", "submission_charges_url":
-        "https://www.elsevier.com/journals/atmospheric-environment-x/2590-1621/open-access-journal",
-        "author_publishing_rights": {"url": "", "publishing_rights": "False"}, "identifier":
-        [{"type": "eissn", "id": "2590-1621"}]}, "created_date": "2019-05-03T14:27:57Z"}],
-        "next": "https://doaj.org/api/v1/search/journals/journal?sort=bibjson.oa_start.year%3Adesc&page=2&pageSize=30",
-        "query": "journal", "total": 6213, "page": 1}'
-  recorded_at: 2019-09-04 17:02:00 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"total": 15596, "page": 1, "pageSize": 30, "timestamp": "2020-11-25T16:06:18.310130Z",
+        "query": "journal", "results": [{"id": "23633cd5387f4b3cb26b8008d3bddc4d",
+        "created_date": "2020-07-30T10:39:58Z", "last_updated": "2020-07-30T10:39:58Z",
+        "bibjson": {"boai": true, "eissn": "2732-4168", "publication_time_weeks":
+        24, "title": "New Classicists", "apc": {"has_apc": false, "url": "https://www.newclassicists.com/about"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "https://www.newclassicists.com/about"}, "deposit_policy": {"has_policy":
+        false}, "editorial": {"review_url": "https://www.newclassicists.com/about",
+        "board_url": "https://www.newclassicists.com/advisoryboard", "review_process":
+        ["Double blind peer review"]}, "institution": {"name": "King''s College London"},
+        "other_charges": {"has_other_charges": false, "url": "https://www.newclassicists.com/about"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "New Classicists",
+        "country": "GB"}, "ref": {"oa_statement": "https://www.newclassicists.com/about",
+        "journal": "https://www.newclassicists.com/", "aims_scope": "https://www.newclassicists.com/about",
+        "author_instructions": "https://www.newclassicists.com/about", "license_terms":
+        "https://www.newclassicists.com/about"}, "waiver": {"has_waiver": false},
+        "keywords": ["classics", "ancient history", "antiquity"], "language": ["EN"],
+        "license": [{"type": "CC BY-ND", "BY": true, "NC": false, "ND": true, "SA":
+        false}], "subject": [{"code": "D51-90", "scheme": "LCC", "term": "Ancient
+        history"}]}, "admin": {"seal": false, "ticked": true}}, {"id": "cda12a4ec6e242b2bae3eccf3c5f1563",
+        "created_date": "2020-10-29T14:41:27Z", "last_updated": "2020-10-29T14:41:27Z",
+        "bibjson": {"boai": true, "eissn": "2729-3548", "publication_time_weeks":
+        16, "title": "Espaces Linguistiques ", "apc": {"has_apc": false, "url": "https://www.unilim.fr/espaces-linguistiques/91"},
+        "article": {"license_display_example_url": "https://www.unilim.fr/espaces-linguistiques/216#article_licence",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": false}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "https://www.unilim.fr/espaces-linguistiques/91",
+        "board_url": "https://www.unilim.fr/espaces-linguistiques/89", "review_process":
+        ["Double blind peer review"]}, "institution": {"name": "Universit\u00e9 de
+        Limoges"}, "other_charges": {"has_other_charges": false, "url": "https://www.unilim.fr/espaces-linguistiques/91"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://www.unilim.fr/espaces-linguistiques/91"}, "preservation":
+        {"has_preservation": false}, "publisher": {"name": "Universit\u00e9 de Limoges",
+        "country": "FR"}, "ref": {"oa_statement": "https://www.unilim.fr/espaces-linguistiques/91",
+        "journal": "https://www.unilim.fr/espaces-linguistiques/", "aims_scope": "https://www.unilim.fr/espaces-linguistiques/88",
+        "author_instructions": "https://www.unilim.fr/espaces-linguistiques/90", "license_terms":
+        "https://www.unilim.fr/espaces-linguistiques/91"}, "waiver": {"has_waiver":
+        false}, "keywords": ["linguistics", "language", "discourse", "translation"],
+        "language": ["FR"], "license": [{"type": "CC BY-NC-ND", "BY": true, "NC":
+        true, "ND": true, "SA": false}], "subject": [{"code": "P", "scheme": "LCC",
+        "term": "Language and Literature"}]}, "admin": {"seal": false, "ticked": true}},
+        {"id": "2d8a054a658340fa9ff6e8c4f6d6afee", "created_date": "2020-07-06T15:46:10Z",
+        "last_updated": "2020-07-06T15:46:10Z", "bibjson": {"boai": true, "eissn":
+        "2723-925X", "publication_time_weeks": 12, "title": "Archivi delle emozioni",
+        "apc": {"has_apc": false, "url": "http://archivi-emozioni.it/index.php/rivista/about"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://archivi-emozioni.it/index.php/rivista/open-access"}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://archivi-emozioni.it/index.php/rivista/peer-review",
+        "board_url": "http://archivi-emozioni.it/index.php/rivista/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universit\u00e0
+        degli Studi di Sassari"}, "other_charges": {"has_other_charges": false, "url":
+        "http://archivi-emozioni.it/index.php/rivista/about"}, "pid_scheme": {"has_pid_scheme":
+        true, "scheme": ["DOI"]}, "plagiarism": {"detection": false}, "preservation":
+        {"has_preservation": false}, "publisher": {"name": "Edizioni di Pagina", "country":
+        "IT"}, "ref": {"oa_statement": "http://archivi-emozioni.it/index.php/rivista/open-access",
+        "journal": "http://archivi-emozioni.it/index.php/rivista", "aims_scope": "http://archivi-emozioni.it/index.php/rivista/about",
+        "author_instructions": "http://archivi-emozioni.it/index.php/rivista/information/authors",
+        "license_terms": "http://archivi-emozioni.it/index.php/rivista/open-access"},
+        "waiver": {"has_waiver": false}, "keywords": ["archives", "emotions", "literature",
+        "arts", "performance"], "language": ["EN", "FR", "DE", "IT", "ES"], "license":
+        [{"type": "CC BY", "BY": true, "NC": false, "ND": false, "SA": false}], "subject":
+        [{"code": "PN1-6790", "scheme": "LCC", "term": "Literature (General)"}, {"code":
+        "B", "scheme": "LCC", "term": "Philosophy. Psychology. Religion"}]}, "admin":
+        {"seal": false, "ticked": true}}, {"id": "9b3296c346af49c98a40f9525f6fa224",
+        "created_date": "2020-11-19T16:54:57Z", "last_updated": "2020-11-19T16:54:57Z",
+        "bibjson": {"boai": true, "eissn": "2723-9535", "publication_time_weeks":
+        7, "title": "HighTech and Innovation Journal", "apc": {"has_apc": false, "url":
+        "https://hightechjournal.org/index.php/HIJ/about/submissions#authorFees"},
+        "article": {"license_display_example_url": "https://hightechjournal.org/index.php/HIJ/article/view/39/pdf",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "https://hightechjournal.org/index.php/HIJ/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://hightechjournal.org/index.php/HIJ/about/editorialPolicies#custom-5",
+        "board_url": "https://hightechjournal.org/index.php/HIJ/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "European
+        High-tech and Emerging Research Association (EUHERA)"}, "other_charges": {"has_other_charges":
+        false, "url": "https://hightechjournal.org/index.php/HIJ/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://hightechjournal.org/index.php/HIJ/about/editorialPolicies#custom-1"},
+        "preservation": {"has_preservation": false, "url": "https://hightechjournal.org/index.php/HIJ/about/editorialPolicies#archiving"},
+        "publisher": {"name": "Ital Publication", "country": "IT"}, "ref": {"oa_statement":
+        "https://hightechjournal.org/index.php/HIJ/about/editorialPolicies#openAccessPolicy",
+        "journal": "https://hightechjournal.org/index.php/HIJ/index", "aims_scope":
+        "https://hightechjournal.org/index.php/HIJ/about/editorialPolicies#focusAndScope",
+        "author_instructions": "https://hightechjournal.org/index.php/HIJ/about/submissions#authorGuidelines",
+        "license_terms": "https://hightechjournal.org/index.php/HIJ/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["smart technologies and applications",
+        "innovation in materials and nanotechnology", "sustainability", "energy and
+        clean technologies", "artificial intelligence", "human services technology"],
+        "language": ["EN"], "license": [{"type": "CC BY", "BY": true, "NC": false,
+        "ND": false, "SA": false}], "subject": [{"code": "HD45-45.2", "scheme": "LCC",
+        "term": "Technological innovations. Automation"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "0f6ef39cc8c64f6286b5c3c7eb7ca983", "created_date":
+        "2020-10-19T10:05:44Z", "last_updated": "2020-10-19T10:05:44Z", "bibjson":
+        {"boai": true, "eissn": "2722-7235", "publication_time_weeks": 8, "title":
+        "Buletin Agroteknologi", "apc": {"has_apc": true, "url": "https://journals.unihaz.ac.id/index.php/bulgro/apc",
+        "max": [{"currency": "USD", "price": 35}]}, "article": {"license_display_example_url":
+        "https://journals.unihaz.ac.id/index.php/bulgro/article/view/1152", "license_display":
+        ["Embed"]}, "copyright": {"author_retains": true, "url": "https://journals.unihaz.ac.id/index.php/bulgro/cn"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://journals.unihaz.ac.id/index.php/bulgro/prp",
+        "board_url": "https://journals.unihaz.ac.id/index.php/bulgro/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "
+        Agrotechnology Study Program Universitas Prof Dr Hazairin SH"}, "other_charges":
+        {"has_other_charges": false, "url": "https://journals.unihaz.ac.id/index.php/bulgro/apc"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://journals.unihaz.ac.id/index.php/bulgro/ps"}, "preservation":
+        {"has_preservation": false}, "publisher": {"name": "Universitas Prof Dr Hazairin
+        SH", "country": "ID"}, "ref": {"oa_statement": "https://journals.unihaz.ac.id/index.php/bulgro/oap",
+        "journal": "https://journals.unihaz.ac.id/index.php/bulgro", "aims_scope":
+        "https://journals.unihaz.ac.id/index.php/bulgro/afs", "author_instructions":
+        "https://journals.unihaz.ac.id/index.php/bulgro/gfa", "license_terms": "https://journals.unihaz.ac.id/index.php/bulgro/cn"},
+        "waiver": {"has_waiver": true, "url": "https://journals.unihaz.ac.id/index.php/bulgro/apc"},
+        "keywords": ["agronomy", "plant production", "soil science", "plant protection",
+        "agriculture"], "language": ["EN"], "license": [{"type": "CC BY", "BY": true,
+        "NC": false, "ND": false, "SA": false}], "subject": [{"code": "S", "scheme":
+        "LCC", "term": "Agriculture"}]}, "admin": {"seal": false, "ticked": true}},
+        {"id": "c93ce25d0a64468980fc962fcb4814fa", "created_date": "2020-10-28T13:17:01Z",
+        "last_updated": "2020-10-28T13:17:01Z", "bibjson": {"boai": true, "eissn":
+        "2724-2722", "publication_time_weeks": 8, "title": "Connessioni remote", "apc":
+        {"has_apc": false, "url": "https://riviste.unimi.it/index.php/connessioniremote/information/authors"},
+        "article": {"license_display_example_url": "https://riviste.unimi.it/index.php/connessioniremote/article/view/13533/12925",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "https://riviste.unimi.it/index.php/connessioniremote/about"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "https://riviste.unimi.it/index.php/connessioniremote/about/submissions",
+        "board_url": "https://riviste.unimi.it/index.php/connessioniremote/about",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Dipartimento
+        Beni culturali e ambientali"}, "other_charges": {"has_other_charges": false,
+        "url": "https://riviste.unimi.it/index.php/connessioniremote/about"}, "pid_scheme":
+        {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection": true,
+        "url": "https://riviste.unimi.it/index.php/connessioniremote/about"}, "preservation":
+        {"has_preservation": true, "url": "https://riviste.unimi.it/index.php/connessioniremote/about",
+        "national_library": ["National Central Libraries of Florence and Rome"]},
+        "publisher": {"name": "Universit\u00e0 degli Studi di Milano", "country":
+        "IT"}, "ref": {"oa_statement": "https://riviste.unimi.it/index.php/connessioniremote/about",
+        "journal": "https://riviste.unimi.it/index.php/connessioniremote/index", "aims_scope":
+        "https://riviste.unimi.it/index.php/connessioniremote/manifesto", "author_instructions":
+        "https://riviste.unimi.it/index.php/connessioniremote/information/authors",
+        "license_terms": "https://riviste.unimi.it/index.php/connessioniremote/about"},
+        "waiver": {"has_waiver": false}, "keywords": ["artivism", "theatre", "media",
+        "politic theatre", "intermediality in theatre and performance", "digital theatre
+        and art"], "language": ["EN", "IT"], "license": [{"type": "CC BY", "BY": true,
+        "NC": false, "ND": false, "SA": false}], "subject": [{"code": "PN2000-3307",
+        "scheme": "LCC", "term": "Dramatic representation. The theater"}]}, "admin":
+        {"seal": false, "ticked": true}}, {"id": "3e452960b1fa40ed9fa01db45debb56b",
+        "created_date": "2020-06-30T15:53:31Z", "last_updated": "2020-06-30T15:53:31Z",
+        "bibjson": {"alternative_title": "IJRSE", "boai": true, "eissn": "2721-2904",
+        "pissn": "2721-3242", "publication_time_weeks": 10, "title": "International
+        Journal on Research in STEM Education", "apc": {"has_apc": false, "url": "http://journals.rsfpress.com/index.php/ijrse/about/submissions#authorFees"},
+        "article": {"license_display_example_url": "http://journals.rsfpress.com/index.php/ijrse/article/view/200/pdf",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://journals.rsfpress.com/index.php/ijrse/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://journals.rsfpress.com/index.php/ijrse/about/editorialPolicies#peerReviewProcess",
+        "board_url": "http://journals.rsfpress.com/index.php/ijrse/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Faculty
+        of Teacher Training and Education Universitas Terbuka"}, "other_charges":
+        {"has_other_charges": false, "url": "http://journals.rsfpress.com/index.php/ijrse/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://journals.rsfpress.com/index.php/ijrse/about/editorialPolicies#custom-2"},
+        "preservation": {"has_preservation": false, "url": "http://journals.rsfpress.com/index.php/ijrse/about/editorialPolicies#archiving"},
+        "publisher": {"name": "Research Synergy Foundation", "country": "ID"}, "ref":
+        {"oa_statement": "http://journals.rsfpress.com/index.php/ijrse/about/editorialPolicies#openAccessPolicy",
+        "journal": "http://journals.rsfpress.com/index.php/ijrse", "aims_scope": "http://journals.rsfpress.com/index.php/ijrse/about/editorialPolicies#focusAndScope",
+        "author_instructions": "http://journals.rsfpress.com/index.php/ijrse/about/submissions#authorGuidelines",
+        "license_terms": "http://journals.rsfpress.com/index.php/ijrse/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["natural sciences", "technology",
+        "engineering", "mathematics", "social sciences", "education"], "language":
+        ["EN"], "license": [{"type": "CC BY-NC", "BY": true, "NC": true, "ND": false,
+        "SA": false}], "subject": [{"code": "LB5-3640", "scheme": "LCC", "term": "Theory
+        and practice of education"}, {"code": "Q", "scheme": "LCC", "term": "Science"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "d8996c10e3d54209907f21750cc8d0a9",
+        "created_date": "2020-09-16T16:40:07Z", "last_updated": "2020-09-16T16:40:07Z",
+        "bibjson": {"alternative_title": "JEET", "boai": true, "eissn": "2721-3811",
+        "publication_time_weeks": 12, "title": "JEET, Journal of English Education
+        and Technology", "apc": {"has_apc": false, "url": "http://jeet.fkdp.or.id/index.php/jeet/Publication-charge"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://jeet.fkdp.or.id/index.php/jeet/Review-guideline",
+        "board_url": "http://jeet.fkdp.or.id/index.php/jeet/editorialboard", "review_process":
+        ["Double blind peer review"]}, "institution": {"name": "Asosiasi Dosen Pengembang
+        Masyarakat (ADPEMAS) Forum Komunikasi Dosen Peneliti (FKDP)"}, "other_charges":
+        {"has_other_charges": true, "url": "http://jeet.fkdp.or.id/index.php/jeet/Publication-charge"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": true,
+        "url": "http://jeet.fkdp.or.id/index.php/jeet/plagiarism-checker"}, "preservation":
+        {"has_preservation": false, "url": "http://jeet.fkdp.or.id/index.php/jeet/about"},
+        "publisher": {"name": "Asosiasi Dosen Pengembang Masyarakat (ADPEMAS) Forum
+        Komunikasi Dosen Peneliti (FKDP)", "country": "ID"}, "ref": {"oa_statement":
+        "http://jeet.fkdp.or.id/index.php/jeet/open-access-statement", "journal":
+        "http://jeet.fkdp.or.id/index.php/jeet", "aims_scope": "http://jeet.fkdp.or.id/index.php/jeet/Journal-Scope",
+        "author_instructions": "http://jeet.fkdp.or.id/index.php/jeet/Authors-Guideline",
+        "license_terms": "http://jeet.fkdp.or.id/index.php/jeet"}, "waiver": {"has_waiver":
+        false}, "keywords": ["education", "technology", "english", "media", "curriculum"],
+        "language": ["EN"], "license": [{"type": "CC BY-SA", "BY": true, "NC": false,
+        "ND": false, "SA": true}], "subject": [{"code": "LC8-6691", "scheme": "LCC",
+        "term": "Special aspects of education"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "b778431b86d34e79964ebdda573cf0c7", "created_date": "2020-07-20T09:41:00Z",
+        "last_updated": "2020-07-20T09:46:17Z", "bibjson": {"boai": true, "eissn":
+        "2721-4834", "publication_time_weeks": 7, "title": "Madaniya", "apc": {"has_apc":
+        true, "url": "https://madaniya.pustaka.my.id/journals/contents/fee", "max":
+        [{"currency": "IDR", "price": 350000}]}, "article": {"license_display_example_url":
+        "https://madaniya.pustaka.my.id/journals/contents/article/view/4/4", "license_display":
+        ["Embed"]}, "copyright": {"author_retains": true, "url": "https://madaniya.pustaka.my.id/journals/contents/copyrights"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://madaniya.pustaka.my.id/journal/peer-review",
+        "board_url": "https://madaniya.pustaka.my.id/journals/contents/about/editorialTeam",
+        "review_process": ["Blind peer review"]}, "institution": {"name": "Pusat Studi
+        Bahasa dan Publikasi Ilmiah"}, "other_charges": {"has_other_charges": false,
+        "url": "https://madaniya.pustaka.my.id/journals/contents/fee"}, "pid_scheme":
+        {"has_pid_scheme": false}, "plagiarism": {"detection": false}, "preservation":
+        {"has_preservation": false}, "publisher": {"name": "Pusat Studi Bahasa dan
+        Publikasi Ilmiah", "country": "ID"}, "ref": {"oa_statement": "https://madaniya.pustaka.my.id/journal/oastatement",
+        "journal": "https://madaniya.pustaka.my.id", "aims_scope": "https://madaniya.pustaka.my.id/journal/about",
+        "author_instructions": "https://madaniya.pustaka.my.id/journals/contents/about/submissions",
+        "license_terms": "https://madaniya.pustaka.my.id/journals/contents/copyrights"},
+        "waiver": {"has_waiver": false}, "keywords": ["language", "culture", "education",
+        "community development"], "language": ["ID"], "license": [{"type": "CC BY",
+        "BY": true, "NC": false, "ND": false, "SA": false}], "subject": [{"code":
+        "H", "scheme": "LCC", "term": "Social Sciences"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "ea135a991e9b43cda046d74c34f104a0", "created_date":
+        "2020-08-19T09:50:04Z", "last_updated": "2020-08-19T09:50:04Z", "bibjson":
+        {"alternative_title": "Coconut Research and Development", "boai": true, "eissn":
+        "2721-8856", "pissn": "0215-1162", "publication_time_weeks": 12, "title":
+        "CORD", "apc": {"has_apc": false, "url": "https://journal.coconutcommunity.org/index.php/journalicc/about/submissions"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://journal.coconutcommunity.org/index.php/journalicc/peer_review_process",
+        "board_url": "https://journal.coconutcommunity.org/index.php/journalicc/about/editorialTeam",
+        "review_process": ["Blind peer review"]}, "institution": {"name": "International
+        Coconut Community"}, "other_charges": {"has_other_charges": false, "url":
+        "https://journal.coconutcommunity.org/index.php/journalicc/about/submissions"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        false}, "preservation": {"has_preservation": false}, "publisher": {"name":
+        "International Coconut Community", "country": "ID"}, "ref": {"oa_statement":
+        "https://journal.coconutcommunity.org/index.php/journalicc/open_access_policy",
+        "journal": "https://journal.coconutcommunity.org", "aims_scope": "https://journal.coconutcommunity.org/index.php/journalicc/Aim",
+        "author_instructions": "https://journal.coconutcommunity.org/index.php/journalicc/instruction_authors",
+        "license_terms": "https://journal.coconutcommunity.org/index.php/journalicc/terms_n_lisences"},
+        "waiver": {"has_waiver": false}, "keywords": ["agriculture", "coconut", "farming",
+        "harvesting", "biotechnology"], "language": ["EN"], "license": [{"type": "CC
+        BY-SA", "BY": true, "NC": false, "ND": false, "SA": true}], "subject": [{"code":
+        "S", "scheme": "LCC", "term": "Agriculture"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "6e8166e9afbf4979bd1d9109bf552e56", "created_date": "2020-09-28T08:39:10Z",
+        "last_updated": "2020-09-28T08:39:10Z", "bibjson": {"boai": true, "eissn":
+        "2720-9601", "publication_time_weeks": 10, "title": "Belantika Pendidikan",
+        "apc": {"has_apc": false, "url": "https://kayonmedia.com/jurnal/index.php/bp/about/submissions#authorFees"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "https://kayonmedia.com/jurnal/index.php/bp/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://kayonmedia.com/jurnal/index.php/bp/about/editorialPolicies#peerReviewProcess",
+        "board_url": "https://kayonmedia.com/jurnal/index.php/bp/about/editorialTeam",
+        "review_process": ["Blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://kayonmedia.com/jurnal/index.php/bp/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://kayonmedia.com/jurnal/index.php/bp/pages/view/pp"},
+        "preservation": {"has_preservation": true, "url": "https://kayonmedia.com/jurnal/index.php/bp/gateway/lockss",
+        "service": ["PKP PN"]}, "publisher": {"name": "Kayon Media", "country": "ID"},
+        "ref": {"oa_statement": "https://kayonmedia.com/jurnal/index.php/bp/pages/view/oa",
+        "journal": "https://kayonmedia.com/jurnal/index.php/bp/index", "aims_scope":
+        "https://kayonmedia.com/jurnal/index.php/bp/about/editorialPolicies#focusAndScope",
+        "author_instructions": "https://kayonmedia.com/jurnal/index.php/bp/about/submissions#authorGuidelines",
+        "license_terms": "https://kayonmedia.com/jurnal/index.php/bp/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["education", "counselling"],
+        "language": ["ID"], "license": [{"type": "CC BY-SA", "BY": true, "NC": false,
+        "ND": false, "SA": true}], "subject": [{"code": "L", "scheme": "LCC", "term":
+        "Education"}]}, "admin": {"seal": false, "ticked": true}}, {"id": "9bbee7fda38240f5ae4b21f9bdbbefc0",
+        "created_date": "2015-01-15T16:39:48Z", "last_updated": "2020-10-30T07:43:33Z",
+        "bibjson": {"boai": true, "eissn": "2719-2938", "pissn": "1896-3307", "publication_time_weeks":
+        25, "title": "Werkwinkel: Journal of Low Countries and South African Studies",
+        "apc": {"has_apc": false, "url": "https://content.sciendo.com/view/journals/werk/werk-overview.xml?tab_body=overview"},
+        "article": {"license_display_example_url": "http://www.degruyter.com/view/j/werk.2014.9.issue-1/werk-2014-0001/werk-2014-0001.xml?format=INT",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://www.degruyter.com/view/supplement/s18963307_Open_Access_License.pdf"},
+        "deposit_policy": {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial":
+        {"review_url": "http://www.degruyter.com/view/supplement/s18963307_Review_Process.pdf",
+        "board_url": "http://www.degruyter.com/view/j/werk", "review_process": ["Double
+        blind peer review"]}, "institution": {"name": "Department of Dutch and South
+        African Studies, Faculty of English, Adam Mickiewicz University"}, "other_charges":
+        {"has_other_charges": false, "url": "https://content.sciendo.com/view/journals/werk/werk-overview.xml?tab_body=overview"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://degruyteropen.com/dgopen-takes-a-further-step-to-ward-off-plagiarism/"},
+        "preservation": {"has_preservation": true, "url": "http://www.degruyter.com/page/859",
+        "service": ["Portico"]}, "publisher": {"name": "Sciendo", "country": "PL"},
+        "ref": {"oa_statement": "http://degruyteropen.com/you/journal-author/open-access-statement/",
+        "journal": "http://www.degruyter.com/view/j/werk", "aims_scope": "http://www.degruyter.com/view/j/werk",
+        "author_instructions": "http://www.degruyter.com/view/supplement/s18963307_Information_for_Auhors.pdf",
+        "license_terms": "http://www.degruyter.com/view/supplement/s18963307_Open_Access_License.pdf"},
+        "waiver": {"has_waiver": false}, "keywords": ["dutch studies", "south african
+        studies", "cultural studies", "literary studies", "history", "linguistics"],
+        "language": ["AF", "NL", "EN"], "license": [{"type": "CC BY-NC-ND", "BY":
+        true, "NC": true, "ND": true, "SA": false}], "subject": [{"code": "P", "scheme":
+        "LCC", "term": "Language and Literature"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "ee8acb4a3eab4766b2296cfb58ee077d", "created_date": "2020-10-26T08:52:20Z",
+        "last_updated": "2020-10-28T07:56:17Z", "bibjson": {"boai": true, "eissn":
+        "2717-8943", "publication_time_weeks": 12, "title": "Ecocene: Cappadocia Journal
+        of Environmental Humanities", "apc": {"has_apc": false, "url": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=24"},
+        "article": {"license_display_example_url": "http://ecocene.kapadokya.edu.tr/Makaleler/1330957246_Ecocene%201.1.1%20Hartman%20and%20Oppermann.pdf",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=26"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=24", "board_url": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=21",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=24"}, "pid_scheme":
+        {"has_pid_scheme": true, "scheme": ["DOI", "Handles"]}, "plagiarism": {"detection":
+        true, "url": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=24"}, "preservation":
+        {"has_preservation": true, "url": "http://ecocene.kapadokya.edu.tr/Anasayfa.aspx",
+        "national_library": ["https://www.resmigazete.gov.tr/eskiler/2012/02/20120229-1.htm"]},
+        "publisher": {"name": "Cappadocia University", "country": "TR"}, "ref": {"oa_statement":
+        "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=26", "journal": "http://ecocene.kapadokya.edu.tr",
+        "aims_scope": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=20", "author_instructions":
+        "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=24", "license_terms": "http://ecocene.kapadokya.edu.tr/Defaultx.Aspx?ID=26"},
+        "waiver": {"has_waiver": false}, "keywords": ["environmental humanities"],
+        "language": ["EN"], "license": [{"type": "CC BY", "BY": true, "NC": false,
+        "ND": false, "SA": false}], "subject": [{"code": "TD169-171.8", "scheme":
+        "LCC", "term": "Environmental protection"}, {"code": "TD878-894", "scheme":
+        "LCC", "term": "Special types of environment"}]}, "admin": {"seal": true,
+        "ticked": true}}, {"id": "495b421eca504abf84cbacb162573b7d", "created_date":
+        "2020-09-15T20:56:22Z", "last_updated": "2020-09-15T20:56:22Z", "bibjson":
+        {"alternative_title": " FORCE", "boai": true, "eissn": "2717-817X", "publication_time_weeks":
+        4, "title": "Focus on Research in Contemporary Economics", "apc": {"has_apc":
+        false, "url": "https://www.forcejournal.org/index.php/force/about/articleprocessingcharge"},
+        "article": {"license_display_example_url": "https://www.forcejournal.org/index.php/force/article/view/8/1",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "https://www.forcejournal.org/index.php/force/about/copyrightnotice"}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "https://www.forcejournal.org/index.php/force/about/peerreviewprocess",
+        "board_url": "https://www.forcejournal.org/index.php/force/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Izmir
+        Democracy University"}, "other_charges": {"has_other_charges": false, "url":
+        "https://www.forcejournal.org/index.php/force/about/articleprocessingcharge"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": true,
+        "url": "https://www.forcejournal.org/index.php/force/about/plagiarismscreeningpolicy"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Ferhat
+        Topbas", "country": "TR"}, "ref": {"oa_statement": "https://www.forcejournal.org/index.php/force/about/openaccesspolicy",
+        "journal": "https://www.forcejournal.org", "aims_scope": "https://www.forcejournal.org/index.php/force/about/focusandscope",
+        "author_instructions": "https://www.forcejournal.org/index.php/force/information",
+        "license_terms": "https://www.forcejournal.org/index.php/force/about/copyrightnotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["economics", "social sciences",
+        "economic relations", "international economics", "contemporary economics",
+        "applied economics"], "language": ["EN"], "license": [{"type": "CC BY-NC-ND",
+        "BY": true, "NC": true, "ND": true, "SA": false}], "subject": [{"code": "H",
+        "scheme": "LCC", "term": "Social Sciences"}, {"code": "HB71-74", "scheme":
+        "LCC", "term": "Economics as a science"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "568f21b29b764bc59450a8d838fb74a1", "created_date": "2020-10-19T07:42:58Z",
+        "last_updated": "2020-10-22T12:11:48Z", "bibjson": {"boai": true, "eissn":
+        "2717-638X", "publication_time_weeks": 10, "title": "Journal of Childhood,
+        Education & Society", "apc": {"has_apc": false, "url": "https://www.j-ces.com/index.php/jces/apcs"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://www.j-ces.com/index.php/jces/reviewpolicy",
+        "board_url": "https://www.j-ces.com/index.php/jces/about/editorialTeam", "review_process":
+        ["Double blind peer review"]}, "other_charges": {"has_other_charges": false,
+        "url": "https://www.j-ces.com/index.php/jces/apcs"}, "pid_scheme": {"has_pid_scheme":
+        true, "scheme": ["DOI"]}, "plagiarism": {"detection": true, "url": "https://www.j-ces.com/index.php/jces/plagiarismpolicy"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Journal
+        of Childhood, Education and Society", "country": "TR"}, "ref": {"oa_statement":
+        "https://www.j-ces.com/index.php/jces/openaccess", "journal": "https://www.j-ces.com/index.php/jces/index",
+        "aims_scope": "https://www.j-ces.com/index.php/jces/aimandscope", "author_instructions":
+        "https://www.j-ces.com/index.php/jces/authorguidelines", "license_terms":
+        "https://www.j-ces.com/index.php/jces/copyrightpolicy"}, "waiver": {"has_waiver":
+        false}, "keywords": ["pedagogical & educational research", "interdisciplinary
+        research in the social sciences", "social sciences"], "language": ["EN"],
+        "license": [{"type": "CC BY-NC-ND", "BY": true, "NC": true, "ND": true, "SA":
+        false}], "subject": [{"code": "L7-991", "scheme": "LCC", "term": "Education
+        (General)"}]}, "admin": {"seal": false, "ticked": true}}, {"id": "a499dd3b20c5431aa67c5f73c538d9c5",
+        "created_date": "2020-07-23T09:40:18Z", "last_updated": "2020-07-23T09:40:18Z",
+        "bibjson": {"alternative_title": "Turkish Journal of Science and Health",
+        "boai": true, "eissn": "2717-7173", "publication_time_weeks": 4, "title":
+        "T\u00fcrk Fen ve Sa\u011fl\u0131k Dergisi", "apc": {"has_apc": false, "url":
+        "https://dergipark.org.tr/en/pub/tfsd/page/9954"}, "article": {"license_display":
+        ["No"]}, "copyright": {"author_retains": false}, "deposit_policy": {"has_policy":
+        false}, "editorial": {"review_url": "https://dergipark.org.tr/en/pub/tfsd/page/9684",
+        "board_url": "http://dergipark.org.tr/en/pub/tfsd/board", "review_process":
+        ["Double blind peer review"]}, "other_charges": {"has_other_charges": false,
+        "url": "https://dergipark.org.tr/en/pub/tfsd/page/9954"}, "pid_scheme": {"has_pid_scheme":
+        true, "scheme": ["DOI"]}, "plagiarism": {"detection": true, "url": "https://dergipark.org.tr/en/pub/tfsd/page/9949"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "\u00dcM\u0130T
+        MUHAMMET KO\u00c7Y\u0130\u011e\u0130T", "country": "TR"}, "ref": {"oa_statement":
+        "https://dergipark.org.tr/en/pub/tfsd/page/9952", "journal": "http://dergipark.org.tr/en/pub/tfsd",
+        "aims_scope": "http://dergipark.org.tr/en/pub/tfsd/aim-and-scope", "author_instructions":
+        "http://dergipark.org.tr/en/pub/tfsd/writing-rules", "license_terms": "https://dergipark.org.tr/tr/pub/tfsd"},
+        "waiver": {"has_waiver": true, "url": "http://dergipark.org.tr/en/pub/tfsd"},
+        "keywords": ["science and health sciences"], "language": ["EN", "TR"], "license":
+        [{"type": "CC BY-NC-ND", "BY": true, "NC": true, "ND": true, "SA": false}],
+        "subject": [{"code": "Q", "scheme": "LCC", "term": "Science"}, {"code": "Q1-390",
+        "scheme": "LCC", "term": "Science (General)"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "d45c9c72f1b84027ac65a30e13e68b3c", "created_date":
+        "2020-10-27T07:32:09Z", "last_updated": "2020-10-27T07:32:09Z", "bibjson":
+        {"alternative_title": "CJAS", "boai": true, "eissn": "2717-7254", "publication_time_weeks":
+        8, "title": "Cappadocia Journal of Area Studies", "apc": {"has_apc": false,
+        "url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=1"}, "article": {"license_display_example_url":
+        "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=36", "license_display": ["Embed"]},
+        "copyright": {"author_retains": true, "url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=36"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=6",
+        "board_url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=1", "review_process":
+        ["Double blind peer review"]}, "institution": {"name": "Center for Social
+        and Strategic Research of Cappadocia University"}, "other_charges": {"has_other_charges":
+        false, "url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=1"}, "pid_scheme":
+        {"has_pid_scheme": true, "scheme": ["DOI", "Handles"]}, "plagiarism": {"detection":
+        true, "url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=29"}, "preservation":
+        {"has_preservation": true, "url": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=35",
+        "national_library": ["National Library of Turkey, Library of Grand National
+        Assembly of Turkey, \u0130stanbul Beyaz\u0131t State\u00a0Library, the Library
+        of \u0130zmir National Library Endowment, \u0130stanbul University Library,
+        and\u00a0Ankara Adnan \u00d6t\u00fcken Public Library"]}, "publisher": {"name":
+        "Cappadocia University", "country": "TR"}, "ref": {"oa_statement": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=28",
+        "journal": "http://cjas.kapadokya.edu.tr/", "aims_scope": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=18",
+        "author_instructions": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=6",
+        "license_terms": "http://cjas.kapadokya.edu.tr/Defaultx.Aspx?ID=28"}, "waiver":
+        {"has_waiver": false}, "keywords": ["critical area studies", "political science",
+        "international relations", "history"], "language": ["EN", "TR"], "license":
+        [{"type": "CC BY", "BY": true, "NC": false, "ND": false, "SA": false}], "subject":
+        [{"code": "D1-2009", "scheme": "LCC", "term": "History (General)"}, {"code":
+        "J", "scheme": "LCC", "term": "Political science"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "6a70d74a49e04ff3bf26fca46b2c576f", "created_date":
+        "2020-05-22T07:27:17Z", "last_updated": "2020-05-22T07:27:17Z", "bibjson":
+        {"boai": true, "eissn": "2716-3482", "pissn": "1978-8320", "publication_time_weeks":
+        6, "title": "Jurnal Riptek", "apc": {"has_apc": false, "url": "https://riptek.semarangkota.go.id/index.php/riptek/about/submissions#authorFees"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "https://riptek.semarangkota.go.id/index.php/riptek/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialPolicies#peerReviewProcess",
+        "board_url": "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "The
+        Government of Semarang"}, "other_charges": {"has_other_charges": false, "url":
+        "https://riptek.semarangkota.go.id/index.php/riptek/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": true,
+        "url": "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialPolicies#custom-1"},
+        "preservation": {"has_preservation": false, "url": "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialPolicies#archiving"},
+        "publisher": {"name": "Bappeda Kota Semarang", "country": "ID"}, "ref": {"oa_statement":
+        "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialPolicies#openAccessPolicy",
+        "journal": "https://riptek.semarangkota.go.id/", "aims_scope": "https://riptek.semarangkota.go.id/index.php/riptek/about/editorialPolicies#focusAndScope",
+        "author_instructions": "https://riptek.semarangkota.go.id/index.php/riptek/about/submissions#authorGuidelines",
+        "license_terms": "https://riptek.semarangkota.go.id/index.php/riptek/about/submissions#privacyStatement"},
+        "waiver": {"has_waiver": false}, "keywords": ["urban planning", "environmental
+        planning", "disaster management", "urban development"], "language": ["ID"],
+        "license": [{"type": "CC BY-NC-SA", "BY": true, "NC": true, "ND": false, "SA":
+        true}], "subject": [{"code": "HD101-1395.5", "scheme": "LCC", "term": "Land
+        use"}, {"code": "HT165.5-169.9", "scheme": "LCC", "term": "City planning"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "4756210d911940e3926132aa70845fdc",
+        "created_date": "2020-06-04T07:31:23Z", "last_updated": "2020-06-04T07:31:23Z",
+        "bibjson": {"boai": true, "eissn": "2715-6249", "publication_time_weeks":
+        16, "title": "Professional Health Journal", "apc": {"has_apc": false, "url":
+        "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/apc"}, "article": {"license_display":
+        ["No"]}, "copyright": {"author_retains": true, "url": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/CopyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/peerReview",
+        "board_url": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "STIKES
+        Banyuwangi"}, "other_charges": {"has_other_charges": false, "url": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/apc"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": true,
+        "url": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/PlagiarismPolicy"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "PPPM STIKES
+        Banyuwangi", "country": "ID"}, "ref": {"oa_statement": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/OPENACCESSPOLICY",
+        "journal": "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/index", "aims_scope":
+        "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/focus-scope", "author_instructions":
+        "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/Makeasubmission", "license_terms":
+        "https://www.ojsstikesbanyuwangi.com/index.php/PHJ/CopyrightNotice"}, "waiver":
+        {"has_waiver": false}, "keywords": ["nursing", "midwifery"], "language": ["ID"],
+        "license": [{"type": "CC BY-SA", "BY": true, "NC": false, "ND": false, "SA":
+        true}], "subject": [{"code": "RT1-120", "scheme": "LCC", "term": "Nursing"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "eda9b2802dc14d889350af72236283ad",
+        "created_date": "2020-10-29T15:39:20Z", "last_updated": "2020-10-29T15:39:20Z",
+        "bibjson": {"boai": true, "eissn": "2715-7660", "pissn": "1693-6191", "publication_time_weeks":
+        4, "title": "Jurnal Teknik", "apc": {"has_apc": true, "url": "https://jt.ft.ung.ac.id/index.php/jt/Author_Fees",
+        "max": [{"currency": "IDR", "price": 300000}]}, "article": {"license_display_example_url":
+        "https://jt.ft.ung.ac.id/index.php/jt/article/view/58/35", "license_display":
+        ["Embed"]}, "copyright": {"author_retains": true, "url": "https://jt.ft.ung.ac.id/index.php/jt/copyright-notice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://jt.ft.ung.ac.id/index.php/jt/peer_review_process",
+        "board_url": "https://jt.ft.ung.ac.id/index.php/jt/about/editorialTeam", "review_process":
+        ["Double blind peer review"]}, "institution": {"name": "Univerisitas Negeri
+        Gorontalo"}, "other_charges": {"has_other_charges": false, "url": "https://jt.ft.ung.ac.id/index.php/jt/Author_Fees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://jt.ft.ung.ac.id/index.php/jt/plagiarism-retracted"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Univerisitas
+        Negeri Gorontalo", "country": "ID"}, "ref": {"oa_statement": "https://jt.ft.ung.ac.id/index.php/jt/Open_Access_Policy",
+        "journal": "https://jt.ft.ung.ac.id/index.php/jt", "aims_scope": "https://jt.ft.ung.ac.id/index.php/jt/focus_and_scope",
+        "author_instructions": "https://jt.ft.ung.ac.id/index.php/jt/author-guideline",
+        "license_terms": "https://jt.ft.ung.ac.id/index.php/jt/copyright-notice"},
+        "waiver": {"has_waiver": false}, "keywords": ["engineering", "electrical",
+        "architecture", "civil engineering", "industrial engineering"], "language":
+        ["ID"], "license": [{"type": "CC BY-SA", "BY": true, "NC": false, "ND": false,
+        "SA": true}], "subject": [{"code": "T", "scheme": "LCC", "term": "Technology"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "34b294e86bce4837943a3414e7958f78",
+        "created_date": "2020-11-12T08:14:21Z", "last_updated": "2020-11-12T08:14:21Z",
+        "bibjson": {"boai": true, "eissn": "2715-9698", "publication_time_weeks":
+        15, "title": "Khazanah Hukum", "apc": {"has_apc": true, "url": "https://journal.uinsgd.ac.id/index.php/kh/about/submissions#authorFees",
+        "max": [{"currency": "IDR", "price": 500000}]}, "article": {"license_display_example_url":
+        "https://journal.uinsgd.ac.id/index.php/kh/article/view/7673/4514", "license_display":
+        ["Embed"]}, "copyright": {"author_retains": true, "url": "https://journal.uinsgd.ac.id/index.php/kh/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://journal.uinsgd.ac.id/index.php/kH/about/editorialPolicies#peerReviewProcess",
+        "board_url": "https://journal.uinsgd.ac.id/index.php/KH/about/editorialTeam#EditorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://journal.uinsgd.ac.id/index.php/kh/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "https://journal.uinsgd.ac.id/index.php/kh/about/editorialPolicies#custom-1"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Pascasarjana
+        UIN Sunan Gunung Djati Bandung", "country": "ID"}, "ref": {"oa_statement":
+        "https://journal.uinsgd.ac.id/index.php/kh/about/editorialPolicies#openAccessPolicy",
+        "journal": "https://journal.uinsgd.ac.id/index.php/kh/index", "aims_scope":
+        "https://journal.uinsgd.ac.id/index.php/KH/about/editorialPolicies#focusAndScope",
+        "author_instructions": "https://journal.uinsgd.ac.id/index.php/KH/about/submissions#authorGuidelines",
+        "license_terms": "https://journal.uinsgd.ac.id/index.php/kh/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["civil law", "islamic law",
+        "commercial law", "international law"], "language": ["EN", "ID"], "license":
+        [{"type": "CC BY-SA", "BY": true, "NC": false, "ND": false, "SA": true}],
+        "subject": [{"code": "KBP1-4860", "scheme": "LCC", "term": "Islamic law"},
+        {"code": "K1-7720", "scheme": "LCC", "term": "Law in general. Comparative
+        and uniform law. Jurisprudence"}]}, "admin": {"seal": false, "ticked": true}},
+        {"id": "d21055d4816d4864b37f4be84355ebea", "created_date": "2020-08-31T18:43:24Z",
+        "last_updated": "2020-08-31T18:43:24Z", "bibjson": {"boai": true, "eissn":
+        "2715-422X", "pissn": "2685-4279", "publication_time_weeks": 8, "title": "Food
+        ScienTech Journal", "apc": {"has_apc": false, "url": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#custom-0"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://jurnal.untirta.ac.id/index.php/fsj/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#peerReviewProcess",
+        "board_url": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universitas
+        Sultan Ageng Tirtayasa"}, "other_charges": {"has_other_charges": false, "url":
+        "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#custom-0"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#peerReviewProcess"},
+        "preservation": {"has_preservation": true, "url": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#archiving",
+        "service": ["LOCKSS"]}, "publisher": {"name": "Department of Food Technology",
+        "country": "ID"}, "ref": {"oa_statement": "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#openAccessPolicy",
+        "journal": "http://jurnal.untirta.ac.id/index.php/fsj/index", "aims_scope":
+        "http://jurnal.untirta.ac.id/index.php/fsj/about/editorialPolicies#focusAndScope",
+        "author_instructions": "http://jurnal.untirta.ac.id/index.php/fsj/pages/view/guidelines",
+        "license_terms": "http://jurnal.untirta.ac.id/index.php/fsj/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["food science", "food technology",
+        "food management", "food security", "food chemistry", "food microbiology"],
+        "language": ["EN"], "license": [{"type": "CC BY-SA", "BY": true, "NC": false,
+        "ND": false, "SA": true}], "subject": [{"code": "TP368-456", "scheme": "LCC",
+        "term": "Food processing and manufacture"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "59f0147cd57b4eb28e299f7a1c6389f4", "created_date": "2020-10-29T14:24:28Z",
+        "last_updated": "2020-10-29T14:24:28Z", "bibjson": {"boai": true, "eissn":
+        "2715-9930", "publication_time_weeks": 5, "title": "Indonesian Journal of
+        Data and Science", "apc": {"has_apc": false, "url": "http://jurnal.yoctobrain.org/index.php/ijodas/authorfee"},
+        "article": {"license_display_example_url": "http://jurnal.yoctobrain.org/index.php/ijodas/article/view/3/4",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://jurnal.yoctobrain.org/index.php/ijodas/copyrightnotice"}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://jurnal.yoctobrain.org/index.php/ijodas/peerreview",
+        "board_url": "http://jurnal.yoctobrain.org/index.php/ijodas/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "http://jurnal.yoctobrain.org/index.php/ijodas/authorfee"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false, "url": "http://jurnal.yoctobrain.org/index.php/ijodas/archiving"},
+        "publisher": {"name": "Yocto Brain", "country": "ID"}, "ref": {"oa_statement":
+        "http://jurnal.yoctobrain.org/index.php/ijodas/openaccesspolicy", "journal":
+        "http://jurnal.yoctobrain.org/index.php/ijodas", "aims_scope": "http://jurnal.yoctobrain.org/index.php/ijodas/focusandscope",
+        "author_instructions": "http://jurnal.yoctobrain.org/index.php/ijodas/information/authors",
+        "license_terms": "http://jurnal.yoctobrain.org/index.php/ijodas/copyrightnotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["data science", "data mining",
+        "data communication", "data security", "data representation"], "language":
+        ["ID"], "license": [{"type": "CC BY-NC", "BY": true, "NC": true, "ND": false,
+        "SA": false}], "subject": [{"code": "QA76.75-76.765", "scheme": "LCC", "term":
+        "Computer software"}]}, "admin": {"seal": false, "ticked": true}}, {"id":
+        "b7fdcac2fc264867a7d33a042febd737", "created_date": "2020-07-10T07:04:18Z",
+        "last_updated": "2020-07-10T07:04:18Z", "bibjson": {"boai": true, "eissn":
+        "2715-8071", "publication_time_weeks": 15, "title": "Khazanah Sosial", "apc":
+        {"has_apc": false, "url": "https://journal.uinsgd.ac.id/index.php/ks/about/submissions#authorFees"},
+        "article": {"license_display_example_url": "https://journal.uinsgd.ac.id/index.php/ks/article/view/8385/4046",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "https://journal.uinsgd.ac.id/index.php/ks/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://journal.uinsgd.ac.id/index.php/ks/about/editorialPolicies#peerReviewProcess",
+        "board_url": "https://journal.uinsgd.ac.id/index.php/ks/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://journal.uinsgd.ac.id/index.php/ks/about/submissions#authorFees"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        false}, "preservation": {"has_preservation": false}, "publisher": {"name":
+        "Pascasarjana UIN Sunan Gunung Djati Bandung", "country": "ID"}, "ref": {"oa_statement":
+        "https://journal.uinsgd.ac.id/index.php/ks/about/editorialPolicies#openAccessPolicy",
+        "journal": "https://journal.uinsgd.ac.id/index.php/ks", "aims_scope": "https://journal.uinsgd.ac.id/index.php/ks/about/editorialPolicies#focusAndScope",
+        "author_instructions": "https://journal.uinsgd.ac.id/index.php/ks/about/submissions#authorGuidelines",
+        "license_terms": "https://journal.uinsgd.ac.id/index.php/ks/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["public administration", "social
+        conflict", "communication sciences", "political science", "economics", "international
+        relations"], "language": ["EN", "ID"], "license": [{"type": "CC BY-SA", "BY":
+        true, "NC": false, "ND": false, "SA": true}], "subject": [{"code": "H", "scheme":
+        "LCC", "term": "Social Sciences"}]}, "admin": {"seal": false, "ticked": true}},
+        {"id": "6f1bcca477b041b0bbfc47c373c96ab5", "created_date": "2020-07-17T08:40:06Z",
+        "last_updated": "2020-07-17T08:40:06Z", "bibjson": {"alternative_title": "JNSPS",
+        "boai": true, "eissn": "2714-4704", "pissn": "2714-2817", "publication_time_weeks":
+        10, "title": "Journal of Nigerian Society of Physical Sciences", "apc": {"has_apc":
+        true, "url": "https://journal.nsps.org.ng/index.php/jnsps/information/authors",
+        "max": [{"currency": "NGN", "price": 17500}]}, "article": {"license_display":
+        ["No"]}, "copyright": {"author_retains": false}, "deposit_policy": {"has_policy":
+        false}, "editorial": {"review_url": "https://journal.nsps.org.ng/index.php/jnsps/about/Peer-Review-Process",
+        "board_url": "https://journal.nsps.org.ng/index.php/jnsps/about/editorialTeam",
+        "review_process": ["Blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://journal.nsps.org.ng/index.php/jnsps/information/authors"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        false}, "preservation": {"has_preservation": false}, "publisher": {"name":
+        "Nigerian Society of Physical Sciences", "country": "NG"}, "ref": {"oa_statement":
+        "https://journal.nsps.org.ng/index.php/jnsps/information/authors", "journal":
+        "https://journal.nsps.org.ng/index.php/jnsps", "aims_scope": "https://journal.nsps.org.ng/index.php/jnsps/about",
+        "author_instructions": "https://journal.nsps.org.ng/index.php/jnsps/about/submissions#authorGuidelines",
+        "license_terms": "https://journal.nsps.org.ng/index.php/jnsps/information/authors"},
+        "waiver": {"has_waiver": false}, "keywords": ["astrophysics", "environmental
+        chemistry", "pure mathematics", "scientific computing"], "language": ["EN"],
+        "license": [{"type": "CC BY", "BY": true, "NC": false, "ND": false, "SA":
+        false}], "subject": [{"code": "QC1-999", "scheme": "LCC", "term": "Physics"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "89c11150740746118140ff725fa4f5c0",
+        "created_date": "2020-11-16T15:08:31Z", "last_updated": "2020-11-16T15:08:31Z",
+        "bibjson": {"alternative_title": "Jurnal Ilmiah Biologi Unsoed", "boai": true,
+        "eissn": "2714-8564", "publication_time_weeks": 12, "title": "BioEksakta",
+        "apc": {"has_apc": false, "url": "http://jos.unsoed.ac.id/index.php/bioe/Biaya_Publikasi"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://jos.unsoed.ac.id/index.php/bioe/Lisensi"}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://jos.unsoed.ac.id/index.php/bioe/Proses_review",
+        "board_url": "http://jos.unsoed.ac.id/index.php/bioe/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universitas
+        Jenderal Soedirman, Fakutas Biologi"}, "other_charges": {"has_other_charges":
+        false, "url": "http://jos.unsoed.ac.id/index.php/bioe/Biaya_Publikasi"}, "pid_scheme":
+        {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection": true,
+        "url": "http://jos.unsoed.ac.id/index.php/bioe/Plagiarism-and-Retraction"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Universitas
+        Jenderal Soedirman", "country": "ID"}, "ref": {"oa_statement": "http://jos.unsoed.ac.id/index.php/bioe/pernyataanaksesterbuka",
+        "journal": "http://jos.unsoed.ac.id/index.php/bioe", "aims_scope": "http://jos.unsoed.ac.id/index.php/bioe/Fokus-dan-Ruang-Lingkup",
+        "author_instructions": "http://jos.unsoed.ac.id/index.php/bioe/Panduan-Penulis",
+        "license_terms": "http://jos.unsoed.ac.id/index.php/bioe/Lisensi"}, "waiver":
+        {"has_waiver": false}, "keywords": ["biology", "biodiversity", "physiology
+        and reproduction", "molecular biology and genetics", "taxonomy and structure",
+        "ecology and conservation"], "language": ["EN", "ID"], "license": [{"type":
+        "CC BY", "BY": true, "NC": false, "ND": false, "SA": false}], "subject": [{"code":
+        "QH301-705.5", "scheme": "LCC", "term": "Biology (General)"}]}, "admin": {"seal":
+        false, "ticked": true}}, {"id": "4a2d677c96ee4bf0950a92d55cad6dcb", "created_date":
+        "2020-03-20T14:01:03Z", "last_updated": "2020-03-20T14:01:03Z", "bibjson":
+        {"boai": false, "eissn": "2713-4148", "publication_time_weeks": 60, "title":
+        "Clinical and Experimental Pediatrics", "apc": {"has_apc": false, "url": "https://www.e-cep.org/authors/authors.php"},
+        "article": {"license_display_example_url": "https://www.e-cep.org/about/about.php",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": false}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "https://www.e-cep.org/authors/review.php", "board_url": "https://www.e-cep.org/about/editorial.php",
+        "review_process": ["Peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://www.e-cep.org/authors/authors.php"}, "pid_scheme":
+        {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection": true,
+        "url": "https://www.crossref.org/services/similarity-check/"}, "preservation":
+        {"has_preservation": true, "url": "https://www.ncbi.nlm.nih.gov/nlmcatalog/101761234",
+        "service": ["PMC"]}, "publisher": {"name": "The Korean Pediatric Society",
+        "country": "KR"}, "ref": {"oa_statement": "https://www.e-cep.org/authors/authors.php",
+        "journal": "http://www.e-cep.org", "aims_scope": "https://www.e-cep.org/about/index.php",
+        "author_instructions": "https://www.e-cep.org/authors/authors.php", "license_terms":
+        "https://www.e-cep.org/authors/authors.php"}, "waiver": {"has_waiver": false},
+        "keywords": ["pediatrics"], "language": ["EN"], "license": [{"type": "CC BY-NC",
+        "BY": true, "NC": true, "ND": false, "SA": false}], "replaces": ["2092-7258"],
+        "subject": [{"code": "RJ1-570", "scheme": "LCC", "term": "Pediatrics"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "01ffa54c451b4cd98f6f95a1939815cf",
+        "created_date": "2020-07-01T13:22:55Z", "last_updated": "2020-07-01T13:22:55Z",
+        "bibjson": {"boai": true, "eissn": "2712-3960", "pissn": "1318-4423", "publication_time_weeks":
+        8, "title": "Slovenska pediatrija", "apc": {"has_apc": false, "url": "http://www.slovenskapediatrija.si/en-gb/"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://www.slovenskapediatrija.si/en-gb"}, "deposit_policy": {"has_policy":
+        false}, "editorial": {"review_url": "http://www.slovenskapediatrija.si/en-gb",
+        "board_url": "http://www.slovenskapediatrija.si/en-gb/Editorship", "review_process":
+        ["Blind peer review"]}, "other_charges": {"has_other_charges": false, "url":
+        "http://www.slovenskapediatrija.si/en-gb/"}, "pid_scheme": {"has_pid_scheme":
+        false}, "plagiarism": {"detection": false}, "preservation": {"has_preservation":
+        false, "url": "http://eds.b.ebscohost.com/eds/results?lg=1&sid=1d0cc367-3801-494b-9cd0-bda24fd2f3da%40sessionmgr101&vid=2&bquery=slovenska%2bpediatrija&bdata=Jmxhbmc9c2wmdHlwZT0wJnNlYXJjaE1vZGU9U3RhbmRhcmQmc2l0ZT1lZHMtbGl2ZQ%253d%253d&bquery=slovenska+pediatrija&bdata=JnR5cGU9MCZzZWFyY2hNb2RlPVN0YW5kYXJkJnNpdGU9ZWRzLWxpdmU%3d"},
+        "publisher": {"name": "The Society for Children with Metabolic Disorders",
+        "country": "SI"}, "ref": {"oa_statement": "http://www.slovenskapediatrija.si/en-gb/Instructions",
+        "journal": "http://www.slovenskapediatrija.si/en-gb/", "aims_scope": "http://www.slovenskapediatrija.si/en-gb",
+        "author_instructions": "http://www.slovenskapediatrija.si/en-gb/Instructions",
+        "license_terms": "http://www.slovenskapediatrija.si/en-gb/"}, "waiver": {"has_waiver":
+        false}, "keywords": ["pedpaediatrics", "epidemiology", "public health", "pediatrics"],
+        "language": ["SL"], "license": [{"type": "CC BY-NC", "BY": true, "NC": true,
+        "ND": false, "SA": false}], "subject": [{"code": "R", "scheme": "LCC", "term":
+        "Medicine"}, {"code": "RJ1-570", "scheme": "LCC", "term": "Pediatrics"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "3581a96b2dc84f4d92a8752a23ff6172",
+        "created_date": "2020-11-10T09:33:10Z", "last_updated": "2020-11-10T09:33:10Z",
+        "bibjson": {"boai": true, "eissn": "2711-4775", "pissn": "2323-0576", "publication_time_weeks":
+        12, "title": "Sabia Revista Cient\u00edfica", "apc": {"has_apc": false, "url":
+        "http://ediciones.unipacifico.edu.co/index.php/sabia/about"}, "article": {"license_display_example_url":
+        "http://ediciones.unipacifico.edu.co/index.php/sabia/article/view/18/86",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": false}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://ediciones.unipacifico.edu.co/index.php/sabia/about",
+        "board_url": "http://ediciones.unipacifico.edu.co/index.php/sabia/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "http://ediciones.unipacifico.edu.co/index.php/sabia/about"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://ediciones.unipacifico.edu.co/index.php/sabia/procesopares"},
+        "preservation": {"has_preservation": false, "url": "http://ediciones.unipacifico.edu.co/index.php/sabia/about"},
+        "publisher": {"name": "Universidad del Pac\u00edfico", "country": "CO"}, "ref":
+        {"oa_statement": "http://ediciones.unipacifico.edu.co/index.php/sabia/licenciauso",
+        "journal": "http://ediciones.unipacifico.edu.co/index.php/sabia", "aims_scope":
+        "http://ediciones.unipacifico.edu.co/index.php/sabia/about", "author_instructions":
+        "http://ediciones.unipacifico.edu.co/index.php/sabia/about", "license_terms":
+        "http://ediciones.unipacifico.edu.co/index.php/sabia/about"}, "waiver": {"has_waiver":
+        false}, "keywords": ["social sciences", "education", "sociology"], "language":
+        ["ES"], "license": [{"type": "CC BY-NC-SA", "BY": true, "NC": true, "ND":
+        false, "SA": true}], "subject": [{"code": "L", "scheme": "LCC", "term": "Education"},
+        {"code": "H", "scheme": "LCC", "term": "Social Sciences"}]}, "admin": {"seal":
+        false, "ticked": true}}, {"id": "e37f49d819fb429ba9461f448813a1d1", "created_date":
+        "2020-01-27T17:39:34Z", "last_updated": "2020-05-16T16:34:37Z", "bibjson":
+        {"boai": true, "eissn": "2710-8619", "pissn": "2710-7922", "publication_time_weeks":
+        8, "title": "Altralang Journal", "apc": {"has_apc": false, "url": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/about"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/peerreview",
+        "board_url": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/about"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "University
+        of Oran 2 Mohamed Ben Ahmed", "country": "DZ"}, "ref": {"oa_statement": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/openaccess",
+        "journal": "http://www.univ-oran2.dz/revuealtralang", "aims_scope": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/topics",
+        "author_instructions": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/geneguide",
+        "license_terms": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/copyright"},
+        "waiver": {"has_waiver": true, "url": "http://www.univ-oran2.dz/revuealtralang/index.php/altralang/about"},
+        "keywords": ["languages", "literature", "social sciences", "psychology", "information",
+        "human sciences"], "language": ["AR", "EN", "FR", "DE", "ES"], "license":
+        [{"type": "CC BY", "BY": true, "NC": false, "ND": false, "SA": false}], "subject":
+        [{"code": "P", "scheme": "LCC", "term": "Language and Literature"}]}, "admin":
+        {"seal": false, "ticked": true}}], "next": "https://doaj.org/api/v2/search/journals/journal?page=2&pageSize=30&sort=bibjson.eissn%3Adesc",
+        "last": "https://doaj.org/api/v2/search/journals/journal?page=520&pageSize=30&sort=bibjson.eissn%3Adesc",
+        "sort": "bibjson.eissn:desc"}'
+  recorded_at: 2020-11-25 16:06:18 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

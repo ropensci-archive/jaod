@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/search/articles/license:CC-BY?page=1&pageSize=10
+    uri: https://doaj.org/api/v2/search/articles/license:CC-BY?page=1&pageSize=10
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,133 +15,299 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:00:47 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:13 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=ddf61e428ec2dab34cb5f5b74dba5afb21606319533; expires=Fri,
+        25-Dec-20 15:52:13 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
-      link: <https://doaj.org/api/v1/search/articles/license:CC-BY?page=417557&pageSize=10>;
-        rel=last, <https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10>;
-        rel=next
-      x-total-count: '4175566'
+      link: <https://doaj.org/api/v2/search/articles/license:CC-BY?page=2&pageSize=10>;
+        rel=next, <https://doaj.org/api/v2/search/articles/license:CC-BY?page=541288&pageSize=10>;
+        rel=last
+      x-total-count: '5412874'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b405ca0000fd9932073000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=2M2ffce71%2BkFs4CGaysb696pOMqMT2RnbnzO9yi5PYIErCZ%2BN2vayOXuZGT8sLSnQyDBCn2ecfIz4Q3Esc2s5q5zqOzlbSSsaQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 5111858d2e2cc9a1-SEA
+      cf-ray: 5f7c891c7c8bfd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"last": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=417557&pageSize=10",
-        "pageSize": 10, "timestamp": "2019-09-04T17:00:47.818530Z", "results": [{"last_updated":
-        "2019-08-29T17:51:43Z", "id": "00000d914fd04a18adf84e756444ec98", "bibjson":
-        {"end_page": "440", "start_page": "431", "author": [{"name": "Mitidieri, Andr\u00e9
-        Luis"}, {"name": "Guimar\u00e3es, Let\u00edcia Batista"}, {"name": "Mazzutti,
-        Luciana Helena Cajas"}], "abstract": "O presente artigo centra-se em Las memorias
-        del General (1996) e Las vidas del General (2004), do ficcionista e jornalista
-        argentino Tom\u00e1s Eloy Mart\u00ednez, enfatizando o sujeito do enunciado
-        e o referente hist\u00f3rico. Apresentamos as reformula\u00e7\u00f5es julgadas
-        significativas entre a primeira e a segunda dessas edi\u00e7\u00f5es, antes
-        de procedermos \u00e0 an\u00e1lise do papel desempenhado pela mem\u00f3ria,
-        pela narrativa e pela reescrita do eu nos artigos que as comp\u00f5em: 1)
-        \u0093Las memorias de Puerta de Hierro\u0094; 2) \u0093D\u00edas de exilio
-        en Madrid \u0094; 3) \u0093Per\u00f3n y sus novelas\u0094. A voz autobiogr\u00e1fica
-        do ex-presidente da Argentina, impressa nas entrevistas concedidas a Mart\u00ednez,
-        passa pelas reavalia\u00e7\u00f5es do autor no primeiro artigo, deposita-se
-        residualmente no segundo texto, de car\u00e1ter biogr\u00e1fico, e se une
-        \u00e0 pr\u00f3pria voz autobiogr\u00e1fica do escritor no terceiro e nos
-        paratextos dos livros analisados, em processo que permite notar as fronteiras
-        cont\u00edguas entre narrativas memorial\u00edsticas, biogr\u00e1ficas, hist\u00f3ricas
-        e autobiogr\u00e1ficas", "title": "Tom\u00e1s Eloy Mart\u00ednez e as (des)mem\u00f3rias
-        de Juan Domingo Per\u00f3n = Tom\u00e1s Eloy Mart\u00ednez and the (des)memories
-        of Juan Domingo Per\u00f3n", "month": "1", "link": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/article/view/15435/10129",
-        "type": "fulltext", "content_type": "pdf"}], "year": "2013", "keywords": ["LITERATURA
-        ARGENTINA", "ESCRITORES ARGENTINOS - CR\u00cdTICA E INTERPRETA\u00c7\u00c3O",
-        "MARTINEZ, TOM\u00c1S ELOY - CR\u00cdTICA E INTERPRETA\u00c7\u00c3O", "AUTOBIOGRAFIAS",
-        "PERONISMO (ARGENTINA)", "PERON, JUAN DOMINGO - BIOGRAFIA"], "identifier":
-        [{"type": "pissn", "id": "0101-3335"}], "journal": {"publisher": "Pontif\u00edcia
-        Universidade Cat\u00f3lica do Rio Grande do Sul", "language": ["ES", "PT"],
-        "license": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/index",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Letras
-        de Hoje", "country": "BR", "number": "4", "volume": "48", "issns": ["0101-3335",
-        "1984-7726"]}, "subject": [{"scheme": "LCC", "term": "Philology. Linguistics",
-        "code": "P1-1091"}, {"scheme": "LCC", "term": "Literature (General)", "code":
-        "PN1-6790"}]}, "created_date": "2019-06-26T11:40:25Z"}, {"last_updated": "2019-02-21T14:47:55Z",
-        "id": "000011857dbc42afb0f1a8c7e35ab46f", "bibjson": {"end_page": "1740",
-        "start_page": "1737", "author": [{"affiliation": "Department of Ophthalmology,
-        No.2 People''s Hospital of Xintai, Xintai 271200, Shandong Province, China",
-        "name": "Bo Gao"}, {"affiliation": "Department of Ophthalmology, Yankuang
-        Group General Hospital, Jining 273500, Shandong Province, China", "name":
-        "Mao-Lan Yang"}, {"affiliation": "Department of Ophthalmology, Affiliated
-        Hospital of Taishan Medical University, Tai''an 271000, Shandong Province,
-        China", "name": "Jiu-Min Yuan"}], "abstract": "As the progress of modern techniques
-        for cataract extraction surgery and various needs of intraocular lens(IOL)implantation,
-        continuous curvilinear capsulorhexis(CCC)is still in absolute dominance among
-        different ways of incision of anterior capsular lens in clinical practices,
-        due to its advantages such as smoothness of capsulor opening, strong anti-tearing
-        ability, integrity of supporting capsular bag, and strength at maintaining
-        IOL stability. This article describes in general the historical development
-        of CCC and complementary methods adapted to raise success rate when it is
-        used in special cases of cataract extraction surgery. Meanwhile, the article
-        also discusses briefly and envisions the prospects of femotsecond laser applied
-        in CCC technique for cataract extraction.", "title": "Study progresses on
-        continuous curvilinear capsulorhexis", "month": "10", "link": [{"url": "http://ies.ijo.cn/cn_publish/2015/10/201510016.pdf",
-        "type": "fulltext"}], "year": "2015", "keywords": ["continuous curvilinear
-        capsulorhexis", "special cataracts", "puncture of posterior chamber central
-        canal of stilling", "femtosecond laser"], "identifier": [{"type": "doi", "id":
-        "10.3980/j.issn.1672-5123.2015.10.16"}, {"type": "pissn", "id": "1672-5123"},
-        {"type": "eissn", "id": "1672-5123"}], "journal": {"publisher": "Press of
-        International Journal of Ophthalmology (IJO PRESS)", "language": ["EN"], "license":
-        [{"url": "http://ies.ijo.cn/gjykcn/ch/reader/view_news.aspx?id=20130815015707001",
-        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
-        "Guoji Yanke Zazhi", "country": "CN", "number": "10", "volume": "15", "issns":
-        ["1672-5123"]}, "subject": [{"scheme": "LCC", "term": "Ophthalmology", "code":
-        "RE1-994"}]}, "created_date": "2015-10-13T08:51:37Z"}, {"last_updated": "2019-02-21T17:54:48Z",
-        "id": "000019e3e0d146eaaff4d5163afda4de", "bibjson": {"end_page": "418", "start_page":
-        "399", "author": [{"name": "Sultan  G\u00dc\u00c7L\u00dc"}, {"affiliation":
-        "Ankara University", "name": "Meral  UYSAL"}], "abstract": "Bu ara\u015ft\u0131rman\u0131n
-        genel amac\u0131, k\u0131rsal kesimde ya\u015fayan\n kad\u0131nlar i\u00e7in
-        geli\u015ftirilecek \u201cHalk Sa\u011fl\u0131\u011f\u0131\u201d konulu bir
-        program\u0131n\n kad\u0131nlar\u0131n sa\u011fl\u0131k risk alg\u0131lamalar\u0131
-        ve sa\u011fl\u0131kla ilgili davran\u0131\u015flar\u0131\n \u00fczerindeki
-        etkisinin belirlenmesidir. Ara\u015ft\u0131rma grubunu, K\u00fctahya \u0130li\n
-        K\u00f6pr\u00fc\u00f6ren K\u00f6y\u00fc Halk E\u011fitim Merkezi\u2019ne ba\u011fl\u0131
-        kurslara devam eden,\n 15 ya\u015f\u0131ndan b\u00fcy\u00fck, okuma-yazma
-        bilen kad\u0131n kursiyerler\n olu\u015fturmaktad\u0131r. \u00c7al\u0131\u015fmada
-        veriler, anket, g\u00f6r\u00fc\u015fme ve odak grup\n g\u00f6r\u00fc\u015fmeleriyle
-        toplanm\u0131\u015ft\u0131r. 20 g\u00fcnl\u00fck bir e\u011fitim program\u0131n\u0131n\n
-        tamamlanmas\u0131n\u0131n ard\u0131ndan kat\u0131l\u0131mc\u0131lara \u00f6ntest
-        olarak uygulanan\n testler 10 g\u00fcn sonra sontest olarak tekrar uygulanm\u0131\u015ft\u0131r.
-        \u00c7al\u0131\u015fman\u0131n\n sonucunda, 20 g\u00fcn s\u00fcren programl\u0131
-        bir e\u011fitim \u00e7al\u0131\u015fmas\u0131n\u0131n etkili oldu\u011fu\n
-        g\u00f6r\u00fclm\u00fc\u015ft\u00fcr.", "title": "Kad\u0131nlar\u0131n\u0131n
+      file: no
+      string: '{"total": 5412874, "page": 1, "pageSize": 10, "timestamp": "2020-11-25T15:52:13.776061Z",
+        "query": "license:CC-BY", "results": [{"last_updated": "2020-11-25T02:27:47Z",
+        "bibjson": {"identifier": [{"id": "10.1038/s41467-020-15686-y", "type": "doi"},
+        {"id": "2041-1723", "type": "eissn"}], "journal": {"volume": "11", "number":
+        "1", "country": "GB", "license": [{"open_access": true, "title": "CC BY",
+        "type": "CC BY", "url": "https://www.nature.com/ncomms/about/open-access"}],
+        "issns": ["2041-1723"], "publisher": "Nature Publishing Group", "language":
+        ["EN"], "title": "Nature Communications"}, "month": "4", "end_page": "6",
+        "year": "2020", "start_page": "1", "subject": [{"code": "Q", "scheme": "LCC",
+        "term": "Science"}], "author": [{"affiliation": "Institute for Diabetes Research
+        and Metabolic Diseases of the Helmholtz Center Munich at the University of
+        T\u00fcbingen", "name": "Stephanie Kullmann"}, {"affiliation": "Institute
+        for Diabetes Research and Metabolic Diseases of the Helmholtz Center Munich
+        at the University of T\u00fcbingen", "name": "Vera Valenta"}, {"affiliation":
+        "Institute for Diabetes Research and Metabolic Diseases of the Helmholtz Center
+        Munich at the University of T\u00fcbingen", "name": "Robert Wagner"}, {"affiliation":
+        "Emergency Department, Marienhospital Stuttgart, Vinzenz von Paul Kliniken",
+        "name": "Otto Tschritter"}, {"affiliation": "Institute for Diabetes Research
+        and Metabolic Diseases of the Helmholtz Center Munich at the University of
+        T\u00fcbingen", "name": "J\u00fcrgen Machann"}, {"affiliation": "Institute
+        for Diabetes Research and Metabolic Diseases of the Helmholtz Center Munich
+        at the University of T\u00fcbingen", "name": "Hans-Ulrich H\u00e4ring"}, {"affiliation":
+        "Institute for Diabetes Research and Metabolic Diseases of the Helmholtz Center
+        Munich at the University of T\u00fcbingen", "name": "Hubert Preissl"}, {"affiliation":
+        "Institute for Diabetes Research and Metabolic Diseases of the Helmholtz Center
+        Munich at the University of T\u00fcbingen", "name": "Andreas Fritsche"}, {"affiliation":
+        "Institute for Diabetes Research and Metabolic Diseases of the Helmholtz Center
+        Munich at the University of T\u00fcbingen", "name": "Martin Heni"}], "link":
+        [{"content_type": "HTML", "type": "fulltext", "url": "http://link.springer.com/article/10.1038/s41467-020-15686-y"}],
+        "abstract": "Brain insulin action regulates eating behavior and whole-body
+        energy fluxes, however\u00a0the impact of brain insulin resistance on long-term
+        weight and body fat composition is unknown. Here, the authors show that high
+        brain insulin sensitivity is linked to weight loss during lifestyle intervention
+        and associates with a favorable body fat distribution.", "title": "Brain insulin
+        sensitivity is linked to adiposity and body fat distribution"}, "id": "00000b689df5492bb15d3ec8927a4f6d",
+        "created_date": "2020-04-19T12:10:11Z"}, {"last_updated": "2020-11-25T01:45:46Z",
+        "bibjson": {"identifier": [{"id": "0101-3335", "type": "pissn"}], "end_page":
+        "440", "keywords": ["literatura argentina", "escritores argentinos - cr\u00edtica
+        e interpreta\u00e7\u00e3o", "martinez, tom\u00e1s eloy - cr\u00edtica e interpreta\u00e7\u00e3o",
+        "autobiografias", "peronismo (argentina)", "peron, juan domingo - biografia"],
+        "year": "2013", "subject": [{"code": "P1-1091", "scheme": "LCC", "term": "Philology.
+        Linguistics"}, {"code": "PN1-6790", "scheme": "LCC", "term": "Literature (General)"}],
+        "author": [{"name": "Mitidieri, Andr\u00e9 Luis"}, {"name": "Guimar\u00e3es,
+        Let\u00edcia Batista"}, {"name": "Mazzutti, Luciana Helena Cajas"}], "link":
+        [{"content_type": "pdf", "type": "fulltext", "url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/article/view/15435/10129"}],
+        "abstract": "O presente artigo centra-se em Las memorias del General (1996)
+        e Las vidas del General (2004), do ficcionista e jornalista argentino Tom\u00e1s
+        Eloy Mart\u00ednez, enfatizando o sujeito do enunciado e o referente hist\u00f3rico.
+        Apresentamos as reformula\u00e7\u00f5es julgadas significativas entre a primeira
+        e a segunda dessas edi\u00e7\u00f5es, antes de procedermos \u00e0 an\u00e1lise
+        do papel desempenhado pela mem\u00f3ria, pela narrativa e pela reescrita do
+        eu nos artigos que as comp\u00f5em: 1) \u0093Las memorias de Puerta de Hierro\u0094;
+        2) \u0093D\u00edas de exilio en Madrid \u0094; 3) \u0093Per\u00f3n y sus novelas\u0094.
+        A voz autobiogr\u00e1fica do ex-presidente da Argentina, impressa nas entrevistas
+        concedidas a Mart\u00ednez, passa pelas reavalia\u00e7\u00f5es do autor no
+        primeiro artigo, deposita-se residualmente no segundo texto, de car\u00e1ter
+        biogr\u00e1fico, e se une \u00e0 pr\u00f3pria voz autobiogr\u00e1fica do escritor
+        no terceiro e nos paratextos dos livros analisados, em processo que permite
+        notar as fronteiras cont\u00edguas entre narrativas memorial\u00edsticas,
+        biogr\u00e1ficas, hist\u00f3ricas e autobiogr\u00e1ficas", "title": "Tom\u00e1s
+        Eloy Mart\u00ednez e as (des)mem\u00f3rias de Juan Domingo Per\u00f3n = Tom\u00e1s
+        Eloy Mart\u00ednez and the (des)memories of Juan Domingo Per\u00f3n", "journal":
+        {"volume": "48", "number": "4", "country": "BR", "license": [{"open_access":
+        true, "title": "CC BY", "type": "CC BY", "url": "http://revistaseletronicas.pucrs.br/ojs/index.php/fale/index"}],
+        "issns": ["0101-3335", "1984-7726"], "publisher": "Pontif\u00edcia Universidade
+        Cat\u00f3lica do Rio Grande do Sul", "language": ["ES", "PT"], "title": "Letras
+        de Hoje"}, "month": "1", "start_page": "431"}, "created_date": "2019-06-26T11:40:25Z",
+        "id": "00000d914fd04a18adf84e756444ec98"}, {"last_updated": "2020-11-25T03:48:13Z",
+        "bibjson": {"identifier": [{"id": "10.22481/odeere.v0i2.1555", "type": "doi"},
+        {"id": "2525-4715", "type": "eissn"}], "journal": {"volume": "1", "number":
+        "2", "country": "BR", "license": [{"open_access": true, "title": "CC BY",
+        "type": "CC BY", "url": "http://periodicos2.uesb.br/index.php/odeere/about/submissions"}],
+        "issns": ["2525-4715"], "publisher": "Universidade Estadual do Sudoeste da
+        Bahia (UESB)", "language": ["PT"], "title": "Revista Odeere"}, "month": "March",
+        "keywords": ["Mem\u00f3ria", "Hist\u00f3ria Oral", "Patrim\u00f4nio Imaterial",
+        "Teoria"], "year": "2017", "subject": [{"code": "GN301-674", "scheme": "LCC",
+        "term": "Ethnology. Social and cultural anthropology"}, {"code": "HT51-65",
+        "scheme": "LCC", "term": "Human settlements. Communities"}], "author": [{"affiliation":
+        "Universidade de S\u00e3o Paulo", "name": "Leandro Seawright Alonso"}], "link":
+        [{"content_type": "HTML", "type": "fulltext", "url": "http://200.128.67.20/ojs-3-2-1-1/index.php/odeere/article/view/1555"}],
+        "abstract": "Neste artigo, demonstrei a rela\u00e7\u00e3o entre a Mem\u00f3ria,
+        a Hist\u00f3ria Oral e o Patrim\u00f4nio Imaterial Afro-brasileiro. Apontei
+        para os aspectos te\u00f3ricos e para a pr\u00e1xis de uma Hist\u00f3ria Oral
+        capaz de oferecer algumas bases para a salvaguarda do Patrim\u00f4nio Imaterial.
+        Para tanto, propus um di\u00e1logo din\u00e2mico com diferentes conceitos
+        de Mem\u00f3ria, sobretudo conforme compreendida por Jo\u00ebl Candau e Maurice
+        Halbwachs. Apresentei diferentes conceitos em di\u00e1logo com autores especialistas
+        em Patrim\u00f4nio Imaterial, como: Maria Am\u00e9lia Jundurian Cor\u00e1,
+        Chiara Bortolotto e Ulpiano Toledo Bezerra de Menses. Al\u00e9m disso, identifiquei
+        procedimentos constru\u00eddos por Jos\u00e9 Carlos Sebe Bom Meihy, Suzana
+        Lopes Salgado Ribeiro e Fab\u00edola Holanda no \u00e2mbito do N\u00facleo
+        de Estudos em Hist\u00f3ria Oral \u2013 NEHO/USP.\n\r\nPalavras-chave: Mem\u00f3ria,
+        Hist\u00f3ria Oral, Patrim\u00f4nio Imaterial, Teoria.\n", "title": "Mem\u00f3ria,
+        Hist\u00f3ria Oral e Patrim\u00f4nio Imaterial Afro-brasileiro: teoria, pr\u00e1xis"},
+        "id": "00001149f7964522953b91582f289cfc", "created_date": "2020-08-22T04:12:27Z"},
+        {"last_updated": "2020-11-25T00:57:25Z", "bibjson": {"identifier": [{"id":
+        "10.3980/j.issn.1672-5123.2015.10.16", "type": "doi"}, {"id": "1672-5123",
+        "type": "pissn"}, {"id": "1672-5123", "type": "eissn"}], "end_page": "1740",
+        "keywords": ["continuous curvilinear capsulorhexis", "special cataracts",
+        "puncture of posterior chamber central canal of stilling", "femtosecond laser"],
+        "year": "2015", "subject": [{"code": "RE1-994", "scheme": "LCC", "term": "Ophthalmology"}],
+        "author": [{"affiliation": "Department of Ophthalmology, No.2 People''s Hospital
+        of Xintai, Xintai 271200, Shandong Province, China", "name": "Bo Gao"}, {"affiliation":
+        "Department of Ophthalmology, Yankuang Group General Hospital, Jining 273500,
+        Shandong Province, China", "name": "Mao-Lan Yang"}, {"affiliation": "Department
+        of Ophthalmology, Affiliated Hospital of Taishan Medical University, Tai''an
+        271000, Shandong Province, China", "name": "Jiu-Min Yuan"}], "link": [{"type":
+        "fulltext", "url": "http://ies.ijo.cn/cn_publish/2015/10/201510016.pdf"}],
+        "abstract": "As the progress of modern techniques for cataract extraction
+        surgery and various needs of intraocular lens(IOL)implantation, continuous
+        curvilinear capsulorhexis(CCC)is still in absolute dominance among different
+        ways of incision of anterior capsular lens in clinical practices, due to its
+        advantages such as smoothness of capsulor opening, strong anti-tearing ability,
+        integrity of supporting capsular bag, and strength at maintaining IOL stability.
+        This article describes in general the historical development of CCC and complementary
+        methods adapted to raise success rate when it is used in special cases of
+        cataract extraction surgery. Meanwhile, the article also discusses briefly
+        and envisions the prospects of femotsecond laser applied in CCC technique
+        for cataract extraction.", "title": "Study progresses on continuous curvilinear
+        capsulorhexis", "journal": {"volume": "15", "number": "10", "country": "CN",
+        "license": [{"open_access": true, "title": "CC BY-NC-ND", "type": "CC BY-NC-ND",
+        "url": "http://ies.ijo.cn/gjykcn/ch/reader/view_news.aspx?id=20130815015707001"}],
+        "issns": ["1672-5123"], "publisher": "Press of International Journal of Ophthalmology
+        (IJO PRESS)", "language": ["EN"], "title": "Guoji Yanke Zazhi"}, "month":
+        "10", "start_page": "1737"}, "created_date": "2015-10-13T08:51:37Z", "id":
+        "000011857dbc42afb0f1a8c7e35ab46f"}, {"last_updated": "2020-11-25T02:22:43Z",
+        "bibjson": {"identifier": [{"id": "2372-255X", "type": "pissn"}, {"id": "2164-1250",
+        "type": "eissn"}], "journal": {"volume": "6", "number": "1", "country": "US",
+        "license": [{"open_access": true, "title": "CC BY", "type": "CC BY", "url":
+        "https://journals.library.columbia.edu/index.php/cswr/about"}], "issns": ["2164-1250"],
+        "publisher": "Columbia University Libraries", "language": ["EN"], "title":
+        "Columbia Social Work Review"}, "month": "July", "year": "2019", "subject":
+        [{"code": "HV1-9960", "scheme": "LCC", "term": "Social pathology. Social and
+        public welfare. Criminology"}], "author": [{"name": "Andreas Ring"}], "link":
+        [{"content_type": "HTML", "type": "fulltext", "url": "https://journals.library.columbia.edu/index.php/cswr/article/view/1975"}],
+        "abstract": "\nTriggered by differing responses of Columbia University School
+        of Social Work students to a recent hate crime at neighboring Teachers College,
+        this paper explores evidence that parts of the student body may, through lacking
+        awareness of its own prejudiced tendencies, be acting out subtle racism and
+        perpetuating the very ethnic divides that fuel racist aggression. The paper
+        argues that fear and an underrepresentation of minority students impede the
+        real dialogue necessary to overcome such aversive racism \u2013 but contends
+        that the introspective and emotionally honest debate which has followed in
+        the wake of the hate crime offers a window of opportunity for change. Steps
+        need to be taken to build the self-reflection witnessed in ensuing forums
+        into the school curriculum and ensure that all graduating students are similarly
+        provoked to the necessary understanding of our individual role in sustaining
+        or combating prejudice and segregation. Only in this manner can we hope to
+        overcome racism as a whole and become the social work practitioners we aspire
+        to be \u2013 capable of resolving the conflicts and tensions within us, as
+        well as around us.\n", "title": "Provoking Discomfort"}, "created_date": "2019-11-11T17:29:18Z",
+        "id": "0000128283cc43b79edeaaa33e826a58"}, {"last_updated": "2020-11-25T01:45:06Z",
+        "bibjson": {"identifier": [{"id": "10.4119/hlz-2470", "type": "doi"}, {"id":
+        "2625-0675", "type": "eissn"}], "journal": {"volume": "2", "number": "3",
+        "country": "DE", "license": [{"open_access": true, "title": "CC BY-SA", "type":
+        "CC BY-SA", "url": "http://www.herausforderung-lehrerinnenbildung.de/index.php/hlz/about/submissions"}],
+        "issns": ["2625-0675"], "publisher": "BiSEd", "language": ["DE", "EN"], "title":
+        "Herausforderung Lehrer*innenbildung"}, "month": "November", "keywords": ["Inklusion",
+        "Lehrer_innenbildung", "reflektierte Praxis", "situiertes Lernen"], "year":
+        "2019", "subject": [{"code": "L7-991", "scheme": "LCC", "term": "Education
+        (General)"}], "author": [{"affiliation": "Universit\u00e4t Regensburg", "name":
+        "Meike Unverferth"}, {"name": "Astrid Rank"}, {"name": "Veronika Wei\u00df"}],
+        "link": [{"content_type": "HTML", "type": "fulltext", "url": "https://www.herausforderung-lehrerinnenbildung.de/index.php/hlz/article/view/2470"}],
+        "abstract": "\nDer Artikel gibt einen konzeptionellen und inhaltlichen \u00dcberblick
+        \u00fcber das dreisemestrige Studienangebot Zertifikat Inklusion \u2013 Basis-kompetenzen
+        (ZIB), welches seit dem Sommersemester 2016 an der Universit\u00e4t Regensburg
+        angeboten wird. Interessierte Lehramtsstudierende des Grund- oder Mittelschullehramts
+        erhalten dadurch die M\u00f6glichkeit, grundlegende Kompetenzen f\u00fcr ihre
+        sp\u00e4tere Berufspraxis in inklusiven Settings zu erwerben. Das Gesamtkonzept
+        zeichnet sich durch eine intensive und strukturierte Theorie-Praxis-Verzahnung
+        aus. W\u00e4hrend des Semesters besuchen die Studierenden jede Woche ihre
+        Praktikumsschule und erhalten Aufgaben, die die Praxiserfahrungen systematisch
+        mit theoretischen Inhalten in Beziehung setzen. Im begleitenden Seminar an
+        der Universit\u00e4t reflektieren die Studierenden ihre Erfahrungen. Die Aufgaben
+        im Praktikum steigern sich jedes Semester in der Komplexit\u00e4t vom Arbeiten
+        mit einem Kind oder Jugendlichen \u00fcber das Arbeiten mit einer Kleingruppe
+        hin zum Arbeiten mit der Klasse. Die inhaltliche Basis des Studienangebots
+        bildet das von der Europ\u00e4ischen Agentur f\u00fcr Entwicklungen in der
+        sonderp\u00e4dagogischen F\u00f6rderung (2012) entwickelte Profil f\u00fcr
+        inklusive Lehrerinnen und Lehrer. Es werden entsprechend drei Kompetenzbereiche
+        zugrunde gelegt: Einstellungen, Wissen und Handeln. In Anlehnung an die zentralen
+        Grundwerte des Profils wurden Grundlagen zu Inklusion, individueller F\u00f6rderung,
+        Beratung und Kooperation sowie Unterst\u00fctzung aller Lernenden in inklusiven
+        Settings als inhaltliche Schwerpunktthemen gesetzt. Im Artikel wird die Konzeption
+        des ZIB dargestellt sowie an ausgew\u00e4hlten Ergebnissen der Begleitforschung
+        die Wirksamkeit des zus\u00e4tzlichen Studienangebots bezogen auf die Kompetenzbereiche
+        aus Studierenden- wie auch aus Dozierendensicht dargestellt. Des Weiteren
+        werden Einsch\u00e4tzungen bez\u00fcglich der Bedeutung der konzeptionellen
+        Teile des Zertifikats anhand von Studierendenaussagen aufgezeigt.\n", "title":
+        "Zertifikat Inklusion \u2013 Basiskompetenzen"}, "id": "0000133165664ede897e8c33fd51e8a4",
+        "created_date": "2019-11-23T08:20:38Z"}, {"last_updated": "2020-11-25T03:38:31Z",
+        "bibjson": {"identifier": [{"id": "10.29315/gm.v7i2.328", "type": "doi"},
+        {"id": "2183-8135", "type": "pissn"}, {"id": "2184-0628", "type": "eissn"}],
+        "journal": {"volume": "7", "number": "2", "country": "PT", "license": [{"open_access":
+        true, "title": "CC BY-NC-ND", "type": "CC BY-NC-ND", "url": "http://www.gazetamedica.pt/index.php/ficha-tecnica"}],
+        "issns": ["2183-8135", "2184-0628"], "publisher": "Jos\u00e9 de Mello Sa\u00fade",
+        "language": ["EN", "PT"], "title": "Gazeta M\u00e9dica"}, "month": "June",
+        "keywords": ["COVID-19", "Infe\u00e7\u00f5es por Coronav\u00edrus", "Neoplasias
+        da Pr\u00f3stata"], "year": "2020", "subject": [{"code": "R", "scheme": "LCC",
+        "term": "Medicine"}, {"code": "R5-920", "scheme": "LCC", "term": "Medicine
+        (General)"}], "author": [{"affiliation": "Servi\u00e7o de Urologia, Centro
+        Hospitalar Universit\u00e1rio Lisboa Central, Lisboa, Portugal.", "name":
+        "Gil Falc\u00e3o"}, {"affiliation": "Servi\u00e7o de Urologia, Centro Hospitalar
+        Universit\u00e1rio Lisboa Central, Lisboa, Portugal.", "name": "Cabrita Carneiro"},
+        {"affiliation": "Servi\u00e7o de Urologia, Centro Hospitalar Universit\u00e1rio
+        Lisboa Central, Lisboa, Portugal.", "name": "Lu\u00eds Campos Pinheiro"}],
+        "link": [{"content_type": "HTML", "type": "fulltext", "url": "https://www.gazetamedica.pt/index.php/gazeta/article/view/328"}],
+        "abstract": "\nA doen\u00e7a causada pelo coronav\u00edrus (COVID-19), inicialmente
+        descrita em Wuhan, China, foi recentemente declarada pela Organiza\u00e7\u00e3o
+        Mundial da Sa\u00fade (OMS) como uma pandemia global. A idade avan\u00e7ada
+        e a presen\u00e7a de comorbilidades, caracter\u00edsticas bem definidas na
+        popula\u00e7\u00e3o portadora de tumores s\u00f3lidos, foram interpretadas
+        como fatores de risco para doen\u00e7a grave e morte. O estado de imunodepress\u00e3o
+        relacionado com o cancro e os seus tratamentos associados tamb\u00e9m parece
+        desempenhar um papel ativo no progn\u00f3stico, resposta e resultados cl\u00ednicos
+        neste tipo de doentes. Apesar dos doentes oncol\u00f3gicos metastizados n\u00e3o
+        serem bons candidatos para o tratamento em Unidade de Cuidados Intensivos
+        (UCI), o progn\u00f3stico individual deve ser tido em considera\u00e7\u00e3o.
+        Descrevemos um caso de um doente com neoplasia da pr\u00f3stata (CaP) metastizado
+        (est\u00e1dio IV) infetado pelo SARS-CoV-2, que necessitou de UCI e recuperou
+        da infe\u00e7\u00e3o pelo COVID-19.\n", "title": "Recupera\u00e7\u00e3o Completa
+        de Doente com Carcinoma da Pr\u00f3stata Est\u00e1dio IV Durante a Pandemia
+        COVID-19"}, "id": "0000196fbeb147e29d612e9e8629692b", "created_date": "2020-06-30T17:32:48Z"},
+        {"last_updated": "2020-11-24T21:53:39Z", "bibjson": {"identifier": [{"id":
+        "1301-3718", "type": "pissn"}, {"id": "2458-8342", "type": "eissn"}], "end_page":
+        "418", "keywords": ["Adult education", " health education", " public health",
+        " focus group conservation", " woman education in rural areas", "Yeti\u015fkin
+        e\u011fitimi", " sa\u011fl\u0131k e\u011fitimi", " halk sa\u011fl\u0131\u011f\u0131",
+        " odak grup g\u00f6r\u00fc\u015fmesi", " k\u0131rsal kesimde kad\u0131n e\u011fitimi"],
+        "year": "2013", "subject": [{"code": "L", "scheme": "LCC", "term": "Education"},
+        {"code": "L7-991", "scheme": "LCC", "term": "Education (General)"}], "author":
+        [{"name": "Sultan  G\u00dc\u00c7L\u00dc"}, {"affiliation": "Ankara University",
+        "name": "Meral  UYSAL"}], "link": [{"content_type": "html", "type": "fulltext",
+        "url": "http://dergipark.gov.tr/auebfd/issue/38379/445027?publisher=ankara"}],
+        "abstract": "Bu ara\u015ft\u0131rman\u0131n genel amac\u0131, k\u0131rsal
+        kesimde ya\u015fayan\n kad\u0131nlar i\u00e7in geli\u015ftirilecek \u201cHalk
+        Sa\u011fl\u0131\u011f\u0131\u201d konulu bir program\u0131n\n kad\u0131nlar\u0131n
+        sa\u011fl\u0131k risk alg\u0131lamalar\u0131 ve sa\u011fl\u0131kla ilgili
+        davran\u0131\u015flar\u0131\n \u00fczerindeki etkisinin belirlenmesidir. Ara\u015ft\u0131rma
+        grubunu, K\u00fctahya \u0130li\n K\u00f6pr\u00fc\u00f6ren K\u00f6y\u00fc Halk
+        E\u011fitim Merkezi\u2019ne ba\u011fl\u0131 kurslara devam eden,\n 15 ya\u015f\u0131ndan
+        b\u00fcy\u00fck, okuma-yazma bilen kad\u0131n kursiyerler\n olu\u015fturmaktad\u0131r.
+        \u00c7al\u0131\u015fmada veriler, anket, g\u00f6r\u00fc\u015fme ve odak grup\n
+        g\u00f6r\u00fc\u015fmeleriyle toplanm\u0131\u015ft\u0131r. 20 g\u00fcnl\u00fck
+        bir e\u011fitim program\u0131n\u0131n\n tamamlanmas\u0131n\u0131n ard\u0131ndan
+        kat\u0131l\u0131mc\u0131lara \u00f6ntest olarak uygulanan\n testler 10 g\u00fcn
+        sonra sontest olarak tekrar uygulanm\u0131\u015ft\u0131r. \u00c7al\u0131\u015fman\u0131n\n
+        sonucunda, 20 g\u00fcn s\u00fcren programl\u0131 bir e\u011fitim \u00e7al\u0131\u015fmas\u0131n\u0131n
+        etkili oldu\u011fu\n g\u00f6r\u00fclm\u00fc\u015ft\u00fcr.", "title": "Kad\u0131nlar\u0131n\u0131n
         sa\u011fl\u0131k e\u011fitimi ihtiya\u00e7lar\u0131n\u0131n odak grup g\u00f6r\u00fc\u015fmesi
-        y\u00f6ntemi ile belirlenmesi", "month": "10", "link": [{"url": "http://dergipark.gov.tr/auebfd/issue/38379/445027?publisher=ankara",
-        "type": "fulltext", "content_type": "html"}], "year": "2013", "keywords":
-        ["Adult education", " health education", " public health", " focus group conservation",
-        " woman education in rural areas", "Yeti\u015fkin e\u011fitimi", " sa\u011fl\u0131k
-        e\u011fitimi", " halk sa\u011fl\u0131\u011f\u0131", " odak grup g\u00f6r\u00fc\u015fmesi",
-        " k\u0131rsal kesimde kad\u0131n e\u011fitimi"], "identifier": [{"type": "pissn",
-        "id": "1301-3718"}, {"type": "eissn", "id": "2458-8342"}], "journal": {"publisher":
-        "Ankara University", "language": ["TR"], "license": [{"url": "http://dergipark.gov.tr/auebfd/page/3887",
-        "open_access": true, "type": "CC BY-NC-ND", "title": "CC BY-NC-ND"}], "title":
-        "Ankara \u00dcniversitesi E\u011fitim Bilimleri Fak\u00fcltesi Dergisi", "country":
-        "TR", "number": "2", "volume": "46", "issns": ["1301-3718", "2458-8342"]},
-        "subject": [{"scheme": "LCC", "term": "Education", "code": "L"}, {"scheme":
-        "LCC", "term": "Education (General)", "code": "L7-991"}]}, "created_date":
-        "2018-07-18T16:46:33Z"}, {"last_updated": "2019-04-02T13:48:52Z", "id": "00001cb7350c4c5ba3cefe297098f736",
-        "bibjson": {"start_page": "282", "author": [{"name": "Isac Karimi"}, {"name":
-        "Ali Amini"}, {"name": "Mehri Azadbakht"}, {"name": "Zahra Rashidi"}], "journal":
-        {"publisher": "Royan Institute (ACECR), Tehran", "language": ["EN"], "license":
-        [{"url": "http://celljournal.org/us", "open_access": true, "type": "CC BY-NC",
-        "title": "CC BY-NC"}], "title": "Cell Journal", "country": "IR", "number":
-        "4", "volume": "15", "issns": ["2228-5806", "2228-5814"]}, "title": "Hydrostatic
-        Pressure Affects In Vitro Maturation of Oocytes and Follicles and Increases
-        Granulosa Cell Death", "subject": [{"scheme": "LCC", "term": "Medicine", "code":
-        "R"}, {"scheme": "LCC", "term": "Science", "code": "Q"}], "link": [{"url":
-        "http://celljournal.org/library/upload/article/af_4242286323327245323625234522626624742334Rashidi-1.pdf",
-        "type": "fulltext"}], "year": "2013", "keywords": ["In vitro Maturation",
-        "Oocyte", "Hydrostatic Pressure", "Apoptosis", "Mouse"], "identifier": [{"type":
-        "pissn", "id": "2228-5806"}, {"type": "eissn", "id": "2228-5814"}], "abstract":
-        "Objective: This study examines the effects of hydrostatic pressure on in
-        vitro maturation (IVM) of oocytes derived from in vitro grown follicles.Materials
+        y\u00f6ntemi ile belirlenmesi", "journal": {"volume": "46", "number": "2",
+        "country": "TR", "license": [{"open_access": true, "title": "CC BY-NC-ND",
+        "type": "CC BY-NC-ND", "url": "http://dergipark.gov.tr/auebfd/page/3887"}],
+        "issns": ["1301-3718", "2458-8342"], "publisher": "Ankara University", "language":
+        ["TR"], "title": "Ankara \u00dcniversitesi E\u011fitim Bilimleri Fak\u00fcltesi
+        Dergisi"}, "month": "10", "start_page": "399"}, "created_date": "2018-07-18T16:46:33Z",
+        "id": "000019e3e0d146eaaff4d5163afda4de"}, {"last_updated": "2020-11-25T01:37:47Z",
+        "bibjson": {"identifier": [{"id": "2228-5806", "type": "pissn"}, {"id": "2228-5814",
+        "type": "eissn"}], "journal": {"volume": "15", "number": "4", "country": "IR",
+        "license": [{"open_access": true, "title": "CC BY-NC", "type": "CC BY-NC",
+        "url": "https://celljournal.org/about-journal"}], "issns": ["2228-5806", "2228-5814"],
+        "publisher": "Royan Institute (ACECR), Tehran", "language": ["EN"], "title":
+        "Cell Journal"}, "end_page": "293", "keywords": ["In vitro Maturation", "Oocyte",
+        "Hydrostatic Pressure", "Apoptosis", "Mouse"], "year": "2013", "start_page":
+        "282", "subject": [{"code": "R", "scheme": "LCC", "term": "Medicine"}, {"code":
+        "Q", "scheme": "LCC", "term": "Science"}], "author": [{"name": "Isac Karimi"},
+        {"name": "Ali Amini"}, {"name": "Mehri Azadbakht"}, {"name": "Zahra Rashidi"}],
+        "link": [{"type": "fulltext", "url": "http://celljournal.org/library/upload/article/af_4242286323327245323625234522626624742334Rashidi-1.pdf"}],
+        "abstract": "Objective: This study examines the effects of hydrostatic pressure
+        on in vitro maturation (IVM) of oocytes derived from in vitro grown follicles.Materials
         and Methods: In this experimental study, preantral follicles were isolated
         from 12-day-old female NMRI mice. Each follicle was cultured individually
         in Alpha Minimal Essential Medium (\u03b1-MEM) under mineral oil for 12 days.
@@ -156,252 +322,38 @@ http_interactions:
         to controls (p<0.05). Exposure of follicles to pressure increased apoptosis
         in cumulus cells compared to controls (p<0.05).Conclusion: Hydrostatic pressure,
         by inducing apoptosis in cumulus cells, participates in the cumulus oocyte
-        coupled relationship with oocyte maturation.", "end_page": "293"}, "created_date":
-        "2013-11-20T07:00:09Z"}, {"last_updated": "2019-08-29T17:50:39Z", "id": "00001f91067541608ff350508b3af10e",
-        "bibjson": {"end_page": "126", "start_page": "109", "author": [{"name": "Peres,
-        Thais Helena de Alc\u00e2ntara"}], "abstract": "Este artigo analisa o Programa
-        Comunidade Solid\u00e1ria, criado pelo primeiro governo Fernando Henrique
-        Cardoso (1995-1998) para a condu\u00e7\u00e3o de pol\u00edticas sociais em
-        parceria com a iniciativa privada e articuladas com a sociedade atrav\u00e9s
-        das Organiza\u00e7\u00f5es N\u00e3o-Governamentais (ONGs). Tal \"inova\u00e7\u00e3o\"
-        tinha como prop\u00f3sito a supera\u00e7\u00e3o da ordem pol\u00edtica patrimonialista
-        vigente no pa\u00eds. A concep\u00e7\u00e3o e as inten\u00e7\u00f5es do Programa
-        Comunidade Solid\u00e1ria s\u00e3o cotejadas com os preceitos estabelecidos
-        pela Constitui\u00e7\u00e3o de 1988 \u00e0 seguridade social, especificamente
-        no campo da assist\u00eancia social, e regulamentados em 1993 pela Lei Org\u00e2nica
-        Social (LOAS). Conclui, a partir dos dados do Alfabetiza\u00e7\u00e3o Solid\u00e1ria,
-        programa de combate ao analfabetismo idealizado pelo Comunidade Solid\u00e1ria,
-        que o modelo para o desenvolvimento de pol\u00edticas sociais proposto pode
-        significar avan\u00e7os para a democratiza\u00e7\u00e3o da rela\u00e7\u00e3o
-        Estado/sociedsade no Brasil", "title": "Comunidade solid\u00e1ria: a proposta
-        de um outro modelo para as pol\u00edticas sociais", "month": "1", "link":
-        [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/article/viewFile/37/1609",
-        "type": "fulltext", "content_type": "pdf"}], "year": "2005", "keywords": ["SOCIOLOGIA",
-        "POL\u00cdTICAS P\u00daBLICAS"], "identifier": [{"type": "pissn", "id": "1984-7289"}],
-        "journal": {"publisher": "Pontif\u00edcia Universidade Cat\u00f3lica do Rio
-        Grande do Sul (EDIPUCRS)", "language": ["PT"], "license": [{"url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/index",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Civitas
-        - Revista de Ci\u00eancias Sociais", "country": "BR", "number": "1", "volume":
-        "5", "issns": ["1519-6089", "1984-7289"]}, "subject": [{"scheme": "LCC", "term":
-        "Social sciences (General)", "code": "H1-99"}]}, "created_date": "2019-06-26T11:39:30Z"},
-        {"last_updated": "2019-02-21T11:34:22Z", "id": "000020ccd46f45b59f7ebbf88614b7f1",
-        "bibjson": {"start_page": "205", "author": [{"name": "Eyherabide Juan Jos\u00e9"},
-        {"name": "Leaden Mar\u00eda In\u00e9s"}, {"name": "Alonso Sara"}], "journal":
-        {"publisher": "Embrapa Informa\u00e7\u00e3o Tecnol\u00f3gica", "language":
-        ["EN", "ES", "PT"], "license": [{"url": "http://www.scielo.br/scielo.php?pid=0100-204X&script=sci_serial",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Pesquisa
-        Agropecu\u00e1ria Brasileira", "country": "BR", "number": "1", "volume": "36",
-        "issns": ["0100-204X", "1678-3921"]}, "title": "Yellow and purple nutsedges
-        survey in the southeastern Buenos Aires Province, Argentina", "subject": [{"scheme":
-        "LCC", "term": "Agriculture (General)", "code": "S1-972"}], "link": [{"url":
-        "http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0100-204X2001000100025",
-        "type": "fulltext"}], "year": "2001", "keywords": ["Cyperus", "weed plants",
-        "agronomic crop production", "horticultural crop production"], "identifier":
-        [{"type": "pissn", "id": "0100-204X"}, {"type": "eissn", "id": "1678-3921"}],
-        "abstract": "A survey of 79 fields was conducted between December 1993 and
-        January 1994, to determine the distribution and relative importance of species
-        of the genus Cyperus, to justify developing management strategies in the southeastern
-        of Buenos Aires Province, Argentina. Yellow and purple nutsedge were found
-        in 43% and 9% respectively of the surveyed fields. Thirty eight per cent of
-        the surveyed area showed a heavy infestation of yellow nutsedge, and in 90%
-        of cases yellow nutsedge was invading fields cultivated with summer crops
-        and associated with one or more of other seven perennial weeds, mainly bermudagrass.",
-        "end_page": "209"}, "created_date": "2004-05-31T00:00:00Z"}, {"admin": {"seal":
-        true}, "last_updated": "2019-02-21T12:40:20Z", "id": "000028c72ae5477c8014dcdb65beea11",
-        "bibjson": {"author": [{"affiliation": "Karlsruhe Institute of Technology",
-        "name": "Anne eFocke"}, {"affiliation": "Karlsruhe Institute of Technology",
-        "name": "Christian eStockinger"}, {"affiliation": "Karlsruhe Institute of
-        Technology", "name": "Christina eDiepold"}, {"affiliation": "Max Planck Institute
-        for Human Cognitive and Brain Sciences Leipzig", "name": "Marco eTaubert"},
-        {"affiliation": "Karlsruhe Institute of Technology", "name": "Thorsten eStein"}],
-        "journal": {"publisher": "Frontiers Media S.A.", "license": [{"url": "http://journal.frontiersin.org/journal/psychology#about",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "language": ["EN"],
-        "title": "Frontiers in Psychology", "country": "CH", "volume": "4", "issns":
-        ["1664-1078"]}, "title": "The influence of catch trials on the consolidation
-        of motor memory in force field adaptation tasks", "month": "7", "link": [{"url":
-        "http://journal.frontiersin.org/Journal/10.3389/fpsyg.2013.00479/full", "type":
-        "fulltext", "content_type": "HTML"}], "year": "2013", "keywords": ["interference",
-        "motor learning", "reaching movements", "after-effects", "manipulandum"],
-        "identifier": [{"type": "eissn", "id": "1664-1078"}, {"type": "doi", "id":
-        "10.3389/fpsyg.2013.00479"}], "abstract": "In computational neuroscience it
-        is generally accepted that human motor memory contains neural representations
-        of the physics of the musculoskeletal system and the objects in the environment.
-        These representations are called internal models. Force field studies, in
-        which subjects have to adapt to dynamic perturbations induced by a robotic
-        manipulandum, are an established tool to analyze the characteristics of such
-        internal models. The aim of the current study was to investigate whether catch
-        trials during force field learning could influence the consolidation of motor
-        memory in more complex tasks. Thereby, the force field was more than double
-        the force field of previous studies (35 Ns/m). Moreover, the arm of the subjects
-        was not supported. A total of forty-six subjects participated in this study
-        and performed center-out movements at a robotic manipulandum in two different
-        force fields. Two control groups learned force field A on day 1 and were retested
-        in the same force field on day 3 (AA). Two test groups additionally learned
-        an interfering force field B (=-A) on day 2 (ABA). The difference between
-        the two test and control groups, respectively, was the absence (0%) or presence
-        (19%) of catch trials, in which the force field was turned off suddenly. The
-        results showed consolidation of force field A on day 3 for both control groups.
-        Test groups showed no consolidation of force field A (19% catch trials) and
-        even poorer performance on day 3 (0% catch trials). In conclusion, it can
-        be stated that catch trials seem to have a positive effect on the performance
-        on day 3 but do not trigger a consolidation process as shown in previous studies
-        that used a lower force field viscosity with supported arm. These findings
-        indicate that the results of previous studies in which less complex tasks
-        were analyzed, cannot be fully transferred to more complex tasks. Moreover,
-        the effects of catch trials in these situations are insufficiently understood
-        and further research is needed.", "subject": [{"scheme": "LCC", "term": "Psychology",
-        "code": "BF1-990"}]}, "created_date": "2014-05-22T09:41:53Z"}, {"admin": {"seal":
-        true}, "last_updated": "2019-02-21T16:48:48Z", "id": "00002efb01964f67914e8246d36dfe60",
-        "bibjson": {"start_page": "12", "author": [{"affiliation": "Faculty of Economics
-        and Management of Sousse, LAMIDED, University of Sousse, Sousse 4023, Tunisia",
-        "name": "Hasna Khemili"}, {"affiliation": "Faculty of Economics and Management
-        of Sousse, LAMIDED, University of Sousse, Sousse 4023, Tunisia", "name": "Mounir
-        Belloumi"}], "journal": {"publisher": "MDPI AG", "language": ["EN"], "license":
-        [{"url": "http://www.mdpi.com/journal/economies/about", "open_access": true,
-        "type": "CC BY", "title": "CC BY"}], "title": "Economies", "country": "CH",
-        "number": "1", "volume": "6", "issns": ["2227-7099"]}, "title": "Social Security
-        and Fighting Poverty in Tunisia", "month": "2", "link": [{"url": "http://www.mdpi.com/2227-7099/6/1/12",
-        "type": "fulltext", "content_type": "pdf"}], "year": "2018", "keywords": ["poverty",
-        "social security", "inequality", "shocks", "economic growth", "Tunisia"],
-        "identifier": [{"type": "eissn", "id": "2227-7099"}, {"type": "doi", "id":
-        "10.3390/economies6010012"}], "abstract": "The objective of this study was
-        to examine the role of social security in fighting poverty in Metlaoui, Tunisia,
-        using survey data collected between July 2012 and January 2014, covering 200
-        poor households. We used questionnaire data, which gave a thorough analysis
-        of the reactions, behavior, and strategies adopted by poor households as a
-        result of various forms of risk. Social security has an effect on a number
-        of different areas, including health, education, housing, and income. Our
-        methodology explored both complete and partial risk-sharing, to investigate
-        the impact of social security schemes on the strategies adopted by households
-        to cope with economic shocks. The estimation results of different models showed
-        that social security could help social security-covered households choose
-        less costly strategies to cope with risks. However, the role of social security
-        remains insufficient, given that covered households had less confidence in
-        its services and they adopted strategies of self-insurance or income smoothing.
-        Overall, the results showed that social security plays an important role in
-        Metlaoui, but it remains insufficient, especially for households that are
-        not covered by social security and are suffering from heavy health expenditures.",
-        "subject": [{"scheme": "LCC", "term": "Economics as a science", "code": "HB71-74"}]},
-        "created_date": "2018-02-19T19:59:36Z"}, {"admin": {"seal": true}, "last_updated":
-        "2019-02-21T18:01:53Z", "id": "00003741594643f4996e2555a01e03c7", "bibjson":
-        {"end_page": "9", "start_page": "1", "author": [{"affiliation": "Boston University
-        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
-        "name": "Jonathan D. Cherry"}, {"affiliation": "Boston University Alzheimer\u2019s
-        Disease and CTE Center, Boston University School of Medicine", "name": "Jesse
-        Mez"}, {"affiliation": "Department of Pathology, Fishberg Department of Neuroscience,
-        Friedman Brain Institute, Ronald M. Loeb Center for Alzheimer\u2019s Disease,
-        Icahn School of Medicine at Mount Sinai School", "name": "John F. Crary"},
-        {"affiliation": "Department of Biostatistics, Boston University School of
-        Public Health", "name": "Yorghos Tripodis"}, {"affiliation": "Boston University
-        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
-        "name": "Victor E. Alvarez"}, {"affiliation": "Boston University Alzheimer\u2019s
-        Disease and CTE Center, Boston University School of Medicine", "name": "Ian
-        Mahar"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE
-        Center, Boston University School of Medicine", "name": "Bertrand R. Huber"},
-        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
-        Boston University School of Medicine", "name": "Michael L. Alosco"}, {"affiliation":
-        "Department of Veterans Affairs Medical Center", "name": "Raymond Nicks"},
-        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
-        Boston University School of Medicine", "name": "Bobak Abdolmohammadi"}, {"affiliation":
-        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
-        School of Medicine", "name": "Patrick T. Kiernan"}, {"affiliation": "Boston
-        University Alzheimer\u2019s Disease and CTE Center, Boston University School
-        of Medicine", "name": "Laney Evers"}, {"affiliation": "Boston University Alzheimer\u2019s
-        Disease and CTE Center, Boston University School of Medicine", "name": "Sarah
-        Svirsky"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and
-        CTE Center, Boston University School of Medicine", "name": "Katharine Babcock"},
-        {"affiliation": "VA Boston Healthcare System", "name": "Hannah M. Gardner"},
-        {"affiliation": "VA Boston Healthcare System", "name": "Gaoyuan Meng"}, {"affiliation":
-        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
-        School of Medicine", "name": "Christopher J. Nowinski"}, {"affiliation": "Department
-        of Biostatistics, Boston University School of Public Health", "name": "Brett
-        M. Martin"}, {"affiliation": "Department of Neurology, Boston University School
-        of Medicine", "name": "Brigid Dwyer"}, {"affiliation": "Boston University
-        Alzheimer\u2019s Disease and CTE Center, Boston University School of Medicine",
-        "name": "Neil W. Kowall"}, {"affiliation": "Department of Anatomy and Neurobiology,
-        Boston University School of Medicine", "name": "Robert C. Cantu"}, {"affiliation":
-        "Boston University Alzheimer\u2019s Disease and CTE Center, Boston University
-        School of Medicine", "name": "Lee E. Goldstein"}, {"affiliation": "Department
-        of Neurology, Boston University School of Medicine", "name": "Douglas I. Katz"},
-        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
-        Boston University School of Medicine", "name": "Robert A. Stern"}, {"affiliation":
-        "Department of Neurology, Boston University School of Medicine", "name": "Lindsay
-        A. Farrer"}, {"affiliation": "Boston University Alzheimer\u2019s Disease and
-        CTE Center, Boston University School of Medicine", "name": "Ann C. McKee"},
-        {"affiliation": "Boston University Alzheimer\u2019s Disease and CTE Center,
-        Boston University School of Medicine", "name": "Thor D. Stein"}], "abstract":
-        "Abstract The genetic basis of chronic traumatic encephalopathy (CTE) is poorly
-        understood. Variation in transmembrane protein 106B (TMEM106B) has been associated
-        with enhanced neuroinflammation during aging and with TDP-43-related neurodegenerative
-        disease, and rs3173615, a missense coding SNP in TMEM106B, has been implicated
-        as a functional variant in these processes. Neuroinflammation and TDP-43 pathology
-        are prominent features in CTE. The purpose of this study was to determine
-        whether genetic variation in TMEM106B is associated with CTE risk, pathological
-        features, and ante-mortem dementia. Eighty-six deceased male athletes with
-        a history of participation in American football, informant-reported Caucasian,
-        and a positive postmortem diagnosis of CTE without comorbid neurodegenerative
-        disease were genotyped for rs3173615. The minor allele frequency (MAF\u2009=\u20090.42)
-        in participants with CTE did not differ from previously reported neurologically
-        normal controls (MAF\u2009=\u20090.43). However, in a case-only analysis among
-        CTE cases, the minor allele was associated with reduced phosphorylated tau
-        (ptau) pathology in the dorsolateral frontal cortex (DLFC) (AT8 density, odds
-        ratio [OR] of increasing one quartile\u2009=\u20090.42, 95% confidence interval
-        [CI] 0.22\u20130.79, p\u2009=\u20090.008), reduced neuroinflammation in the
-        DLFC (CD68 density, OR of increasing one quartile\u2009=\u20090.53, 95% CI
-        0.29\u20130.98, p\u2009=\u20090.043), and increased synaptic protein density
-        (\u03b2\u2009=\u20090.306, 95% CI 0.065\u20130.546, p\u2009=\u20090.014).
-        Among CTE cases, TMEM106B minor allele was also associated with reduced ante-mortem
-        dementia (OR\u2009=\u20090.40, 95% CI 0.16\u20130.99, p\u2009=\u20090.048),
-        but was not associated with TDP-43 pathology. All case-only models were adjusted
-        for age at death and duration of football play. Taken together, variation
-        in TMEM106B may have a protective effect on CTE-related outcomes.", "title":
-        "Variation in TMEM106B in chronic traumatic encephalopathy", "month": "11",
-        "link": [{"url": "http://link.springer.com/article/10.1186/s40478-018-0619-9",
-        "type": "fulltext", "content_type": "HTML"}], "year": "2018", "keywords":
-        ["Chronic traumatic encephalopathy", "TMEM106B", "Neuroinflammation", "Football",
-        "Traumatic brain injury", "Tau"], "identifier": [{"type": "doi", "id": "10.1186/s40478-018-0619-9"},
-        {"type": "eissn", "id": "2051-5960"}], "journal": {"publisher": "BMC", "language":
-        ["EN"], "license": [{"url": "https://actaneurocomms.biomedcentral.com/submission-guidelines/copyright",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Acta Neuropathologica
-        Communications", "country": "GB", "number": "1", "volume": "6", "issns": ["2051-5960"]},
-        "subject": [{"scheme": "LCC", "term": "Neurology. Diseases of the nervous
-        system", "code": "RC346-429"}]}, "created_date": "2018-11-04T12:37:46Z"},
-        {"last_updated": "2019-02-21T18:26:32Z", "id": "00003b1f9857400494e87ee739ed2098",
-        "bibjson": {"end_page": "620", "start_page": "616", "author": [{"affiliation":
-        "Department of Neurology, the Second Hospital of Hebei Medical University,
-        Shijiazhuang 050000, Hebei, China", "name": "Kun HONG"}, {"affiliation": "Department
-        of Neurology, Hebei General Hospital, Shijiazhuang 050051, Hebei, China",
-        "name": "Yan-hong DONG"}, {"affiliation": "Department of Geriatrics, the First
-        Hospital of Shijiazhuang City, Shijiazhuang 050011, Hebei, China", "name":
-        "Yuan-yuan ZHOU"}, {"affiliation": "Department of Geriatrics, the First Hospital
-        of Shijiazhuang City, Shijiazhuang 050011, Hebei, China", "name": "Hui-ying
-        ZHAO"}, {"affiliation": "Department of Neurology, the Second Hospital of Hebei
-        Medical University, Shijiazhuang 050000, Hebei, China", "name": "Jun-ying
-        HE"}, {"affiliation": "Department of Neurology, the Second Hospital of Hebei
-        Medical University, Shijiazhuang 050000, Hebei, China", "name": "Yue-li ZOU"},
-        {"affiliation": "Department of Neurology, the Second Hospital of Hebei Medical
-        University, Shijiazhuang 050000, Hebei, China", "name": "Yi LI"}, {"affiliation":
-        "Department of Neurology, the Second Hospital of Hebei Medical University,
-        Shijiazhuang 050000, Hebei, China", "name": "Ya-juan LIU"}, {"affiliation":
-        "Department of Neurology, the Second Hospital of Hebei Medical University,
-        Shijiazhuang 050000, Hebei, China", "name": "Jun-zhao CUI"}, {"affiliation":
-        "Department of Neurology, the Second Hospital of Hebei Medical University,
-        Shijiazhuang 050000, Hebei, China", "name": "Qin-qin ZHANG"}, {"affiliation":
-        "Department of Neurology, the Second Hospital of Hebei Medical University,
-        Shijiazhuang 050000, Hebei, China", "name": "Xin LIU"}, {"affiliation": "Department
-        of Neurology, the Second Hospital of Hebei Medical University, Shijiazhuang
-        050000, Hebei, China", "name": "Hui BU"}], "abstract": "<strong>DOI: </strong>10.3969/j.issn.1672-6731.2016.09.012",
-        "title": "Anti-N-methyl-D-aspartate receptor encephalitis combined with teratoma:
-        two cases report", "month": "9", "link": [{"url": "http://www.cjcnn.org/index.php/cjcnn/article/view/1462",
-        "type": "fulltext", "content_type": "html"}], "year": "2016", "keywords":
-        ["Encephalitis", "Receptors, N-methyl-D-aspartate", "Teratoma", "Case reports"],
-        "identifier": [{"type": "pissn", "id": "1672-6731"}], "journal": {"publisher":
-        "Tianjin Huanhu Hospital", "language": ["EN", "ZH"], "license": [{"url": "http://www.cjcnn.org/index.php/cjcnn/about/editorialPolicies#custom-1",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Chinese
-        Journal of Contemporary Neurology and Neurosurgery", "country": "CN", "number":
-        "9", "volume": "16", "issns": ["1672-6731"]}, "subject": [{"scheme": "LCC",
-        "term": "Neurology. Diseases of the nervous system", "code": "RC346-429"}]},
-        "created_date": "2016-10-24T05:00:05Z"}], "next": "https://doaj.org/api/v1/search/articles/license:CC-BY?page=2&pageSize=10",
-        "query": "license:CC-BY", "total": 4175566, "page": 1}'
-  recorded_at: 2019-09-04 17:00:48 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+        coupled relationship with oocyte maturation.", "title": "Hydrostatic Pressure
+        Affects In Vitro Maturation of Oocytes and Follicles and Increases Granulosa
+        Cell Death"}, "created_date": "2013-11-20T07:00:09Z", "id": "00001cb7350c4c5ba3cefe297098f736"},
+        {"last_updated": "2020-11-25T01:11:12Z", "bibjson": {"identifier": [{"id":
+        "1984-7289", "type": "pissn"}], "end_page": "126", "keywords": ["sociologia",
+        "pol\u00edticas p\u00fablicas"], "year": "2005", "subject": [{"code": "H1-99",
+        "scheme": "LCC", "term": "Social sciences (General)"}], "author": [{"name":
+        "Peres, Thais Helena de Alc\u00e2ntara"}], "link": [{"content_type": "pdf",
+        "type": "fulltext", "url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/article/viewFile/37/1609"}],
+        "abstract": "Este artigo analisa o Programa Comunidade Solid\u00e1ria, criado
+        pelo primeiro governo Fernando Henrique Cardoso (1995-1998) para a condu\u00e7\u00e3o
+        de pol\u00edticas sociais em parceria com a iniciativa privada e articuladas
+        com a sociedade atrav\u00e9s das Organiza\u00e7\u00f5es N\u00e3o-Governamentais
+        (ONGs). Tal \"inova\u00e7\u00e3o\" tinha como prop\u00f3sito a supera\u00e7\u00e3o
+        da ordem pol\u00edtica patrimonialista vigente no pa\u00eds. A concep\u00e7\u00e3o
+        e as inten\u00e7\u00f5es do Programa Comunidade Solid\u00e1ria s\u00e3o cotejadas
+        com os preceitos estabelecidos pela Constitui\u00e7\u00e3o de 1988 \u00e0
+        seguridade social, especificamente no campo da assist\u00eancia social, e
+        regulamentados em 1993 pela Lei Org\u00e2nica Social (LOAS). Conclui, a partir
+        dos dados do Alfabetiza\u00e7\u00e3o Solid\u00e1ria, programa de combate ao
+        analfabetismo idealizado pelo Comunidade Solid\u00e1ria, que o modelo para
+        o desenvolvimento de pol\u00edticas sociais proposto pode significar avan\u00e7os
+        para a democratiza\u00e7\u00e3o da rela\u00e7\u00e3o Estado/sociedsade no
+        Brasil", "title": "Comunidade solid\u00e1ria: a proposta de um outro modelo
+        para as pol\u00edticas sociais", "journal": {"volume": "5", "number": "1",
+        "country": "BR", "license": [{"open_access": true, "title": "CC BY", "type":
+        "CC BY", "url": "http://revistaseletronicas.pucrs.br/ojs/index.php/civitas/index"}],
+        "issns": ["1519-6089", "1984-7289"], "publisher": "Pontif\u00edcia Universidade
+        Cat\u00f3lica do Rio Grande do Sul (EDIPUCRS)", "language": ["PT"], "title":
+        "Civitas - Revista de Ci\u00eancias Sociais"}, "month": "1", "start_page":
+        "109"}, "created_date": "2019-06-26T11:39:30Z", "id": "00001f91067541608ff350508b3af10e"}],
+        "next": "https://doaj.org/api/v2/search/articles/license:CC-BY?page=2&pageSize=10",
+        "last": "https://doaj.org/api/v2/search/articles/license:CC-BY?page=541288&pageSize=10"}'
+  recorded_at: 2020-11-25 15:52:14 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

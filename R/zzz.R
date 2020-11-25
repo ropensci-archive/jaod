@@ -8,7 +8,7 @@ pluck <- function(x, name, type) {
 
 jc <- function(x) Filter(Negate(is.null), x)
 
-doaj_base <- function() "https://doaj.org/api/v1"
+doaj_base <- function() "https://doaj.org/api/v2"
 
 jaod_parse <- function(x, parse = TRUE, flatten = TRUE) {
   jsonlite::fromJSON(x, parse, flatten = flatten)

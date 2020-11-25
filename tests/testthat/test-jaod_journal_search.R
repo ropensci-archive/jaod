@@ -3,33 +3,35 @@ context("jaod_journal_search")
 test_that("jaod_journal_search works", {
   vcr::use_cassette("jaod_journal_search", {
     a <- jaod_journal_search(query = "bibjson.keywords:heritage")
-
-    expect_is(a, "list")
-    expect_named(a, c('timestamp', 'page', 'pageSize', 'query', 'total',
-                      'next', 'last', 'results'))
-    expect_is(a$timestamp, "character")
-    expect_type(a$page, "integer")
-    expect_type(a$pageSize, "integer")
-    expect_is(a$query, "character")
-    expect_type(a$total, "integer")
-    expect_is(a$`next`, "character")
-    expect_is(a$last, "character")
-    expect_is(a$results, "data.frame")
   })
+
+  expect_is(a, "list")
+  expect_named(a, c('timestamp', 'page', 'pageSize', 'query', 'total',
+                    'next', 'last', 'results'))
+  expect_is(a$timestamp, "character")
+  expect_type(a$page, "integer")
+  expect_type(a$pageSize, "integer")
+  expect_is(a$query, "character")
+  expect_type(a$total, "integer")
+  expect_is(a$`next`, "character")
+  expect_is(a$last, "character")
+  expect_is(a$results, "data.frame")
 })
 
 test_that("jaod_journal_search - params work", {
   vcr::use_cassette("jaod_journal_search_params", {
     # pagination
-    a <- jaod_journal_search(query = "publisher:dove", pageSize = 2)
-    expect_equal(NROW(a$results), 2)
-
+    a <- jaod_journal_search(query = "bibjson.publisher.name:ecology",
+      pageSize = 2)
     # sorting
-    a <- jaod_journal_search(query="journal", sort="bibjson.oa_start.year:desc",
+    b <- jaod_journal_search(query="journal", sort="bibjson.eissn:desc",
                              pageSize = 30)
-    yrs <- as.numeric(a$results$bibjson.oa_start.year)
-    expect_gte(yrs[1], yrs[length(yrs)])
   })
+
+  expect_equal(NROW(a$results), 2)
+  es <- vapply(b$results$bibjson.eissn, 
+    function(z) as.numeric(strsplit(z, split="-")[[1]][1]), numeric(1))
+  expect_gte(es[1], es[length(es)])
 })
 
 test_that("jaod_journal_search fails well", {

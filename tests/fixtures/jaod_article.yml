@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/articles/0005e11ec616453f854070069385e057
+    uri: https://doaj.org/api/v2/articles/0005e11ec616453f854070069385e057
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,30 +15,38 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:00:24 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:12 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d41c25686376101abca1862b4eb35cf171606319531; expires=Fri,
+        25-Dec-20 15:52:11 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b3ff2d0000fd99fe257000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ym9u3M8cHcw6Fevdba3mAc7pPCtf4E2e59VpFdh89UW9JZTWp7TIZsp0zQIjKey8MUo%2BpHK7V0YEzoDii6X8J8YogSg%2FYCHI0g%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 511184fd2afee35a-SEA
+      cf-ray: 5f7c8911d8b2fd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"admin": {"seal": true, "upload_id": "f5bc15c78aa341eda23d2ba578107cbc",
-        "in_doaj": true, "publisher_record_id": "1015"}, "last_updated": "2019-02-21T13:48:23Z",
-        "id": "0005e11ec616453f854070069385e057", "bibjson": {"title": "Where in the
-        brain are the genes expressed", "journal": {"publisher": "Frontiers Media
-        S.A.", "language": ["EN"], "license": [{"url": "http://journal.frontiersin.org/journal/neuroinformatics#about",
-        "open_access": true, "type": "CC BY", "title": "CC BY"}], "title": "Frontiers
-        in Neuroinformatics", "country": "CH", "volume": "2"}, "author": [{"affiliation":
-        "Centre for Molecular Biology and Neuroscience & Institute for basic medical
-        sciences, Univ Oslo", "name": "Trygve B Leergaard"}, {"affiliation": "San
-        Diego Supercomputer Center, UCSD", "name": "Ilya Zaslavsky"}], "month": "4",
-        "link": [{"url": "http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full",
-        "type": "fulltext", "content_type": "HTML"}], "year": "2008", "identifier":
-        [{"type": "eissn", "id": "1662-5196"}, {"type": "doi", "id": "10.3389/neuro.11.009.2007"}],
-        "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological psychiatry.
-        Neuropsychiatry", "code": "RC321-571"}]}, "created_date": "2014-05-22T09:30:38Z"}'
-  recorded_at: 2019-09-04 17:00:24 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"id": "0005e11ec616453f854070069385e057", "created_date": "2014-05-22T09:30:38Z",
+        "last_updated": "2020-11-24T23:35:43Z", "es_type": "article", "admin": {"in_doaj":
+        true, "seal": true, "publisher_record_id": "1015", "upload_id": "f5bc15c78aa341eda23d2ba578107cbc"},
+        "bibjson": {"title": "Where in the brain are the genes expressed", "year":
+        "2008", "month": "4", "journal": {"volume": "2", "publisher": "Frontiers Media
+        S.A.", "title": "Frontiers in Neuroinformatics", "country": "CH", "language":
+        ["EN"]}, "identifier": [{"type": "eissn", "id": "1662-5196"}, {"type": "doi",
+        "id": "10.3389/neuro.11.009.2007"}], "link": [{"type": "fulltext", "url":
+        "http://journal.frontiersin.org/Journal/10.3389/neuro.11.009.2007/full", "content_type":
+        "HTML"}], "author": [{"name": "Trygve B Leergaard", "affiliation": "Centre
+        for Molecular Biology and Neuroscience & Institute for basic medical sciences,
+        Univ Oslo"}, {"name": "Ilya Zaslavsky", "affiliation": "San Diego Supercomputer
+        Center, UCSD"}], "subject": [{"scheme": "LCC", "term": "Neurosciences. Biological
+        psychiatry. Neuropsychiatry", "code": "RC321-571"}]}}'
+  recorded_at: 2020-11-25 15:52:12 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

@@ -25,8 +25,8 @@
 #'
 #' # sorting
 #' out <- jaod_journal_search(query = "bibjson.keywords:heritage",
-#'   sort = "bibjson.oa_start.year:desc")
-#' out$results$bibjson.oa_start.year
+#'   sort = "bibjson.eissn:desc")
+#' out$results$bibjson.eissn
 #' }
 jaod_journal_search <- function(query, page = 1, pageSize = 10, sort = NULL,
                                 ...) {

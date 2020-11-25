@@ -7,7 +7,7 @@ Description: Client for the Directory of Open Access Journals ('DOAJ')
     all 'DOAJ' API routes: fetch article information by identifier,
     search for articles, fetch journal information by identifier,
     and search for journals.
-Version: 0.2.1.92
+Version: 0.2.4.91
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
         email = "myrmecocystus+r@gmail.com", 
@@ -32,7 +32,7 @@ Suggests:
     knitr,
     rmarkdown,
     vcr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-ming, literature, pdf, xml, publications, citations, full-text, metadata

@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=1&pageSize=10
+    uri: https://doaj.org/api/v2/search/journals/bibjson.keywords:heritage?page=1&pageSize=10
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/4.0 crul/0.8.4.9100
+      User-Agent: libcurl/7.73.0 r-curl/4.3 crul/1.0.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,278 +15,270 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: 'HTTP/2 200 '
-      date: Wed, 04 Sep 2019 17:01:59 GMT
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Nov 2020 15:52:17 GMT
       content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      set-cookie: __cfduid=d2ff2d9c5b817bc1cb16d541137ccd79a1606319536; expires=Fri,
+        25-Dec-20 15:52:16 GMT; path=/; domain=.doaj.org; HttpOnly; SameSite=Lax
       access-control-allow-origin: '*'
-      link: <https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=10&pageSize=10>;
-        rel=last, <https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10>;
-        rel=next
-      x-total-count: '95'
+      link: <https://doaj.org/api/v2/search/journals/bibjson.keywords:heritage?page=2&pageSize=10>;
+        rel=next, <https://doaj.org/api/v2/search/journals/bibjson.keywords:heritage?page=12&pageSize=10>;
+        rel=last
+      x-total-count: '112'
+      cf-cache-status: DYNAMIC
+      cf-request-id: 06a1b412ef0000fd99f413d000000001
       expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      report-to: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iyGomgQGwPCMMrTiAZXZxPBZPePAsLT7IsT6DLfgezQoAiESKeaVNLDx2Em01h5ydMr6XgFba5xaFnutiKAeFBvDaJd%2FD35EOw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      nel: '{"report_to":"cf-nel","max_age":604800}'
       server: cloudflare
-      cf-ray: 5111874a8f35e38a-SEA
+      cf-ray: 5f7c89317daffd99-PDX
       content-encoding: gzip
     body:
       encoding: UTF-8
-      string: '{"last": "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=10&pageSize=10",
-        "pageSize": 10, "timestamp": "2019-09-04T17:01:58.958444Z", "results": [{"admin":
-        {"ticked": true}, "last_updated": "2017-12-11T13:38:20Z", "id": "0110b60ed1ce453899e668620e67a3f0",
-        "bibjson": {"allows_fulltext_indexing": true, "author_publishing_rights":
-        {"url": "http://nailos.org/acerca-de/", "publishing_rights": "True"}, "keywords":
-        ["paleoanthropology", "geoarchaeology", "paleoenvironmental studies", "ethnoarchaeology",
-        "heritage"], "deposit_policy": ["Sherpa/Romeo", "Dulcinea"], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Nailos: Estudios Interdisciplinares
-        de Arqueolog\u00eda", "publication_time": 14, "provider": "http://nailos.org/",
-        "subject": [{"code": "CC1-960", "term": "Archaeology", "scheme": "LCC"}],
-        "format": ["PDF"], "plagiarism_detection": {"detection": false, "url": ""},
-        "link": [{"url": "http://nailos.org/", "type": "homepage"}, {"url": "http://nailos.org/acerca-de/",
-        "type": "editorial_board"}, {"url": "http://nailos.org/acerca-de/", "type":
-        "aims_scope"}, {"url": "http://nailos.org/normas-de-publicacion-revista-nailos/",
-        "type": "author_instructions"}, {"url": "http://nailos.org/acerca-de/", "type":
-        "oa_statement"}], "active": true, "oa_start": {"year": 2014}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://nailos.org/acerca-de/"},
-        "author_copyright": {"url": "http://nailos.org/acerca-de/", "copyright": "True"},
-        "institution": "Asociaci\u00f3n de Profesionales Independientes de la Arqueolog\u00eda
-        de Asturias (APIAA)", "publisher": "Asociaci\u00f3n de Profesionales Independientes
-        de la Arqueolog\u00eda de Asturias (APIAA)", "language": ["ES"], "license":
-        [{"open_access": true, "embedded": false, "title": "CC BY-NC-ND", "url": "http://nailos.org/acerca-de/",
-        "NC": true, "ND": true, "embedded_example_url": "", "SA": false, "type": "CC
-        BY-NC-ND", "BY": true}], "alternative_title": "Nailos", "country": "ES", "identifier":
-        [{"type": "pissn", "id": "2340-9126"}, {"type": "eissn", "id": "2341-1074"}]},
-        "created_date": "2014-05-19T16:03:52Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2018-05-10T09:57:15Z", "id": "02233e98710842d4a296c3dc7e472aa4",
-        "bibjson": {"allows_fulltext_indexing": true, "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "keywords": ["cultural heritage"],
-        "subject": [{"code": "GN301-674", "term": "Ethnology. Social and cultural
-        anthropology", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
-        false}, "title": "Journal Sampurasun", "publication_time": 24, "provider":
-        "OJS", "format": ["PDF"], "plagiarism_detection": {"detection": false, "url":
-        ""}, "apc_url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee",
-        "link": [{"url": "https://journal.unpas.ac.id/index.php/sampurasun", "type":
-        "homepage"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/EditorialTeam",
-        "type": "editorial_board"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/FocusandScope",
-        "type": "aims_scope"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorGuidelines",
-        "type": "author_instructions"}, {"url": "https://journal.unpas.ac.id/index.php/sampurasun/OpenAccessPolicy",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2016}, "editorial_review":
-        {"process": "Peer review", "url": "https://journal.unpas.ac.id/index.php/sampurasun/PeerReviewProcess"},
-        "author_copyright": {"url": "", "copyright": "False"}, "publisher": "Universitas
-        Pasundan", "language": ["EN", "ID"], "license": [{"open_access": true, "embedded":
-        false, "title": "CC BY", "url": "https://journal.unpas.ac.id/index.php/sampurasun/CopyrightNotice",
-        "NC": false, "ND": false, "embedded_example_url": "", "SA": false, "type":
-        "CC BY", "BY": true}], "alternative_title": "Sampurasun Interdisciplinary
-        Studies for Cultural Heritage", "country": "ID", "submission_charges_url":
-        "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee", "identifier":
-        [{"type": "pissn", "id": "2460-5735"}, {"type": "eissn", "id": "2460-5743"}]},
-        "created_date": "2017-06-30T14:29:20Z"}, {"admin": {"ticked": true, "seal":
-        false}, "last_updated": "2018-05-10T09:57:51Z", "id": "08d5436c19454e07a44b6205add55048",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy
-        "}, "author_publishing_rights": {"url": "http://ge-iic.com/ojs/index.php/revista/about/submissions#copyrightNotice",
-        "publishing_rights": "True"}, "keywords": ["cultural heritage", "conservation",
-        "restoration", "arts", "methodology"], "subject": [{"code": "N", "term": "Fine
-        Arts", "scheme": "LCC"}, {"code": "NX1-820", "term": "Arts in general", "scheme":
-        "LCC"}], "article_statistics": {"url": "", "statistics": false}, "title":
-        "Ge-conservaci\u00f3n ", "publication_time": 4, "format": ["PDF"], "provider":
-        "OJS", "deposit_policy": ["Sherpa/Romeo"], "plagiarism_detection": {"detection":
-        false, "url": ""}, "apc_url": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy",
-        "link": [{"url": "http://ge-iic.com/ojs/index.php/revista", "type": "homepage"},
-        {"url": "http://ge-iic.com/ojs/index.php/revista/about/editorialTeam", "type":
-        "editorial_board"}, {"url": "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#focusAndScope",
-        "type": "aims_scope"}, {"url": "http://ge-iic.com/ojs/index.php/revista/about/submissions#authorGuidelines",
-        "type": "author_instructions"}, {"url": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy",
-        "type": "oa_statement"}], "oa_start": {"year": 2009}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#peerReviewProcess"},
-        "author_copyright": {"url": "http://ge-iic.com/ojs/index.php/revista/about/submissions#copyrightNotice",
-        "copyright": "True"}, "publisher": "Grupo Espa\u00f1ol del IIC", "language":
-        ["EN", "PT", "ES"], "license": [{"open_access": true, "embedded": false, "title":
-        "CC BY-NC-ND", "url": "http://ge-iic.com/ojs/index.php/revista/about/submissions#copyrightNotice",
-        "NC": true, "ND": true, "embedded_example_url": "", "SA": false, "type": "CC
-        BY-NC-ND", "BY": true}], "alternative_title": "Ge conservaci\u00f3n", "country":
-        "ES", "submission_charges_url": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy",
-        "identifier": [{"type": "pissn", "id": "1989-8568"}]}, "created_date": "2010-12-21T11:10:08Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2018-05-10T09:57:55Z",
-        "id": "097bdb07f33c44688620bfed222eabc6", "bibjson": {"allows_fulltext_indexing":
-        true, "author_publishing_rights": {"url": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#copyrightNotice",
-        "publishing_rights": "True"}, "keywords": ["landscape", "regional planning",
-        "urban space", "development", "cultural heritage", "geography"], "deposit_policy":
-        ["Sherpa/Romeo"], "article_statistics": {"url": "", "statistics": false},
-        "title": "Terr@ Plural", "publication_time": 36, "provider": "OJS SEER", "subject":
-        [{"code": "G1-922", "term": "Geography (General)", "scheme": "LCC"}, {"code":
-        "HT101-395", "term": "Urban groups. The city. Urban sociology", "scheme":
-        "LCC"}], "format": ["PDF"], "plagiarism_detection": {"detection": false, "url":
-        ""}, "apc_url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#custom-0",
-        "link": [{"url": "http://www.revistas2.uepg.br/index.php/tp/index", "type":
-        "homepage"}, {"url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#focusAndScope",
-        "type": "aims_scope"}, {"url": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#authorGuidelines",
-        "type": "author_instructions"}, {"url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#openAccessPolicy",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2007}, "editorial_review":
-        {"process": "Peer review", "url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#peerReviewProcess"},
-        "author_copyright": {"url": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#copyrightNotice",
-        "copyright": "True"}, "institution": " Universidade Estadual de Ponta Grossa,
-        Programa de P\u00f3s-Gradua\u00e7\u00e3o em Geografia", "publisher": "Universidade
-        Estadual de Ponta Grossa", "language": ["EN", "PT", "ES"], "license": [{"open_access":
-        true, "embedded": false, "title": "CC BY-NC-ND", "url": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#copyrightNotice",
-        "NC": true, "ND": true, "embedded_example_url": "", "SA": false, "type": "CC
-        BY-NC-ND", "BY": true}], "country": "BR", "submission_charges_url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#custom-0",
-        "identifier": [{"type": "eissn", "id": "1982-095X"}]}, "created_date": "2018-02-09T16:31:19Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-04-23T21:55:11Z",
-        "id": "10056a2d31fb40a0b50b2c55d9f26b4f", "bibjson": {"allows_fulltext_indexing":
-        true, "author_publishing_rights": {"url": "", "publishing_rights": "False"},
-        "keywords": ["tourism", "cultural management", "cultural heritage", "gastronomy",
-        "marketing for tourism", "hotel management"], "subject": [{"code": "TX901-946.5",
-        "term": "Hospitality industry. Hotels, clubs, restaurants, etc. Food service",
-        "scheme": "LCC"}, {"code": "GV181.35-181.6", "term": "Recreation leadership.
-        Administration of recreation services", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "Turismo y Patrimonio", "publication_time":
-        16, "provider": "OJS", "format": ["PDF"], "plagiarism_detection": {"detection":
-        true, "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"},
-        "apc_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
-        "link": [{"url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/index",
-        "type": "homepage"}, {"url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
-        "type": "aims_scope"}, {"url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about/submissions",
-        "type": "author_instructions"}, {"url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2012}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "Universidad
-        de San Mart\u00edn de Porres", "publisher": "Universidad de San Mart\u00edn
-        de Porres", "language": ["ES"], "license": [{"open_access": true, "embedded":
-        true, "title": "CC BY-NC-SA", "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
-        "NC": true, "ND": false, "embedded_example_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/article/view/93/77",
-        "SA": true, "type": "CC BY-NC-SA", "BY": true}], "alternative_title": "Revista
-        Turismo y Patrimonio", "country": "PE", "submission_charges_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
-        "identifier": [{"type": "pissn", "id": "1680-9556"}, {"type": "eissn", "id":
-        "2313-853X"}]}, "created_date": "2018-07-23T17:11:04Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2018-05-10T09:58:58Z", "id": "1642c0a3d74d4218951a597b3ed1193e",
-        "bibjson": {"allows_fulltext_indexing": true, "author_publishing_rights":
-        {"url": "", "publishing_rights": "False"}, "keywords": ["cultural heritage"],
-        "subject": [{"code": "N", "term": "Fine Arts", "scheme": "LCC"}], "article_statistics":
-        {"url": "", "statistics": false}, "title": "In Situ : Revue de Patrimoines",
-        "publication_time": 40, "provider": "revues.org", "format": ["PDF", "HTML"],
-        "plagiarism_detection": {"detection": false, "url": ""}, "apc_url": "http://insitu.revues.org/?page=informations",
-        "link": [{"url": "http://insitu.revues.org/", "type": "homepage"}, {"url":
-        "http://insitu.revues.org/400", "type": "editorial_board"}, {"url": "http://insitu.revues.org/399",
-        "type": "aims_scope"}, {"url": "http://insitu.revues.org/401", "type": "author_instructions"},
-        {"url": "http://insitu.revues.org/?page=informations", "type": "oa_statement"}],
-        "active": true, "oa_start": {"year": 2001}, "editorial_review": {"process":
-        "Peer review", "url": "http://insitu.revues.org/399"}, "author_copyright":
-        {"url": "", "copyright": "False"}, "publisher": "Minist\u00e8re de la Culture
-        et de la Communication", "language": ["FR"], "license": [{"open_access": true,
-        "embedded": true, "title": "CC BY-NC-ND", "url": "http://insitu.revues.org/?page=informations",
-        "NC": true, "ND": true, "embedded_example_url": "https://insitu.revues.org/12009",
-        "SA": false, "type": "CC BY-NC-ND", "BY": true}], "country": "FR", "submission_charges_url":
-        "http://insitu.revues.org/?page=informations", "identifier": [{"type": "eissn",
-        "id": "1630-7305"}]}, "created_date": "2012-07-13T10:25:34Z"}, {"admin": {"ticked":
-        true, "seal": true}, "last_updated": "2018-10-30T11:13:45Z", "id": "1891525fc1794e749175d2f671454c2d",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://zmj.unibo.it/about/editorialPolicies", "nat_lib": "Biblioteca Nazionale
-        Centrale di Firenze"}, "author_publishing_rights": {"url": "http://zmj.unibo.it/about/submissions#copyrightNotice",
-        "publishing_rights": "True"}, "keywords": ["fashion studies", "visual studies",
-        "design", "cultural heritage", "media culture", "mass culture"], "deposit_policy":
-        ["Sherpa/Romeo"], "article_statistics": {"url": "", "statistics": false},
-        "title": "ZoneModa Journal", "publication_time": 16, "provider": "OJS", "subject":
-        [{"code": "N", "term": "Fine Arts", "scheme": "LCC"}, {"code": "N1-9211",
-        "term": "Visual arts", "scheme": "LCC"}], "format": ["PDF", "HTML"], "plagiarism_detection":
-        {"detection": true, "url": "http://zmj.unibo.it/about/editorialPolicies#peerReviewProcess"},
-        "apc_url": "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy",
-        "link": [{"url": "http://zmj.unibo.it/", "type": "homepage"}, {"url": "http://zmj.unibo.it/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://zmj.unibo.it/about/editorialPolicies#focusAndScope",
-        "type": "aims_scope"}, {"url": "http://zmj.unibo.it/about/submissions#authorGuidelines",
-        "type": "author_instructions"}, {"url": "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2017}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://zmj.unibo.it/about/editorialPolicies#peerReviewProcess"},
-        "author_copyright": {"url": "http://zmj.unibo.it/about/submissions#copyrightNotice",
-        "copyright": "True"}, "institution": "University of Bologna \u2013 Dipartimento
-        di Scienze per la Qualit\u00e0 della vita", "publisher": "University of Bologna",
-        "language": ["EN", "IT"], "license": [{"open_access": true, "embedded": true,
-        "title": "CC BY", "url": "http://zmj.unibo.it/about/submissions#copyrightNotice",
-        "NC": false, "ND": false, "embedded_example_url": "http://zmj.unibo.it/article/view/8222",
-        "SA": false, "type": "CC BY", "BY": true}], "alternative_title": "Zone Moda
-        Journal", "country": "IT", "submission_charges_url": "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy",
-        "persistent_identifier_scheme": ["DOI"], "identifier": [{"type": "eissn",
-        "id": "2611-0563"}]}, "created_date": "2018-10-30T11:13:45Z"}, {"admin": {"ticked":
-        true, "seal": false}, "last_updated": "2019-07-29T11:30:59Z", "id": "1932be17cc5f432495e6b5d3aa2f2777",
-        "bibjson": {"allows_fulltext_indexing": true, "archiving_policy": {"url":
-        "http://www.mdpi.com/journal/heritage/indexing"}, "persistent_identifier_scheme":
-        ["DOI"], "keywords": ["archaeological heritage", "conservation and architectural
-        restoration", "archaeological sensing technologies", "heritage risk assessment
-        and mitigation", "integrated multiscale remote sensing methods in archaeology"],
-        "apc": {"currency": "CHF", "average_price": 1000}, "subject": [{"code": "CC1-960",
-        "term": "Archaeology", "scheme": "LCC"}], "article_statistics": {"url": "http://www.mdpi.com/journal/heritage/stats",
-        "statistics": true}, "title": "Heritage", "publication_time": 10, "format":
-        ["PDF", "HTML", "ePUB", "XML"], "plagiarism_detection": {"detection": false,
-        "url": ""}, "apc_url": "http://www.mdpi.com/journal/heritage/apc", "link":
-        [{"url": "http://www.mdpi.com/journal/heritage", "type": "homepage"}, {"url":
-        "http://www.mdpi.com/journal/heritage/editors", "type": "editorial_board"},
-        {"url": "http://www.mdpi.com/journal/heritage/about", "type": "aims_scope"},
-        {"url": "http://www.mdpi.com/journal/heritage/about", "type": "author_instructions"},
-        {"url": "http://www.mdpi.com/about/openaccess", "type": "oa_statement"}],
-        "oa_start": {"year": 2018}, "editorial_review": {"process": "Blind peer review",
-        "url": "http://www.mdpi.com/journal/heritage/instructions#editorial_procedure"},
-        "author_copyright": {"url": "http://www.mdpi.com/authors", "copyright": "True"},
-        "publisher": "MDPI AG", "language": ["EN"], "license": [{"open_access": true,
-        "embedded": false, "title": "CC BY", "url": "http://www.mdpi.com/about/openaccess",
-        "NC": false, "ND": false, "embedded_example_url": "", "SA": false, "type":
-        "CC BY", "BY": true}], "country": "CH", "submission_charges_url": "http://www.mdpi.com/journal/heritage/apc",
-        "author_publishing_rights": {"url": "http://www.mdpi.com/authors", "publishing_rights":
-        "True"}, "identifier": [{"type": "eissn", "id": "2571-9408"}]}, "created_date":
-        "2018-08-24T13:19:11Z"}, {"admin": {"ticked": true, "seal": false}, "last_updated":
-        "2018-05-10T09:59:12Z", "id": "194030ad521e4f469f3273a6afe8a6e4", "bibjson":
-        {"allows_fulltext_indexing": true, "persistent_identifier_scheme": ["DOI"],
-        "keywords": ["fine arts", "conservation", "public economics", "archival science",
-        "cultural heritage", "archaeology"], "subject": [{"code": "NX1-820", "term":
-        "Arts in general", "scheme": "LCC"}, {"code": "C", "term": "Auxiliary sciences
-        of history", "scheme": "LCC"}], "article_statistics": {"url": "", "statistics":
-        false}, "title": "Il Capitale Culturale: Studies on the Value of Cultural
-        Heritage", "publication_time": 19, "provider": "OJS", "format": ["PDF"], "plagiarism_detection":
-        {"detection": false, "url": ""}, "apc_url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialPolicies#custom-1
-        ", "link": [{"url": "http://www.unimc.it/riviste/cap-cult", "type": "homepage"},
-        {"url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialPolicies#focusAndScope",
-        "type": "aims_scope"}, {"url": "http://riviste.unimc.it/index.php/cap-cult/information/authors",
-        "type": "author_instructions"}, {"url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialPolicies#openAccessPolicy",
-        "type": "oa_statement"}], "oa_start": {"year": 2010}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialPolicies#peerReviewProcess"},
-        "author_copyright": {"url": "", "copyright": "False"}, "institution": "University
-        of Macerata", "publisher": "eum edizioni universit\u00e0 di macerata", "language":
-        ["EN", "IT"], "license": [{"open_access": true, "embedded": true, "title":
-        "CC BY-SA", "url": "http://riviste.unimc.it/index.php/cap-cult/index", "NC":
-        false, "ND": false, "embedded_example_url": "http://riviste.unimc.it/index.php/cap-cult/article/view/1449/1035",
-        "SA": true, "type": "CC BY-SA", "BY": true}], "alternative_title": "ICC",
-        "country": "IT", "submission_charges_url": "http://riviste.unimc.it/index.php/cap-cult/about/editorialPolicies#custom-1
-        ", "author_publishing_rights": {"url": "", "publishing_rights": "False"},
-        "identifier": [{"type": "pissn", "id": "2039-2362"}]}, "created_date": "2011-02-07T09:42:45Z"},
-        {"admin": {"ticked": true, "seal": false}, "last_updated": "2019-04-06T15:41:30Z",
-        "id": "1b3a1ec1ba634240abbc059b21794464", "bibjson": {"allows_fulltext_indexing":
-        true, "persistent_identifier_scheme": ["DOI"], "keywords": ["palaeoslavonic
-        studies", "Slavic etymology", "Baltic-Slavonic linguistic relations", "Slavic
-        heritage of the Grand Duchy of Lithuania", "Slavic dialectology", "Slavic
-        languages and cultures"], "subject": [{"code": "PG1-9665", "term": "Slavic
-        languages. Baltic languages. Albanian languages", "scheme": "LCC"}], "article_statistics":
-        {"url": "http://www.journals.vu.lt/slavistica-vilnensis/article/view/12060",
-        "statistics": true}, "title": "Slavistica Vilnensis", "publication_time":
-        24, "provider": "OJS", "format": ["PDF"], "plagiarism_detection": {"detection":
-        true, "url": "http://www.journals.vu.lt/slavistica-vilnensis/journalpolicy"},
-        "apc_url": "http://www.journals.vu.lt/slavistica-vilnensis/about", "link":
-        [{"url": "http://www.journals.vu.lt/slavistica-vilnensis", "type": "homepage"},
-        {"url": "http://www.journals.vu.lt/slavistica-vilnensis/about/editorialTeam",
-        "type": "editorial_board"}, {"url": "http://www.journals.vu.lt/slavistica-vilnensis/about",
-        "type": "aims_scope"}, {"url": "http://www.journals.vu.lt/slavistica-vilnensis/about/submissions",
-        "type": "author_instructions"}, {"url": "http://www.journals.vu.lt/slavistica-vilnensis/journalpolicy",
-        "type": "oa_statement"}], "active": true, "oa_start": {"year": 2011}, "editorial_review":
-        {"process": "Double blind peer review", "url": "http://www.journals.vu.lt/slavistica-vilnensis/peerreview"},
-        "author_copyright": {"url": "http://www.journals.vu.lt/slavistica-vilnensis/journalpolicy",
-        "copyright": "True"}, "publisher": "Vilnius University Press", "language":
-        ["EN", "LT", "RU"], "license": [{"open_access": true, "embedded": false, "title":
-        "CC BY", "url": "http://www.journals.vu.lt/slavistica-vilnensis/journalpolicy",
-        "NC": false, "ND": false, "embedded_example_url": "", "SA": false, "type":
-        "CC BY", "BY": true}], "country": "LT", "submission_charges_url": "http://www.journals.vu.lt/slavistica-vilnensis/about",
-        "author_publishing_rights": {"url": "http://www.journals.vu.lt/slavistica-vilnensis/journalpolicy",
-        "publishing_rights": "True"}, "identifier": [{"type": "pissn", "id": "2351-6895"},
-        {"type": "eissn", "id": "2424-6115"}]}, "created_date": "2019-04-06T15:41:30Z"}],
-        "next": "https://doaj.org/api/v1/search/journals/bibjson.keywords:heritage?page=2&pageSize=10",
-        "query": "bibjson.keywords:heritage", "total": 95, "page": 1}'
-  recorded_at: 2019-09-04 17:01:59 GMT
-  recorded_with: vcr/0.3.0, webmockr/0.4.0
+      file: no
+      string: '{"total": 112, "page": 1, "pageSize": 10, "timestamp": "2020-11-25T15:52:17.068126Z",
+        "query": "bibjson.keywords:heritage", "results": [{"id": "02233e98710842d4a296c3dc7e472aa4",
+        "created_date": "2017-06-30T14:29:20Z", "last_updated": "2020-02-03T14:13:06Z",
+        "bibjson": {"alternative_title": "Sampurasun Interdisciplinary Studies for
+        Cultural Heritage", "boai": true, "eissn": "2460-5743", "pissn": "2460-5735",
+        "publication_time_weeks": 24, "title": "Journal Sampurasun", "apc": {"has_apc":
+        false, "url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://journal.unpas.ac.id/index.php/sampurasun/PeerReviewProcess",
+        "board_url": "https://journal.unpas.ac.id/index.php/sampurasun/EditorialTeam",
+        "review_process": ["Peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://journal.unpas.ac.id/index.php/sampurasun/AuthorFee"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Universitas
+        Pasundan", "country": "ID"}, "ref": {"oa_statement": "https://journal.unpas.ac.id/index.php/sampurasun/OpenAccessPolicy",
+        "journal": "https://journal.unpas.ac.id/index.php/sampurasun", "aims_scope":
+        "https://journal.unpas.ac.id/index.php/sampurasun/FocusandScope", "author_instructions":
+        "https://journal.unpas.ac.id/index.php/sampurasun/AuthorGuidelines", "license_terms":
+        "https://journal.unpas.ac.id/index.php/sampurasun/CopyrightNotice"}, "waiver":
+        {"has_waiver": false}, "keywords": ["cultural heritage"], "language": ["EN",
+        "ID"], "license": [{"type": "CC BY", "BY": true, "NC": false, "ND": false,
+        "SA": false}], "subject": [{"code": "GN301-674", "scheme": "LCC", "term":
+        "Ethnology. Social and cultural anthropology"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "0363f2df5e80496fabf11a8ba5853a58", "created_date":
+        "2020-07-03T13:52:12Z", "last_updated": "2020-07-03T13:52:12Z", "bibjson":
+        {"boai": true, "eissn": "1980-4466", "publication_time_weeks": 30, "title":
+        "Revista CPC", "apc": {"has_apc": false, "url": "http://www.revistas.usp.br/cpc/about"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://www.revistas.usp.br/cpc/about/submissions"}, "deposit_policy":
+        {"has_policy": true, "service": ["Diadorim"]}, "editorial": {"review_url":
+        "http://www.revistas.usp.br/cpc/about", "board_url": "http://www.revistas.usp.br/cpc/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universidade
+        de S\u00e3o Paulo (USP), Centro de Preserva\u00e7\u00e3o Cultural"}, "other_charges":
+        {"has_other_charges": false, "url": "http://www.revistas.usp.br/cpc/about"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        false}, "preservation": {"has_preservation": true, "url": "http://www.revistas.usp.br/wp/?page_id=2236",
+        "service": ["PKP PN"]}, "publisher": {"name": "Universidade de S\u00e3o Paulo
+        (USP)", "country": "BR"}, "ref": {"oa_statement": "http://www.revistas.usp.br/cpc/about",
+        "journal": "http://www.revistas.usp.br/cpc/index", "aims_scope": "http://www.revistas.usp.br/cpc/about",
+        "author_instructions": "http://www.revistas.usp.br/cpc/about/submissions",
+        "license_terms": "http://www.revistas.usp.br/cpc/about"}, "waiver": {"has_waiver":
+        false}, "keywords": ["cultural heritage", "heritage preservation", "conservation",
+        "collections", "museology", "social memory"], "language": ["PT"], "license":
+        [{"type": "CC BY-NC-SA", "BY": true, "NC": true, "ND": false, "SA": true}],
+        "subject": [{"code": "AM1-501", "scheme": "LCC", "term": "Museums. Collectors
+        and collecting"}]}, "admin": {"seal": false, "ticked": true}}, {"id": "041baa2be2da41f3888b2025e1b8a549",
+        "created_date": "2020-05-28T18:46:31Z", "last_updated": "2020-05-28T18:46:31Z",
+        "bibjson": {"boai": true, "eissn": "2618-5555", "pissn": "0070-1688", "publication_time_weeks":
+        17, "title": "Cuadernos de Historia del Arte ", "apc": {"has_apc": false,
+        "url": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/enfoqueyalcance"},
+        "article": {"license_display_example_url": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/article/view/2376/1743",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/derechoautor"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/evaluacion",
+        "board_url": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/consejoeditorial",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universidad
+        Nacional de Cuyo. Facultad de Filosof\u00eda y Letras. Insstituto de Historia
+        del Arte"}, "other_charges": {"has_other_charges": false, "url": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/enfoqueyalcance"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Universidad
+        Nacional de Cuyo. Facultad de Filosof\u00eda y Letras. Insstituto de Historia
+        del Arte", "country": "AR"}, "ref": {"oa_statement": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/enfoqueyalcance",
+        "journal": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/index",
+        "aims_scope": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/enfoqueyalcance",
+        "author_instructions": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/normasparaautores",
+        "license_terms": "http://revistas.uncu.edu.ar/ojs3/index.php/cuadernoshistoarte/catalogacionycalidadeditorial"},
+        "waiver": {"has_waiver": false}, "keywords": ["humanities", "social sciences",
+        "history of art", "cultural heritage management", "latin america"], "language":
+        ["ES"], "license": [{"type": "CC BY-NC-SA", "BY": true, "NC": true, "ND":
+        false, "SA": true}], "subject": [{"code": "NX1-820", "scheme": "LCC", "term":
+        "Arts in general"}, {"code": "NX440-632", "scheme": "LCC", "term": "History
+        of the arts"}]}, "admin": {"seal": false, "ticked": true}}, {"id": "08d5436c19454e07a44b6205add55048",
+        "created_date": "2010-12-21T11:10:08Z", "last_updated": "2020-02-03T14:17:09Z",
+        "bibjson": {"alternative_title": "Ge conservaci\u00f3n", "boai": true, "pissn":
+        "1989-8568", "publication_time_weeks": 4, "title": "Ge-conservaci\u00f3n ",
+        "apc": {"has_apc": false, "url": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://ge-iic.com/ojs/index.php/revista/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial":
+        {"review_url": "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#peerReviewProcess",
+        "board_url": "http://ge-iic.com/ojs/index.php/revista/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false, "url": "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy"},
+        "publisher": {"name": "Grupo Espa\u00f1ol del IIC", "country": "ES"}, "ref":
+        {"oa_statement": "http://www.ge-iic.com/ojs/index.php/revista/about/editorialPolicies#openAccessPolicy",
+        "journal": "http://ge-iic.com/ojs/index.php/revista", "aims_scope": "http://ge-iic.com/ojs/index.php/revista/about/editorialPolicies#focusAndScope",
+        "author_instructions": "http://ge-iic.com/ojs/index.php/revista/about/submissions#authorGuidelines",
+        "license_terms": "http://ge-iic.com/ojs/index.php/revista/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["cultural heritage", "conservation",
+        "restoration", "arts", "methodology"], "language": ["EN", "PT", "ES"], "license":
+        [{"type": "CC BY-NC-ND", "BY": true, "NC": true, "ND": true, "SA": false}],
+        "subject": [{"code": "N", "scheme": "LCC", "term": "Fine Arts"}, {"code":
+        "NX1-820", "scheme": "LCC", "term": "Arts in general"}]}, "admin": {"seal":
+        false, "ticked": true}}, {"id": "09431d8250524160ab5966bc42462929", "created_date":
+        "2020-08-12T16:54:21Z", "last_updated": "2020-08-19T12:47:40Z", "bibjson":
+        {"alternative_title": "Revista de Ciencias Sociales y Humanidades", "boai":
+        true, "eissn": "2550-6722", "publication_time_weeks": 45, "title": "Chaki\u00f1an",
+        "apc": {"has_apc": false, "url": "http://chakinan.unach.edu.ec/index.php/chakinan/about#POL%C3%8DTICA%20DE%20ACCESO%20ABIERTO%20(OPEN%20ACCESS)"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://chakinan.unach.edu.ec/index.php/chakinan/about#POL%C3%8DTICA%20DE%20ACCESO%20ABIERTO%20(OPEN%20ACCESS)"},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "http://chakinan.unach.edu.ec/index.php/chakinan/about#PROCESO%20EDITORIAL",
+        "board_url": "http://chakinan.unach.edu.ec/index.php/chakinan/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universidad
+        Nacional de Chimborazo"}, "other_charges": {"has_other_charges": false, "url":
+        "http://chakinan.unach.edu.ec/index.php/chakinan/about#POL%C3%8DTICA%20DE%20ACCESO%20ABIERTO%20(OPEN%20ACCESS)"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://chakinan.unach.edu.ec/index.php/chakinan/about#DECLARACI%C3%93N%20DE%20%C3%89TICA%20Y%20NEGLIGENCIA"},
+        "preservation": {"has_preservation": false, "url": "https://keepers.issn.org//advancedsearch?search_id=5167172"},
+        "publisher": {"name": "Universidad Nacional de Chimborazo", "country": "EC"},
+        "ref": {"oa_statement": "http://chakinan.unach.edu.ec/index.php/chakinan/about#POL%C3%8DTICA%20DE%20ACCESO%20ABIERTO%20(OPEN%20ACCESS)",
+        "journal": "http://chakinan.unach.edu.ec/index.php/chakinan", "aims_scope":
+        "http://chakinan.unach.edu.ec/index.php/chakinan/about#ENFOQUE%20Y%20ALCANCE",
+        "author_instructions": "http://chakinan.unach.edu.ec/index.php/chakinan/about/submissions#authorGuidelines",
+        "license_terms": "http://chakinan.unach.edu.ec/index.php/chakinan/about#POL%C3%8DTICA%20DE%20ACCESO%20ABIERTO%20(OPEN%20ACCESS)"},
+        "waiver": {"has_waiver": false}, "keywords": ["social sciences", "education",
+        "transcultural studies", "cultural heritage", "ancestral knowledge"], "language":
+        ["EN", "QU", "ES"], "license": [{"type": "CC BY-NC", "BY": true, "NC": true,
+        "ND": false, "SA": false}], "subject": [{"code": "H1-99", "scheme": "LCC",
+        "term": "Social sciences (General)"}]}, "admin": {"seal": false, "ticked":
+        true}}, {"id": "097bdb07f33c44688620bfed222eabc6", "created_date": "2018-02-09T16:31:19Z",
+        "last_updated": "2020-02-03T14:16:39Z", "bibjson": {"boai": true, "eissn":
+        "1982-095X", "publication_time_weeks": 36, "title": "Terr@ Plural", "apc":
+        {"has_apc": false, "url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#custom-0"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": true,
+        "url": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#copyrightNotice"},
+        "deposit_policy": {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial":
+        {"review_url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#peerReviewProcess",
+        "board_url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialTeam",
+        "review_process": ["Peer review"]}, "institution": {"name": " Universidade
+        Estadual de Ponta Grossa, Programa de P\u00f3s-Gradua\u00e7\u00e3o em Geografia"},
+        "other_charges": {"has_other_charges": false, "url": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#custom-0"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Universidade
+        Estadual de Ponta Grossa", "country": "BR"}, "ref": {"oa_statement": "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#openAccessPolicy",
+        "journal": "http://www.revistas2.uepg.br/index.php/tp/index", "aims_scope":
+        "http://www.revistas2.uepg.br/index.php/tp/about/editorialPolicies#focusAndScope",
+        "author_instructions": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#authorGuidelines",
+        "license_terms": "http://www.revistas2.uepg.br/index.php/tp/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["landscape", "regional planning",
+        "urban space", "development", "cultural heritage", "geography"], "language":
+        ["EN", "PT", "ES"], "license": [{"type": "CC BY-NC-ND", "BY": true, "NC":
+        true, "ND": true, "SA": false}], "subject": [{"code": "G1-922", "scheme":
+        "LCC", "term": "Geography (General)"}, {"code": "HT101-395", "scheme": "LCC",
+        "term": "Urban groups. The city. Urban sociology"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "10056a2d31fb40a0b50b2c55d9f26b4f", "created_date":
+        "2018-07-23T17:11:04Z", "last_updated": "2020-02-03T14:13:27Z", "bibjson":
+        {"alternative_title": "Revista Turismo y Patrimonio", "boai": true, "eissn":
+        "2313-853X", "pissn": "1680-9556", "publication_time_weeks": 16, "title":
+        "Turismo y Patrimonio", "apc": {"has_apc": false, "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"},
+        "article": {"license_display_example_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/article/view/93/77",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": false}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
+        "board_url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "institution": {"name": "Universidad
+        de San Mart\u00edn de Porres"}, "other_charges": {"has_other_charges": false,
+        "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"}, "pid_scheme":
+        {"has_pid_scheme": false}, "plagiarism": {"detection": true, "url": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Universidad
+        de San Mart\u00edn de Porres", "country": "PE"}, "ref": {"oa_statement": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
+        "journal": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/index",
+        "aims_scope": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about",
+        "author_instructions": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about/submissions",
+        "license_terms": "http://ojs.revistaturismoypatrimonio.com/index.php/typ/about"},
+        "waiver": {"has_waiver": false}, "keywords": ["tourism", "cultural management",
+        "cultural heritage", "gastronomy", "marketing for tourism", "hotel management"],
+        "language": ["ES"], "license": [{"type": "CC BY-NC-SA", "BY": true, "NC":
+        true, "ND": false, "SA": true}], "subject": [{"code": "TX901-946.5", "scheme":
+        "LCC", "term": "Hospitality industry. Hotels, clubs, restaurants, etc. Food
+        service"}, {"code": "GV181.35-181.6", "scheme": "LCC", "term": "Recreation
+        leadership. Administration of recreation services"}]}, "admin": {"seal": false,
+        "ticked": true}}, {"id": "1642c0a3d74d4218951a597b3ed1193e", "created_date":
+        "2012-07-13T10:25:34Z", "last_updated": "2020-02-03T14:16:42Z", "bibjson":
+        {"boai": true, "eissn": "1630-7305", "publication_time_weeks": 40, "title":
+        "In Situ : Revue de Patrimoines", "apc": {"has_apc": false, "url": "http://insitu.revues.org/?page=informations"},
+        "article": {"license_display_example_url": "https://insitu.revues.org/12009",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": false}, "deposit_policy":
+        {"has_policy": false}, "editorial": {"review_url": "http://insitu.revues.org/399",
+        "board_url": "http://insitu.revues.org/400", "review_process": ["Peer review"]},
+        "other_charges": {"has_other_charges": false, "url": "http://insitu.revues.org/?page=informations"},
+        "pid_scheme": {"has_pid_scheme": false}, "plagiarism": {"detection": false},
+        "preservation": {"has_preservation": false}, "publisher": {"name": "Minist\u00e8re
+        de la Culture et de la Communication", "country": "FR"}, "ref": {"oa_statement":
+        "http://insitu.revues.org/?page=informations", "journal": "http://insitu.revues.org/",
+        "aims_scope": "http://insitu.revues.org/399", "author_instructions": "http://insitu.revues.org/401",
+        "license_terms": "http://insitu.revues.org/?page=informations"}, "waiver":
+        {"has_waiver": false}, "keywords": ["cultural heritage"], "language": ["FR"],
+        "license": [{"type": "CC BY-NC-ND", "BY": true, "NC": true, "ND": true, "SA":
+        false}], "subject": [{"code": "N", "scheme": "LCC", "term": "Fine Arts"}]},
+        "admin": {"seal": false, "ticked": true}}, {"id": "1891525fc1794e749175d2f671454c2d",
+        "created_date": "2018-10-30T11:13:45Z", "last_updated": "2020-08-13T10:03:06Z",
+        "bibjson": {"alternative_title": "Zone Moda Journal", "boai": true, "eissn":
+        "2611-0563", "publication_time_weeks": 16, "title": "ZoneModa Journal", "apc":
+        {"has_apc": false, "url": "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy"},
+        "article": {"license_display_example_url": "http://zmj.unibo.it/article/view/8222",
+        "license_display": ["Embed"]}, "copyright": {"author_retains": true, "url":
+        "http://zmj.unibo.it/about/submissions#copyrightNotice"}, "deposit_policy":
+        {"has_policy": true, "service": ["Sherpa/Romeo"]}, "editorial": {"review_url":
+        "http://zmj.unibo.it/about/editorialPolicies#peerReviewProcess", "board_url":
+        "http://zmj.unibo.it/about/editorialTeam", "review_process": ["Double blind
+        peer review"]}, "institution": {"name": "University of Bologna \u2013 Dipartimento
+        di Scienze per la Qualit\u00e0 della vita"}, "other_charges": {"has_other_charges":
+        false, "url": "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        true, "url": "http://zmj.unibo.it/about/editorialPolicies#peerReviewProcess"},
+        "preservation": {"has_preservation": true, "url": "http://zmj.unibo.it/about/editorialPolicies",
+        "national_library": ["Biblioteca Nazionale Centrale di Firenze"]}, "publisher":
+        {"name": "University of Bologna", "country": "IT"}, "ref": {"oa_statement":
+        "http://zmj.unibo.it/about/editorialPolicies#openAccessPolicy", "journal":
+        "http://zmj.unibo.it/", "aims_scope": "http://zmj.unibo.it/about/editorialPolicies#focusAndScope",
+        "author_instructions": "http://zmj.unibo.it/about/submissions#authorGuidelines",
+        "license_terms": "http://zmj.unibo.it/about/submissions#copyrightNotice"},
+        "waiver": {"has_waiver": false}, "keywords": ["fashion studies", "visual studies",
+        "design", "cultural heritage", "media culture", "mass culture"], "language":
+        ["EN", "IT"], "license": [{"type": "CC BY", "BY": true, "NC": false, "ND":
+        false, "SA": false}], "subject": [{"code": "N", "scheme": "LCC", "term": "Fine
+        Arts"}, {"code": "N1-9211", "scheme": "LCC", "term": "Visual arts"}]}, "admin":
+        {"seal": true, "ticked": true}}, {"id": "192499b12e2c42e0b117a7ef59a39568",
+        "created_date": "2020-04-14T13:59:13Z", "last_updated": "2020-04-14T13:59:13Z",
+        "bibjson": {"alternative_title": "Heran\u00e7a: Revista de Hist\u00f3ria,
+        Patrim\u00f3nio e Cultura", "boai": true, "eissn": "2184-3090", "publication_time_weeks":
+        24, "title": "Heran\u00e7a", "apc": {"has_apc": false, "url": "https://revistas.ponteditora.org/index.php/heranca/about"},
+        "article": {"license_display": ["No"]}, "copyright": {"author_retains": false},
+        "deposit_policy": {"has_policy": false}, "editorial": {"review_url": "https://revistas.ponteditora.org/index.php/heranca/about",
+        "board_url": "https://revistas.ponteditora.org/index.php/heranca/about/editorialTeam",
+        "review_process": ["Double blind peer review"]}, "other_charges": {"has_other_charges":
+        false, "url": "https://revistas.ponteditora.org/index.php/heranca/about"},
+        "pid_scheme": {"has_pid_scheme": true, "scheme": ["DOI"]}, "plagiarism": {"detection":
+        false}, "preservation": {"has_preservation": false, "url": "https://revistas.ponteditora.org/index.php/heranca"},
+        "publisher": {"name": "Ponteditora", "country": "PT"}, "ref": {"oa_statement":
+        "https://revistas.ponteditora.org/index.php/heranca/about", "journal": "https://revistas.ponteditora.org/index.php/heranca/",
+        "aims_scope": "https://revistas.ponteditora.org/index.php/heranca/about",
+        "author_instructions": "https://revistas.ponteditora.org/index.php/heranca/about/submissions",
+        "license_terms": "https://revistas.ponteditora.org/index.php/heranca/index"},
+        "waiver": {"has_waiver": false}, "keywords": ["history", "patrimony", "heritage"],
+        "language": ["PT"], "license": [{"type": "CC BY", "BY": true, "NC": false,
+        "ND": false, "SA": false}], "subject": [{"code": "C", "scheme": "LCC", "term":
+        "Auxiliary sciences of history"}, {"code": "D1-2009", "scheme": "LCC", "term":
+        "History (General)"}]}, "admin": {"seal": false, "ticked": true}}], "next":
+        "https://doaj.org/api/v2/search/journals/bibjson.keywords:heritage?page=2&pageSize=10",
+        "last": "https://doaj.org/api/v2/search/journals/bibjson.keywords:heritage?page=12&pageSize=10"}'
+  recorded_at: 2020-11-25 15:52:17 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
