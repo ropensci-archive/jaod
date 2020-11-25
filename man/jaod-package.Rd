@@ -15,9 +15,9 @@ DOAJ is a (quoting) "community-curated list of open access journals and aims
 to be the starting point for all information searches for quality, peer
 reviewed open access material."
 
-DOAJ API documentation can be found at \url{https://doaj.org/api/v1/docs}.
+DOAJ API documentation can be found at \url{https://doaj.org/api/v2/docs}.
 
-DOAJ API FAQ: \url{https://doaj.org/faq#apikey}
+DOAJ API FAQ: \url{https://doaj.org/docs/faq/#apikey}
 }
 
 \section{Package API}{
@@ -31,6 +31,6 @@ DOAJ API FAQ: \url{https://doaj.org/faq#apikey}
 }
 
 \author{
-Scott Chamberlain \email{myrmecocystus+r@gmail.com}
+Scott Chamberlain
 }
 \keyword{package}

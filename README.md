@@ -10,9 +10,9 @@ jaod
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/jaod)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/jaod)](https://cran.r-project.org/package=jaod)
 
-`jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v1/docs)
+`jaod` - R client for [Directory of Open Access Journals API](https://doaj.org/api/v2/docs)
 
-DOAJ API FAQ: <https://doaj.org/faq#apikey>
+DOAJ API FAQ: <https://doaj.org/docs/faq/#apikey>
 
 get started with the package docs: <https://docs.ropensci.org/jaod/>
 

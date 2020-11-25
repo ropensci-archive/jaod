@@ -8,9 +8,9 @@
 #' to be the starting point for all information searches for quality, peer
 #' reviewed open access material."
 #'
-#' DOAJ API documentation can be found at <https://doaj.org/api/v1/docs>.
+#' DOAJ API documentation can be found at <https://doaj.org/api/v2/docs>.
 #' 
-#' DOAJ API FAQ: <https://doaj.org/faq#apikey>
+#' DOAJ API FAQ: <https://doaj.org/docs/faq/#apikey>
 #'
 #' @section Package API:
 #' * [jaod_article()] - Get an article by ID
@@ -22,5 +22,5 @@
 #' @aliases jaod
 #' @docType package
 #' @keywords package
-#' @author Scott Chamberlain \email{myrmecocystus+r@@gmail.com}
+#' @author Scott Chamberlain
 NULL
