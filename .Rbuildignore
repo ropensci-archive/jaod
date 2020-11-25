@@ -10,3 +10,4 @@ Makefile
 ^codemeta\.json$
 ^docs$
 .github
+^LICENSE\.md$
