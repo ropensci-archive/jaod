@@ -7,7 +7,7 @@ Description: Client for the Directory of Open Access Journals ('DOAJ')
     all 'DOAJ' API routes: fetch article information by identifier,
     search for articles, fetch journal information by identifier,
     and search for journals.
-Version: 0.2.4.91
+Version: 0.3.0
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
         email = "myrmecocystus+r@gmail.com", 
@@ -17,7 +17,7 @@ Authors@R: c(
         comment = "https://ropensci.org/")
     )
 License: MIT + file LICENSE
-URL: https://docs.ropensci.org/jaod, https://github.com/ropensci/jaod
+URL: https://docs.ropensci.org/jaod/, https://github.com/ropensci/jaod
 BugReports: https://github.com/ropensci/jaod/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)
@@ -29,11 +29,8 @@ Imports:
     tibble
 Suggests:
     testthat,
-    knitr,
-    rmarkdown,
     vcr
 RoxygenNote: 7.1.1
-VignetteBuilder: knitr
 X-schema.org-applicationCategory: Literature
 X-schema.org-keywords: text-ming, literature, pdf, xml, publications, citations, full-text, metadata
 X-schema.org-isPartOf: https://ropensci.org

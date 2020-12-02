@@ -30,7 +30,7 @@ install.packages("jaod")
 Or the development version:
 
 ```{r eval=FALSE}
-devtools::install_github("ropensci/jaod")
+remotes::install_github("ropensci/jaod")
 ```
 
 ```{r}

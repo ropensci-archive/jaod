@@ -12,3 +12,4 @@ Makefile
 ^docs$
 .github
 ^LICENSE\.md$
+vignettes

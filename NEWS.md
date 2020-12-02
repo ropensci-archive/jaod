@@ -1,3 +1,12 @@
+jaod 0.3.0
+==========
+
+### MINOR IMPROVEMENTS
+
+* fix to `jaod_article_search()` (#11)
+* change base DOAJ API url to v2 (version 2) (#12)
+
+
 jaod 0.2.0
 ==========
 
