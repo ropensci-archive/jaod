@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.6.1 patched
-* ubuntu 14.04 (on travis-ci), R 3.6.1
+* local OS X install, R 4.0.3 patched
+* ubuntu 16.04 (on GitHub Actions), R 4.0.3
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -14,7 +14,7 @@ There are no reverse dependencies.
 
 ---
 
-This version adds a vignette and a few small improvements.
+This version fixes a bug and changes base url for the API the package interacts with.
 
 Thanks!
 Scott Chamberlain

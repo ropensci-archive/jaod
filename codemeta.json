@@ -10,14 +10,13 @@
   "codeRepository": "https://github.com/ropensci/jaod",
   "issueTracker": "https://github.com/ropensci/jaod/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.1",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.1 Patched (2019-07-17 r76848)",
+  "runtimePlatform": "R version 4.0.3 Patched (2020-11-22 r79464)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -45,19 +44,6 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "roxygen2",
-      "name": "roxygen2",
-      "version": ">= 6.1.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=roxygen2"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
       "provider": {
@@ -67,30 +53,6 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=testthat"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "knitr",
-      "name": "knitr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=knitr"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "rmarkdown",
-      "name": "rmarkdown",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
     },
     {
       "@type": "SoftwareApplication",
@@ -110,7 +72,6 @@
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
       "name": "jsonlite",
-      "version": ">= 1.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -123,7 +84,6 @@
       "@type": "SoftwareApplication",
       "identifier": "crul",
       "name": "crul",
-      "version": ">= 0.3.8",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -136,7 +96,6 @@
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
-      "version": ">= 1.3.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -146,15 +105,20 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "contIntegration": "https://travis-ci.org/ropensci/jaod",
-  "releaseNotes": "https://github.com/ropensci/jaod/blob/master/NEWS.md",
+  "contIntegration": "https://codecov.io/github/ropensci/jaod?branch=master",
   "readme": "https://github.com/ropensci/jaod/blob/master/README.md",
-  "fileSize": "73.089KB",
+  "fileSize": "0KB",
   "contributor": {},
   "copyrightHolder": {},
-  "funder": {},
+  "funder": [
+    {
+      "@type": "Organization",
+      "name": "rOpenSci"
+    }
+  ],
   "applicationCategory": "Literature",
   "isPartOf": "https://ropensci.org",
   "keywords": ["text-ming", "literature", "pdf", "xml", "publications", "citations", "full-text", "metadata", "api-client", "open-access", "web-api", "scholarly-articles", "rstats", "r", "r-package"],
-  "developmentStatus": "http://www.repostatus.org/#active"
+  "developmentStatus": "https://www.repostatus.org/#active",
+  "relatedLink": "https://docs.ropensci.org/jaod/"
 }
