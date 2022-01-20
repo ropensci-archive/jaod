@@ -2,7 +2,7 @@ jaod
 ====
 
 
-
+[![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](https://www.repostatus.org/badges/latest/abandoned.svg)](https://www.repostatus.org/#abandoned)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![cran checks](https://cranchecks.info/badges/worst/jaod)](https://cranchecks.info/pkgs/jaod)
 [![R-check](https://github.com/ropensci/jaod/workflows/R-check/badge.svg)](https://github.com/ropensci/jaod/actions?query=workflow%3AR-check)
